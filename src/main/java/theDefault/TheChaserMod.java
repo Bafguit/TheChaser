@@ -21,6 +21,9 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theDefault.cards.*;
+import theDefault.cards.starter.ReactionShot;
+import theDefault.cards.starter.StarterDefend;
+import theDefault.cards.starter.StarterStrike;
 import theDefault.characters.TheChaser;
 import theDefault.events.IdentityCrisisEvent;
 import theDefault.potions.PlaceholderPotion;
@@ -94,7 +97,7 @@ public class TheChaserMod implements
     
     // Colors (RGB)
     // Character Color
-    public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
+    public static final Color DEFAULT_NAVY = CardHelper.getColor(0f, 0f, 128.0f);
     
     // Potion Colors in RGB
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
@@ -204,8 +207,8 @@ public class TheChaserMod implements
         
         logger.info("Creating the color " + TheChaser.Enums.COLOR_GRAY.toString());
         
-        BaseMod.addColor(TheChaser.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        BaseMod.addColor(TheChaser.Enums.COLOR_CHASER, DEFAULT_NAVY, DEFAULT_NAVY, DEFAULT_NAVY,
+                DEFAULT_NAVY, DEFAULT_NAVY, DEFAULT_NAVY, DEFAULT_NAVY,
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
                 ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
@@ -218,7 +221,7 @@ public class TheChaserMod implements
         // The actual mod Button is added below in receivePostInitialize()
         theDefaultDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE"); // This is the default setting. It's actually set...
         try {
-            SpireConfig config = new SpireConfig("kte", "theKteConfig", theDefaultDefaultSettings); // ...right here
+            SpireConfig config = new SpireConfig("theChaser", "theChaserConfig", theDefaultDefaultSettings); // ...right here
             // the "fileName" parameter is the name of the file MTS will create where it will save our setting.
             config.load(); // Load the setting and set the boolean to equal it
             enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
@@ -423,27 +426,14 @@ public class TheChaserMod implements
         BaseMod.addDynamicVariable(new MagicNumber2());
         
         logger.info("Adding cards");
-        // Add the cards
-        // Don't delete these default cards yet. You need 1 of each type and rarity (technically) for your game not to crash
-        // when generating card rewards/shop screen items.
+        //BASIC
+        BaseMod.addCard(new StarterStrike());
+        BaseMod.addCard(new StarterDefend());
+        BaseMod.addCard(new ReactionShot());
+        //COMMON
 
-        // This method automatically adds any cards so you don't have to manually load them 1 by 1
-        // For more specific info, including how to exclude cards from being added:
-        // https://github.com/daviscook477/BaseMod/wiki/AutoAdd
-
-        // The ID for this function isn't actually your modid as used for prefixes/by the getModID() method.
-        // It's the mod id you give MTS in ModTheSpire.json - by default your artifact ID in your pom.xml
-
-        //TODO: Rename the "DefaultMod" with the modid in your ModTheSpire.json file
-        //TODO: The artifact mentioned in ModTheSpire.json is the artifactId in pom.xml you should've edited earlier
-        new AutoAdd("DefaultMod") // ${project.artifactId}
-            .packageFilter(ChaserCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
-            .setDefaultSeen(true)
-            .cards();
-
-        // .setDefaultSeen(true) unlocks the cards
-        // This is so that they are all "seen" in the library,
-        // for people who like to look at the card list before playing your mod
+        logger.info("Auto Adding cards (Disabled)");
+        //new AutoAdd("TheChaser").packageFilter(ChaserCard.class).setDefaultSeen(true).cards();
 
         logger.info("Done adding cards!");
     }

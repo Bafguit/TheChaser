@@ -23,7 +23,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theDefault.TheChaserMod;
 import theDefault.cards.*;
-import theDefault.cards.starter.attack.StarterStrike;
+import theDefault.cards.starter.ReactionShot;
+import theDefault.cards.starter.StarterDefend;
+import theDefault.cards.starter.StarterStrike;
 import theDefault.relics.DefaultClickableRelic;
 import theDefault.relics.PlaceholderRelic;
 import theDefault.relics.PlaceholderRelic2;
@@ -31,7 +33,7 @@ import theDefault.relics.PlaceholderRelic2;
 import java.util.ArrayList;
 
 import static theDefault.TheChaserMod.*;
-import static theDefault.characters.TheChaser.Enums.COLOR_GRAY;
+import static theDefault.characters.TheChaser.Enums.COLOR_CHASER;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -51,11 +53,11 @@ public class TheChaser extends CustomPlayer {
         @SpireEnum
         public static AbstractPlayer.PlayerClass THE_DEFAULT;
         @SpireEnum
-        public static AbstractPlayer.PlayerClass KITTYEYES;
+        public static AbstractPlayer.PlayerClass THECHASER;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR")
         public static AbstractCard.CardColor COLOR_GRAY;
         @SpireEnum
-        public static AbstractCard.CardColor COLOR_KTE;
+        public static AbstractCard.CardColor COLOR_CHASER;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }
@@ -67,7 +69,7 @@ public class TheChaser extends CustomPlayer {
 
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 70;
-    public static final int MAX_HP = 70;
+    public static final int MAX_HP = 74;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
@@ -77,7 +79,7 @@ public class TheChaser extends CustomPlayer {
 
     // =============== STRINGS =================
 
-    private static final String ID = makeID("Kittyeyes");
+    private static final String ID = makeID("The Chaser");
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     private static final String[] NAMES = characterStrings.NAMES;
     private static final String[] TEXT = characterStrings.TEXT;
@@ -162,20 +164,16 @@ public class TheChaser extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(StarterStrike.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
+        retVal.add(StarterStrike.ID);
+        retVal.add(StarterStrike.ID);
+        retVal.add(StarterStrike.ID);
+        retVal.add(StarterStrike.ID);
+        retVal.add(ReactionShot.ID);
+        retVal.add(StarterDefend.ID);
+        retVal.add(StarterDefend.ID);
+        retVal.add(StarterDefend.ID);
+        retVal.add(StarterDefend.ID);
 
-        retVal.add(DefaultCommonSkill.ID);
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
-
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
-
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
         return retVal;
     }
 
@@ -220,13 +218,13 @@ public class TheChaser extends CustomPlayer {
     // Should return the card color enum to be associated with your character.
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return COLOR_GRAY;
+        return COLOR_CHASER;
     }
 
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return TheChaserMod.DEFAULT_GRAY;
+        return DEFAULT_NAVY;
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -263,14 +261,14 @@ public class TheChaser extends CustomPlayer {
     // Should return a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
-        return TheChaserMod.DEFAULT_GRAY;
+        return DEFAULT_NAVY;
     }
 
     // Should return a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
-        return TheChaserMod.DEFAULT_GRAY;
+        return DEFAULT_NAVY;
     }
 
     // Should return an AttackEffect array of any size greater than 0. These effects

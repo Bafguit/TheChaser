@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import theDefault.powers.TargetPower;
 
 public class RandomAttackAction extends AbstractGameAction {
     private DamageInfo info;
@@ -37,7 +38,7 @@ public class RandomAttackAction extends AbstractGameAction {
         if (this.target != null) {
             this.addToTop(new DamageAction(this.target, this.info, this.attackEffect));
             if(this.isTag) {
-                this.addToTop(new ApplyPowerAction(this.target, this.source, new VulnerablePower(this.target, this.amount, !this.source.isPlayer)));
+                this.addToTop(new ApplyPowerAction(this.target, this.source, new TargetPower(this.target, this.amount)));
             }
         }
 
