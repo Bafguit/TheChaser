@@ -21,13 +21,11 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theChaser.cards.common.*;
-import theChaser.cards.rare.ShadowForm;
-import theChaser.cards.rare.Vitality;
+import theChaser.cards.rare.*;
 import theChaser.cards.starter.ReactionShot;
 import theChaser.cards.starter.StarterDefend;
 import theChaser.cards.starter.StarterStrike;
-import theChaser.cards.uncommon.AttackFirst;
-import theChaser.cards.uncommon.Hack;
+import theChaser.cards.uncommon.*;
 import theChaser.cards.common.Linger;
 import theChaser.characters.TheChaser;
 import theChaser.events.IdentityCrisisEvent;
@@ -439,16 +437,24 @@ public class TheChaserMod implements
         BaseMod.addCard(new Chase());
         BaseMod.addCard(new Identify());
         BaseMod.addCard(new LeaveTraces());
+        BaseMod.addCard(new Linger());
         BaseMod.addCard(new Makeready());
         BaseMod.addCard(new RandomThrow());
         BaseMod.addCard(new Watch());
         //UNCOMMON
         BaseMod.addCard(new AttackFirst());
+        BaseMod.addCard(new AttackWeakness());
+        BaseMod.addCard(new FallTechnique());
         BaseMod.addCard(new Hack());
-        BaseMod.addCard(new Linger());
+        BaseMod.addCard(new Penetrate());
+        BaseMod.addCard(new Penetrative());
+        BaseMod.addCard(new Wither());
         //RARE
-        BaseMod.addCard(new Vitality());
+        BaseMod.addCard(new AbsoluteAdvantage());
+        BaseMod.addCard(new ForteIsFrailty());
         BaseMod.addCard(new ShadowForm());
+        BaseMod.addCard(new Unwary());
+        BaseMod.addCard(new Vitality());
 
         logger.info("Auto Adding cards (Disabled)");
         //new AutoAdd("TheChaser").packageFilter(ChaserCard.class).setDefaultSeen(true).cards();

@@ -6,18 +6,19 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import theChaser.powers.PenetrativePower;
 import theChaser.powers.TargetPower;
 
 import java.util.ArrayList;
 
 public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscriber, PostBattleSubscriber, PostCreateStartingRelicsSubscriber {
 
-    public static int TarAtkCnt = 0;
-    public static int TarAtkCntPerTurn = 0;
-    public static int TarAtkDmg = 2;
-    public static int BaseTarAtkDmg = 2;
+    private static int TarAtkCnt = 0;
+    private static int TarAtkCntPerTurn = 0;
+    private static int TarAtkDmg = 2;
+    private static int BaseTarAtkDmg = 2;
 
-    public static boolean isFirstCard = true;
+    private static boolean isFirstCard = true;
 
     public static int getTargetCount() {
         return getTarget().size();
@@ -28,7 +29,7 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
     }
 
     public static int getTargetDamage() {
-        return TarAtkDmg;
+        return TarAtkDmg + (AbstractDungeon.player.hasPower(PenetrativePower.POWER_ID) ? AbstractDungeon.player.getPower(PenetrativePower.POWER_ID).amount : 0);
     }
 
     public static int getTargetAttackCount() {
@@ -37,6 +38,15 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
 
     public static int getTargetAttackCountPerTurn() {
         return TarAtkCntPerTurn;
+    }
+
+    public static void addTargetDamagePerBattle(int amount) {
+        TarAtkDmg += amount;
+    }
+
+    public static void addTargetDamage(int amount) {
+        BaseTarAtkDmg += amount;
+        TarAtkDmg += amount;
     }
 
     public static void resetVars() {

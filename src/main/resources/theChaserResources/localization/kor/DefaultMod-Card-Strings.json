@@ -1,4 +1,8 @@
 {
+  "theChaser:Throwing Knife": {
+    "NAME": "수리검",
+    "DESCRIPTION": "휘발성. NL 무작위 적에게 피해를 !D! 줍니다. theChaser:표적을 가진 적을 우선적으로 공격합니다. 소멸."
+  },
   "theChaser:Strike": {
     "NAME": "타격",
     "DESCRIPTION": "피해를 !D! 줍니다."
@@ -43,6 +47,10 @@
     "NAME": "약점 공격",
     "DESCRIPTION": "적이 가진 해로운 효과 수만큼 피해를 !D! 줍니다."
   },
+  "theChaser:Fall Technique": {
+    "NAME": "낙법",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 약화를 !M! 얻습니다."
+  },
   "theChaser:Hack": {
     "NAME": "난도질",
     "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다."
@@ -50,6 +58,28 @@
   "theChaser:Penetrate": {
     "NAME": "관통 사격",
     "DESCRIPTION": "피해를 !D! 줍니다. 취약을 !M! 부여합니다. 적이 이미 취약 상태라면 대신 theChaser:무방비를 부여합니다."
+  },
+  "theChaser:Penetrative": {
+    "NAME": "예리함",
+    "DESCRIPTION": "theChaser:표적 theChaser:공격의 피해가 !M! 증가합니다."
+  },
+  "theChaser:Wither": {
+    "NAME": "위축",
+    "DESCRIPTION": "약화를 99 부여합니다. 소멸."
+  },
+  "theChaser:Absolute Advantage": {
+    "NAME": "절대 우위",
+    "DESCRIPTION": "[E] 를 얻습니다. 적 전체의 해로운 효과 종류 수만큼 카드를 뽑습니다. 소멸.",
+    "UPGRADE_DESCRIPTION": "[E] [E] 를 얻습니다. 적 전체의 해로운 효과 종류 수만큼 카드를 뽑습니다. 소멸."
+  },
+  "theChaser:Hide": {
+    "NAME": "은신",
+    "DESCRIPTION": "theChaser:은신합니다. 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. theChaser:은신합니다. 소멸."
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "그림자의 형상",
+    "DESCRIPTION": "매 턴 시작 시 theChaser:표적 theChaser:공격의 피해가 !M! 증가합니다."
   },
   "theChaser:Unwary": {
     "NAME": "방심",
