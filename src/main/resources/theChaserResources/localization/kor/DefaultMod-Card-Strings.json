@@ -1,0 +1,90 @@
+{
+  "theChaser:Strike": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "theChaser:Defend": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "theChaser:Chase": {
+    "NAME": "추적",
+    "DESCRIPTION": "피해를 !D! 줍니다. theChaser:표적을 가진 적 수만큼 카드를 뽑습니다."
+  },
+  "theChaser:Identify": {
+    "NAME": "식별",
+    "DESCRIPTION": "피해를 !D! 줍니다. theChaser:표적을 !M! 부여합니다."
+  },
+  "theChaser:Leave Traces": {
+    "NAME": "흔적 남기기",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 주고 theChaser:표적을 !M! 부여합니다."
+  },
+  "theChaser:Linger": {
+    "NAME": "여운",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. theChaser:표적 theChaser:공격"
+  },
+  "theChaser:Makeready": {
+    "NAME": "정비",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. 이 카드가 이번 턴에 처음 사용하는 카드라면, 1 장 더 뽑습니다."
+  },
+  "theChaser:Random Throw": {
+    "NAME": "수리검 난사",
+    "DESCRIPTION": "*수리검 을 !M! 장 얻습니다."
+  },
+  "theChaser:Watch": {
+    "NAME": "주시",
+    "DESCRIPTION": "theChaser:표적을 !M! 부여합니다. 소멸."
+  },
+  "theChaser:Attack First": {
+    "NAME": "선공",
+    "DESCRIPTION": "[E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 !M! 감소합니다."
+  },
+  "theChaser:Attack Weakness": {
+    "NAME": "약점 공격",
+    "DESCRIPTION": "적이 가진 해로운 효과 수만큼 피해를 !D! 줍니다."
+  },
+  "theChaser:Hack": {
+    "NAME": "난도질",
+    "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다."
+  },
+  "theChaser:Penetrate": {
+    "NAME": "관통 사격",
+    "DESCRIPTION": "피해를 !D! 줍니다. 취약을 !M! 부여합니다. 적이 이미 취약 상태라면 대신 theChaser:무방비를 부여합니다."
+  },
+  "theChaser:Unwary": {
+    "NAME": "방심",
+    "DESCRIPTION": "theChaser:표적 theChaser:공격이 theChaser:무방비를 부여합니다."
+  },
+  "theChaser:Vitality": {
+    "NAME": "활력",
+    "DESCRIPTION": "이번 턴 theChaser:표적 theChaser:공격 횟수만큼 체력을 회복합니다. 소멸."
+  },
+
+
+  "theChaser:A": {
+    "NAME": "",
+    "DESCRIPTION": ""
+  },
+  "theChaser:B": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "theChaser:C": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      ""
+    ]
+  },
+  "theChaser:D": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      ""
+    ]
+  }
+}
