@@ -3,6 +3,7 @@ package theChaser.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -49,9 +50,7 @@ public class UnwaryPower extends AbstractPower implements CloneablePowerInterfac
     public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
         flash();
         for(AbstractMonster m : mo) {
-            if(!m.isDeadOrEscaped()) {
-                m.addPower(new UnfortifiedPower(m, this.owner, 1));
-            }
+            addToBot(new ApplyPowerAction(m, this.owner, new UnfortifiedPower(m, this.owner, 1), 1, true));
         }
     }
 

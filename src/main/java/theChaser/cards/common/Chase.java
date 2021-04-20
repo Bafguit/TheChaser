@@ -44,7 +44,7 @@ public class Chase extends ChaserCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_HORIZONTAL));
         if(ChaserUtil.canAttack()) {
-            addToBot(new DrawCardAction(ChaserUtil.getTargetCount()));
+            addToBot(new DrawCardAction(p, ChaserUtil.getTargetCount()));
         }
     }
 

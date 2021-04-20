@@ -40,7 +40,7 @@ public class Watch extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, this.magicNumber)));
+        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, this.magicNumber), this.magicNumber));
     }
 
     @Override

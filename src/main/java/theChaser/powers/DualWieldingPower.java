@@ -2,20 +2,24 @@ package theChaser.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theChaser.TheChaserMod;
-import theChaser.actions.ChaserUtil;
+import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
 import theChaser.util.TextureLoader;
 
-public class TargetPower extends AbstractPower implements CloneablePowerInterface {
+import java.util.ArrayList;
+
+public class DualWieldingPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = TheChaserMod.makeID("Target");
+    public static final String POWER_ID = TheChaserMod.makeID("Dual Wielding");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -24,40 +28,34 @@ public class TargetPower extends AbstractPower implements CloneablePowerInterfac
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
 
-    public TargetPower(final AbstractCreature owner, int amount) {
+    public DualWieldingPower(final AbstractCreature owner) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
-        this.amount = amount;
 
-        type = PowerType.DEBUFF;
+        type = PowerType.BUFF;
         isTurnBased = true;
 
-        this.loadRegion("accuracy");
-        // We load those textures here.
-        //this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
-        //this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+        this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
         updateDescription();
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        if(this.amount > 1) {
-            this.amount--;
-        } else if(this.amount == 1) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-        }
+    public void updateDescription() {
+        description = DESCRIPTIONS[0];
     }
 
     @Override
-    public void updateDescription() {
-        description = DESCRIPTIONS[0] + ChaserUtil.getTargetDamage() + DESCRIPTIONS[1] + " NL " + DESCRIPTIONS[2] + amount;
+    public void atEndOfTurn(boolean isPlayer) {
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new TargetPower(owner, amount);
+        return new DualWieldingPower(owner);
     }
+
 }

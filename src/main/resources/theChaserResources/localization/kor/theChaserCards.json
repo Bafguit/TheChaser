@@ -1,0 +1,158 @@
+{
+  "theChaser:Throwing Knife": {
+    "NAME": "수리검",
+    "DESCRIPTION": "휘발성. NL 무작위 적에게 피해를 !D! 줍니다. thechaser:표적을 가진 적을 우선적으로 공격합니다. 소멸."
+  },
+  "theChaser:Reaction Shot": {
+    "NAME": "반응 사격",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 주고 thechaser:표적을 !M! 부여합니다."
+  },
+  "theChaser:Recluse": {
+    "NAME": "은둔자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 약화를 1 얻습니다. NL 손상을 1 얻습니다."
+  },
+  "theChaser:Strike": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "theChaser:Defend": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "theChaser:Chase": {
+    "NAME": "추적",
+    "DESCRIPTION": "피해를 !D! 줍니다. thechaser:표적을 가진 적 수만큼 카드를 뽑습니다."
+  },
+  "theChaser:Identify": {
+    "NAME": "식별",
+    "DESCRIPTION": "피해를 !D! 줍니다. thechaser:표적을 !M! 부여합니다."
+  },
+  "theChaser:Leave Traces": {
+    "NAME": "흔적 남기기",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 주고 thechaser:표적을 !M! 부여합니다."
+  },
+  "theChaser:Linger": {
+    "NAME": "여운",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. thechaser:표적 *공격"
+  },
+  "theChaser:Makeready": {
+    "NAME": "정비",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. 이 카드가 이번 턴에 처음 사용하는 카드라면, 1 장 더 뽑습니다."
+  },
+  "theChaser:Passing": {
+    "NAME": "넘기기",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 이번 턴에 thechaser:표적 *공격을 했다면, 카드를 2 장 뽑습니다."
+  },
+  "theChaser:Random Throw": {
+    "NAME": "수리검 난사",
+    "DESCRIPTION": "*수리검 을 !M! 장 얻습니다."
+  },
+  "theChaser:Watch": {
+    "NAME": "주시",
+    "DESCRIPTION": "thechaser:표적을 !M! 부여합니다. 소멸."
+  },
+  "theChaser:Attack First": {
+    "NAME": "선공",
+    "DESCRIPTION": "[E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 1 장 감소합니다."
+  },
+  "theChaser:Attack Weakness": {
+    "NAME": "약점 공격",
+    "DESCRIPTION": "적이 가진 해로운 효과 수만큼 피해를 !D! 줍니다."
+  },
+  "theChaser:Fall Technique": {
+    "NAME": "낙법",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 약화를 !M! 얻습니다."
+  },
+  "theChaser:Hack": {
+    "NAME": "난도질",
+    "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다."
+  },
+  "theChaser:Paralyze": {
+    "NAME": "무력화",
+    "DESCRIPTION": "적이 가진 해로운 효과 수만큼 힘을 감소시킵니다.",
+    "UPGRADE_DESCRIPTION": "적이 가진 해로운 효과 수+1 만큼 힘을 감소시킵니다."
+  },
+  "theChaser:Penetrate": {
+    "NAME": "관통 사격",
+    "DESCRIPTION": "피해를 !D! 줍니다. 취약을 !M! 부여합니다. 적이 이미 취약 상태라면 대신 thechaser:무방비를 부여합니다."
+  },
+  "theChaser:Penetrative": {
+    "NAME": "예리함",
+    "DESCRIPTION": "thechaser:표적 *공격의 피해가 !M! 증가합니다."
+  },
+  "theChaser:Ragewind": {
+    "NAME": "휘몰아치기",
+    "DESCRIPTION": "thechaser:표적 *공격 !M! 회. 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸."
+  },
+  "theChaser:Win The Exchange": {
+    "NAME": "이득교환",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 thechaser:무방비 상태라면 [E] 를 얻고 카드를 1 장 뽑습니다."
+  },
+  "theChaser:Wither": {
+    "NAME": "위축",
+    "DESCRIPTION": "약화를 99 부여합니다. 소멸."
+  },
+  "theChaser:Absolute Advantage": {
+    "NAME": "절대 우위",
+    "DESCRIPTION": "[E] 를 얻습니다. 적 전체의 해로운 효과 종류 수만큼 카드를 뽑습니다. 소멸.",
+    "UPGRADE_DESCRIPTION": "[E] [E] 를 얻습니다. 적 전체의 해로운 효과 종류 수만큼 카드를 뽑습니다. 소멸."
+  },
+  "theChaser:Dual Wielding": {
+    "NAME": "쌍수",
+    "DESCRIPTION": "이번 턴 동안 thechaser:표적 *공격이 두 번씩 발동됩니다."
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "강점이자 약점",
+    "DESCRIPTION": "적이 가진 모든 이로운 효과가 해로운 효과로 인식됩니다."
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "그림자의 형상",
+    "DESCRIPTION": "매 턴 시작 시 thechaser:표적 *공격의 피해가 !M! 증가합니다."
+  },
+  "theChaser:Space Out": {
+    "NAME": "간격 두기",
+    "DESCRIPTION": "theChaser:표적 공격을 할 때마다 thechaser:표적 *공격의 피해만큼 방어도를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. theChaser:표적 *공격을 할 때마다 theChaser:표적 *공격의 피해만큼 방어도를 얻습니다."
+  },
+  "theChaser:Uncertainty": {
+    "NAME": "반신반의",
+    "DESCRIPTION": "불가침을 !M! 얻습니다. 약화를 !M! 얻습니다. 소멸."
+  },
+  "theChaser:Unwary": {
+    "NAME": "방심",
+    "DESCRIPTION": "thechaser:표적 *공격이 thechaser:무방비를 부여합니다.",
+    "UPGRADE_DESCRIPTION": "선천성. thechaser:표적 *공격이 thechaser:무방비를 부여합니다."
+  },
+  "theChaser:Vitality": {
+    "NAME": "활력",
+    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. 소멸."
+  },
+
+
+  "theChaser:A": {
+    "NAME": "",
+    "DESCRIPTION": ""
+  },
+  "theChaser:B": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "theChaser:C": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      ""
+    ]
+  },
+  "theChaser:D": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      ""
+    ]
+  }
+}

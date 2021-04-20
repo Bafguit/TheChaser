@@ -1,8 +1,10 @@
 package theChaser.cards.common;
 
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.city.BronzeAutomaton;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.cards.temp.ThrowingKnife;
@@ -12,12 +14,12 @@ import static theChaser.TheChaserMod.makeCardPath;
 
 public class RandomThrow extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("RandomThrow");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String ID = TheChaserMod.makeID("Random Throw");
+    public static final String IMG = makeCardPath("Skill.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;

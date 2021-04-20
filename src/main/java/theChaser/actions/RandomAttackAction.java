@@ -48,7 +48,7 @@ public class RandomAttackAction extends AbstractGameAction {
         if (this.target != null) {
             this.addToTop(new DamageAction(this.target, this.info, this.attackEffect));
             if (this.isTag) {
-                this.addToTop(new ApplyPowerAction(this.target, this.source, new TargetPower(this.target, this.amount)));
+                this.addToTop(new ApplyPowerAction(this.target, this.source, new TargetPower(this.target, this.amount), this.amount));
             }
         }
 

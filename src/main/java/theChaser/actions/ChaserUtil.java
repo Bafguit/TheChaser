@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import theChaser.powers.DualWieldingPower;
 import theChaser.powers.PenetrativePower;
 import theChaser.powers.TargetPower;
 
@@ -40,6 +41,10 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
         return TarAtkCntPerTurn;
     }
 
+    public static boolean isTargetAttackPerTurn() {
+        return TarAtkCntPerTurn > 0;
+    }
+
     public static void addTargetDamagePerBattle(int amount) {
         TarAtkDmg += amount;
     }
@@ -67,12 +72,22 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
         return temp;
     }
 
+    public static void setFirstCardIsDone() {
+        isFirstCard = false;
+    }
+
     public static boolean isFirstCardPerTurn() {
         return isFirstCard;
     }
 
     public static void attack() {
         if(canAttack()) {
+            if(AbstractDungeon.player.hasPower(DualWieldingPower.POWER_ID)) {
+                AbstractDungeon.player.getPower(DualWieldingPower.POWER_ID).flash();
+                AbstractDungeon.actionManager.addToBottom(new DamageAllTargetAction(getTargetDamage(), getTarget()));
+                TarAtkCnt++;
+                TarAtkCntPerTurn++;
+            }
             AbstractDungeon.actionManager.addToBottom(new DamageAllTargetAction(getTargetDamage(), getTarget()));
             TarAtkCnt++;
             TarAtkCntPerTurn++;
@@ -81,12 +96,6 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
 
     @Override
     public void receiveCardUsed(AbstractCard abstractCard) {
-        if(isFirstCardPerTurn()) {
-            isFirstCard = false;
-        }
-        if(abstractCard.type == AbstractCard.CardType.ATTACK) {
-            attack();
-        }
     }
 
     @Override

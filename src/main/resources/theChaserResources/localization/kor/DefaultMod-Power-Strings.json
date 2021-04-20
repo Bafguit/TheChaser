@@ -1,0 +1,63 @@
+{
+  "theChaser:Dual Wielding": {
+    "NAME": "쌍수",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 #y표적 #y공격 이 #b2 번씩 발동됩니다."
+    ]
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "강점이자 약점",
+    "DESCRIPTIONS": [
+      "적이 가진 모든 이로운 효과가 해로운 효과로 인식됩니다."
+    ]
+  },
+  "theChaser:Penetrative": {
+    "NAME": "예리함",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 의 피해가 #b",
+      " 증가합니다."
+    ]
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "그림자의 형상",
+    "DESCRIPTIONS": [
+      "턴 시작 시 #y표적 #y공격 의 피해가 #b",
+      " 증가합니다."
+    ]
+  },
+  "theChaser:Space Out": {
+    "NAME": "간격 두기",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 을 할 때마다 방어도를 #b",
+      " 얻습니다."
+    ]
+  },
+  "theChaser:Target": {
+    "NAME": "표적",
+    "DESCRIPTIONS": [
+      "플레이어 또는 적이 #y공격 한 후, #y표적 을 가진 모든 적에게 피해를 #b",
+      " 줍니다.",
+      "지속 턴수: #b"
+    ]
+  },
+  "theChaser:Unfortified": {
+    "NAME": "무방비",
+    "DESCRIPTIONS": [
+      "공격 피해를 #b",
+      " 더 받습니다."
+    ]
+  },
+  "theChaser:Unwary": {
+    "NAME": "방심",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 이 #y무방비 를 부여합니다."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "",
+      ""
+    ]
+  }
+}

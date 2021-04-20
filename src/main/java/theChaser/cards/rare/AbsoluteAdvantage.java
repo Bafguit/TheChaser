@@ -60,7 +60,7 @@ public class AbsoluteAdvantage extends ChaserCard {
 
         int count = getDebuffs();
         if(count > 0) {
-            addToBot(new DrawCardAction(count));
+            addToBot(new DrawCardAction(p, count));
         }
     }
 

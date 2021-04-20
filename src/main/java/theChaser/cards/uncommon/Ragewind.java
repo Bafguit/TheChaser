@@ -1,19 +1,22 @@
 package theChaser.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.blue.GeneticAlgorithm;
+import com.megacrit.cardcrawl.cards.colorless.RitualDagger;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theChaser.TheChaserMod;
+import theChaser.actions.IncreaseMagicAction;
+import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class FallTechnique extends ChaserCard {
+public class Ragewind extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Fall Technique");
+    public static final String ID = TheChaserMod.makeID("Ragewind");
     public static final String IMG = makeCardPath("Skill.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -22,25 +25,32 @@ public class FallTechnique extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int BLOCK = 14;
-    private static final int UP_BLOCK = 2;
-    private static final int WEAK = 2;
-    private static final int UP_WEAK = -1;
+    private static final int UP_COST = 0;
+    private static final int MAGIC = 1;
 
-    public FallTechnique() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, WEAK);
+    public Ragewind() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, MAGIC);
+        this.misc = 1;
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, this.block));
-        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false), this.magicNumber));
+        addToBot(new IncreaseMagicAction(this.uuid, 1));
+        for(int i = 0; i < this.magicNumber; i++) {
+            addToBot(new TargetAttackAction());
+        }
+    }
+
+    public void applyPowers() {
+        this.baseBlock = this.misc;
+        super.applyPowers();
+        this.initializeDescription();
     }
 
     @Override
     public void upgradeCard() {
-        upgradeBlock(UP_BLOCK);
-        upgradeMagicNumber(UP_WEAK);
+        upgradeBaseCost(UP_COST);
     }
 
 }

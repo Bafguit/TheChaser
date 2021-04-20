@@ -36,7 +36,7 @@ public class Identify extends ChaserCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.BLUNT_LIGHT));
-        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, this.magicNumber)));
+        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, this.magicNumber), this.magicNumber));
     }
 
     @Override

@@ -56,9 +56,9 @@ public class DamageAllTargetAction extends AbstractGameAction {
         if (this.isDone) {
 
             for(AbstractMonster m : this.monsters) {
-                if (!m.isDeadOrEscaped()) {
-                    m.damage(new DamageInfo(this.source, this.damage, this.damageType));
+                if (!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {
                     m.getPower(TargetPower.POWER_ID).flash();
+                    m.damage(new DamageInfo(this.source, this.damage, this.damageType));
                 }
             }
 

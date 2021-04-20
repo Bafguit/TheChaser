@@ -17,17 +17,16 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.relics.RingOfTheSerpent;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theChaser.TheChaserMod;
 import theChaser.cards.starter.ReactionShot;
-import theChaser.cards.starter.StarterDefend;
-import theChaser.cards.starter.StarterStrike;
-import theChaser.relics.DefaultClickableRelic;
-import theChaser.relics.PlaceholderRelic;
-import theChaser.relics.PlaceholderRelic2;
+import theChaser.cards.starter.ChaserDefend;
+import theChaser.cards.starter.ChaserStrike;
+import theChaser.cards.starter.Recluse;
 
 import java.util.ArrayList;
 
@@ -50,13 +49,14 @@ public class TheChaser extends CustomPlayer {
 
     public static class Enums {
         @SpireEnum
-        public static AbstractPlayer.PlayerClass THE_DEFAULT;
-        @SpireEnum
         public static AbstractPlayer.PlayerClass THE_CHASER;
         @SpireEnum
         public static AbstractCard.CardColor COLOR_CHASER;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR")
-        public static CardLibrary.LibraryType LIBRARY_COLOR;
+    }
+
+    public static class LibraryEnum {
+        @SpireEnum
+        public static CardLibrary.LibraryType COLOR_CHASER;
     }
 
     // =============== CHARACTER ENUMERATORS  =================
@@ -65,7 +65,7 @@ public class TheChaser extends CustomPlayer {
     // =============== BASE STATS =================
 
     public static final int ENERGY_PER_TURN = 3;
-    public static final int STARTING_HP = 70;
+    public static final int STARTING_HP = 74;
     public static final int MAX_HP = 74;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
@@ -160,16 +160,16 @@ public class TheChaser extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(StarterStrike.ID);
-        retVal.add(StarterStrike.ID);
-        retVal.add(StarterStrike.ID);
-        retVal.add(StarterStrike.ID);
-        retVal.add(StarterStrike.ID);
+        retVal.add(ChaserStrike.ID);
+        retVal.add(ChaserStrike.ID);
+        retVal.add(ChaserStrike.ID);
+        retVal.add(ChaserStrike.ID);
         retVal.add(ReactionShot.ID);
-        retVal.add(StarterDefend.ID);
-        retVal.add(StarterDefend.ID);
-        retVal.add(StarterDefend.ID);
-        retVal.add(StarterDefend.ID);
+        retVal.add(ChaserDefend.ID);
+        retVal.add(ChaserDefend.ID);
+        retVal.add(ChaserDefend.ID);
+        retVal.add(ChaserDefend.ID);
+        retVal.add(Recluse.ID);
 
         return retVal;
     }
@@ -178,15 +178,8 @@ public class TheChaser extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(PlaceholderRelic.ID);
-        retVal.add(PlaceholderRelic2.ID);
-        retVal.add(DefaultClickableRelic.ID);
-
-        // Mark relics as seen - makes it visible in the compendium immediately
-        // If you don't have this it won't be visible in the compendium until you see them in game
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+        retVal.add(RingOfTheSerpent.ID);
+        UnlockTracker.markRelicAsSeen(RingOfTheSerpent.ID);
 
         return retVal;
     }
@@ -228,7 +221,7 @@ public class TheChaser extends CustomPlayer {
     // energy is displayed from within the energy orb.
     @Override
     public BitmapFont getEnergyNumFont() {
-        return FontHelper.energyNumFontPurple;
+        return FontHelper.energyNumFontBlue;
     }
 
     // Should return class name as it appears in run history screen.
@@ -240,7 +233,7 @@ public class TheChaser extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new StarterStrike();
+        return new ChaserStrike();
     }
 
     // The class name as it appears next to your player name in-game

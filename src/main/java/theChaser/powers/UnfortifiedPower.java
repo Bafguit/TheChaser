@@ -41,7 +41,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
         this.amount = amount;
 
         type = PowerType.DEBUFF;
-        isTurnBased = false;
+        isTurnBased = true;
 
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
@@ -53,18 +53,10 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
         if (this.amount == -1) {
             System.out.println(this.name + " does not stack");
         } else if (this.amount < 3){
-            this.fontScale = 8.0F;
             this.amount += stackAmount;
         } else if(this.amount == 3) {
-            this.fontScale = 8.0F;
             this.amount = 3;
         }
-    }
-
-    @Override
-    public void update(int slot) {
-        super.update(slot);
-        updateDescription();
     }
 
     @Override

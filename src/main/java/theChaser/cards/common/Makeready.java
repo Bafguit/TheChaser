@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Makeready extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Makeready");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Skill.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -39,7 +39,7 @@ public class Makeready extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(this.magicNumber + (ChaserUtil.isFirstCardPerTurn() ? 1 : 0)));
+        addToBot(new DrawCardAction(p, this.magicNumber + (ChaserUtil.isFirstCardPerTurn() ? 1 : 0)));
     }
 
     @Override
