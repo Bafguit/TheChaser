@@ -6,12 +6,14 @@
 package theChaser.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
 import theChaser.powers.TargetPower;
@@ -62,9 +64,21 @@ public class DamageAllTargetAction extends AbstractGameAction {
                 }
             }
 
+            for(AbstractRelic r : AbstractDungeon.player.relics) {
+                if(r instanceof OnAfterTargetAttackSubscriber) {
+                    ((OnAfterTargetAttackSubscriber) r).onAfterTargetAttack(this.monsters, this.damage);
+                }
+            }
+
             for(AbstractPower p : AbstractDungeon.player.powers) {
                 if(p instanceof OnAfterTargetAttackSubscriber) {
                     ((OnAfterTargetAttackSubscriber) p).onAfterTargetAttack(this.monsters, this.damage);
+                }
+            }
+
+            for(AbstractCard c : AbstractDungeon.player.hand.group) {
+                if(c instanceof OnAfterTargetAttackSubscriber) {
+                    ((OnAfterTargetAttackSubscriber) c).onAfterTargetAttack(this.monsters, this.damage);
                 }
             }
 

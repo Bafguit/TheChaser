@@ -1,4 +1,5 @@
 {
+
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",
     "DESCRIPTIONS": [
@@ -44,13 +45,39 @@
     "NAME": "무방비",
     "DESCRIPTIONS": [
       "공격 피해를 #b",
-      " 더 받습니다."
+      "% 더 받습니다."
     ]
   },
   "theChaser:Unwary": {
     "NAME": "방심",
     "DESCRIPTIONS": [
       "#y표적 #y공격 이 #y무방비 를 부여합니다."
+    ]
+  },
+  "theChaser:Bleeding": {
+    "NAME": "출혈",
+    "DESCRIPTIONS": [
+      "공격할 때마다 체력을 #b",
+      " 잃고 중첩이 #b1 감소합니다. 턴 시작에 해로운 효과 수만큼 체력을 잃습니다. NL 해로운 효과 수: #b"
+    ]
+  },
+  "theChaser:Hide": {
+    "NAME": "은신",
+    "DESCRIPTIONS": [
+      "모든 적이 행동을 중지합니다. 적을 공격하면 종료됩니다."
+    ]
+  },
+  "theChaser:Puzzled": {
+    "NAME": "어리둥절",
+    "DESCRIPTIONS": [
+      "분명 방금 전까지만 해도 눈앞에 적이 있었는데 말이죠..."
+    ]
+  },
+  "theChaser:Acceleration": {
+    "NAME": "가속",
+    "DESCRIPTIONS": [
+      "카드를 사용할 때마다 턴 종료까지 공격 피해가 #b10% 증가합니다. NL 현재: #b",
+      "% 증가"
     ]
   },
   "theChaser:": {

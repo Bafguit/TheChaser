@@ -1,14 +1,15 @@
-package theChaser.cards.starter;
+package theChaser.cards.rare;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainGoldAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.green.DaggerSpray;
+import com.megacrit.cardcrawl.cards.colorless.HandOfGreed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
-import theChaser.actions.RandomAttackAction;
+import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 
@@ -23,42 +24,38 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class ReactionShot extends ChaserCard {
+public class Stealage extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Reaction Shot");
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-
+    public static final String ID = TheChaserMod.makeID("Stealage");
     public static final String IMG = makeCardPath("Attack.png");
-    public static final String IMG_BETA = makeCardPath("Attack_beta.png");
 
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-
-    private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 0;
-    private static final int DAMAGE = 3;
-    private static final int UPGRADE_PLUS_DMG = 1;
-    private static final int TAG = 2;
-    private static final int UP_TAG = 1;
+    private static final int COST = 1;
+    private static final int DAMAGE = 7;
+    private static final int UP_DAMAGE = 5;
+    private static final int GOLD = 7;
+    private static final int UP_GOLD = 5;
 
-    public ReactionShot() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, TAG);
-        loadJokeCardImage(this, IMG_BETA);
+    public Stealage() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, GOLD);
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new RandomAttackAction(new DamageInfo(p, this.damage), AttackEffect.BLUNT_LIGHT, true, this.magicNumber));
+        m.gainGold(this.magicNumber);
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), this.magicNumber));
+        addToBot(new GainGoldAction(this.magicNumber));
     }
 
     @Override
     public void upgradeCard() {
-        upgradeDamage(UPGRADE_PLUS_DMG);
-        upgradeMagicNumber(UP_TAG);
+        upgradeDamage(UP_DAMAGE);
+        upgradeMagicNumber(UP_GOLD);
     }
 
 }

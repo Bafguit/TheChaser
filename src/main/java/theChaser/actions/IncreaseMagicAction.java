@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
+import theChaser.cards.ChaserCard;
+
 import java.util.Iterator;
 import java.util.UUID;
 
@@ -16,7 +18,7 @@ public class IncreaseMagicAction extends AbstractGameAction {
     private int miscIncrease;
     private UUID uuid;
 
-    public IncreaseMagicAction(UUID targetUUID, int miscIncrease) {
+    public IncreaseMagicAction(UUID targetUUID, int miscValue, int miscIncrease) {
         this.miscIncrease = miscIncrease;
         this.uuid = targetUUID;
     }
@@ -31,7 +33,7 @@ public class IncreaseMagicAction extends AbstractGameAction {
                 c.misc += this.miscIncrease;
                 c.applyPowers();
                 c.baseMagicNumber = c.misc;
-                c.isMagicNumberModified = false;
+                c.isBlockModified = false;
             }
         }
 

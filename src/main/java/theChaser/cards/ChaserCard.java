@@ -1,7 +1,14 @@
 package theChaser.cards;
+import basemod.ReflectionHacks;
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 public abstract class ChaserCard extends CustomCard {
 
@@ -20,6 +27,7 @@ public abstract class ChaserCard extends CustomCard {
     public boolean isTempCard;
     public String upgradeDescription;
     public String[] extendedDescription;
+    public String betaArtPath;
 
     protected CardStrings cardStrings;
     protected String NORMAL_DESCRIPTION;
@@ -76,6 +84,44 @@ public abstract class ChaserCard extends CustomCard {
             }
             initializeDescription();
         }
+    }
+
+    public static void loadJokeCardImage(AbstractCard card, String img) {
+        if (card instanceof ChaserCard) {
+            ((ChaserCard) card).betaArtPath = img;
+        }
+        Texture cardTexture;
+        cardTexture = ImageMaster.loadImage(img);
+        cardTexture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        int tw = cardTexture.getWidth();
+        int th = cardTexture.getHeight();
+        TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(cardTexture, 0, 0, tw, th);
+        ReflectionHacks.setPrivate(card, AbstractCard.class, "jokePortrait", cardImg);
+    }
+
+    @Override
+    protected Texture getPortraitImage() {
+        if (Settings.PLAYTESTER_ART_MODE || UnlockTracker.betaCardPref.getBoolean(this.cardID, false)) {
+            if (this.textureImg == null) {
+                return null;
+            } else {
+                if (betaArtPath != null) {
+                    int endingIndex = betaArtPath.lastIndexOf(".");
+                    String newPath = betaArtPath.substring(0, endingIndex) + "_p" + betaArtPath.substring(endingIndex);
+                    System.out.println("Finding texture: " + newPath);
+
+                    Texture portraitTexture;
+                    try {
+                        portraitTexture = ImageMaster.loadImage(newPath);
+                    } catch (Exception var5) {
+                        portraitTexture = null;
+                    }
+
+                    return portraitTexture;
+                }
+            }
+        }
+        return super.getPortraitImage();
     }
 
     public abstract void upgradeCard();

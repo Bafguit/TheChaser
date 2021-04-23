@@ -3,6 +3,8 @@ package theChaser.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.cards.green.CripplingPoison;
+import com.megacrit.cardcrawl.cards.green.Envenom;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -39,26 +41,27 @@ public class ForteIsFrailtyPower extends AbstractPower implements CloneablePower
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
         updateDescription();
+    }
 
+    @Override
+    public void update(int slot) {
+        super.update(slot);
         changeBuff();
     }
 
     @Override
-    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(power.type == PowerType.BUFF && target != null && !target.isPlayer) {
-            changeBuff();
-        }
+    public void onInitialApplication() {
+        changeBuff();
     }
 
     private void changeBuff() {
-        for(int j = 0; j < AbstractDungeon.getCurrRoom().monsters.monsters.size(); j++) {
-            for(int i = 0; i < AbstractDungeon.getCurrRoom().monsters.monsters.get(j).powers.size(); i++) {
-                if(AbstractDungeon.getCurrRoom().monsters.monsters.get(j).powers.get(i).type == PowerType.BUFF) {
-                    AbstractDungeon.getCurrRoom().monsters.monsters.get(j).powers.get(i).type = PowerType.DEBUFF;
+        for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            for(AbstractPower p : m.powers) {
+                if(p.type == PowerType.BUFF) {
+                    p.type = PowerType.DEBUFF;
                 }
             }
         }
-
     }
 
     @Override

@@ -3,7 +3,9 @@ package theChaser.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -16,10 +18,10 @@ import theChaser.util.TextureLoader;
 
 import java.util.ArrayList;
 
-public class SpaceOutPower extends AbstractPower implements CloneablePowerInterface, OnAfterTargetAttackSubscriber {
+public class HidePower extends AbstractPower implements CloneablePowerInterface, OnAfterTargetAttackSubscriber {
     public AbstractCreature source;
 
-    public static final String POWER_ID = TheChaserMod.makeID("Space Out");
+    public static final String POWER_ID = TheChaserMod.makeID("Hide");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -28,12 +30,11 @@ public class SpaceOutPower extends AbstractPower implements CloneablePowerInterf
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
 
-    public SpaceOutPower(final AbstractCreature owner, int amount) {
+    public HidePower(final AbstractCreature owner) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
-        this.amount = amount;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -45,19 +46,34 @@ public class SpaceOutPower extends AbstractPower implements CloneablePowerInterf
     }
 
     @Override
+    public void onInitialApplication() {
+        ChaserUtil.applyPuzzled();
+    }
+
+    @Override
+    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        if(!target.isPlayer) {
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, HidePower.POWER_ID));
+        }
+    }
+
+    @Override
+    public void onRemove() {
+        ChaserUtil.removePuzzled();
+    }
+
+    @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0];
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new SpaceOutPower(owner, amount);
+        return new HidePower(owner);
     }
 
     @Override
     public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
-        if(damage > 0) {
-            addToBot(new GainBlockAction(this.owner, this.amount));
-        }
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, HidePower.POWER_ID));
     }
 }

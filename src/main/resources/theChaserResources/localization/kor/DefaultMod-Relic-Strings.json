@@ -30,5 +30,26 @@
       ".",
       "Select a card to bottle for "
     ]
+  },
+  "theChaser:Shadow In Necklace": {
+    "NAME": "목걸이 속의 그림자",
+    "FLAVOR": "심연의 어둠이 담긴 작은 유리병으로 만들어졌습니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 시 무작위 적에게 #y표적 을 #b2 부여합니다."
+    ]
+  },
+  "theChaser:Cloak Of Assassin": {
+    "NAME": "암살자의 망토",
+    "FLAVOR": "뛰어난 위장 성능을 자랑하는 망토입니다. 양산품입니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 시 #y은신 합니다."
+    ]
+  },
+  "theChaser:R-B0-7": {
+    "NAME": "R-B0-7",
+    "FLAVOR": "유명한 약에서 치료 효과만 빼낸 위험한 약품입니다.",
+    "DESCRIPTIONS": [
+      "내 턴 시작 시 #y해로운 #y효과 를 가진 모든 적에게 피해를 #b5 줍니다."
+    ]
   }
 }

@@ -28,6 +28,7 @@ public class AfterCardPlayPatch
     public static void Postfix(AbstractPlayer __instance, AbstractCard c, AbstractMonster monster, int energyOnUse)
     {
         System.out.println("AfterCardPlayPatcher");
+        ChaserUtil.cardIsUsed(c);
         if(ChaserUtil.isFirstCardPerTurn()) {
             ChaserUtil.setFirstCardIsDone();
         }

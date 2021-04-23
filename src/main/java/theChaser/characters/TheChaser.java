@@ -27,6 +27,7 @@ import theChaser.cards.starter.ReactionShot;
 import theChaser.cards.starter.ChaserDefend;
 import theChaser.cards.starter.ChaserStrike;
 import theChaser.cards.starter.Recluse;
+import theChaser.relics.ShadowInNecklace;
 
 import java.util.ArrayList;
 
@@ -178,8 +179,8 @@ public class TheChaser extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(RingOfTheSerpent.ID);
-        UnlockTracker.markRelicAsSeen(RingOfTheSerpent.ID);
+        retVal.add(ShadowInNecklace.ID);
+        UnlockTracker.markRelicAsSeen(ShadowInNecklace.ID);
 
         return retVal;
     }

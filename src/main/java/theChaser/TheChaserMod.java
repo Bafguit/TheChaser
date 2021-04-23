@@ -6,27 +6,36 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theChaser.actions.ChaserUtil;
+import theChaser.cards.ChaserCard;
 import theChaser.cards.common.*;
 import theChaser.cards.rare.*;
 import theChaser.cards.starter.ReactionShot;
 import theChaser.cards.starter.Recluse;
 import theChaser.cards.starter.ChaserDefend;
 import theChaser.cards.starter.ChaserStrike;
+import theChaser.cards.temp.ContinuousSlashAlt;
+import theChaser.cards.temp.SequenceFlow;
 import theChaser.cards.uncommon.*;
 import theChaser.cards.common.Linger;
 import theChaser.characters.TheChaser;
+import theChaser.relics.CloakOfAssassin;
+import theChaser.relics.RBO7;
+import theChaser.relics.ShadowInNecklace;
 import theChaser.util.IDCheckDontTouchPls;
 import theChaser.util.TextureLoader;
 import theChaser.variables.MagicNumber2;
@@ -34,7 +43,6 @@ import theChaser.variables.MagicNumber2;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Base64;
 import java.util.Properties;
 
 //TODO: DON'T MASS RENAME/REFACTOR
@@ -385,10 +393,10 @@ public class TheChaserMod implements
         // for reference as to how to turn this into an "Auto-Add" rather than having to list every relic individually.
         // Of note is that the bard mod uses it's own custom relic class (not dissimilar to our AbstractDefaultCard class for cards) that adds the 'color' field,
         // in order to automatically differentiate which pool to add the relic too.
-        
-        // Mark relics as seen - makes it visible in the compendium immediately
-        // If you don't have this it won't be visible in the compendium until you see them in game
-        // (the others are all starters so they're marked as seen in the character file)
+
+        BaseMod.addRelicToCustomPool(new ShadowInNecklace(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new CloakOfAssassin(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new RBO7(), TheChaser.Enums.COLOR_CHASER);
         logger.info("Done adding relics!");
     }
     
@@ -415,31 +423,50 @@ public class TheChaserMod implements
         BaseMod.addCard(new Recluse());
         //COMMON
         BaseMod.addCard(new Chase());
+        BaseMod.addCard(new ContinuousSlash());
+        BaseMod.addCard(new FatalBlitz());
         BaseMod.addCard(new Identify());
         BaseMod.addCard(new LeaveTraces());
         BaseMod.addCard(new Linger());
         BaseMod.addCard(new Passing());
         BaseMod.addCard(new Makeready());
         BaseMod.addCard(new RandomThrow());
+        BaseMod.addCard(new ScarStab());
+        BaseMod.addCard(new Stalling());
         BaseMod.addCard(new Watch());
+        BaseMod.addCard(new Wound());
         //UNCOMMON
+        BaseMod.addCard(new Acceleration());
         BaseMod.addCard(new AttackFirst());
         BaseMod.addCard(new AttackWeakness());
+        BaseMod.addCard(new Chance());
+        BaseMod.addCard(new Conquest());
         BaseMod.addCard(new FallTechnique());
         BaseMod.addCard(new Hack());
+        BaseMod.addCard(new HiddenDagger());
+        BaseMod.addCard(new InternalHemorrhage());
         BaseMod.addCard(new Paralyze());
         BaseMod.addCard(new Penetrate());
         BaseMod.addCard(new Penetrative());
+        BaseMod.addCard(new PluckOutDaggers());
         BaseMod.addCard(new Ragewind());
+        BaseMod.addCard(new Recall());
+        BaseMod.addCard(new Sequence());
+        BaseMod.addCard(new SpaceOut());
+        BaseMod.addCard(new Vigilance());
         BaseMod.addCard(new WinTheExchange());
         BaseMod.addCard(new Wither());
         //RARE
         BaseMod.addCard(new AbsoluteAdvantage());
         BaseMod.addCard(new DualWielding());
         BaseMod.addCard(new ForteIsFrailty());
+        BaseMod.addCard(new Fraudulence());
+        BaseMod.addCard(new Hide());
+        BaseMod.addCard(new MortalBlow());
+        BaseMod.addCard(new Phrenitis());
         BaseMod.addCard(new ShadowForm());
-        BaseMod.addCard(new SpaceOut());
-        BaseMod.addCard(new Uncertainty());
+        BaseMod.addCard(new Stealage());
+        BaseMod.addCard(new StrategicRetreat());
         BaseMod.addCard(new Unwary());
         BaseMod.addCard(new Vitality());
 
@@ -461,33 +488,42 @@ public class TheChaserMod implements
         
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/kor/theChaserCards.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserCards.json");
         
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/kor/DefaultMod-Power-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Power-Strings.json");
         
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/kor/DefaultMod-Relic-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Relic-Strings.json");
         
         // Event Strings
         BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/kor/DefaultMod-Event-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Event-Strings.json");
         
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/kor/DefaultMod-Potion-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Potion-Strings.json");
         
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/kor/DefaultMod-Character-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Character-Strings.json");
         
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/kor/DefaultMod-Orb-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Orb-Strings.json");
         
         logger.info("Done edittting strings");
+    }
+
+    public String getLanguage() {
+        switch (Settings.language.name()) {
+            case "KOR":
+                return "kor";
+            default:
+                return "eng";
+        }
     }
     
     // ================ /LOAD THE TEXT/ ===================
@@ -505,7 +541,7 @@ public class TheChaserMod implements
         // In Keyword-Strings.json you would have PROPER_NAME as A Long Keyword and the first element in NAMES be a long keyword, and the second element be a_long_keyword
 
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/kor/DefaultMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal(getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
         Keyword[] keywords = (Keyword[])gson.fromJson(json, Keyword[].class);
         if (keywords != null) {
             int var7 = keywords.length;
@@ -516,8 +552,8 @@ public class TheChaserMod implements
             }
         }
     }
-    
-    // ================ /LOAD THE KEYWORDS/ ===================    
+
+    // ================ /LOAD THE KEYWORDS/ ===================
     
     // this adds "ModName:" before the ID of any card/relic/power etc.
     // in order to avoid conflicts if any other mod uses the same ID.

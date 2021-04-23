@@ -61,7 +61,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
 
     @Override
     public void atEndOfRound() {
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, UnfortifiedPower.POWER_ID));
     }
 
     @Override

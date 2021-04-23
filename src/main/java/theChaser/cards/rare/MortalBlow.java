@@ -1,10 +1,16 @@
 package theChaser.cards.rare;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.red.Bludgeon;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
@@ -20,34 +26,39 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class Uncertainty extends ChaserCard {
+public class MortalBlow extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Uncertainty");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String ID = TheChaserMod.makeID("Mortal Blow");
+    public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 1;
-    private static final int UNT = 1;
-    private static final int UP_UNT = 1;
+    private static final int COST = 3;
+    private static final int DAMAGE = 38;
+    private static final int UP_DAMAGE = 10;
+    private static final int WEAK = 2;
 
-    public Uncertainty() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, UNT);
-        this.exhaust = true;
+    public MortalBlow() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, WEAK);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, this.magicNumber)));
-        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false), this.magicNumber));
+        if (m != null) {
+            this.addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
+        }
+
+        this.addToBot(new WaitAction(0.8F));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false)));
     }
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(UP_UNT);
+        upgradeDamage(UP_DAMAGE);
     }
 
 }
