@@ -31,7 +31,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
         this.damage = amount;
         this.monsters = mo;
         this.actionType = ActionType.DAMAGE;
-        this.damageType = DamageType.NORMAL;
+        this.damageType = DamageType.THORNS;
         this.attackEffect = AttackEffect.BLUNT_LIGHT;
         this.duration = Settings.ACTION_DUR_XFAST;
     }

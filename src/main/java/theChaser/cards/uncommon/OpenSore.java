@@ -1,4 +1,4 @@
-package theChaser.cards.rare;
+package theChaser.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -6,36 +6,37 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
-import theChaser.powers.ForteIsFrailtyPower;
-import theChaser.powers.PenetrativePower;
+import theChaser.powers.OpenSorePower;
+import theChaser.powers.SpaceOutPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class ForteIsFrailty extends ChaserCard {
+public class OpenSore extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Forte Is Frailty");
+    public static final String ID = TheChaserMod.makeID("Open Sore");
     public static final String IMG = makeCardPath("Power.png");
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 2;
-    private static final int UP_COST = 1;
+    private static final int COST = 1;
+    private static final int B = 1;
+    private static final int U_B = 1;
 
-    public ForteIsFrailty() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+    public OpenSore() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, B);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new ForteIsFrailtyPower(p)));
+        addToBot(new ApplyPowerAction(p, p, new OpenSorePower(p, this.magicNumber)));
     }
+
 
     @Override
     public void upgradeCard() {
-        upgradeBaseCost(UP_COST);
+        upgradeMagicNumber(U_B);
     }
-
 }

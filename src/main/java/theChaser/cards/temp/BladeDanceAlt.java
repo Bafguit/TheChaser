@@ -34,16 +34,14 @@ public class BladeDanceAlt extends ChaserCard {
 
     public BladeDanceAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
-        this.exhaust = true;
     }
 
     public void onChoseThisOption() {
-        this.addToBot(new MakeTempCardInHandAction(this, 1));
+        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
     }
 
     @Override

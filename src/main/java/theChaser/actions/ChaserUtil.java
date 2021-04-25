@@ -1,13 +1,16 @@
 package theChaser.actions;
 
 import basemod.interfaces.*;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -17,6 +20,7 @@ import theChaser.powers.PenetrativePower;
 import theChaser.powers.PuzzledPower;
 import theChaser.powers.TargetPower;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -31,6 +35,7 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
     private static int CardCnt = 0;
     private static int CardCntPerTurn = 0;
     private static AbstractCard lastCard = null;
+    private static Color BLEEDING_COLOR = new Color(100, 0, 0);
 
     @SpireEnum
     public static AbstractPower.PowerType NONE;

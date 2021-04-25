@@ -1,16 +1,15 @@
-package theChaser.cards.rare;
+package theChaser.cards.uncommon;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.green.EscapePlan;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
-import theChaser.actions.ChaserUtil;
+import theChaser.actions.SecretCardAction;
+import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
-import theChaser.powers.HidePower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -23,33 +22,32 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class Hide extends ChaserCard {
+public class SecretCard extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Hide");
+    public static final String ID = TheChaserMod.makeID("Secret Card");
     public static final String IMG = makeCardPath("Skill.png");
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 1;
-    private static final int TURN = 2;
-    private static final int UP_TURN = 1;
+    private static final int COST = 0;
+    private static final int TAR = 1;
+    private static final int UP_TAR = 1;
 
-    public Hide() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TURN);
-        this.exhaust = true;
+    public SecretCard() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAR);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new HidePower(p, this.magicNumber)));
+        addToBot(new DrawCardAction(1, new SecretCardAction(this.magicNumber)));
     }
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(UP_TURN);
+        upgradeMagicNumber(UP_TAR);
     }
 
 }

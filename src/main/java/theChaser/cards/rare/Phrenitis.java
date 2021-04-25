@@ -37,7 +37,7 @@ public class Phrenitis extends ChaserCard {
     public static final String IMG = makeCardPath("Skill.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
@@ -51,6 +51,7 @@ public class Phrenitis extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        /*
         ArrayList<AbstractMonster> mo = new ArrayList<>();
 
         for(AbstractMonster mm : getCurrRoom().monsters.monsters) {
@@ -67,6 +68,15 @@ public class Phrenitis extends ChaserCard {
         addToBot(new ApplyPowerAction(mo.get(cardRandomRng.random.nextInt(size)), p, new BleedingPower(mo.get(cardRandomRng.random.nextInt(size)), p, 1), 1, true));
         addToBot(new ApplyPowerAction(mo.get(cardRandomRng.random.nextInt(size)), p, new TargetPower(mo.get(cardRandomRng.random.nextInt(size)), 1), 1, true));
         addToBot(new ApplyPowerAction(mo.get(cardRandomRng.random.nextInt(size)), p, new UnfortifiedPower(mo.get(cardRandomRng.random.nextInt(size)), p, 1), 1, true));
+         */
+
+
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 1, false), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, 1), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, 1), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, 1), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, 1), 1, true));
     }
 
     @Override

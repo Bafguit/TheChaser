@@ -26,7 +26,7 @@ public class CloakOfAssassin extends CustomRelic {
     @Override
     public void atBattleStartPreDraw() {
         this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HidePower(AbstractDungeon.player)));
+        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HidePower(AbstractDungeon.player, 2)));
     }
 
     @Override

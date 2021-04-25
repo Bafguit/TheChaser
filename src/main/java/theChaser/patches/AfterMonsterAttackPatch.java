@@ -16,10 +16,10 @@ public class AfterMonsterAttackPatch
 {
 
     public static void Prefix(AbstractMonster __instance)
-    {
+    {/*
         System.out.println("AfterMonsterAttackPatcher");
         if(__instance.intent == AbstractMonster.Intent.ATTACK || __instance.intent == AbstractMonster.Intent.ATTACK_BUFF || __instance.intent == AbstractMonster.Intent.ATTACK_DEBUFF || __instance.intent == AbstractMonster.Intent.ATTACK_DEFEND) {
-            AbstractDungeon.actionManager.addToBottom(new TargetAttackAction());
-        }
+            __instance.addToBot(new TargetAttackAction());
+        }*/
     }
 }

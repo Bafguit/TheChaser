@@ -1,11 +1,11 @@
 {
   "theChaser:Throwing Knife": {
     "NAME": "수리검",
-    "DESCRIPTION": "휘발성 NL 무작위 적에게 피해를 !D! 줍니다. thechaser:표적 을 가진 적을 우선적으로 공격합니다. NL 소멸"
+    "DESCRIPTION": "휘발성 NL 무작위 적에게 피해를 !D! 줍니다. thechaser:표적 을 가진 적을 우선적으로 공격합니다."
   },
   "theChaser:Acrobatics": {
     "NAME": "곡??%?>$ㅇ?ㅖ??",
-    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 카드를 1장 버립니다. NL 소멸"
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 카드를 1장 버립니다."
   },
   "theChaser:Blade Dance": {
     "NAME": "無$$?검@@&?무??",
@@ -13,8 +13,8 @@
   },
   "theChaser:Outmaneuver": {
     "NAME": "?ㅇㅏ#ㅂ?%도$??",
-    "DESCRIPTION": "다음 턴에 [E] [E] 를 얻습니다. NL 소멸",
-    "UPGRADE_DESCRIPTION": "다음 턴에 [E] [E] [E] 를 얻습니다. NL 소멸"
+    "DESCRIPTION": "다음 턴에 [E] [E] 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "다음 턴에 [E] [E] [E] 를 얻습니다."
   },
   "theChaser:Continuous Slash Alt": {
     "NAME": "연속 베기",
@@ -63,7 +63,7 @@
   },
   "theChaser:Linger": {
     "NAME": "여운",
-    "DESCRIPTION": "방어도 를 !B! 얻습니다. thechaser:표적 *공격"
+    "DESCRIPTION": "방어도 를 !B! 얻습니다. thechaser:표적 *공격 을 1회 합니다."
   },
   "theChaser:Makeready": {
     "NAME": "정비",
@@ -97,6 +97,10 @@
     "NAME": "가속",
     "DESCRIPTION": "카드를 사용할 때마다 턴 종료까지 공격 피해가 10% 증가합니다."
   },
+  "theChaser:Aggravate": {
+    "NAME": "악화",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 thechaser:출혈 상태인 적이 thechaser:출혈 피해를 즉시 1회 받습니다."
+  },
   "theChaser:Attack First": {
     "NAME": "선공",
     "DESCRIPTION": "[E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 1 장 감소합니다."
@@ -104,6 +108,19 @@
   "theChaser:Attack Weakness": {
     "NAME": "약점 공격",
     "DESCRIPTION": "적이 가진 해로운 효과 수만큼 피해를 !D! 줍니다."
+  },
+  "theChaser:Big Picture": {
+    "NAME": "큰 그림",
+    "DESCRIPTION": "해로운 효과를 얻을 때마다 힘 을 !M! 얻습니다."
+  },
+  "theChaser:Blitzkrieg": {
+    "NAME": "급습",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 1 부여합니다."
+  },
+  "theChaser:Break Armour": {
+    "NAME": "장갑 돌파",
+    "DESCRIPTION": "적이 가진 thechaser:표적 을 제거하고 그 수치만큼 취약 , 약화 를 부여합니다.",
+    "UPGRADE_DESCRIPTION": "적이 가진 thechaser:표적 을 제거하고 그 수치만큼 취약 , 약화 , thechaser:출혈 을 부여합니다."
   },
   "theChaser:Chance": {
     "NAME": "기회",
@@ -130,10 +147,14 @@
     "NAME": "내출혈",
     "DESCRIPTION": "적 전체에게 thechaser:출혈 을 !M! 부여하고 약화 를 2 부여합니다. NL 소멸"
   },
+  "theChaser:Open Sore": {
+    "NAME": "아물지 않은 상처",
+    "DESCRIPTION": "적의 thechaser:출혈 이 감소할 때, 대신 !M! 만큼 증가합니다."
+  },
   "theChaser:Paralyze": {
-    "NAME": "무력화",
-    "DESCRIPTION": "적이 가진 해로운 효과 수만큼 힘을 감소시킵니다.",
-    "UPGRADE_DESCRIPTION": "적이 가진 해로운 효과 수+1 만큼 힘을 감소시킵니다."
+    "NAME": "마비",
+    "DESCRIPTION": "적이 가진 해로운 효과 수만큼 힘을 감소시킵니다. NL 소멸",
+    "UPGRADE_DESCRIPTION": "적이 가진 해로운 효과 수+1 만큼 힘을 감소시킵니다. NL 소멸"
   },
   "theChaser:Penetrate": {
     "NAME": "관통 사격",
@@ -149,12 +170,16 @@
   },
   "theChaser:Ragewind": {
     "NAME": "휘몰아치기",
-    "DESCRIPTION": "thechaser:표적 *공격 !M! 회. 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
+    "DESCRIPTION": "thechaser:표적 *공격 을 !M! 회 합니다. NL 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
   },
   "theChaser:Recall": {
     "NAME": "회상",
     "DESCRIPTION": "두 번 선택: NL *단도 카드를 !M! 장 얻거나, 카드를 !M! 장 뽑고 1장 버리거나, 다음 턴에 [E] [E] 를 얻습니다. NL 소멸.",
     "UPGRADE_DESCRIPTION": "두 번 선택: NL *단도 카드를 !M! 장 얻거나, 카드를 !M! 장 뽑고 1장 버리거나, 다음 턴에 [E] [E] [E] 를 얻습니다. NL 소멸"
+  },
+  "theChaser:Secret Card": {
+    "NAME": "숨겨둔 패",
+    "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 thechaser:표적 *공격 을 !M! 회 합니다."
   },
   "theChaser:Sequence": {
     "NAME": "연속된 동작",
@@ -163,7 +188,11 @@
   },
   "theChaser:Space Out": {
     "NAME": "간격 두기",
-    "DESCRIPTION": "theChaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다."
+    "DESCRIPTION": "thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다."
+  },
+  "theChaser:Throes": {
+    "NAME": "발악",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 3 부여합니다. NL 취약 을 1 얻습니다."
   },
   "theChaser:Vigilance": {
     "NAME": "경계",
@@ -196,7 +225,7 @@
   },
   "theChaser:Hide": {
     "NAME": "은신",
-    "DESCRIPTION": "thechaser:은신 합니다. NL 소멸"
+    "DESCRIPTION": "!M! 턴 동안 thechaser:은신 합니다. NL 소멸"
   },
   "theChaser:Mortal Blow": {
     "NAME": "일격필살",
@@ -204,7 +233,7 @@
   },
   "theChaser:Phrenitis": {
     "NAME": "착란",
-    "DESCRIPTION": "약화 , 취약 , 중독 , thechaser:출혈 , thechaser:표적 , thechaser:무방비 를 각각 무작위 적에게 1 부여합니다. NL 소멸"
+    "DESCRIPTION": "약화 , 취약 , 중독 , thechaser:출혈 , thechaser:표적 , thechaser:무방비 를 1 부여합니다. NL 소멸"
   },
   "theChaser:Shadow Form": {
     "NAME": "그림자의 형상",
@@ -226,7 +255,12 @@
   },
   "theChaser:Vitality": {
     "NAME": "활력",
-    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. 소멸"
+    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. 소멸",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 ",
+      "번 공격했습니다.)",
+      "번 공격했습니다.)"
+    ]
   },
 
 

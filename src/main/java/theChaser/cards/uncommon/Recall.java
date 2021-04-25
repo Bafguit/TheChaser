@@ -58,7 +58,6 @@ public class Recall extends ChaserCard {
             while(var4.hasNext()) {
                 ChaserCard c = (ChaserCard) var4.next();
                 c.upgrade();
-                c.freeToPlayOnce = true;
             }
         }
 

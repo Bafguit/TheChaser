@@ -437,20 +437,25 @@ public class TheChaserMod implements
         BaseMod.addCard(new Wound());
         //UNCOMMON
         BaseMod.addCard(new Acceleration());
+        BaseMod.addCard(new Aggravate());
         BaseMod.addCard(new AttackFirst());
         BaseMod.addCard(new AttackWeakness());
+        BaseMod.addCard(new Blitzkrieg());
+        BaseMod.addCard(new BreakArmour());
         BaseMod.addCard(new Chance());
         BaseMod.addCard(new Conquest());
         BaseMod.addCard(new FallTechnique());
         BaseMod.addCard(new Hack());
         BaseMod.addCard(new HiddenDagger());
         BaseMod.addCard(new InternalHemorrhage());
+        BaseMod.addCard(new OpenSore());
         BaseMod.addCard(new Paralyze());
         BaseMod.addCard(new Penetrate());
         BaseMod.addCard(new Penetrative());
         BaseMod.addCard(new PluckOutDaggers());
         BaseMod.addCard(new Ragewind());
         BaseMod.addCard(new Recall());
+        BaseMod.addCard(new SecretCard());
         BaseMod.addCard(new Sequence());
         BaseMod.addCard(new SpaceOut());
         BaseMod.addCard(new Vigilance());

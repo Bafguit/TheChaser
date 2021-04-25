@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Acrobatics;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import theChaser.TheChaserMod;
@@ -30,17 +31,15 @@ public class AcrobaticsAlt extends ChaserCard {
 
     public AcrobaticsAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
-        this.exhaust = true;
     }
 
     public void onChoseThisOption() {
-        this.addToBot(new MakeTempCardInHandAction(this, 1));
+        this.addToBot(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
+        this.addToBot(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, 1, false));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DrawCardAction(p, this.magicNumber));
-        this.addToBot(new DiscardAction(p, p, 1, false));
     }
 
     @Override

@@ -1,12 +1,16 @@
 package theChaser.cards.rare;
 
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+
+import java.util.Iterator;
 
 import static theChaser.TheChaserMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -35,6 +39,20 @@ public class Vitality extends ChaserCard {
     public Vitality() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+
+        this.rawDescription = this.NORMAL_DESCRIPTION;
+        this.rawDescription = this.rawDescription + this.extendedDescription[0] + ChaserUtil.getTargetAttackCountPerTurn();
+        if (ChaserUtil.getTargetAttackCountPerTurn() == 1) {
+            this.rawDescription = this.rawDescription + this.extendedDescription[1];
+        } else {
+            this.rawDescription = this.rawDescription + this.extendedDescription[2];
+        }
+
+        this.initializeDescription();
     }
 
     @Override

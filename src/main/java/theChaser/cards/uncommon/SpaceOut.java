@@ -13,7 +13,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 
 public class SpaceOut extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Unwary");
+    public static final String ID = TheChaserMod.makeID("Space Out");
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

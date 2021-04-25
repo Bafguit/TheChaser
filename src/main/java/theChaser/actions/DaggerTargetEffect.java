@@ -43,13 +43,13 @@ public class DaggerTargetEffect extends AbstractGameEffect {
             for(i = am.size(); i > 0; --i) {
                 float f = am.get(i);
                 x = AbstractDungeon.player.hb.cX - MathUtils.random(0.0F, 450.0F) * Settings.scale;
-                AbstractDungeon.effectsQueue.add(new FlyingDaggerEffect(x, AbstractDungeon.player.hb.cY + 120.0F * Settings.scale + f * -18.0F * Settings.scale, (f * 4) - 30.0F, true));
+                AbstractDungeon.effectsQueue.add(new TargetDaggerEffect(x, AbstractDungeon.player.hb.cY + 120.0F * Settings.scale + f * -18.0F * Settings.scale, (f * 4) - 30.0F, true));
             }
         } else {
             for(i = 0; i < am.size(); ++i) {
                 float f = am.get(i);
                 x = AbstractDungeon.player.hb.cX + MathUtils.random(0.0F, 450.0F) * Settings.scale;
-                AbstractDungeon.effectsQueue.add(new FlyingDaggerEffect(x, AbstractDungeon.player.hb.cY - 100.0F * Settings.scale + f * 18.0F * Settings.scale, (f * 4) - 20.0F, false));
+                AbstractDungeon.effectsQueue.add(new TargetDaggerEffect(x, AbstractDungeon.player.hb.cY - 100.0F * Settings.scale + f * 18.0F * Settings.scale, (f * 4) - 20.0F, false));
             }
         }
 

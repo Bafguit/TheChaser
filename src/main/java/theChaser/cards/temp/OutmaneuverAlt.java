@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Outmaneuver;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import theChaser.TheChaserMod;
@@ -29,20 +30,18 @@ public class OutmaneuverAlt extends ChaserCard {
 
     public OutmaneuverAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
-        this.exhaust = true;
     }
 
     public void onChoseThisOption() {
-        this.addToBot(new MakeTempCardInHandAction(this, 1));
+        if (!this.upgraded) {
+            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, 2), 2));
+        } else {
+            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, 3), 3));
+        }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!this.upgraded) {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
-        } else {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 3), 3));
-        }
     }
 
     @Override

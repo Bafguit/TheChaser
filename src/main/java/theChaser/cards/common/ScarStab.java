@@ -1,5 +1,8 @@
 package theChaser.cards.common;
 
+import basemod.abstracts.cardbuilder.actionbuilder.PoisonActionBuilder;
+import com.evacipated.cardcrawl.mod.stslib.patches.powerInterfaces.HealthBarRenderPowerPatch;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -8,14 +11,19 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.purple.Wish;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.PoisonPower;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 import theChaser.powers.BleedingPower;
 import theChaser.powers.TargetPower;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
@@ -52,7 +60,13 @@ public class ScarStab extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_VERTICAL));
+        ArrayList<AttackEffect> effects = new ArrayList<>();
+        effects.add(AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
+        effects.add(AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
+        effects.add(AbstractGameAction.AttackEffect.SLASH_VERTICAL);
+        Random random = new Random();
+
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(random.nextInt(effects.size()))));
         if(m.hasPower(BleedingPower.POWER_ID)) {
             if(m.getPower(BleedingPower.POWER_ID) instanceof BleedingPower) {
                 for (int i = 0; i < this.magicNumber; i++) {

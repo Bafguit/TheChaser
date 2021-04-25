@@ -1,15 +1,20 @@
 package theChaser.cards.rare;
 
 import basemod.devcommands.deck.Deck;
+import com.evacipated.cardcrawl.mod.stslib.patches.relicInterfaces.OnRemoveCardFromMasterDeckPatch;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.SmokeBomb;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.shop.Merchant;
+import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
@@ -58,9 +63,17 @@ public class StrategicRetreat extends ChaserCard {
             AbstractDungeon.overlayMenu.endTurnButton.disable();
             AbstractDungeon.player.escapeTimer = 2.5F;
         }
-        for(AbstractCard c : p.masterDeck.group) {
-            if(c.uuid == this.uuid) {
-                p.masterDeck.removeCard(c);
+
+        Iterator var1 = AbstractDungeon.player.masterDeck.group.iterator();
+
+        AbstractCard c;
+        while(var1.hasNext()) {
+            c = (AbstractCard)var1.next();
+            if (c.uuid.equals(this.uuid)) {
+                CardCrawlGame.metricData.addPurgedItem(c.getMetricID());
+                AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(c, (float) Settings.WIDTH / 2.0F, (float) Settings.HEIGHT / 2.0F));
+                AbstractDungeon.player.masterDeck.removeCard(c);
+                break;
             }
         }
     }

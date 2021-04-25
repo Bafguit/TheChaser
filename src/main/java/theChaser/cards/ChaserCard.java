@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import theChaser.util.TextureLoader;
 
 public abstract class ChaserCard extends CustomCard {
 
@@ -91,7 +92,7 @@ public abstract class ChaserCard extends CustomCard {
             ((ChaserCard) card).betaArtPath = img;
         }
         Texture cardTexture;
-        cardTexture = ImageMaster.loadImage(img);
+        cardTexture = TextureLoader.getTexture(img);
         cardTexture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
         int tw = cardTexture.getWidth();
         int th = cardTexture.getHeight();

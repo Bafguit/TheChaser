@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -30,11 +31,12 @@ public class HidePower extends AbstractPower implements CloneablePowerInterface,
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
 
-    public HidePower(final AbstractCreature owner) {
+    public HidePower(final AbstractCreature owner, int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
+        this.amount = amount;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -46,15 +48,17 @@ public class HidePower extends AbstractPower implements CloneablePowerInterface,
     }
 
     @Override
-    public void onInitialApplication() {
-        ChaserUtil.applyPuzzled();
+    public void atStartOfTurn() {
+        if(this.amount > 1) {
+            this.amount--;
+        } else if (this.amount == 1) {
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+        }
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if(!target.isPlayer) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, HidePower.POWER_ID));
-        }
+    public void onInitialApplication() {
+        ChaserUtil.applyPuzzled();
     }
 
     @Override
@@ -64,12 +68,12 @@ public class HidePower extends AbstractPower implements CloneablePowerInterface,
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new HidePower(owner);
+        return new HidePower(owner, amount);
     }
 
     @Override

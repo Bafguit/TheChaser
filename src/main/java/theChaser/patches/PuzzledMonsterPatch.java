@@ -43,7 +43,7 @@ public class PuzzledMonsterPatch {
             return new ExprEditor() {
                 public void edit(MethodCall m) throws CannotCompileException {
                     if (m.getClassName().equals("com.megacrit.cardcrawl.monsters.AbstractMonster") && m.getMethodName().equals("takeTurn")) {
-                        m.replace("if (!m.hasPower(theChaser.powers.PuzzledPower.POWER_ID)) {$_ = $proceed($$);}");
+                        m.replace("if (!m.hasPower(theChaser.powers.PuzzledPower.POWER_ID)) {$_ = $proceed($$); if (m.intent == com.megacrit.cardcrawl.monsters.AbstractMonster.Intent.ATTACK || m.intent == com.megacrit.cardcrawl.monsters.AbstractMonster.Intent.ATTACK_BUFF || m.intent == com.megacrit.cardcrawl.monsters.AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == com.megacrit.cardcrawl.monsters.AbstractMonster.Intent.ATTACK_DEFEND) {m.addToBot(new theChaser.actions.TargetAttackAction());}} ");
                     }
 
                 }
