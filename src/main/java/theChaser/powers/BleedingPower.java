@@ -61,7 +61,7 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
     @Override
     public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
         if(info.type == DamageInfo.DamageType.NORMAL) {
-            this.getBleedingDamage();
+            this.getBleedingDamage(1);
         }
         return damageAmount;
     }
@@ -79,29 +79,32 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
 
     public void renderAmount(SpriteBatch sb, float x, float y, Color c) {
         FontHelper.renderFontRightTopAligned(sb, FontHelper.powerAmountFont, Integer.toString(this.amount), x, y, this.fontScale, Color.WHITE.cpy());
-        FontHelper.renderFontRightTopAligned(sb, FontHelper.powerAmountFont, Integer.toString(getDebuffAmount()), x, y + 15.0F * Settings.scale, this.fontScale, Color.RED.cpy());
+        FontHelper.renderFontRightTopAligned(sb, FontHelper.powerAmountFont, Integer.toString(getDebuffAmount()), x, y + 16.0F * Settings.scale, this.fontScale, Color.RED.cpy());
     }
 
-    public void getBleedingDamage() {
-        this.flashWithoutSound();
-        this.owner.damage(new DamageInfo(null, this.amount, DamageInfo.DamageType.HP_LOSS));
-        if(AbstractDungeon.player.hasPower(OpenSorePower.POWER_ID)) {
-            AbstractDungeon.player.getPower(OpenSorePower.POWER_ID).flash();
-            this.amount += AbstractDungeon.player.getPower(OpenSorePower.POWER_ID).amount;
-        } else if(this.amount > 1) {
-            this.amount--;
-        } else if(this.amount == 1) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+    public void getBleedingDamage(int amount) {
+        for(int i = 0; i < amount; i++) {
+            if (!this.owner.isDeadOrEscaped()) {
+                this.flashWithoutSound();
+                this.owner.damage(new DamageInfo(null, this.amount, DamageInfo.DamageType.HP_LOSS));
+                if (AbstractDungeon.player.hasPower(OpenSorePower.POWER_ID)) {
+                    AbstractDungeon.player.getPower(OpenSorePower.POWER_ID).flash();
+                    this.amount += AbstractDungeon.player.getPower(OpenSorePower.POWER_ID).amount;
+                } else if (this.amount > 1) {
+                    this.amount--;
+                } else if (this.amount == 1) {
+                    addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+                }
+            }
         }
     }
 
     @Override
     public void atStartOfTurn() {
-        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && !this.owner.isDeadOrEscaped()) {
             this.flashWithoutSound();
             this.addToBot(new LoseHPAction(this.owner, null, this.getDebuffAmount()));
         }
-
     }
 
     @Override

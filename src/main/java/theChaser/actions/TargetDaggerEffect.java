@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import theChaser.TheChaserMod;
 
 public class TargetDaggerEffect extends AbstractGameEffect {
     private float x;
@@ -41,7 +42,7 @@ public class TargetDaggerEffect extends AbstractGameEffect {
             this.rotation = fAngle;
         }
 
-        this.color = Color.NAVY.cpy();
+        this.color = TheChaserMod.DEFAULT_NAVY;
         this.color.a = 0.0F;
     }
 

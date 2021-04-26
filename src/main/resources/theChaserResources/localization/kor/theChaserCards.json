@@ -111,7 +111,8 @@
   },
   "theChaser:Big Picture": {
     "NAME": "큰 그림",
-    "DESCRIPTION": "해로운 효과를 얻을 때마다 힘 을 !M! 얻습니다."
+    "DESCRIPTION": "해로운 효과를 얻을 때마다 힘 을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. 해로운 효과를 얻을 때마다 힘 을 !M! 얻습니다."
   },
   "theChaser:Blitzkrieg": {
     "NAME": "급습",
@@ -170,7 +171,7 @@
   },
   "theChaser:Ragewind": {
     "NAME": "휘몰아치기",
-    "DESCRIPTION": "thechaser:표적 *공격 을 !M! 회 합니다. NL 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
+    "DESCRIPTION": "thechaser:표적 을 !M! 회 공격합니다. NL 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
   },
   "theChaser:Recall": {
     "NAME": "회상",
@@ -179,7 +180,7 @@
   },
   "theChaser:Secret Card": {
     "NAME": "숨겨둔 패",
-    "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 thechaser:표적 *공격 을 !M! 회 합니다."
+    "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 thechaser:표적 을 !M! 회 공격합니다."
   },
   "theChaser:Sequence": {
     "NAME": "연속된 동작",

@@ -101,7 +101,7 @@ public class TheChaserMod implements
     
     // Colors (RGB)
     // Character Color
-    public static final Color DEFAULT_NAVY = CardHelper.getColor(0f, 0f, 128.0f);
+    public static final Color DEFAULT_NAVY = CardHelper.getColor(77, 77, 255);
     
     // Potion Colors in RGB
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
@@ -414,7 +414,7 @@ public class TheChaserMod implements
         logger.info("Add variables");
         // Add the Custom Dynamic variables
         BaseMod.addDynamicVariable(new MagicNumber2());
-        
+        /*
         logger.info("Adding cards");
         //BASIC
         BaseMod.addCard(new ChaserStrike());
@@ -473,10 +473,10 @@ public class TheChaserMod implements
         BaseMod.addCard(new Stealage());
         BaseMod.addCard(new StrategicRetreat());
         BaseMod.addCard(new Unwary());
-        BaseMod.addCard(new Vitality());
+        BaseMod.addCard(new Vitality());*/
 
         logger.info("Auto Adding cards (Disabled)");
-        //new AutoAdd("TheChaser").packageFilter(ChaserCard.class).setDefaultSeen(true).cards();
+        new AutoAdd("TheChaser").packageFilter(ChaserCard.class).setDefaultSeen(true).cards();
 
         logger.info("Done adding cards!");
     }

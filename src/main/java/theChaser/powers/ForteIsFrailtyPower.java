@@ -46,15 +46,15 @@ public class ForteIsFrailtyPower extends AbstractPower implements CloneablePower
     @Override
     public void update(int slot) {
         super.update(slot);
-        changeBuff();
+        this.onSpecificTrigger();
     }
 
     @Override
     public void onInitialApplication() {
-        changeBuff();
+        this.onSpecificTrigger();
     }
 
-    private void changeBuff() {
+    public void onSpecificTrigger() {
         for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
             for(AbstractPower p : m.powers) {
                 if(p.type == PowerType.BUFF) {

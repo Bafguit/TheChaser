@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
+import theChaser.actions.InstantBleedingDamageAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 import theChaser.powers.BleedingPower;
@@ -67,13 +68,7 @@ public class ScarStab extends ChaserCard {
         Random random = new Random();
 
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(random.nextInt(effects.size()))));
-        if(m.hasPower(BleedingPower.POWER_ID)) {
-            if(m.getPower(BleedingPower.POWER_ID) instanceof BleedingPower) {
-                for (int i = 0; i < this.magicNumber; i++) {
-                    ((BleedingPower) m.getPower(BleedingPower.POWER_ID)).getBleedingDamage();
-                }
-            }
-        }
+        addToBot(new InstantBleedingDamageAction(m, this.upgraded ? 2 : 1));
     }
 
     @Override

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.city.BanditLeader;
 import theChaser.TheChaserMod;
+import theChaser.actions.InstantBleedingDamageAction;
 import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
@@ -44,10 +45,7 @@ public class Aggravate extends ChaserCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if(!mo.isDeadOrEscaped() && mo.hasPower(BleedingPower.POWER_ID)) {
-                if(mo.getPower(BleedingPower.POWER_ID) instanceof BleedingPower)
-                ((BleedingPower)mo.getPower(BleedingPower.POWER_ID)).getBleedingDamage();
-            }
+            addToBot(new InstantBleedingDamageAction(mo, 1));
         }
     }
 
