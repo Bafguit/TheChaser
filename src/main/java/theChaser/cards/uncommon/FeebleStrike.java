@@ -30,7 +30,7 @@ public class FeebleStrike extends ChaserCard {
     private static final int COST = 1;
     private static final int DAMAGE = 9;
     private static final int MULTI = 2;
-    private static final int UP_MULTI = 3;
+    private static final int UP_MULTI = 1;
 
     public FeebleStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, MULTI);

@@ -28,7 +28,7 @@ public class WeaknessStrike extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 7;
     private static final int UP_DMG = 2;
 
     private boolean debuffCheck;

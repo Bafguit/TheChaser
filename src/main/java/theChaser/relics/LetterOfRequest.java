@@ -6,29 +6,29 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import theChaser.powers.PenetrativePower;
 import theChaser.powers.TargetPower;
 import theChaser.util.TextureLoader;
 
 import static theChaser.TheChaserMod.makeID;
 import static theChaser.TheChaserMod.makeRelicPath;
 
-public class ShadowInNecklace extends CustomRelic {
-    public static final String ID = makeID("Shadow In Necklace");
+public class LetterOfRequest extends CustomRelic {
+    public static final String ID = makeID("Letter Of Request");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
 
-    public ShadowInNecklace() {
-        super(ID, IMG, RelicTier.STARTER, LandingSound.CLINK);
-
+    public LetterOfRequest() {
+        super(ID, IMG, RelicTier.SHOP, LandingSound.FLAT);
     }
 
     @Override
-    public void atBattleStartPreDraw() {
-        AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
-        AbstractPower p = new TargetPower(m, 2);
-        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, p));
+    public void atBattleStart() {
+        this.flash();
+        for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new TargetPower(m, 3), 3, true));
+        }
+        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     @Override
@@ -40,7 +40,7 @@ public class ShadowInNecklace extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() { // always override this method to return a new instance of your relic
-        return new ShadowInNecklace();
+        return new LetterOfRequest();
     }
 
 }

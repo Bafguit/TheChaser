@@ -63,7 +63,7 @@ public class PreemptiveAttackPower extends AbstractPower implements CloneablePow
     }
 
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         for(int i = 0; i < this.amount; i++) {
             this.addToBot(new TargetAttackAction());
         }

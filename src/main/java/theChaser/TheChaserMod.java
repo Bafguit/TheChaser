@@ -33,9 +33,7 @@ import theChaser.cards.temp.SequenceFlow;
 import theChaser.cards.uncommon.*;
 import theChaser.cards.common.Linger;
 import theChaser.characters.TheChaser;
-import theChaser.relics.CloakOfAssassin;
-import theChaser.relics.RBO7;
-import theChaser.relics.ShadowInNecklace;
+import theChaser.relics.*;
 import theChaser.util.IDCheckDontTouchPls;
 import theChaser.util.TextureLoader;
 import theChaser.variables.MagicNumber2;
@@ -397,6 +395,14 @@ public class TheChaserMod implements
         BaseMod.addRelicToCustomPool(new ShadowInNecklace(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new CloakOfAssassin(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new RBO7(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new ShadowInMask(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new LetterOfRequest(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new BrokenTicker(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new ScochStone(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new KnifePocket(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new BoxCutter(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new AcidSolution(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new RustyHelmet(), TheChaser.Enums.COLOR_CHASER);
         logger.info("Done adding relics!");
     }
     
@@ -497,27 +503,27 @@ public class TheChaserMod implements
         
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Power-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserPowers.json");
         
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Relic-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserRelics.json");
         
         // Event Strings
         BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Event-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserEvents.json");
         
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Potion-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserPotions.json");
         
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Character-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserCharacter.json");
         
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Orb-Strings.json");
+                getModID() + "Resources/localization/" + getLanguage() + "/theChaserOrbs.json");
         
         logger.info("Done edittting strings");
     }
@@ -546,7 +552,7 @@ public class TheChaserMod implements
         // In Keyword-Strings.json you would have PROPER_NAME as A Long Keyword and the first element in NAMES be a long keyword, and the second element be a_long_keyword
 
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/" + getLanguage() + "/DefaultMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal(getModID() + "Resources/localization/" + getLanguage() + "/theChaserKeywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
         Keyword[] keywords = (Keyword[])gson.fromJson(json, Keyword[].class);
         if (keywords != null) {
             int var7 = keywords.length;

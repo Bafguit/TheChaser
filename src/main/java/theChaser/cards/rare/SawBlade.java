@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.powers.SawBladePower;
 import theChaser.powers.ShadowFormPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
@@ -32,7 +33,7 @@ public class SawBlade extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ShadowFormPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SawBladePower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override

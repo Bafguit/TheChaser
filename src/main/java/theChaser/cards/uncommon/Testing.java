@@ -29,7 +29,7 @@ public class Testing extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 11;
     private static final int UP_DAMAGE = 2;
     private static final int TAG = 2;
     private static final int UP_TAG = 1;
@@ -51,7 +51,8 @@ public class Testing extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeDamage(UP_TAG);
+        upgradeDamage(UP_DAMAGE);
+        upgradeMagicNumber(UP_TAG);
     }
 
 }

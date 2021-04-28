@@ -34,7 +34,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
         this.damage = amount;
         this.monsters = mo;
         this.actionType = ActionType.DAMAGE;
-        this.damageType = DamageType.NORMAL;
+        this.damageType = DamageType.THORNS;
         this.attackEffect = AttackEffect.BLUNT_LIGHT;
         this.duration = Settings.ACTION_DUR_XFAST;
     }
@@ -63,7 +63,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
             for(AbstractMonster m : this.monsters) {
                 if (!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {
                     m.getPower(TargetPower.POWER_ID).flash();
-                    m.damage(new DamageInfo(m, this.damage, this.damageType));
+                    m.damage(new DamageInfo(AbstractDungeon.player, this.damage, this.damageType));
                 }
             }
 

@@ -26,6 +26,7 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    public int strCount = 0;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
@@ -54,9 +55,18 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        flashWithoutSound();
-        for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(m, this.owner, new BleedingPower(m, this.owner, this.amount), this.amount, true));
+        if(card.type == AbstractCard.CardType.ATTACK) {
+            flashWithoutSound();
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount)));
+            this.strCount++;
+        }
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if(this.strCount > 0) {
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.strCount)));
+            this.strCount = 0;
         }
     }
 

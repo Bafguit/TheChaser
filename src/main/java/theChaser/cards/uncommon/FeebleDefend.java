@@ -29,11 +29,10 @@ public class FeebleDefend extends ChaserCard {
     private static final int COST = 1;
     private static final int BLOCK = 8;
     private static final int MULTI = 2;
-    private static final int UP_MULTI = 3;
+    private static final int UP_MULTI = 1;
 
     public FeebleDefend() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, MULTI);
-        this.tags.add(CardTags.STRIKE);
     }
 
     @Override

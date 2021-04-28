@@ -1,0 +1,137 @@
+{
+
+  "theChaser:Dual Wielding": {
+    "NAME": "쌍수",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 #y표적 #y공격 이 #b2 번씩 발동됩니다."
+    ]
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "강점이자 약점",
+    "DESCRIPTIONS": [
+      "모든 이로운 효과가 해로운 효과로 인식됩니다."
+    ]
+  },
+  "theChaser:Penetrative": {
+    "NAME": "예리함",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 의 피해가 #b",
+      " 증가합니다."
+    ]
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "그림자의 형상",
+    "DESCRIPTIONS": [
+      "턴 시작 시 #y표적 #y공격 의 피해가 #b",
+      " 증가합니다."
+    ]
+  },
+  "theChaser:Space Out": {
+    "NAME": "간격 두기",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 을 할 때마다 방어도를 #b",
+      " 얻습니다."
+    ]
+  },
+  "theChaser:Target": {
+    "NAME": "표적",
+    "DESCRIPTIONS": [
+      "플레이어 또는 적이 #y공격 한 후, #y표적 을 가진 모든 적에게 피해를 #b",
+      " 줍니다.",
+      "지속 턴수: #b"
+    ]
+  },
+  "theChaser:Unfortified": {
+    "NAME": "무방비",
+    "DESCRIPTIONS": [
+      "공격 피해를 #b",
+      "% 더 받습니다."
+    ]
+  },
+  "theChaser:Unwary": {
+    "NAME": "방심",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 이 #y무방비 를 부여합니다."
+    ]
+  },
+  "theChaser:Bleeding": {
+    "NAME": "출혈",
+    "DESCRIPTIONS": [
+      "공격할 때마다 체력을 #b",
+      " 잃고 중첩이 #b1 감소합니다. 턴 시작에 해로운 효과 수만큼 체력을 잃습니다. NL 해로운 효과 수: #b"
+    ]
+  },
+  "theChaser:Hide": {
+    "NAME": "은신",
+    "DESCRIPTIONS": [
+      "모든 적이 행동을 중지합니다. 적을 공격하면 종료됩니다. NL 지속 턴 수: #b",
+      " 턴"
+    ]
+  },
+  "theChaser:Puzzled": {
+    "NAME": "어리둥절",
+    "DESCRIPTIONS": [
+      "분명 방금 전까지만 해도 눈앞에 적이 있었는데 말이죠..."
+    ]
+  },
+  "theChaser:Acceleration": {
+    "NAME": "가속",
+    "DESCRIPTIONS": [
+      "공격 카드를 사용할 때마다 임시로 #y힘 을 #b",
+      " 얻습니다."
+    ]
+  },
+  "theChaser:Open Sore": {
+    "NAME": "아물지 않은 상처",
+    "DESCRIPTIONS": [
+      "적의 #y출혈 이 감소할 때, 대신 #b",
+      " 만큼 증가합니다."
+    ]
+  },
+  "theChaser:Big Picture": {
+    "NAME": "큰 그림",
+    "DESCRIPTIONS": [
+      "해로운 효과를 얻을 때마다 #y힘 을 #b",
+      " 얻습니다."
+    ]
+  },
+  "theChaser:Saw Blade": {
+    "NAME": "톱날",
+    "DESCRIPTIONS": [
+      "카드를 사용할 때마다 적 전체에게 #y출혈 을 #b",
+      " 부여합니다."
+    ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "이중 칼날",
+    "DESCRIPTIONS": [
+      "비용이 0이 아닌 카드를 사용할 때마다 #y수리검 카드를 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "theChaser:Preemptive Attack": {
+    "NAME": "선제 공격",
+    "DESCRIPTIONS": [
+      "턴 시작 시 카드를 #b",
+      " 장 뽑고 #y표적 을 #b",
+      " 번 공격합니다.",
+      " 장 뽑고 #y표적 을 #b",
+      " 번 공격합니다."
+    ]
+  },
+  "theChaser:Replica Dagger": {
+    "NAME": "복제품 단검",
+    "DESCRIPTIONS": [
+      "턴 시작 시 #y수리검 카드를 #b",
+      " 장 얻습니다. #y표적 을 가진 적이 없다면 대신 무작위 적에게 #y표적 을 #b",
+      " 부여합니다."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "",
+      ""
+    ]
+  }
+}

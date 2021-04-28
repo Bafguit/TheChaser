@@ -6,29 +6,28 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.SlowPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import theChaser.powers.TargetPower;
+import theChaser.powers.PenetrativePower;
 import theChaser.util.TextureLoader;
 
 import static theChaser.TheChaserMod.makeID;
 import static theChaser.TheChaserMod.makeRelicPath;
 
-public class ShadowInNecklace extends CustomRelic {
-    public static final String ID = makeID("Shadow In Necklace");
+public class ScochStone extends CustomRelic {
+    public static final String ID = makeID("Scoch Stone");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
 
-    public ShadowInNecklace() {
-        super(ID, IMG, RelicTier.STARTER, LandingSound.CLINK);
-
+    public ScochStone() {
+        super(ID, IMG, RelicTier.COMMON, LandingSound.HEAVY);
     }
 
     @Override
-    public void atBattleStartPreDraw() {
-        AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
-        AbstractPower p = new TargetPower(m, 2);
-        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, p));
+    public void atBattleStart() {
+        this.flash();
+        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PenetrativePower(AbstractDungeon.player, 1), 1));
+        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     @Override
@@ -40,7 +39,7 @@ public class ShadowInNecklace extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() { // always override this method to return a new instance of your relic
-        return new ShadowInNecklace();
+        return new ScochStone();
     }
 
 }

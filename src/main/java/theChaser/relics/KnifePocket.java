@@ -4,37 +4,33 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.relics.MercuryHourglass;
 import theChaser.actions.ChaserUtil;
+import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
 import theChaser.util.TextureLoader;
+
+import java.util.ArrayList;
 
 import static theChaser.TheChaserMod.makeID;
 import static theChaser.TheChaserMod.makeRelicPath;
 
-public class RBO7 extends CustomRelic {
-    public static final String ID = makeID("R-B0-7");
+public class KnifePocket extends CustomRelic implements OnAfterTargetAttackSubscriber {
+    public static final String ID = makeID("Knife Pocket");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
 
-    public RBO7() {
-        super(ID, IMG, RelicTier.UNCOMMON, LandingSound.CLINK);
+    public KnifePocket() {
+        super(ID, IMG, RelicTier.BOSS, LandingSound.FLAT);
+        this.counter = 2;
     }
 
     public void atTurnStart() {
-        this.flash();
-        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        if(ChaserUtil.getAllDebuffMonsters().size() > 0) {
-            for (AbstractMonster m : ChaserUtil.getAllDebuffMonsters()) {
-                addToBot(new DamageAction(m, new DamageInfo(null, 5, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.FIRE, true));
-            }
-        }
+        this.isDone = false;
+        this.counter = 2;
     }
 
     @Override
@@ -44,6 +40,24 @@ public class RBO7 extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() { // always override this method to return a new instance of your relic
-        return new RBO7();
+        return new KnifePocket();
+    }
+
+    public void onVictory() {
+        this.isDone = false;
+        this.counter = -1;
+    }
+
+    @Override
+    public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
+        if(!this.isDone) {
+            this.counter--;
+            if (this.counter == 0) {
+                this.counter = -1;
+                this.flash();
+                this.addToBot(new GainEnergyAction(1));
+                this.isDone = true;
+            }
+        }
     }
 }
