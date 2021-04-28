@@ -30,7 +30,7 @@ public class Sequence extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 2;
+    private static final int DAMAGE = 3;
     private static final int UP_DAMAGE = 1;
     private static final int MAGIC = 5;
 
@@ -59,12 +59,11 @@ public class Sequence extends ChaserCard {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
         } else {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             ChaserCard temp = new SequenceFlow();
             if(this.upgraded) temp.upgrade();
-            addToBot(new MakeTempCardInHandAction(temp, 2));
+            addToBot(new MakeTempCardInHandAction(temp, 1));
         }
     }
 

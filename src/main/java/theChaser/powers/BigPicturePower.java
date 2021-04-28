@@ -4,10 +4,14 @@ import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.blue.MachineLearning;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.city.Chosen;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.HexPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theChaser.TheChaserMod;
 import theChaser.util.TextureLoader;
@@ -42,7 +46,7 @@ public class BigPicturePower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(power.type == PowerType.DEBUFF && target == this.owner) {
+        if(power.type == PowerType.DEBUFF && target.isPlayer) {
             flash();
             addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount)));
         }

@@ -26,7 +26,7 @@ public class Identify extends ChaserCard {
     private static final int COST = 1;
     private static final int DAMAGE = 7;
     private static final int UP_DMG = 2;
-    private static final int TAG = 2;
+    private static final int TAG = 3;
     private static final int UP_TAG = 1;
 
     public Identify() {

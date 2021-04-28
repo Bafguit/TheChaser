@@ -44,13 +44,7 @@ public class Vitality extends ChaserCard {
     public void applyPowers() {
         super.applyPowers();
 
-        this.rawDescription = this.NORMAL_DESCRIPTION;
-        this.rawDescription = this.rawDescription + this.extendedDescription[0] + ChaserUtil.getTargetAttackCountPerTurn();
-        if (ChaserUtil.getTargetAttackCountPerTurn() == 1) {
-            this.rawDescription = this.rawDescription + this.extendedDescription[1];
-        } else {
-            this.rawDescription = this.rawDescription + this.extendedDescription[2];
-        }
+        this.rawDescription = this.extendedDescription[0] + ChaserUtil.getTargetAttackCountPerTurn() + this.extendedDescription[1];
 
         this.initializeDescription();
     }

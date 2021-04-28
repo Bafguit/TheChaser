@@ -232,7 +232,7 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
     }
 
     @Override
-    public void receiveCardUsed(AbstractCard abstractCard) {
+    public void receiveCardUsed(AbstractCard card) {
     }
 
     @Override

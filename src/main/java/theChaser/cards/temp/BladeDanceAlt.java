@@ -28,7 +28,7 @@ public class BladeDanceAlt extends ChaserCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.COLORLESS;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int AMOUNT = 3;
     private static final int UP_AMOUNT = 1;
 
@@ -37,11 +37,12 @@ public class BladeDanceAlt extends ChaserCard {
     }
 
     public void onChoseThisOption() {
-        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
+        this.addToBot(new MakeTempCardInHandAction(this));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
     }
 
     @Override

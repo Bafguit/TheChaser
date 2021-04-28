@@ -24,7 +24,7 @@ public class OutmaneuverAlt extends ChaserCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.COLORLESS;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int AMOUNT = 2;
     private static final int UP_AMOUNT = 1;
 
@@ -33,15 +33,12 @@ public class OutmaneuverAlt extends ChaserCard {
     }
 
     public void onChoseThisOption() {
-        if (!this.upgraded) {
-            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, 2), 2));
-        } else {
-            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, 3), 3));
-        }
+        this.addToBot(new MakeTempCardInHandAction(this));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, this.magicNumber), this.magicNumber));
     }
 
     @Override

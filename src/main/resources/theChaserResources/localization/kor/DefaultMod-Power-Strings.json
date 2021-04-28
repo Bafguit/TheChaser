@@ -9,7 +9,7 @@
   "theChaser:Forte Is Frailty": {
     "NAME": "강점이자 약점",
     "DESCRIPTIONS": [
-      "적이 가진 모든 이로운 효과가 해로운 효과로 인식됩니다."
+      "모든 이로운 효과가 해로운 효과로 인식됩니다."
     ]
   },
   "theChaser:Penetrative": {
@@ -77,8 +77,8 @@
   "theChaser:Acceleration": {
     "NAME": "가속",
     "DESCRIPTIONS": [
-      "카드를 사용할 때마다 턴 종료까지 공격 피해가 #b10% 증가합니다. NL 현재: #b",
-      "% 증가"
+      "공격 카드를 사용할 때마다 임시로 #y힘 을 #b",
+      " 얻습니다."
     ]
   },
   "theChaser:Open Sore": {
@@ -91,8 +91,40 @@
   "theChaser:Big Picture": {
     "NAME": "큰 그림",
     "DESCRIPTIONS": [
-      "해로운 효과를 받을 때마다 #y힘 을 #b",
+      "해로운 효과를 얻을 때마다 #y힘 을 #b",
       " 얻습니다."
+    ]
+  },
+  "theChaser:Saw Blade": {
+    "NAME": "톱날",
+    "DESCRIPTIONS": [
+      "카드를 사용할 때마다 적 전체에게 #y출혈 을 #b",
+      " 부여합니다."
+    ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "이중 칼날",
+    "DESCRIPTIONS": [
+      "비용이 0이 아닌 카드를 사용할 때마다 #y수리검 카드를 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "theChaser:Preemptive Attack": {
+    "NAME": "선제 공격",
+    "DESCRIPTIONS": [
+      "턴 시작 시 카드를 #b",
+      " 장 뽑고 #y표적 을 #b",
+      " 번 공격합니다.",
+      " 장 뽑고 #y표적 을 #b",
+      " 번 공격합니다."
+    ]
+  },
+  "theChaser:Replica Dagger": {
+    "NAME": "복제품 단검",
+    "DESCRIPTIONS": [
+      "턴 시작 시 #y수리검 카드를 #b",
+      " 장 얻습니다. #y표적 을 가진 적이 없다면 대신 무작위 적에게 #y표적 을 #b",
+      " 부여합니다."
     ]
   },
   "theChaser:": {

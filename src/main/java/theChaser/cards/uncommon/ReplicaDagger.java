@@ -7,13 +7,13 @@ import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 import theChaser.powers.AccelerationPower;
-import theChaser.powers.SpaceOutPower;
+import theChaser.powers.ReplicaDaggerPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class Acceleration extends ChaserCard {
+public class ReplicaDagger extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Acceleration");
+    public static final String ID = TheChaserMod.makeID("Replica Dagger");
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -22,21 +22,19 @@ public class Acceleration extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int STR = 1;
-    private static final int UP_STR = 0;
 
-    public Acceleration() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, STR);
+    public ReplicaDagger() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, 0);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new AccelerationPower(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new ReplicaDaggerPower(p, 1)));
     }
 
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(UP_STR);
+        this.isInnate = true;
     }
 }

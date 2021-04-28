@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
+import theChaser.actions.AddCardPerTurnAction;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
@@ -37,7 +38,7 @@ public class Stalling extends ChaserCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_DIAGONAL));
-        ChaserUtil.addCardCountPerTurn(this.magicNumber);
+        addToBot(new AddCardPerTurnAction(this.magicNumber));
     }
 
     @Override

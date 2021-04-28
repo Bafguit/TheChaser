@@ -62,6 +62,11 @@ public class ForteIsFrailtyPower extends AbstractPower implements CloneablePower
                 }
             }
         }
+        for(AbstractPower p : AbstractDungeon.player.powers) {
+            if(p.type == PowerType.BUFF) {
+                p.type = PowerType.DEBUFF;
+            }
+        }
     }
 
     @Override

@@ -17,9 +17,9 @@ import theChaser.powers.UnfortifiedPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class AttackWeakness extends ChaserCard {
+public class WeaknessStrike extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Attack Weakness");
+    public static final String ID = TheChaserMod.makeID("Weakness Strike");
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -33,8 +33,9 @@ public class AttackWeakness extends ChaserCard {
 
     private boolean debuffCheck;
 
-    public AttackWeakness() {
+    public WeaknessStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
+        this.tags.add(CardTags.STRIKE);
     }
 
     @Override

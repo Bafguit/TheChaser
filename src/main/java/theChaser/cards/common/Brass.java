@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.powers.BleedingPower;
 import theChaser.powers.TargetPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
@@ -19,9 +20,9 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class Watch extends ChaserCard {
+public class Brass extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Watch");
+    public static final String ID = TheChaserMod.makeID("Brass");
     public static final String IMG = makeCardPath("Skill.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -31,16 +32,15 @@ public class Watch extends ChaserCard {
 
     private static final int COST = 1;
     private static final int UP_COST = 0;
-    private static final int TAG = 7;
+    private static final int TAG = 5;
 
-    public Watch() {
+    public Brass() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);
-        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, this.magicNumber), this.magicNumber));
     }
 
     @Override

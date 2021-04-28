@@ -1,18 +1,20 @@
 package theChaser.cards.rare;
 
+import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
-import theChaser.powers.UnwaryPower;
+import theChaser.powers.ShadowFormPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class Unwary extends ChaserCard {
+public class SawBlade extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Unwary");
+    public static final String ID = TheChaserMod.makeID("Saw Blade");
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -20,21 +22,21 @@ public class Unwary extends ChaserCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 2;
-    private static final int UP_COST = 1;
+    private static final int COST = 3;
+    private static final int MAGIC = 1;
+    private static final int UP_MAGIC = 1;
 
-    public Unwary() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+    public SawBlade() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, MAGIC);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new UnwaryPower(p)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ShadowFormPower(p, this.magicNumber), this.magicNumber));
     }
-
 
     @Override
     public void upgradeCard() {
-        upgradeBaseCost(UP_COST);
+        upgradeMagicNumber(UP_MAGIC);
     }
 }

@@ -1,42 +1,43 @@
-package theChaser.cards.uncommon;
+package theChaser.cards.rare;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
+import theChaser.cards.temp.ThrowingKnife;
 import theChaser.characters.TheChaser;
-import theChaser.powers.AccelerationPower;
-import theChaser.powers.SpaceOutPower;
+import theChaser.powers.DipladePower;
+import theChaser.powers.ForteIsFrailtyPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class Acceleration extends ChaserCard {
+public class Diplade extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Acceleration");
+    public static final String ID = TheChaserMod.makeID("Diplade");
     public static final String IMG = makeCardPath("Power.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 1;
-    private static final int STR = 1;
-    private static final int UP_STR = 0;
+    private static final int COST = 2;
+    private static final int UP_COST = 1;
 
-    public Acceleration() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, STR);
+    public Diplade() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        this.cardsToPreview = new ThrowingKnife();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new AccelerationPower(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new DipladePower(p, 1)));
     }
-
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(UP_STR);
+        upgradeBaseCost(UP_COST);
     }
+
 }

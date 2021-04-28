@@ -31,21 +31,26 @@ public class Linger extends ChaserCard {
 
     private static final int COST = 1;
     private static final int BLOCK = 8;
-    private static final int UP_BLOCK = 3;
+    private static final int UP_BLOCK = 2;
+    private static final int TAR = 1;
+    private static final int UP_TAR = 1;
 
     public Linger() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 0);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, TAR);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
-        addToBot(new TargetAttackAction());
+        for(int i = 0; i < this.magicNumber; i++) {
+            addToBot(new TargetAttackAction());
+        }
     }
 
     @Override
     public void upgradeCard() {
         upgradeBlock(UP_BLOCK);
+        upgradeMagicNumber(UP_TAR);
     }
 
 }

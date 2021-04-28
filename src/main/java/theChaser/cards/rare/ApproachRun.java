@@ -1,12 +1,17 @@
-package theChaser.cards.common;
+package theChaser.cards.rare;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
+import theChaser.actions.AddCardPerTurnAction;
+import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
-import theChaser.powers.TargetPower;
+import theChaser.powers.BleedingPower;
+import theChaser.powers.HidePower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -19,28 +24,45 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class Watch extends ChaserCard {
+public class ApproachRun extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Watch");
+    public static final String ID = TheChaserMod.makeID("Approach Run");
     public static final String IMG = makeCardPath("Skill.png");
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
     private static final int UP_COST = 0;
-    private static final int TAG = 7;
+    private static final int TURN = 5;
 
-    public Watch() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);
+    public ApproachRun() {
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TURN);
         this.exhaust = true;
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        if(ChaserUtil.isAccel()) {
+            this.target = CardTarget.ALL_ENEMY;
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.target = CardTarget.SELF;
+        }
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new TargetPower(m, this.magicNumber), this.magicNumber));
+        if(ChaserUtil.isAccel()) {
+            for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+                addToBot(new ApplyPowerAction(mo, p, new BleedingPower(mo, p, this.magicNumber)));
+            }
+        } else {
+            addToBot(new AddCardPerTurnAction(4));
+        }
     }
 
     @Override

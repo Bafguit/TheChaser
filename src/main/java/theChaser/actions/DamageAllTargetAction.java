@@ -11,8 +11,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.city.Byrd;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.FlightPower;
+import com.megacrit.cardcrawl.powers.ThornsPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
@@ -27,11 +31,10 @@ public class DamageAllTargetAction extends AbstractGameAction {
 
     public DamageAllTargetAction(int amount, ArrayList<AbstractMonster> mo) {
         this.firstFrame = true;
-        this.source = AbstractDungeon.player;
         this.damage = amount;
         this.monsters = mo;
         this.actionType = ActionType.DAMAGE;
-        this.damageType = DamageType.THORNS;
+        this.damageType = DamageType.NORMAL;
         this.attackEffect = AttackEffect.BLUNT_LIGHT;
         this.duration = Settings.ACTION_DUR_XFAST;
     }
@@ -60,7 +63,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
             for(AbstractMonster m : this.monsters) {
                 if (!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {
                     m.getPower(TargetPower.POWER_ID).flash();
-                    m.damage(new DamageInfo(this.source, this.damage, this.damageType));
+                    m.damage(new DamageInfo(m, this.damage, this.damageType));
                 }
             }
 
