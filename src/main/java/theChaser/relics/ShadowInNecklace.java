@@ -16,11 +16,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class ShadowInNecklace extends CustomRelic {
     public static final String ID = makeID("Shadow In Necklace");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("neck.png"));
 
     public ShadowInNecklace() {
         super(ID, IMG, RelicTier.STARTER, LandingSound.CLINK);
-
     }
 
     @Override

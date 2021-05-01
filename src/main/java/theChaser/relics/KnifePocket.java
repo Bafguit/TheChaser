@@ -20,12 +20,12 @@ import static theChaser.TheChaserMod.makeID;
 import static theChaser.TheChaserMod.makeRelicPath;
 
 public class KnifePocket extends CustomRelic implements OnAfterTargetAttackSubscriber {
-    public static final String ID = makeID("Knife Pocket");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    public static final String ID = makeID("Pocket Knife");
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("knf.png"));
 
     public KnifePocket() {
         super(ID, IMG, RelicTier.BOSS, LandingSound.FLAT);
-        this.counter = 2;
+        this.isDone = false;
     }
 
     public void atTurnStart() {
@@ -50,7 +50,7 @@ public class KnifePocket extends CustomRelic implements OnAfterTargetAttackSubsc
 
     @Override
     public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
-        if(!this.isDone) {
+        if(this.counter > 0) {
             this.counter--;
             if (this.counter == 0) {
                 this.counter = -1;

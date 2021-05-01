@@ -21,7 +21,7 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class BoxCutter extends CustomRelic implements OnAfterTargetAttackSubscriber {
     public static final String ID = makeID("Box Cutter");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("cutter.png"));
 
     public BoxCutter() {
         super(ID, IMG, RelicTier.UNCOMMON, LandingSound.FLAT);

@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Wither extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Wither");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Wither.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

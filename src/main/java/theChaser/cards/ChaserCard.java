@@ -59,7 +59,12 @@ public abstract class ChaserCard extends CustomCard {
         this(id, CardCrawlGame.languagePack.getCardStrings(id).NAME, img, cost, CardCrawlGame.languagePack.getCardStrings(id).DESCRIPTION, type, color, rarity, target, 0, 0, 0, 0);
     }
 
-    @Override
+    public void resetAttributes() {
+        super.resetAttributes();
+        this.magicNumber2 = this.baseMagicNumber2;
+        this.isMagicNumber2Modified = false;
+    }
+
     public void displayUpgrades() {
         super.displayUpgrades();
         if (this.upgradedMagicNumber2) {

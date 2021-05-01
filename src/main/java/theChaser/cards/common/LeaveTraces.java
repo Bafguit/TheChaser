@@ -29,7 +29,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class LeaveTraces extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Leave Traces");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("LeaveTraces.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

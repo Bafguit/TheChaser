@@ -1,6 +1,23 @@
 {
-"theDefault:PlaceholderPotion": {
-        "NAME": "Placeholder Potion",
-        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " Strength."]
-}
+  "theChaser:Acid Potion": {
+    "NAME": "산성 포션",
+    "DESCRIPTIONS": [
+      "적 하나에게 #y출혈 을 #b",
+      " 부여합니다."
+    ]
+  },
+        "theChaser:Shadow Potion": {
+                "NAME": "병 속의 그림자",
+                "DESCRIPTIONS": [
+                        "#b",
+                        " 턴 동안 #y은신 합니다."
+                ]
+        },
+        "theChaser:Target Potion": {
+                "NAME": "표식 포션",
+                "DESCRIPTIONS": [
+                        "#y표적 을 #b",
+                        " 번 공격합니다."
+                ]
+        }
 }

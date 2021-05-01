@@ -30,7 +30,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class AbsoluteAdvantage extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Absolute Advantage");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("AbsoluteAdvantage.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

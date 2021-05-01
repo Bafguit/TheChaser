@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Disguise extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Disguise");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Disguise.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

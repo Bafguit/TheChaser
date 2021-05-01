@@ -25,7 +25,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Thornmail extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Thornmail");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Thornmail.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

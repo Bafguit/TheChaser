@@ -29,8 +29,8 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/unf84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/unf32.png");
 
     public UnfortifiedPower(final AbstractCreature owner, final AbstractCreature source, int amount) {
         name = NAME;

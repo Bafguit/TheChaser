@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class OpenSore extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Open Sore");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("OpenSore.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -23,7 +23,6 @@ public class OpenSore extends ChaserCard {
 
     private static final int COST = 1;
     private static final int B = 1;
-    private static final int U_B = 1;
 
     public OpenSore() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, B);
@@ -31,12 +30,12 @@ public class OpenSore extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new OpenSorePower(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new OpenSorePower(p, 1)));
     }
 
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(U_B);
+        this.isInnate = true;
     }
 }

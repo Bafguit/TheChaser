@@ -34,7 +34,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Phrenitis extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Phrenitis");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Phrenitis.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

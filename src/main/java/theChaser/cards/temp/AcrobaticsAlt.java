@@ -18,7 +18,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class AcrobaticsAlt extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Acrobatics");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Acrobatics.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -31,6 +31,7 @@ public class AcrobaticsAlt extends ChaserCard {
 
     public AcrobaticsAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
+        this.exhaust = true;
     }
 
     public void onChoseThisOption() {

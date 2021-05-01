@@ -19,7 +19,7 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class RustyHelmet extends CustomRelic {
     public static final String ID = makeID("Rusty Helmet");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("hel.png"));
 
     public RustyHelmet() {
         super(ID, IMG, RelicTier.RARE, LandingSound.HEAVY);

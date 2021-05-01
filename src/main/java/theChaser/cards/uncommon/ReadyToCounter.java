@@ -34,7 +34,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ReadyToCounter extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Ready To Counter");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("ReadyToCounter.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

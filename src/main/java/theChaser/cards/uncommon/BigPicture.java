@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class BigPicture extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Big Picture");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("BigPicture.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -35,7 +35,7 @@ public class BigPicture extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        this.isInnate = true;
+        upgradeMagicNumber(1);
     }
 
 }

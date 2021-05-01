@@ -16,7 +16,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Wound extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Wound");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Wound.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

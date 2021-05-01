@@ -18,7 +18,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Ragewind extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Ragewind");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Ragewind.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

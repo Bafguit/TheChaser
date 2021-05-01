@@ -26,8 +26,8 @@ public class SpaceOutPower extends AbstractPower implements CloneablePowerInterf
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/space84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/space32.png");
 
     public SpaceOutPower(final AbstractCreature owner, int amount) {
         name = NAME;
@@ -59,7 +59,7 @@ public class SpaceOutPower extends AbstractPower implements CloneablePowerInterf
     public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
         if(damage > 0) {
             flash();
-            addToBot(new GainBlockAction(this.owner, this.amount));
+            addToBot(new GainBlockAction(this.owner, this.amount, true));
         }
     }
 }

@@ -21,7 +21,7 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class RBO7 extends CustomRelic {
     public static final String ID = makeID("R-B0-7");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("rb7.png"));
 
     public RBO7() {
         super(ID, IMG, RelicTier.UNCOMMON, LandingSound.CLINK);

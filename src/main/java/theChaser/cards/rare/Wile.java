@@ -27,7 +27,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Wile extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Wile");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Wile.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

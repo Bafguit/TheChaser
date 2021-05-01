@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Acceleration extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Acceleration");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("Acceleration.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

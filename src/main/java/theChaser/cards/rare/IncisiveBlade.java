@@ -24,7 +24,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class IncisiveBlade extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Incisive Blade");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("IncisiveBlade.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

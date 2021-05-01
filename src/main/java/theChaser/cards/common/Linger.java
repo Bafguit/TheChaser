@@ -22,7 +22,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Linger extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Linger");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Linger.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

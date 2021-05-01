@@ -48,8 +48,8 @@
       "#r목걸이 #r속의 #r그림자와 #r교체됩니다. 내 턴 시작 시 적 전체에게 #y표적 을 #b1 부여하고 #y표적 을 #b1 번 공격합니다."
     ]
   },
-  "theChaser:Knife Pocket": {
-    "NAME": "칼주머니",
+  "theChaser:Pocket Knife": {
+    "NAME": "주머니칼",
     "FLAVOR": "애옹",
     "DESCRIPTIONS": [
       "매 턴마다 #b2 번째 #y표적 #y공격 을 한 후에 [E] 를 얻습니다."

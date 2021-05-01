@@ -22,7 +22,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Chance extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Chance");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Chance.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -57,7 +57,7 @@ public class Chance extends ChaserCard {
             }
 
             if(cards.size() > 0) {
-                cards.get(AbstractDungeon.cardRandomRng.random.nextInt(cards.size())).freeToPlayOnce = true;
+                cards.get(AbstractDungeon.cardRandomRng.random.nextInt(cards.size())).setCostForTurn(0);
             }
         }
     }

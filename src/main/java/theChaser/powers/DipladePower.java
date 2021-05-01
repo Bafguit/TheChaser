@@ -26,8 +26,8 @@ public class DipladePower extends AbstractPower implements CloneablePowerInterfa
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/Diplade84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/Diplade32.png");
 
     public DipladePower(final AbstractCreature owner, int amount) {
         name = NAME;
@@ -46,7 +46,7 @@ public class DipladePower extends AbstractPower implements CloneablePowerInterfa
     }
 
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         if(card.costForTurn != 0) {
             this.flash();
             this.addToBot(new MakeTempCardInHandAction(new ThrowingKnife(), this.amount));

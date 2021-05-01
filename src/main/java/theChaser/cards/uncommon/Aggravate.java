@@ -26,7 +26,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Aggravate extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Aggravate");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Aggravate.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL;
@@ -34,24 +34,23 @@ public class Aggravate extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int BLOCK = 7;
-    private static final int UP_BLOCK = 4;
+    private static final int BLOCK = 8;
 
     public Aggravate() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 0);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 1);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new InstantBleedingDamageAction(mo, 1));
+            addToBot(new InstantBleedingDamageAction(mo, this.magicNumber));
         }
     }
 
     @Override
     public void upgradeCard() {
-        upgradeBlock(UP_BLOCK);
+        upgradeBlock(3);
     }
 
 }

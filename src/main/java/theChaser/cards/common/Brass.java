@@ -23,7 +23,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Brass extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Brass");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Brass.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

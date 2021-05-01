@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Penetrative extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Penetrative");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("Penetrative.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

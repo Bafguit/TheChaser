@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ShadowForm extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Shadow Form");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("ShadowForm.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

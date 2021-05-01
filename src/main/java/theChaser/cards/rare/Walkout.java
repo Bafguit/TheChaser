@@ -32,7 +32,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Walkout extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Walkout");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Walkout.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

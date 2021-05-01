@@ -17,7 +17,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class OutmaneuverAlt extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Outmaneuver");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Outmaneuver.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -30,6 +30,7 @@ public class OutmaneuverAlt extends ChaserCard {
 
     public OutmaneuverAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
+        this.exhaust = true;
     }
 
     public void onChoseThisOption() {

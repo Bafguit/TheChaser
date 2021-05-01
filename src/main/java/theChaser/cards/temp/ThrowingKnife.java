@@ -13,7 +13,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ThrowingKnife extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Throwing Knife");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("ThrowingKnife.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.NONE;

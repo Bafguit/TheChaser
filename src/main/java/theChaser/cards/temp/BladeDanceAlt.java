@@ -21,7 +21,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class BladeDanceAlt extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Blade Dance");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("BladeDance.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -34,6 +34,7 @@ public class BladeDanceAlt extends ChaserCard {
 
     public BladeDanceAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
+        this.exhaust = true;
     }
 
     public void onChoseThisOption() {

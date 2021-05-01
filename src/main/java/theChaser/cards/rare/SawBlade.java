@@ -16,7 +16,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class SawBlade extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Saw Blade");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("SawBlade.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

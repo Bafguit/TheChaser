@@ -14,9 +14,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.BurstPower;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theChaser.TheChaserMod;
+import theChaser.actions.RemoveStackStrAction;
 import theChaser.util.TextureLoader;
 
 public class AccelerationPower extends AbstractPower implements CloneablePowerInterface {
@@ -29,8 +31,8 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     public int strCount = 0;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/Accel84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/Accel32.png");
 
     public AccelerationPower(final AbstractCreature owner, int amount) {
         name = NAME;
@@ -41,10 +43,12 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
 
         type = PowerType.BUFF;
         isTurnBased = false;
-
+/*
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+*/
 
+        this.loadRegion("burst");
         updateDescription();
     }
 
@@ -58,14 +62,14 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
         if(card.type == AbstractCard.CardType.ATTACK) {
             flashWithoutSound();
             addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount)));
-            this.strCount++;
+            this.strCount += this.amount;
         }
     }
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if(this.strCount > 0) {
-            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.strCount)));
+            addToBot(new RemoveStackStrAction(this.owner, this.strCount));
             this.strCount = 0;
         }
     }

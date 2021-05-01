@@ -13,7 +13,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Unwary extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Unwary");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("Unwary.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

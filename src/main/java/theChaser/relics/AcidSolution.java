@@ -19,7 +19,7 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class AcidSolution extends CustomRelic {
     public static final String ID = makeID("Acid Solution");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("acid.png"));
 
     public AcidSolution() {
         super(ID, IMG, RelicTier.RARE, LandingSound.SOLID);

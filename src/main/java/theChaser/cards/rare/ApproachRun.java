@@ -27,7 +27,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ApproachRun extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Approach Run");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("ApproachRun.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -2,6 +2,7 @@ package theChaser;
 
 import basemod.*;
 import basemod.interfaces.*;
+import basemod.patches.com.megacrit.cardcrawl.helpers.PotionLibrary.PotionHelperGetPotion;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -17,6 +18,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -33,6 +35,9 @@ import theChaser.cards.temp.SequenceFlow;
 import theChaser.cards.uncommon.*;
 import theChaser.cards.common.Linger;
 import theChaser.characters.TheChaser;
+import theChaser.potions.AcidPotion;
+import theChaser.potions.ShadowPotion;
+import theChaser.potions.TargetPotion;
 import theChaser.relics.*;
 import theChaser.util.IDCheckDontTouchPls;
 import theChaser.util.TextureLoader;
@@ -127,8 +132,8 @@ public class TheChaserMod implements
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "theChaserResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "theChaserResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "theChaserResources/images/charSelect/KteBG.png";
+    private static final String THE_DEFAULT_BUTTON = "theChaserResources/images/charSelect/ChaserButton.png";
+    private static final String THE_DEFAULT_PORTRAIT = "theChaserResources/images/charSelect/ChaserBG.png";
     public static final String THE_DEFAULT_SHOULDER_1 = "theChaserResources/images/char/defaultCharacter/shoulder.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "theChaserResources/images/char/defaultCharacter/shoulder2.png";
     public static final String THE_DEFAULT_CORPSE = "theChaserResources/images/char/defaultCharacter/corpse.png";
@@ -338,6 +343,13 @@ public class TheChaserMod implements
         settingsPanel.addUIElement(enableNormalsButton); // Add the button to the settings panel. Button is a go.
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
+
+
+        Color maroon = new Color(0.4F, 0, 0, 1).cpy();
+        Color dark = new Color(0, 0, 50, 0.75F).cpy();
+        BaseMod.addPotion(AcidPotion.class, maroon, maroon, Color.YELLOW, AcidPotion.ID, TheChaser.Enums.THE_CHASER);
+        BaseMod.addPotion(ShadowPotion.class, dark, null, null, ShadowPotion.ID, TheChaser.Enums.THE_CHASER);
+        BaseMod.addPotion(TargetPotion.class, Color.WHITE, Color.RED, null, TargetPotion.ID, TheChaser.Enums.THE_CHASER);
 
         /*
         // =============== EVENTS =================

@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class RandomThrow extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Random Throw");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("RandomThrow.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

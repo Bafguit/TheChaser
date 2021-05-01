@@ -32,7 +32,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Fraudulence extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Fraudulence");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Fraudulence.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -28,8 +28,8 @@ public class ReactionShot extends ChaserCard {
     public static final String ID = TheChaserMod.makeID("Reaction Shot");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Attack.png");
-    public static final String IMG_BETA = makeCardPath("Attack_beta.png");
+    public static final String IMG = makeCardPath("ReactionShot.png");
+    public static final String IMG_BETA = makeCardPath("ReactionShot.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

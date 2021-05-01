@@ -21,7 +21,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ChaserDefend extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Defend");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Defend.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -34,6 +34,7 @@ public class ChaserDefend extends ChaserCard {
 
     public ChaserDefend() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 0);
+        this.tags.add(CardTags.STARTER_DEFEND);
     }
 
     @Override

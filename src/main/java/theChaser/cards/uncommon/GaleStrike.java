@@ -33,7 +33,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class GaleStrike extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Gale Strike");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("GaleStrike.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
@@ -65,15 +65,16 @@ public class GaleStrike extends ChaserCard {
             p.getRelic("Chemical X").flash();
         }
 
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            addToBot(new ApplyPowerAction(mo, p, new TargetPower(mo, 1), 1, true));
+        }
+
         if(effect > 0) {
-            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                addToBot(new ApplyPowerAction(mo, p, new TargetPower(mo, 1), 1, true));
-            }
 
             for (int i = 0; i < effect; i++) {
                 this.addToBot(new SFXAction("ATTACK_HEAVY"));
                 this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-                addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE));
+                addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE, true));
             }
 
             for (int i = 0; i < effect; i++) {

@@ -17,7 +17,7 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class ScochStone extends CustomRelic {
     public static final String ID = makeID("Scoch Stone");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ston.png"));
 
     public ScochStone() {
         super(ID, IMG, RelicTier.COMMON, LandingSound.HEAVY);

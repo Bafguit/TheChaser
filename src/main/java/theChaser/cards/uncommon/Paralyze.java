@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Paralyze extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Paralyze");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Paralyze.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

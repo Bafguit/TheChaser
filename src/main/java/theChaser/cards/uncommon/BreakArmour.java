@@ -21,7 +21,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class BreakArmour extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Break Armour");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("BreakArmour.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

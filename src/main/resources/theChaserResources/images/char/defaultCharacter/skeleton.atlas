@@ -1,118 +1,104 @@
 
-skeleton.png
-size: 512,256
+theSilent.png
+size: 468,201
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-images/armleft
+body
   rotate: false
-  xy: 113, 3
-  size: 67, 64
-  orig: 67, 64
+  xy: 413, 105
+  size: 53, 94
+  orig: 53, 94
   offset: 0, 0
   index: -1
-images/armright
+cape_left
   rotate: false
-  xy: 292, 91
-  size: 70, 36
-  orig: 70, 36
+  xy: 2, 34
+  size: 157, 165
+  orig: 157, 165
   offset: 0, 0
   index: -1
-images/bandage
-  rotate: false
-  xy: 472, 165
-  size: 16, 17
-  orig: 16, 17
-  offset: 0, 0
-  index: -1
-images/bandageflap
-  rotate: false
-  xy: 378, 138
-  size: 32, 12
-  orig: 32, 12
-  offset: 0, 0
-  index: -1
-images/body
-  rotate: false
-  xy: 2, 69
-  size: 172, 185
-  orig: 172, 185
-  offset: 0, 0
-  index: -1
-images/fingersleft
-  rotate: false
-  xy: 230, 57
-  size: 18, 24
-  orig: 18, 24
-  offset: 0, 0
-  index: -1
-images/fingersright
-  rotate: false
-  xy: 204, 33
-  size: 24, 22
-  orig: 24, 22
-  offset: 0, 0
-  index: -1
-images/head
-  rotate: false
-  xy: 420, 184
-  size: 75, 70
-  orig: 75, 70
-  offset: 0, 0
-  index: -1
-images/leftwing
-  rotate: false
-  xy: 326, 152
-  size: 92, 102
-  orig: 92, 102
-  offset: 0, 0
-  index: -1
-images/legleft
-  rotate: false
-  xy: 182, 2
-  size: 20, 79
-  orig: 20, 79
-  offset: 0, 0
-  index: -1
-images/legright
+cape_right
   rotate: true
-  xy: 420, 163
-  size: 19, 50
-  orig: 19, 50
+  xy: 161, 2
+  size: 137, 155
+  orig: 137, 155
   offset: 0, 0
   index: -1
-images/rightwing
+eye
   rotate: false
-  xy: 176, 152
-  size: 148, 102
-  orig: 148, 102
+  xy: 400, 129
+  size: 10, 10
+  orig: 10, 10
   offset: 0, 0
   index: -1
-images/shadow
+face
   rotate: false
-  xy: 176, 129
-  size: 200, 21
-  orig: 200, 21
+  xy: 125, 4
+  size: 28, 28
+  orig: 28, 28
   offset: 0, 0
   index: -1
-images/shoulderright
+foot
   rotate: false
-  xy: 204, 57
-  size: 24, 24
-  orig: 24, 24
+  xy: 400, 24
+  size: 37, 27
+  orig: 37, 27
   offset: 0, 0
   index: -1
-images/weaponleft
+hair
   rotate: true
-  xy: 176, 83
-  size: 44, 114
-  orig: 44, 114
+  xy: 2, 7
+  size: 25, 83
+  orig: 25, 83
   offset: 0, 0
   index: -1
-images/weaponright
+hair2
   rotate: true
-  xy: 2, 10
-  size: 57, 109
-  orig: 57, 109
+  xy: 361, 6
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 439, 30
+  size: 25, 21
+  orig: 25, 21
+  offset: 0, 0
+  index: -1
+kris
+  rotate: false
+  xy: 400, 53
+  size: 64, 50
+  orig: 64, 50
+  offset: 0, 0
+  index: -1
+neck_spine
+  rotate: true
+  xy: 87, 4
+  size: 28, 36
+  orig: 28, 36
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 161, 141
+  size: 250, 58
+  orig: 250, 58
+  offset: 0, 0
+  index: -1
+skull
+  rotate: true
+  xy: 318, 24
+  size: 115, 80
+  orig: 115, 80
+  offset: 0, 0
+  index: -1
+tail_spine
+  rotate: false
+  xy: 318, 8
+  size: 41, 14
+  orig: 41, 14
   offset: 0, 0
   index: -1

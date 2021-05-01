@@ -17,15 +17,17 @@ import static theChaser.TheChaserMod.makeRelicPath;
 
 public class BrokenTicker extends CustomRelic {
     public static final String ID = makeID("Broken Ticker");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("tick.png"));
 
     public BrokenTicker() {
         super(ID, IMG, RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
     @Override
-    public void onSpawnMonster(AbstractMonster monster) {
-        monster.addPower(new SlowPower(monster, 0));
+    public void atTurnStart() {
+        for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            m.addPower(new SlowPower(m, 0));
+        }
     }
 
     @Override

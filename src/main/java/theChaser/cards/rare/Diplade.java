@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Diplade extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Diplade");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("Diplade.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

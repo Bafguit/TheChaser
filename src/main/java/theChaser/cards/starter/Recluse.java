@@ -24,7 +24,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Recluse extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Recluse");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Recluse.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -42,7 +42,6 @@ public class Recluse extends ChaserCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
-        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, 1, false), 1));
         addToBot(new ApplyPowerAction(p, p, new FrailPower(p, 1, false), 1));
     }
 

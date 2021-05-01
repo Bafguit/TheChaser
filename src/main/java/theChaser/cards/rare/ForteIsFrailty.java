@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ForteIsFrailty extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Forte Is Frailty");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("ForteIsFrailty.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -21,7 +21,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class SequenceFlow extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Sequence Flow");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("SequenceFlow.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ENEMY;

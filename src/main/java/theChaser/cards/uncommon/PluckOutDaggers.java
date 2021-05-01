@@ -25,7 +25,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class PluckOutDaggers extends ChaserCard implements OnAfterTargetAttackSubscriber {
 
     public static final String ID = TheChaserMod.makeID("Pluck Out Daggers");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("PluckOutDaggers.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

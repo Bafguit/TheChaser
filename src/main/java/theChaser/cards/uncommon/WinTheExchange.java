@@ -22,7 +22,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class WinTheExchange extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Win The Exchange");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("WinTheExchange.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

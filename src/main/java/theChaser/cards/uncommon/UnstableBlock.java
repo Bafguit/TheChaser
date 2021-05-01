@@ -16,7 +16,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class UnstableBlock extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Unstable Block");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("UnstableBlock.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

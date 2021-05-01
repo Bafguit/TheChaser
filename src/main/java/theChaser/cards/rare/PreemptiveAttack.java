@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class PreemptiveAttack extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Preemptive Attack");
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("PreemptiveAttack.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

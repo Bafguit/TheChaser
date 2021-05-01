@@ -15,7 +15,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class ContinuousSlashAlt extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Continuous Slash Alt");
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("ContinuousSlash.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ENEMY;

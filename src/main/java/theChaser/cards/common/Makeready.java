@@ -14,7 +14,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 public class Makeready extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Makeready");
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Makeready.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
