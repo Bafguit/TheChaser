@@ -53,7 +53,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
         if (this.amount == -1) {
             System.out.println(this.name + " does not stack");
         } else if (this.amount < 3){
-            this.amount += stackAmount;
+            this.amount = Math.min(this.amount + stackAmount, 3);
         } else if(this.amount == 3) {
             this.amount = 3;
         }

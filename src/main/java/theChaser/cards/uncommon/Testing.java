@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.red.ThunderClap;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,6 +16,8 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+
+import java.util.Iterator;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
@@ -43,9 +46,12 @@ public class Testing extends ChaserCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new SFXAction("ATTACK_HEAVY"));
         this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AttackEffect.NONE));
-        for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(m, this.magicNumber, false)));
+        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AttackEffect.NONE));
+        Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+        while(var3.hasNext()) {
+            AbstractMonster mo = (AbstractMonster)var3.next();
+            this.addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, this.magicNumber, false), this.magicNumber, true, AttackEffect.NONE));
         }
     }
 
