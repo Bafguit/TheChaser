@@ -40,12 +40,13 @@ public class Paralyze extends ChaserCard {
             }
         }
 
-        int temp = -count - (this.upgraded ? 1 : 0);
+        int temp = -count;
         addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, temp), temp));
     }
 
     @Override
     public void upgradeCard() {
+        upgradeBaseCost(0);
     }
 
 }

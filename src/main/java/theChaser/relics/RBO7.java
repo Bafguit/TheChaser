@@ -28,11 +28,11 @@ public class RBO7 extends CustomRelic {
     }
 
     public void atTurnStart() {
-        this.flash();
-        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         if(ChaserUtil.getAllDebuffMonsters().size() > 0) {
+            this.flash();
+            this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             for (AbstractMonster m : ChaserUtil.getAllDebuffMonsters()) {
-                addToBot(new DamageAction(m, new DamageInfo(null, 5, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.FIRE, true));
+                addToBot(new DamageAction(m, new DamageInfo(AbstractDungeon.player, 5, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.FIRE, true));
             }
         }
     }

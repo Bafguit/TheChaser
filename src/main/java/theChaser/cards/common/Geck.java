@@ -1,14 +1,22 @@
 package theChaser.cards.common;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.red.ThunderClap;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 import theChaser.powers.TargetPower;
 import theChaser.powers.UnfortifiedPower;
+
+import java.util.Iterator;
 
 import static theChaser.TheChaserMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -41,8 +49,20 @@ public class Geck extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new UnfortifiedPower(mo, p, this.magicNumber), this.magicNumber, true));
+        this.addToBot(new SFXAction("THUNDERCLAP", 0.05F));
+        Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+        AbstractMonster mo;
+        while(var3.hasNext()) {
+            mo = (AbstractMonster)var3.next();
+            if (!mo.isDeadOrEscaped()) {
+                this.addToBot(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), 0.05F));
+            }
+        }
+
+        while(var3.hasNext()) {
+            mo = (AbstractMonster)var3.next();
+            this.addToBot(new ApplyPowerAction(mo, p, new UnfortifiedPower(mo, p, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 

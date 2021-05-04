@@ -29,7 +29,7 @@ public class ReactionShot extends ChaserCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("ReactionShot.png");
-    public static final String IMG_BETA = makeCardPath("ReactionShot.png");
+    public static final String IMG_BETA = makeCardPath("beta/ReactionShot.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

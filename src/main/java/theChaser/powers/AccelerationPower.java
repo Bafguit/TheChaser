@@ -4,6 +4,7 @@ import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -58,7 +59,7 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     }
 
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         if(card.type == AbstractCard.CardType.ATTACK) {
             flashWithoutSound();
             addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount)));
@@ -69,7 +70,7 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if(this.strCount > 0) {
-            addToBot(new RemoveStackStrAction(this.owner, this.strCount));
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.strCount), -this.strCount, true));
             this.strCount = 0;
         }
     }

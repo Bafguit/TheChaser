@@ -33,8 +33,7 @@ public class Vitality extends ChaserCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 1;
-    private static final int UP_COST = 0;
+    private static final int COST = 0;
 
     public Vitality() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -44,7 +43,7 @@ public class Vitality extends ChaserCard {
     public void applyPowers() {
         super.applyPowers();
 
-        this.rawDescription = this.extendedDescription[0] + ChaserUtil.getTargetAttackCountPerTurn() + this.extendedDescription[1];
+        this.rawDescription = (this.upgraded ? this.extendedDescription[2] : "" ) + this.extendedDescription[0] + ChaserUtil.getTargetAttackCountPerTurn() + this.extendedDescription[1];
 
         this.initializeDescription();
     }
@@ -56,7 +55,7 @@ public class Vitality extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeBaseCost(UP_COST);
+        this.selfRetain = true;
     }
 
 }

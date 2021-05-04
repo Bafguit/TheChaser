@@ -39,17 +39,12 @@ public class ShadowInMask extends CustomRelic {
     }
 
     @Override
-    public void atBattleStart() {
+    public void atTurnStart() {
         this.flash();
         for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
             this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new TargetPower(m, 1), 1, true));
         }
         this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-    }
-
-    @Override
-    public void atTurnStartPostDraw() {
-        this.flash();
         this.addToBot(new TargetAttackAction());
     }
 

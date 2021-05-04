@@ -24,7 +24,7 @@ public class ShadowInNecklace extends CustomRelic {
 
     @Override
     public void atBattleStartPreDraw() {
-        AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
+        AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         AbstractPower p = new TargetPower(m, 2);
         this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, p));

@@ -1,6 +1,7 @@
 package theChaser.characters;
 
 import basemod.abstracts.CustomPlayer;
+import basemod.animations.SpineAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -10,6 +11,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.characters.TheSilent;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
@@ -108,8 +110,9 @@ public class TheChaser extends CustomPlayer {
     public TheChaser(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "theChaserResources/images/char/defaultCharacter/orb/vfx.png", null,
-                new SpriterAnimation(
-                        "theChaserResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                new SpineAnimation(
+                        THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F));
+        this.loadAnimation(THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F);
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
@@ -119,7 +122,7 @@ public class TheChaser extends CustomPlayer {
                 THE_DEFAULT_SHOULDER_2, // campfire pose
                 THE_DEFAULT_SHOULDER_1, // another campfire pose
                 THE_DEFAULT_CORPSE, // dead corpse
-                getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
+                getLoadout(), -20.0F, -24.0F, 240.0F, 240.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
@@ -235,7 +238,7 @@ public class TheChaser extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new ChaserStrike();
+        return new Recluse();
     }
 
     // The class name as it appears next to your player name in-game

@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
@@ -35,6 +36,7 @@ public class Phrenitis extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Phrenitis");
     public static final String IMG = makeCardPath("Phrenitis.png");
+    public static final String IMG_BETA = makeCardPath("beta/Phrenitis.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -46,6 +48,7 @@ public class Phrenitis extends ChaserCard {
 
     public Phrenitis() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        loadJokeCardImage(this, IMG_BETA);
         this.exhaust = true;
     }
 
@@ -73,6 +76,7 @@ public class Phrenitis extends ChaserCard {
 
         addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false), 1, true));
         addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 1, false), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new FrailPower(m, 1, false), 1, true));
         addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, 1), 1, true));
         addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, 1), 1, true));
         addToBot(new ApplyPowerAction(m, p, new TargetPower(m, 1), 1, true));

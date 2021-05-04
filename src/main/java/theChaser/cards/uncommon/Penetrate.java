@@ -53,7 +53,7 @@ public class Penetrate extends ChaserCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.BLUNT_LIGHT));
         if(m.hasPower(VulnerablePower.POWER_ID)) {
-            addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, 1), 1));
+            addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, this.magicNumber), this.magicNumber));
         } else {
             addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
         }

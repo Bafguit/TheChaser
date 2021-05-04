@@ -1,0 +1,1 @@
+{"skeleton":{"width":362.6,"height":331.8,"fps":24,"hash":" ","name":"Armature"},"bones":[{"name":"root"}],"slots":[{"name":"chaser","bone":"root","attachment":"chaser"}],"skins":{"default":{"chaser":{"chaser":{"name":"chaser","width":344,"height":288,"x":-35,"y":106.4}}}}}
