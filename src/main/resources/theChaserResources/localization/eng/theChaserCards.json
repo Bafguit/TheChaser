@@ -50,8 +50,8 @@
   },
   "theChaser:Continuous Slash": {
     "NAME": "Continuous Slash",
-    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Scramble : Add 1 *Continuous *Slash *Alt into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Scramble : Add 2 *Continuous *Slash *Alt into your hand."
+    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Scramble: Add 1 *Continuous *Slash *Alt into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Scramble: Add 2 *Continuous *Slash *Alt into your hand."
   },
   "theChaser:Delusive Strike": {
     "NAME": "Delusive Strike",
@@ -147,7 +147,7 @@
   },
   "theChaser:Chance": {
     "NAME": "Chance",
-    "DESCRIPTION": "Gain !B! Block. NL thechaser:Scramble : Cost of random card in your hand will be 0 during this turn."
+    "DESCRIPTION": "Gain !B! Block. NL thechaser:Scramble: Cost of random card in your hand will be 0 during this turn."
   },
   "theChaser:Conquest": {
     "NAME": "Conquest",
@@ -182,7 +182,7 @@
   },
   "theChaser:Hidden Dagger": {
     "NAME": "Hidden Dagger",
-    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Scramble : upgrade ALL *Throwing *Knife in your hand."
+    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Scramble: upgrade ALL *Throwing *Knife in your hand."
   },
   "theChaser:Internal Hemorrhage": {
     "NAME": "Internal Hemorrhage",
@@ -207,63 +207,63 @@
   },
   "theChaser:Pluck Out Daggers": {
     "NAME": "Pluck Out Daggers",
-    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 이 카드의 비용이 [E] 감소합니다. NL 피해를 !D! 만큼 !M! 번 줍니다."
+    "DESCRIPTION": "Costs 1 [E] less for each thechaser:Target *Attack this turn. NL Deal !D! damage !M! times."
   },
   "theChaser:Ragewind": {
     "NAME": "Ragewind",
-    "DESCRIPTION": "thechaser:표적 을 !M! 번 공격합니다. NL 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
+    "DESCRIPTION": "Attack thechaser:Target !M! times. NL Parmanently increase this card's thechaser:Target *Attack amount by 1. NL 소멸"
   },
   "theChaser:Ready To Counter": {
     "NAME": "Ready To Counter",
-    "DESCRIPTION": "방어도를 !B! 만큼 X 번 얻습니다. NL *수리검+ 카드를 X 장 얻습니다."
+    "DESCRIPTION": "Gain !B! Block X times. NL Add X *Throwing *Knife+ into your hand."
   },
   "theChaser:Recall": {
     "NAME": "Recall",
-    "DESCRIPTION": "두 번 선택: NL *단도 카드를 !M! 장 얻거나, 카드를 !M! 장 뽑고 1장 버리거나, 다음 턴에 [E] [E] 를 얻습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "두 번 선택: NL *단도 카드를 !M! 장 얻거나, 카드를 !M! 장 뽑고 1장 버리거나, 다음 턴에 [E] [E] [E] 를 얻습니다. NL 소멸"
+    "DESCRIPTION": "Choose two: NL Add !M! *Shiv into your hand, draw !M! cards and discard 1 card, or gain [E] [E] Next turn.  NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose two: NL Add !M! *Shiv into your hand, draw !M! cards and discard 1 card, or gain [E] [E] [E] Next turn.  NL Exhaust."
   },
   "theChaser:Replica Dagger": {
     "NAME": "Replica Dagger",
-    "DESCRIPTION": "턴 시작 시 *수리검 카드를 1장 얻습니다. thechaser:표적 을 가진 적이 없다면, 대신 무작위 적에게 thechaser:표적 을 1 부여합니다.",
-    "UPGRADE_DESCRIPTION": "선천성. 턴 시작 시 *수리검 카드를 1장 얻습니다. thechaser:표적 을 가진 적이 없다면, 대신 무작위 적에게 thechaser:표적 을 1 부여합니다."
+    "DESCRIPTION": "At the start of your turn, add a *Throwing *Kife into your hand. If there's no thechaser:Target, instead, Apply 1 thechaser:Target to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a *Throwing *Kife into your hand. If there's no thechaser:Target, instead, Apply 1 thechaser:Target to a random enemy."
   },
   "theChaser:Secret Card": {
     "NAME": "Secret Card",
-    "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 thechaser:표적 을 !M! 번 공격합니다."
+    "DESCRIPTION": "Draw 1 card. NL If you draw an Attack, Attack thechaser:Target !M! times."
   },
   "theChaser:Sequence": {
     "NAME": "Sequence",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL *연결 *동작 카드를 1장 얻습니다. NL 이번 턴에 사용한 카드가 4장 이상이면, 대신 피해를 !D! 만큼 4번 줍니다.",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *연결 *동작+ 카드를 1장 얻습니다. NL 이번 턴에 사용한 카드가 4장 이상이면, 대신 피해를 !D! 만큼 4번 줍니다."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Scramble: Instead, deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Scramble: Instead, deal !D! damage !M! times."
   },
   "theChaser:Space Out": {
     "NAME": "Space Out",
-    "DESCRIPTION": "thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다."
+    "DESCRIPTION": "After thechaser:Target Attack, gain !B! Block."
   },
   "theChaser:Testing": {
     "NAME": "Testing",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 주고 취약 을 !M! 부여합니다."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies."
   },
   "theChaser:Throes": {
     "NAME": "Throes",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 3 부여합니다. NL 취약 을 1 얻습니다."
+    "DESCRIPTION": "Deal !D! damage and apply 3 thechaser:Unfortified. NL Gain 1 Vulnerable."
   },
   "theChaser:Unstable Block": {
     "NAME": "Unstable Block",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 취약 을 1 얻습니다.",
-    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:무방비 를 1 얻습니다."
+    "DESCRIPTION": "Gain !B! Block and 1 Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 thechaser:Unfortified."
   },
   "theChaser:Weakness Strike": {
     "NAME": "Weakness Strike",
-    "DESCRIPTION": "적이 가진 해로운 효과 수만큼 피해를 !D! 줍니다."
+    "DESCRIPTION": "Deal !D! damage for each Debuff the enemy has."
   },
   "theChaser:Win The Exchange": {
     "NAME": "Win The Exchange",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 thechaser:무방비 상태라면 [E] 를 얻고 카드를 1 장 뽑습니다."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has thechaser:Unfortified, gain [E] and draw 1 card."
   },
   "theChaser:Wither": {
     "NAME": "Wither",
-    "DESCRIPTION": "약화 를 99 부여합니다. 소멸."
+    "DESCRIPTION": "Apply 99 Weak. Exhaust."
   },
   "theChaser:Absolute Advantage": {
     "NAME": "Absolute Advantage",
