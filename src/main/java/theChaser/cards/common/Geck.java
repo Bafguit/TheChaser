@@ -60,9 +60,11 @@ public class Geck extends ChaserCard {
             }
         }
 
-        while(var3.hasNext()) {
-            mo = (AbstractMonster)var3.next();
-            this.addToBot(new ApplyPowerAction(mo, p, new UnfortifiedPower(mo, p, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
+        Iterator var4 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+        while(var4.hasNext()) {
+            AbstractMonster mom = (AbstractMonster)var4.next();
+            this.addToBot(new ApplyPowerAction(mom, p, new UnfortifiedPower(m, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 

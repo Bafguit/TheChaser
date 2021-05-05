@@ -2,38 +2,23 @@ package theChaser;
 
 import basemod.*;
 import basemod.interfaces.*;
-import basemod.patches.com.megacrit.cardcrawl.helpers.PotionLibrary.PotionHelperGetPotion;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
-import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
-import theChaser.cards.common.*;
-import theChaser.cards.rare.*;
-import theChaser.cards.starter.ReactionShot;
-import theChaser.cards.starter.Recluse;
-import theChaser.cards.starter.ChaserDefend;
-import theChaser.cards.starter.ChaserStrike;
-import theChaser.cards.temp.ContinuousSlashAlt;
-import theChaser.cards.temp.SequenceFlow;
-import theChaser.cards.uncommon.*;
-import theChaser.cards.common.Linger;
 import theChaser.characters.TheChaser;
 import theChaser.potions.AcidPotion;
 import theChaser.potions.ShadowPotion;
@@ -134,16 +119,16 @@ public class TheChaserMod implements
     // Character assets
     private static final String THE_DEFAULT_BUTTON = "theChaserResources/images/charSelect/ChaserButton.png";
     private static final String THE_DEFAULT_PORTRAIT = "theChaserResources/images/charSelect/ChaserBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "theChaserResources/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "theChaserResources/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "theChaserResources/images/char/defaultCharacter/corpse.png";
+    public static final String THE_DEFAULT_SHOULDER_1 = "theChaserResources/images/char/theChaser/shoulder.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "theChaserResources/images/char/theChaser/shoulder2.png";
+    public static final String THE_DEFAULT_CORPSE = "theChaserResources/images/char/theChaser/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "theChaserResources/images/Badge.png";
     
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "theChaserResources/images/char/defaultCharacter/TheChaser/TheChaser_Temp.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "theChaserResources/images/char/defaultCharacter/TheChaser/TheChaser_Temp.json";
+    public static final String THE_DEFAULT_SKELETON_ATLAS = "theChaserResources/images/char/theChaser/TheChaser/TheChaser_Temp.atlas";
+    public static final String THE_DEFAULT_SKELETON_JSON = "theChaserResources/images/char/theChaser/TheChaser/TheChaser_Temp.json";
 
     // =============== MAKE IMAGE PATHS =================
     
@@ -521,10 +506,6 @@ public class TheChaserMod implements
         BaseMod.loadCustomStringsFile(RelicStrings.class,
                 getModID() + "Resources/localization/" + getLanguage() + "/theChaserRelics.json");
         
-        // Event Strings
-        BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/theChaserEvents.json");
-        
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
                 getModID() + "Resources/localization/" + getLanguage() + "/theChaserPotions.json");
@@ -532,10 +513,6 @@ public class TheChaserMod implements
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
                 getModID() + "Resources/localization/" + getLanguage() + "/theChaserCharacter.json");
-        
-        // OrbStrings
-        BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/" + getLanguage() + "/theChaserOrbs.json");
         
         logger.info("Done edittting strings");
     }

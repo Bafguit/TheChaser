@@ -2,11 +2,10 @@ package theChaser.characters;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
-import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -15,12 +14,12 @@ import com.megacrit.cardcrawl.characters.TheSilent;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.potions.PoisonPotion;
-import com.megacrit.cardcrawl.relics.RingOfTheSerpent;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -31,8 +30,10 @@ import theChaser.cards.starter.ChaserDefend;
 import theChaser.cards.starter.ChaserStrike;
 import theChaser.cards.starter.Recluse;
 import theChaser.relics.ShadowInNecklace;
+import theChaser.util.TextureLoader;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static theChaser.TheChaserMod.*;
 import static theChaser.characters.TheChaser.Enums.COLOR_CHASER;
@@ -91,17 +92,17 @@ public class TheChaser extends CustomPlayer {
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
-            "theChaserResources/images/char/defaultCharacter/orb/layer1.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer2.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer3.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer4.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer5.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer6.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer1d.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer2d.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer3d.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer4d.png",
-            "theChaserResources/images/char/defaultCharacter/orb/layer5d.png",};
+            "theChaserResources/images/char/theChaser/orb/layer1.png",
+            "theChaserResources/images/char/theChaser/orb/layer2.png",
+            "theChaserResources/images/char/theChaser/orb/layer3.png",
+            "theChaserResources/images/char/theChaser/orb/layer4.png",
+            "theChaserResources/images/char/theChaser/orb/layer5.png",
+            "theChaserResources/images/char/theChaser/orb/layer6.png",
+            "theChaserResources/images/char/theChaser/orb/layer1d.png",
+            "theChaserResources/images/char/theChaser/orb/layer2d.png",
+            "theChaserResources/images/char/theChaser/orb/layer3d.png",
+            "theChaserResources/images/char/theChaser/orb/layer4d.png",
+            "theChaserResources/images/char/theChaser/orb/layer5d.png",};
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
@@ -109,7 +110,7 @@ public class TheChaser extends CustomPlayer {
 
     public TheChaser(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "theChaserResources/images/char/defaultCharacter/orb/vfx.png", null,
+                "theChaserResources/images/char/theChaser/orb/vfx.png", null,
                 new SpineAnimation(
                         THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F));
         this.loadAnimation(THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F);
@@ -192,15 +193,15 @@ public class TheChaser extends CustomPlayer {
     // character Select screen effect
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("ATTACK_DAGGER_1", 1.25f); // Sound Effect
-        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT,
-                false); // Screen Effect
+        CardCrawlGame.sound.playA("BLOCK_BREAK", MathUtils.random(-0.2F, 0.2F)); // Sound Effect
+        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT,
+                true); // Screen Effect
     }
 
     // character Select on-button-press sound effect
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "ATTACK_DAGGER_1";
+        return "BLOCK_BREAK";
     }
 
     // Should return how much HP your maximum HP reduces by when starting a run at
@@ -272,9 +273,22 @@ public class TheChaser extends CustomPlayer {
     @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
         return new AbstractGameAction.AttackEffect[]{
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY,
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY,
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY};
+                AbstractGameAction.AttackEffect.SLASH_HORIZONTAL,
+                AbstractGameAction.AttackEffect.SLASH_VERTICAL,
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL,
+                AbstractGameAction.AttackEffect.SLASH_HEAVY};
+    }
+
+    public Texture getCutsceneBg() {
+        return TextureLoader.getTexture("theChaserResources/images/scene/navyBg.jpg");
+    }
+
+    public List<CutscenePanel> getCutscenePanels() {
+        List<CutscenePanel> panels = new ArrayList();
+        panels.add(new CutscenePanel("theChaserResources/images/scene/chaser1.png", "ATTACK_DAGGER_5"));
+        panels.add(new CutscenePanel("MoonworksResources/images/scene/starbreaker2.png", "TURN_EFFECT"));
+        panels.add(new CutscenePanel("MoonworksResources/images/scene/starbreaker3.png", "CEILING_DUST_3"));
+        return panels;
     }
 
     // Should return a string containing what text is shown when your character is
