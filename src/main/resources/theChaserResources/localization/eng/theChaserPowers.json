@@ -1,7 +1,7 @@
 {
 
   "theChaser:Dual Wielding": {
-    "NAME": "쌍수",
+    "NAME": "Dual Wielding",
     "DESCRIPTIONS": [
       "이번 턴 동안 #y표적 #y공격 이 #b2 번씩 발동됩니다."
     ]

@@ -1,23 +1,23 @@
 {
   "theChaser:Acid Potion": {
-    "NAME": "산성 포션",
+    "NAME": "Acid Potion",
     "DESCRIPTIONS": [
-      "적 하나에게 #y출혈 을 #b",
-      " 부여합니다."
+      "Apply #b",
+      " #yBleeding to an enemy."
     ]
   },
         "theChaser:Shadow Potion": {
-                "NAME": "병 속의 그림자",
+                "NAME": "Shadow in a Jar",
                 "DESCRIPTIONS": [
-                        "#b",
-                        " 턴 동안 #y은신 합니다."
+                        "#yHide for #b",
+                        " turn."
                 ]
         },
         "theChaser:Target Potion": {
-                "NAME": "표식 포션",
+                "NAME": "Target Potion",
                 "DESCRIPTIONS": [
-                        "#y표적 을 #b",
-                        " 번 공격합니다."
+                        "Attack #yTarget #b",
+                        " times."
                 ]
         }
 }

@@ -50,8 +50,8 @@
   },
   "theChaser:Continuous Slash": {
     "NAME": "Continuous Slash",
-    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Scramble: Add 1 *Continuous *Slash *Alt into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Scramble: Add 2 *Continuous *Slash *Alt into your hand."
+    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Rapid: Add 1 *Continuous *Slash *Alt into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Rapid: Add 2 *Continuous *Slash *Alt into your hand."
   },
   "theChaser:Delusive Strike": {
     "NAME": "Delusive Strike",
@@ -97,7 +97,7 @@
   },
   "theChaser:Stalling": {
     "NAME": "Stalling",
-    "DESCRIPTION": "Deal !D! damage NL Amount of card used this turn + !M!"
+    "DESCRIPTION": "Deal !D! damage NL Amount of cards used this turn + !M!"
   },
   "theChaser:Thornmail": {
     "NAME": "Thornmail",
@@ -105,7 +105,7 @@
   },
   "theChaser:Vigilance": {
     "NAME": "Vigilance",
-    "DESCRIPTION": "Gain !B! Block. NL Amount of card used this turn + !M!"
+    "DESCRIPTION": "Gain !B! Block. NL Amount of cards used this turn + !M!"
   },
   "theChaser:Watch": {
     "NAME": "Watch",
@@ -147,7 +147,7 @@
   },
   "theChaser:Chance": {
     "NAME": "Chance",
-    "DESCRIPTION": "Gain !B! Block. NL thechaser:Scramble: Cost of random card in your hand will be 0 during this turn."
+    "DESCRIPTION": "Gain !B! Block. NL thechaser:Rapid: Cost of random card in your hand will be 0 during this turn."
   },
   "theChaser:Conquest": {
     "NAME": "Conquest",
@@ -182,7 +182,7 @@
   },
   "theChaser:Hidden Dagger": {
     "NAME": "Hidden Dagger",
-    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Scramble: upgrade ALL *Throwing *Knife in your hand."
+    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Rapid: upgrade ALL *Throwing *Knife in your hand."
   },
   "theChaser:Internal Hemorrhage": {
     "NAME": "Internal Hemorrhage",
@@ -233,8 +233,8 @@
   },
   "theChaser:Sequence": {
     "NAME": "Sequence",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Scramble: Instead, deal !D! damage !M! times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Scramble: Instead, deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Rapid: Instead, deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Rapid: Instead, deal !D! damage !M! times."
   },
   "theChaser:Space Out": {
     "NAME": "Space Out",
@@ -267,74 +267,74 @@
   },
   "theChaser:Absolute Advantage": {
     "NAME": "Absolute Advantage",
-    "DESCRIPTION": "[E] 를 얻습니다. 적 전체의 해로운 효과 종류 수만큼 카드를 뽑습니다. NL 소멸",
-    "UPGRADE_DESCRIPTION": "[E] [E] 를 얻습니다. 적 전체의 해로운 효과 종류 수만큼 카드를 뽑습니다. NL 소멸"
+    "DESCRIPTION": "Gain [E] . Draw 1 card for each Debuff type enemies have. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] . Draw 1 card for each Debuff type enemies have. NL Exhaust."
   },
   "theChaser:Approach Run": {
     "NAME": "Approach Run",
-    "DESCRIPTION": "이번 턴에 사용한 카드 수 + 4 NL 이번 턴에 사용한 카드가 4장 이상이면, 대신 적 전체에게 thechaser:출혈 을 !M! 부여합니다. 소멸"
+    "DESCRIPTION": "Amount of cards used this turn + 4 NL thechaser:Rapid: Instead, Apply !M! thechaser:Bleeding to ALL enemies. Exhaust."
   },
   "theChaser:Diplade": {
     "NAME": "Diplade",
-    "DESCRIPTION": "비용이 0이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
+    "DESCRIPTION": "Whenever you play a card which cost is not 0, Add 1 *Throwing *Knife into your hand."
   },
   "theChaser:Dual Wielding": {
     "NAME": "Dual Wielding",
-    "DESCRIPTION": "이번 턴 동안 thechaser:표적 *공격 이 두 번씩 발동됩니다."
+    "DESCRIPTION": "thechaser:Target *Attack triggers twice this turn."
   },
   "theChaser:Forte Is Frailty": {
     "NAME": "Forte Is Frailty",
-    "DESCRIPTION": "모든 이로운 효과가 해로운 효과로 인식됩니다."
+    "DESCRIPTION": "Perceive Buff as Debuff."
   },
   "theChaser:Fraudulence": {
     "NAME": "Fraudulence",
-    "DESCRIPTION": "적 전체의 해로운 효과 하나당 방어도 를 !B! 얻습니다."
+    "DESCRIPTION": "Gain !B! Block for each Debuff enemies have."
   },
   "theChaser:Hide": {
     "NAME": "Hide",
-    "DESCRIPTION": "!M! 턴 동안 thechaser:은신 합니다. NL 소멸"
+    "DESCRIPTION": "thechaser:Hide for !M! turns. NL Exhaust."
   },
   "theChaser:Incisive Blade": {
     "NAME": "Incisive Blade",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸"
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "theChaser:Phrenitis": {
     "NAME": "Phrenitis",
-    "DESCRIPTION": "약화 , 취약 , 중독 , thechaser:출혈 , thechaser:표적 , thechaser:무방비 를 1 부여합니다. NL 소멸"
+    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Target, thechaser:Unfortified. NL Exhaust."
   },
   "theChaser:Preemptive Attack": {
     "NAME": "Preemptive Attack",
-    "DESCRIPTION": "턴 시작 시 카드를 1장 뽑고 thechaser:표적 을 1번 공격합니다."
+    "DESCRIPTION": "At the start of your turn, draw 1 card and Attack thechaser:Target once."
   },
   "theChaser:Saw Blade": {
     "NAME": "Saw Blade",
-    "DESCRIPTION": "카드를 사용할 때마다 적 전체에게 thechaser:출혈 을 !M! 부여합니다."
+    "DESCRIPTION": "Whenever you play a card, apply !M! thechaser:Bleeding to ALL enemies."
   },
   "theChaser:Shadow Form": {
     "NAME": "Shadow Form",
-    "DESCRIPTION": "매 턴 시작 시 thechaser:표적 *공격 의 피해가 !M! 증가합니다."
+    "DESCRIPTION": "At the start of your turn, increase thechaser:Target *Attack damage by !M! ."
   },
   "theChaser:Stealage": {
     "NAME": "Stealage",
-    "DESCRIPTION": "피해를 !D! 줍니다. 골드를 !M! 얻습니다. NL 소멸"
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Gold. NL Exhaust."
   },
   "theChaser:Strategic Retreat": {
     "NAME": "Strategic Retreat",
-    "DESCRIPTION": "*보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다.",
+    "DESCRIPTION": "*보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL remove this card from deck.",
     "UPGRADE_DESCRIPTION": "보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다."
   },
   "theChaser:Unwary": {
     "NAME": "Unwary",
-    "DESCRIPTION": "thechaser:표적 *공격 이 thechaser:무방비 를 부여합니다."
+    "DESCRIPTION": "thechaser:Target *Attack applies thechaser:Unfortified"
   },
   "theChaser:Vitality": {
     "NAME": "Vitality",
-    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. NL 소멸",
-    "UPGRADE_DESCRIPTION": "보존. 이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. NL 소멸",
+    "DESCRIPTION": "Heal HP by thechaser:Target *Attack amount this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Heal HP by thechaser:Target *Attack amount this turn. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "이번 턴 thechaser:표적 *공격 횟수(",
-      ") 만큼 체력을 회복합니다. NL 소멸",
-      "보존. "
+      "Heal HP by thechaser:Taget *Attack amount(",
+      ") this turn. NL Exhaust.",
+      "Retain. "
     ]
   },
   "theChaser:Walkout": {
@@ -347,7 +347,7 @@
   },
   "theChaser:Wile": {
     "NAME": "Wile",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 취약 , 약화 , thechaser:무방비 를 !M! 부여합니다."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable, Weak, thechaser:Unfortified."
   },
 
 

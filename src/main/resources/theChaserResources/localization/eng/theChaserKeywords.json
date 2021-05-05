@@ -1,43 +1,35 @@
 [
   {
-    "PROPER_NAME": "표적 공격",
+    "PROPER_NAME": "Target Attack",
     "NAMES": [
-      "표적",
-      "표적을",
-      "표적이",
-      "표적의"
+      "target",
+      "Target"
     ],
-    "DESCRIPTION": "플레이어 또는 적이 #y공격 한 후, #y표적 을 가진 모든 적에게 피해를 줍니다."
+    "DESCRIPTION": "Whenever after player or monster #yAttack, damage to ALL enemies on #yTarget."
   },
   {
-    "PROPER_NAME": "무방비",
+    "PROPER_NAME": "Unfortified",
     "NAMES": [
-      "무방비",
-      "무방비를",
-      "무방비가",
-      "무방비의"
+      "unfortified",
+      "Unfortified"
     ],
-    "DESCRIPTION": "중첩 당 공격 피해를 #b30% 더 받습니다. 최대 #b3 번 중첩됩니다."
+    "DESCRIPTION": "Receive #b30% more damage for each stack. Max stack is #b3 ."
   },
   {
-    "PROPER_NAME": "출혈",
+    "PROPER_NAME": "Bleeding",
     "NAMES": [
-      "출혈",
-      "출혈의",
-      "출혈을",
-      "출혈이"
+      "bleeding",
+      "Bleeding"
     ],
-    "DESCRIPTION": "공격할 때마다 체력을 잃고 중첩이 #b1 감소합니다."
+    "DESCRIPTION": "Whenever attack, lose HP and reduced by 1."
   },
   {
-    "PROPER_NAME": "은신",
+    "PROPER_NAME": "Hide",
     "NAMES": [
-      "은신",
-      "은신합니다",
-      "은신을",
-      "은신이"
+      "hide",
+      "Hide"
     ],
-    "DESCRIPTION": "모든 적이 행동을 중지합니다. 적을 공격하면 종료됩니다."
+    "DESCRIPTION": "ALL enemies stop action. Instantly end when attack."
   },
   {
     "PROPER_NAME": "",
