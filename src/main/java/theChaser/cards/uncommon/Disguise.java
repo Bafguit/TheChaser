@@ -40,6 +40,14 @@ public class Disguise extends ChaserCard {
         }
     }
 
+    public void applyPowers() {
+        super.applyPowers();
+
+        this.rawDescription = this.extendedDescription[0] + ChaserUtil.getPlayerDebuffAmount() + this.extendedDescription[1];
+
+        this.initializeDescription();
+    }
+
     @Override
     public void upgradeCard() {
         upgradeBlock(UP_BLOCK);

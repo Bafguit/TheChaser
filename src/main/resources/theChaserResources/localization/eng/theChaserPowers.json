@@ -3,128 +3,138 @@
   "theChaser:Dual Wielding": {
     "NAME": "Dual Wielding",
     "DESCRIPTIONS": [
-      "이번 턴 동안 #y표적 #y공격 이 #b2 번씩 발동됩니다."
+      "#yTarget #yAttack triggers twice this turn."
     ]
   },
   "theChaser:Forte Is Frailty": {
-    "NAME": "강점이자 약점",
+    "NAME": "Forte Is Frailty",
     "DESCRIPTIONS": [
-      "모든 이로운 효과가 해로운 효과로 인식됩니다."
+      "Perceive Buff as Debuff."
     ]
   },
   "theChaser:Penetrative": {
-    "NAME": "예리함",
+    "NAME": "Penetrative",
     "DESCRIPTIONS": [
-      "#y표적 #y공격 의 피해가 #b",
-      " 증가합니다."
+      "#yTarget #yAttack deal #b",
+      " additional damage."
     ]
   },
   "theChaser:Shadow Form": {
-    "NAME": "그림자의 형상",
+    "NAME": "Shadow Form",
     "DESCRIPTIONS": [
-      "턴 시작 시 #y표적 #y공격 의 피해가 #b",
-      " 증가합니다."
+      "At the start of your turn, increase #yTarget #yAttack damage by #b",
+      " ."
     ]
   },
   "theChaser:Space Out": {
-    "NAME": "간격 두기",
+    "NAME": "Space Out",
     "DESCRIPTIONS": [
-      "#y표적 #y공격 을 할 때마다 방어도를 #b",
-      " 얻습니다."
+      "After #yTarget #yAttack, gain #b",
+      " block."
     ]
   },
   "theChaser:Target": {
-    "NAME": "표적",
+    "NAME": "Target",
     "DESCRIPTIONS": [
-      "플레이어 또는 적이 #y공격 한 후, #y표적 을 가진 모든 적에게 피해를 #b",
-      " 줍니다.",
-      "지속 턴수: #b"
+      "Whenever after player or monster attack, deal #b",
+      " damage to ALL enemies on #yTarget. NL ",
+      "Last for #b",
+      " turn.",
+      " turns."
     ]
   },
   "theChaser:Unfortified": {
-    "NAME": "무방비",
+    "NAME": "Unfortified",
     "DESCRIPTIONS": [
-      "공격 피해를 #b",
-      "% 더 받습니다."
+      "Receive #b",
+      "% more damage."
     ]
   },
   "theChaser:Unwary": {
-    "NAME": "방심",
+    "NAME": "Unwary",
     "DESCRIPTIONS": [
-      "#y표적 #y공격 이 #y무방비 를 부여합니다."
+      "#yTarget #yAttack applies #yUnfortified."
     ]
   },
   "theChaser:Bleeding": {
-    "NAME": "출혈",
+    "NAME": "Bleeding",
     "DESCRIPTIONS": [
-      "공격할 때마다 체력을 #b",
-      " 잃고 중첩이 #b1 감소합니다."
+      "Whenever attack, lose #r",
+      " HP and reduced by #b1."
     ]
   },
   "theChaser:Hide": {
-    "NAME": "은신",
+    "NAME": "Hide",
     "DESCRIPTIONS": [
-      "모든 적이 행동을 중지합니다. 적을 공격하면 종료됩니다. NL 지속 턴 수: #b",
-      " 턴"
+      "ALL enemies stop action. Instantly end when attack. NL Last for #b",
+      " turn.",
+      " turns."
     ]
   },
   "theChaser:Puzzled": {
-    "NAME": "어리둥절",
+    "NAME": "Puzzled",
     "DESCRIPTIONS": [
-      "분명 방금 전까지만 해도 눈앞에 적이 있었는데 말이죠..."
+      "Apparently there was an enemy in front of me just before..."
     ]
   },
   "theChaser:Acceleration": {
-    "NAME": "가속",
+    "NAME": "Acceleration",
     "DESCRIPTIONS": [
-      "공격 카드를 사용할 때마다 임시로 #y힘 을 #b",
-      " 얻습니다."
+      "After you attack, gain #b",
+      " temporary #yStrength."
     ]
   },
   "theChaser:Open Sore": {
-    "NAME": "아물지 않은 상처",
+    "NAME": "Open Sore",
     "DESCRIPTIONS": [
-      "적의 #y출혈 이 감소할 때, 대신 #b",
-      " 만큼 증가합니다."
+      "#yBleeding no longer reduced."
     ]
   },
   "theChaser:Big Picture": {
-    "NAME": "큰 그림",
+    "NAME": "Big Picture",
     "DESCRIPTIONS": [
-      "해로운 효과를 얻을 때마다 #y힘 을 #b",
-      " 얻습니다."
+      "After you gain Debuff yourself, gain #b",
+      " #yStrength."
     ]
   },
   "theChaser:Saw Blade": {
-    "NAME": "톱날",
+    "NAME": "Saw Blade",
     "DESCRIPTIONS": [
-      "카드를 사용할 때마다 적 전체에게 #y출혈 을 #b",
-      " 부여합니다."
+      "Whenever you play a card, apply #b",
+      " #yBleeding to ALL enemies."
     ]
   },
   "theChaser:Diplade": {
-    "NAME": "이중 칼날",
+    "NAME": "Diplade",
     "DESCRIPTIONS": [
-      "비용이 0이 아닌 카드를 사용할 때마다 #y수리검 카드를 #b",
-      " 장 얻습니다."
+      "Whenever you play a card which cost is not 0, add #b",
+      " #yThrowing #yKnife into your hand."
     ]
   },
   "theChaser:Preemptive Attack": {
-    "NAME": "선제 공격",
+    "NAME": "Preemptive Attack",
     "DESCRIPTIONS": [
-      "턴 시작 시 카드를 #b",
-      " 장 뽑고 #y표적 을 #b",
-      " 번 공격합니다.",
-      " 장 뽑고 #y표적 을 #b",
-      " 번 공격합니다."
+      "At the start of your turn, draw 1 card and Attack thechaser:Target once.",
+      " card and attack #yTarget ",
+      " once.",
+      " cards and attack #yTarget #b",
+      " times."
     ]
   },
   "theChaser:Replica Dagger": {
-    "NAME": "복제품 단검",
+    "NAME": "Replica Dagger",
     "DESCRIPTIONS": [
-      "턴 시작 시 #y수리검 카드를 #b",
-      " 장 얻습니다. #y표적 을 가진 적이 없다면 대신 무작위 적에게 #y표적 을 #b",
-      " 부여합니다."
+      "At the start of your turn, add #b",
+      " #yThrowing #yKife into your hand. If there's no #yTarget, instead, apply #b",
+      " #yTarget to a random enemy."
+    ]
+  },
+  "theChaser:Fake Sore": {
+    "NAME": "Fake Sore",
+    "DESCRIPTIONS": [
+      "Last for #b",
+      " turn.",
+      " turns."
     ]
   },
   "theChaser:": {

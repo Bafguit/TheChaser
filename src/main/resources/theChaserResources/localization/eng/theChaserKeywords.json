@@ -5,7 +5,7 @@
       "target",
       "Target"
     ],
-    "DESCRIPTION": "Whenever after player or monster #yAttack, damage to ALL enemies on #yTarget."
+    "DESCRIPTION": "Whenever after player or monster attack, damage to ALL enemies on #yTarget."
   },
   {
     "PROPER_NAME": "Unfortified",
@@ -30,6 +30,22 @@
       "Hide"
     ],
     "DESCRIPTION": "ALL enemies stop action. Instantly end when attack."
+  },
+  {
+    "PROPER_NAME": "Swift",
+    "NAMES": [
+      "swift",
+      "Swift:"
+    ],
+    "DESCRIPTION": "If you used 4 cards or more this turn, invoke additional effect."
+  },
+  {
+    "PROPER_NAME": "Fake Sore",
+    "NAMES": [
+      "sore",
+      "Sore"
+    ],
+    "DESCRIPTION": "A Debuff which has no effect."
   },
   {
     "PROPER_NAME": "",

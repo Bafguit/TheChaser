@@ -1,16 +1,23 @@
 package theChaser.cards.rare;
 
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.EndTurnAction;
+import com.megacrit.cardcrawl.actions.utility.ShakeScreenAction;
 import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.green.DieDieDie;
 import com.megacrit.cardcrawl.cards.purple.Conclude;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
+import com.megacrit.cardcrawl.vfx.combat.DieDieDieEffect;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.actions.TargetAttackAction;
@@ -56,6 +63,9 @@ public class Walkout extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new VFXAction(new BorderLongFlashEffect(Color.LIGHT_GRAY)));
+        this.addToBot(new VFXAction(new DieDieDieEffect(), 0.5F));
+        this.addToBot(new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.SHORT, ScreenShake.ShakeIntensity.MED));
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             addToBot(new ApplyPowerAction(mo, p, new TargetPower(mo, 1), 1, true));

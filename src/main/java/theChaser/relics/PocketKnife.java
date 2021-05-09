@@ -2,15 +2,9 @@ package theChaser.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import theChaser.actions.ChaserUtil;
 import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
 import theChaser.util.TextureLoader;
 
@@ -19,12 +13,13 @@ import java.util.ArrayList;
 import static theChaser.TheChaserMod.makeID;
 import static theChaser.TheChaserMod.makeRelicPath;
 
-public class KnifePocket extends CustomRelic implements OnAfterTargetAttackSubscriber {
+public class PocketKnife extends CustomRelic implements OnAfterTargetAttackSubscriber {
     public static final String ID = makeID("Pocket Knife");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("knf.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/knf.png"));
 
-    public KnifePocket() {
-        super(ID, IMG, RelicTier.BOSS, LandingSound.FLAT);
+    public PocketKnife() {
+        super(ID, IMG, IMG_OUT, RelicTier.BOSS, LandingSound.FLAT);
         this.isDone = false;
     }
 
@@ -40,7 +35,7 @@ public class KnifePocket extends CustomRelic implements OnAfterTargetAttackSubsc
 
     @Override
     public AbstractRelic makeCopy() { // always override this method to return a new instance of your relic
-        return new KnifePocket();
+        return new PocketKnife();
     }
 
     public void onVictory() {

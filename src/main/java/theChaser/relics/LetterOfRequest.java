@@ -17,9 +17,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class LetterOfRequest extends CustomRelic {
     public static final String ID = makeID("Letter Of Request");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("let.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/let.png"));
 
     public LetterOfRequest() {
-        super(ID, IMG, RelicTier.SHOP, LandingSound.FLAT);
+        super(ID, IMG, IMG_OUT, RelicTier.SHOP, LandingSound.FLAT);
     }
 
     @Override

@@ -20,9 +20,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class AcidSolution extends CustomRelic {
     public static final String ID = makeID("Acid Solution");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("acid.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/acid.png"));
 
     public AcidSolution() {
-        super(ID, IMG, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, IMG_OUT, RelicTier.RARE, LandingSound.SOLID);
     }
 
     @Override
@@ -31,10 +32,10 @@ public class AcidSolution extends CustomRelic {
             if(AbstractDungeon.player.hasPower(WeakPower.POWER_ID) || (AbstractDungeon.player.hasPower(FrailPower.POWER_ID) && target.currentBlock > 0)) {
                 this.flash();
                 if (AbstractDungeon.player.hasPower(WeakPower.POWER_ID)) {
-                    this.addToBot(new ApplyPowerAction(target, null, new WeakPower(target, 1, false), 1, true));
+                    this.addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new WeakPower(target, 1, false), 1, true));
                 }
                 if (AbstractDungeon.player.hasPower(FrailPower.POWER_ID) && target.currentBlock > 0) {
-                    this.addToBot(new RemoveAllBlockAction(target, null));
+                    this.addToBot(new RemoveAllBlockAction(target, AbstractDungeon.player));
                 }
                 this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             }

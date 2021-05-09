@@ -62,7 +62,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
 
             for(AbstractMonster m : this.monsters) {
                 if (!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {
-                    m.getPower(TargetPower.POWER_ID).flash();
+                    m.getPower(TargetPower.POWER_ID).flashWithoutSound();
                     m.damage(new DamageInfo(AbstractDungeon.player, this.damage, this.damageType));
                 }
             }

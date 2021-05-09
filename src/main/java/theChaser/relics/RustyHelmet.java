@@ -20,16 +20,17 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class RustyHelmet extends CustomRelic {
     public static final String ID = makeID("Rusty Helmet");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("hel.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/hel.png"));
 
     public RustyHelmet() {
-        super(ID, IMG, RelicTier.RARE, LandingSound.HEAVY);
+        super(ID, IMG, IMG_OUT, RelicTier.RARE, LandingSound.HEAVY);
     }
 
     public void atTurnStart() {
         this.flash();
         this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            this.addToBot(new ApplyPowerAction(m, null, new UnfortifiedPower(m, null, 1), 1, true));
+            this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new UnfortifiedPower(m, AbstractDungeon.player, 1)));
         }
     }
 

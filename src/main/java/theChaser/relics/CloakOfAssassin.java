@@ -17,9 +17,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class CloakOfAssassin extends CustomRelic {
     public static final String ID = makeID("Cloak Of Assassin");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("cloak.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/cloak.png"));
 
     public CloakOfAssassin() {
-        super(ID, IMG, RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, IMG, IMG_OUT, RelicTier.RARE, LandingSound.MAGICAL);
 
     }
 

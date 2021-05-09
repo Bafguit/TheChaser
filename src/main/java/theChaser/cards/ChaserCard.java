@@ -21,10 +21,6 @@ public abstract class ChaserCard extends CustomCard {
     // simply use that in our cards, so long as we put "extends AbstractDynamicCard" instead of "extends CustomCard" at the start.
     // In simple terms, it's for things that we don't want to define again and again in every single card we make.
 
-    public int magicNumber2;
-    public int baseMagicNumber2;
-    public boolean upgradedMagicNumber2;
-    public boolean isMagicNumber2Modified;
     public boolean isTempCard;
     public String upgradeDescription;
     public String[] extendedDescription;
@@ -46,7 +42,6 @@ public abstract class ChaserCard extends CustomCard {
         this.damage = this.baseDamage = damage;
         this.block = this.baseBlock = block;
         this.magicNumber = this.baseMagicNumber = magicNumber;
-        this.magicNumber2 = this.baseMagicNumber2 = magicNumber2;
         this.isTempCard = false;
     }
 
@@ -61,24 +56,13 @@ public abstract class ChaserCard extends CustomCard {
 
     public void resetAttributes() {
         super.resetAttributes();
-        this.magicNumber2 = this.baseMagicNumber2;
-        this.isMagicNumber2Modified = false;
     }
 
     public void displayUpgrades() {
         super.displayUpgrades();
-        if (this.upgradedMagicNumber2) {
-            this.magicNumber2 = this.baseMagicNumber2;
-            this.isMagicNumber2Modified = true;
-        }
 
     }
 
-    public void upgradeMagicNumber2(int amount) {
-        this.baseMagicNumber2 += amount;
-        this.magicNumber2 = this.baseMagicNumber2;
-        this.upgradedMagicNumber2 = true;
-    }
 
     @Override
     public final void upgrade() {

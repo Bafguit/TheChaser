@@ -38,7 +38,7 @@ public class FatalBlitz extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SMASH));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.BLUNT_HEAVY));
         addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, this.magicNumber), this.magicNumber));
     }
 

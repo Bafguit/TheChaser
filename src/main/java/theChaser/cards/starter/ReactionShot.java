@@ -52,7 +52,7 @@ public class ReactionShot extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new RandomAttackAction(new DamageInfo(p, this.damage), AttackEffect.BLUNT_LIGHT, true, this.magicNumber));
+        addToBot(new RandomAttackAction(this, AttackEffect.BLUNT_LIGHT, true, this.magicNumber));
     }
 
     @Override

@@ -61,7 +61,7 @@ public class ApproachRun extends ChaserCard {
                 addToBot(new ApplyPowerAction(mo, p, new BleedingPower(mo, p, this.magicNumber)));
             }
         } else {
-            addToBot(new AddCardPerTurnAction(4));
+            addToBot(new AddCardPerTurnAction(this.magicNumber));
         }
     }
 

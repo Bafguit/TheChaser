@@ -43,9 +43,9 @@
   },
   "theChaser:Shadow In Mask": {
     "NAME": "가면 속의 그림자",
-    "FLAVOR": "가면 뒤에는 항상 심연의 그림자가 숨어 있습니다.",
+    "FLAVOR": "가면 뒤에는 항상 심연의 어둠이 숨어 있습니다.",
     "DESCRIPTIONS": [
-      "#r목걸이 #r속의 #r그림자와 #r교체됩니다. 내 턴 시작 시 적 전체에게 #y표적 을 #b1 부여하고 #y표적 을 #b1 번 공격합니다."
+      "#p목걸이 #p속의 #p그림자 와 교체됩니다. 내 턴 시작 시 적 전체에게 #y표적 을 #b1 부여하고 #y표적 을 #b1 번 공격합니다."
     ]
   },
   "theChaser:Pocket Knife": {
@@ -69,18 +69,18 @@
       "매 턴마다 첫 #y표적 #y공격 이 #b2 번 더 발동됩니다."
     ]
   },
-  "theChaser:": {
-    "NAME": "",
-    "FLAVOR": "",
-    "DESCRIPTIONS": [
-      ""
-    ]
-  },
   "theChaser:Rusty Helmet": {
     "NAME": "녹슨 투구",
     "FLAVOR": "과거의 전쟁에서 사용되었던 구식 투구입니다.",
     "DESCRIPTIONS": [
       "내 턴 시작 시 적 전체에게 #y무방비 를 #b1 부여합니다."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      ""
     ]
   }
 }

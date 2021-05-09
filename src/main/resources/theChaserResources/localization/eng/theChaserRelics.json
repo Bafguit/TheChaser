@@ -1,72 +1,72 @@
 {
   "theChaser:Shadow In Necklace": {
-    "NAME": "목걸이 속의 그림자",
-    "FLAVOR": "심연의 어둠이 담긴 작은 유리병으로 만들어졌습니다.",
+    "NAME": "Shadow In Necklace",
+    "FLAVOR": "It is made of a small glass bottle of the abyssal darkness",
     "DESCRIPTIONS": [
-      "전투 시작 시 무작위 적에게 #y표적 을 #b2 부여합니다."
+      "At the start of battle, apply #b2 #yTarget to a random enemy."
     ]
   },
   "theChaser:Cloak Of Assassin": {
-    "NAME": "암살자의 망토",
-    "FLAVOR": "뛰어난 위장 성능을 자랑하는 망토입니다. 양산품입니다.",
+    "NAME": "Cloak Of Assassin",
+    "FLAVOR": "This cloak boasts excellent camouflage performance. It is a mass-product.",
     "DESCRIPTIONS": [
-      "전투 시작 시 #b2 턴 동안 #y은신 합니다."
+      "At the start of battle, #yHide for #b2 turns."
     ]
   },
   "theChaser:R-B0-7": {
     "NAME": "R-B0-7",
-    "FLAVOR": "유명한 약품에서 치료 효과만 빼낸 위험한 비밀무기입니다.",
+    "FLAVOR": "It is a dangerous secret weapon that has only a fatal effect from a famous drug.",
     "DESCRIPTIONS": [
-      "내 턴 시작 시 #y해로운 #y효과 를 가진 모든 적이 체력을 #b5 잃습니다."
+      "At the start of turn, enemies have debuff lose #b5 #yHP."
     ]
   },
   "theChaser:Broken Ticker": {
-    "NAME": "고장난 회중시계",
-    "FLAVOR": "이미 고장났지만 시곗바늘이 째각대는 소리는 여전히 들린다고 합니다.",
+    "NAME": "Broken Ticker",
+    "FLAVOR": "It is already broken, but it is said that the ticking sound of the clock hands can still be heard.",
     "DESCRIPTIONS": [
-      "모든 적이 #y둔화 상태로 전투를 시작합니다."
+      "Enemies start battle with #ySlow."
     ]
   },
   "theChaser:Scoch Stone": {
-    "NAME": "연마석",
-    "FLAVOR": "이 이상한 돌로 어떻게 연마를 한다는 걸까요?",
+    "NAME": "Scoch Stone",
+    "FLAVOR": "How do you polish it with this strange stone?",
     "DESCRIPTIONS": [
-      "#y표적 #y공격 의 피해가 #b1 증가합니다."
+      "#yTarget #yAttack deal #b1 additional damage."
     ]
   },
   "theChaser:Letter Of Request": {
-    "NAME": "의뢰서",
-    "FLAVOR": "의뢰주를 알 수 없는 의뢰서입니다.",
+    "NAME": "Letter Of Request",
+    "FLAVOR": "It is a request from unknown client.",
     "DESCRIPTIONS": [
-      "전투 시작 시 적 전체에게 #y표적 을 #b3 부여합니다."
+      "At the start of battle, apply #b3 #yTarget to ALL enemies."
     ]
   },
   "theChaser:Shadow In Mask": {
-    "NAME": "가면 속의 그림자",
-    "FLAVOR": "가면 뒤에는 항상 심연의 그림자가 숨어 있습니다.",
+    "NAME": "Shadow In Mask",
+    "FLAVOR": "Abyssal shadow always hides behind the mask.",
     "DESCRIPTIONS": [
-      "#r목걸이 #r속의 #r그림자와 #r교체됩니다. 내 턴 시작 시 적 전체에게 #y표적 을 #b1 부여하고 #y표적 을 #b1 번 공격합니다."
+      "Replaces #pShadow #pIn #pNecklace. At the start of turn, apply #b1 #yTarget to ALL enemies and attack #yTarget once."
     ]
   },
   "theChaser:Pocket Knife": {
-    "NAME": "주머니칼",
-    "FLAVOR": "밧줄을 자르는 데에 쓰이는 휴대용 칼입니다.",
+    "NAME": "Pocket Knife",
+    "FLAVOR": "A portable knife used to cut ropes.",
     "DESCRIPTIONS": [
-      "매 턴마다 #b2 번째 #y표적 #y공격 을 한 후에 [E] 를 얻습니다."
+      "After second #yTarget #yAttack during turn, gain [E] ."
     ]
   },
   "theChaser:Acid Solution": {
-    "NAME": "산성 용액",
-    "FLAVOR": "누구한테 뿌리는 용도로 쓰는 사람은 없겠죠?",
+    "NAME": "Acid Solution",
+    "FLAVOR": "No one uses it for sprinkling on anyone, right?",
     "DESCRIPTIONS": [
-      "내가 #y약화 상태라면, 공격한 적에게 약화를 #b1 부여합니다. 내가 #y손상 상태라면, 공격한 적의 모든 #y방어도 를 없앱니다."
+      "If you have #yWeak , your attack applies #b1 #yWeak to the enemy. If you have #yFrail, your attack removes all block of the enemy."
     ]
   },
   "theChaser:Box Cutter": {
-    "NAME": "커터칼",
-    "FLAVOR": "매우 특이하게 생긴 칼입니다. 용도는 알 수 없습니다.",
+    "NAME": "Box Cutter",
+    "FLAVOR": "It's a very peculiar sword. The purpose is unknown.",
     "DESCRIPTIONS": [
-      "매 턴마다 첫 #y표적 #y공격 이 #b2 번 더 발동됩니다."
+      "First #yTarget #yAttack each turn triggers #btwice ."
     ]
   },
   "theChaser:": {
@@ -77,10 +77,10 @@
     ]
   },
   "theChaser:Rusty Helmet": {
-    "NAME": "녹슨 투구",
-    "FLAVOR": "과거의 전쟁에서 사용되었던 구식 투구입니다.",
+    "NAME": "Rusty Helmet",
+    "FLAVOR": "It is an old helmet used in wars of the past.",
     "DESCRIPTIONS": [
-      "내 턴 시작 시 적 전체에게 #y무방비 를 #b1 부여합니다."
+      "At the start of turn, apply #b1 #yUnfortified to ALL enemies."
     ]
   }
 }

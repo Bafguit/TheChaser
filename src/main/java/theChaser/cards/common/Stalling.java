@@ -11,6 +11,7 @@ import theChaser.actions.AddCardPerTurnAction;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.powers.FakeSorePower;
 import theChaser.powers.TargetPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
@@ -39,6 +40,9 @@ public class Stalling extends ChaserCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_DIAGONAL));
         addToBot(new AddCardPerTurnAction(this.magicNumber));
+        for(int i = 0; i < this.magicNumber; i++) {
+            addToBot(new ApplyPowerAction(p, p, new FakeSorePower(p, 1), 1, true));
+        }
     }
 
     @Override

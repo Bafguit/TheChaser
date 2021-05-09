@@ -57,6 +57,8 @@ public class WeaknessStrike extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_HORIZONTAL, true));
+
         int count = 0;
         if(m.powers.size() > 0) {
             for (AbstractPower power : m.powers) {

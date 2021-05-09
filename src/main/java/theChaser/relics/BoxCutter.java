@@ -22,9 +22,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class BoxCutter extends CustomRelic implements OnAfterTargetAttackSubscriber {
     public static final String ID = makeID("Box Cutter");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("cutter.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/cutter.png"));
 
     public BoxCutter() {
-        super(ID, IMG, RelicTier.UNCOMMON, LandingSound.FLAT);
+        super(ID, IMG, IMG_OUT, RelicTier.UNCOMMON, LandingSound.FLAT);
     }
 
     public void atTurnStart() {

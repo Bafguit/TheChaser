@@ -236,6 +236,10 @@ public class TheChaser extends CustomPlayer {
         return NAMES[0];
     }
 
+    public String getLeaderboardCharacterName() {
+        return "CHASER";
+    }
+
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {

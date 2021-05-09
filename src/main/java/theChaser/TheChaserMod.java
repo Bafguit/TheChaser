@@ -1,6 +1,7 @@
 package theChaser;
 
 import basemod.*;
+import basemod.abstracts.CustomUnlockBundle;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -15,10 +16,19 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.unlock.AbstractUnlock;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theChaser.actions.ChaserUtil;
-import theChaser.cards.ChaserCard;
+import theChaser.cards.common.*;
+import theChaser.cards.rare.*;
+import theChaser.cards.starter.ChaserDefend;
+import theChaser.cards.starter.ChaserStrike;
+import theChaser.cards.starter.ReactionShot;
+import theChaser.cards.starter.Recluse;
+import theChaser.cards.temp.*;
+import theChaser.cards.uncommon.*;
 import theChaser.characters.TheChaser;
 import theChaser.potions.AcidPotion;
 import theChaser.potions.ShadowPotion;
@@ -26,7 +36,6 @@ import theChaser.potions.TargetPotion;
 import theChaser.relics.*;
 import theChaser.util.IDCheckDontTouchPls;
 import theChaser.util.TextureLoader;
-import theChaser.variables.MagicNumber2;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -69,7 +78,7 @@ public class TheChaserMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber, SetUnlocksSubscriber{
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(TheChaserMod.class.getName());
@@ -82,8 +91,8 @@ public class TheChaserMod implements
 
     //This is for the in-game mod settings panel.
     private static final String MODNAME = "TheChaser";
-    private static final String AUTHOR = "Fastcat"; // And pretty soon - You!
-    private static final String DESCRIPTION = "A base for Slay the Spire to start your own mod from, feat. the Default.";
+    private static final String AUTHOR = "FastCat"; // And pretty soon - You!
+    private static final String DESCRIPTION = "A character mod adds The Chaser.";
     
     // =============== INPUT TEXTURE LOCATION =================
     
@@ -331,7 +340,7 @@ public class TheChaserMod implements
 
 
         Color maroon = new Color(0.4F, 0, 0, 1).cpy();
-        Color dark = new Color(0, 0, 50, 0.75F).cpy();
+        Color dark = new Color(100, 100, 255, 255).cpy();
         BaseMod.addPotion(AcidPotion.class, maroon, maroon, Color.YELLOW, AcidPotion.ID, TheChaser.Enums.THE_CHASER);
         BaseMod.addPotion(ShadowPotion.class, dark, null, null, ShadowPotion.ID, TheChaser.Enums.THE_CHASER);
         BaseMod.addPotion(TargetPotion.class, Color.WHITE, Color.RED, null, TargetPotion.ID, TheChaser.Enums.THE_CHASER);
@@ -396,7 +405,7 @@ public class TheChaserMod implements
         BaseMod.addRelicToCustomPool(new LetterOfRequest(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new BrokenTicker(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new ScochStone(), TheChaser.Enums.COLOR_CHASER);
-        BaseMod.addRelicToCustomPool(new KnifePocket(), TheChaser.Enums.COLOR_CHASER);
+        BaseMod.addRelicToCustomPool(new PocketKnife(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new BoxCutter(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new AcidSolution(), TheChaser.Enums.COLOR_CHASER);
         BaseMod.addRelicToCustomPool(new RustyHelmet(), TheChaser.Enums.COLOR_CHASER);
@@ -410,14 +419,9 @@ public class TheChaserMod implements
     
     @Override
     public void receiveEditCards() {
-        logger.info("Adding variables");
         //Ignore this
         pathCheck();
-        // Add the Custom Dynamic Variables
-        logger.info("Add variables");
-        // Add the Custom Dynamic variables
-        BaseMod.addDynamicVariable(new MagicNumber2());
-        /*
+
         logger.info("Adding cards");
         //BASIC
         BaseMod.addCard(new ChaserStrike());
@@ -425,29 +429,39 @@ public class TheChaserMod implements
         BaseMod.addCard(new ReactionShot());
         BaseMod.addCard(new Recluse());
         //COMMON
+        BaseMod.addCard(new Alert());
+        BaseMod.addCard(new Blitzkrieg());
+        BaseMod.addCard(new Brass());
         BaseMod.addCard(new Chase());
         BaseMod.addCard(new ContinuousSlash());
+        BaseMod.addCard(new DelusiveStrike());
         BaseMod.addCard(new FatalBlitz());
+        BaseMod.addCard(new Geck());
         BaseMod.addCard(new Identify());
         BaseMod.addCard(new LeaveTraces());
         BaseMod.addCard(new Linger());
-        BaseMod.addCard(new Passing());
         BaseMod.addCard(new Makeready());
+        BaseMod.addCard(new Passing());
         BaseMod.addCard(new RandomThrow());
-        BaseMod.addCard(new ScarStab());
         BaseMod.addCard(new Stalling());
+        BaseMod.addCard(new Thornmail());
         BaseMod.addCard(new Watch());
         BaseMod.addCard(new Wound());
         //UNCOMMON
         BaseMod.addCard(new Acceleration());
         BaseMod.addCard(new Aggravate());
         BaseMod.addCard(new AttackFirst());
-        BaseMod.addCard(new AttackWeakness());
-        BaseMod.addCard(new Blitzkrieg());
+        BaseMod.addCard(new BigPicture());
         BaseMod.addCard(new BreakArmour());
+        BaseMod.addCard(new Bulwark());
         BaseMod.addCard(new Chance());
         BaseMod.addCard(new Conquest());
+        BaseMod.addCard(new Disguise());
         BaseMod.addCard(new FallTechnique());
+        BaseMod.addCard(new FeebleDefend());
+        BaseMod.addCard(new FeebleStrike());
+        BaseMod.addCard(new Flexibility());
+        BaseMod.addCard(new GaleStrike());
         BaseMod.addCard(new Hack());
         BaseMod.addCard(new HiddenDagger());
         BaseMod.addCard(new InternalHemorrhage());
@@ -457,31 +471,74 @@ public class TheChaserMod implements
         BaseMod.addCard(new Penetrative());
         BaseMod.addCard(new PluckOutDaggers());
         BaseMod.addCard(new Ragewind());
-        BaseMod.addCard(new Recall());
+        BaseMod.addCard(new ReadyToCounter());
+        BaseMod.addCard(new ReplicaDagger());
+        BaseMod.addCard(new ScarStab());
         BaseMod.addCard(new SecretCard());
         BaseMod.addCard(new Sequence());
         BaseMod.addCard(new SpaceOut());
-        BaseMod.addCard(new Vigilance());
+        BaseMod.addCard(new Testing());
+        BaseMod.addCard(new Throes());
+        BaseMod.addCard(new UnstableBlock());
+        BaseMod.addCard(new WeaknessStrike());
         BaseMod.addCard(new WinTheExchange());
         BaseMod.addCard(new Wither());
         //RARE
         BaseMod.addCard(new AbsoluteAdvantage());
+        BaseMod.addCard(new ApproachRun());
+        BaseMod.addCard(new Diplade());
         BaseMod.addCard(new DualWielding());
         BaseMod.addCard(new ForteIsFrailty());
         BaseMod.addCard(new Fraudulence());
         BaseMod.addCard(new Hide());
-        BaseMod.addCard(new MortalBlow());
+        BaseMod.addCard(new IncisiveBlade());
         BaseMod.addCard(new Phrenitis());
+        BaseMod.addCard(new PreemptiveAttack());
+        BaseMod.addCard(new SawBlade());
         BaseMod.addCard(new ShadowForm());
         BaseMod.addCard(new Stealage());
         BaseMod.addCard(new StrategicRetreat());
         BaseMod.addCard(new Unwary());
-        BaseMod.addCard(new Vitality());*/
-
+        BaseMod.addCard(new Vitality());
+        BaseMod.addCard(new Walkout());
+        BaseMod.addCard(new Wile());
+        //TEMP
+        BaseMod.addCard(new BloodyWind());
+        BaseMod.addCard(new Camouflage());
+        BaseMod.addCard(new ContinuousSlashAlt());
+        BaseMod.addCard(new KnifeThrow());
+        BaseMod.addCard(new SequenceFlow());
+        BaseMod.addCard(new ThrowingKnife());
+/*
         logger.info("Auto Adding cards (Disabled)");
         new AutoAdd("TheChaser").packageFilter(ChaserCard.class).setDefaultSeen(true).cards();
-
+*/
         logger.info("Done adding cards!");
+    }
+
+    public void receiveSetUnlocks() {
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(ReplicaDagger.ID, BigPicture.ID, SawBlade.ID), TheChaser.Enums.THE_CHASER, 0);
+        UnlockTracker.addCard(ReplicaDagger.ID);
+        UnlockTracker.addCard(BigPicture.ID);
+        UnlockTracker.addCard(SawBlade.ID);
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(AbstractUnlock.UnlockType.RELIC, BoxCutter.ID, LetterOfRequest.ID, PocketKnife.ID), TheChaser.Enums.THE_CHASER, 1);
+        UnlockTracker.addRelic(BoxCutter.ID);
+        UnlockTracker.addRelic(LetterOfRequest.ID);
+        UnlockTracker.addRelic(PocketKnife.ID);
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(GaleStrike.ID, Fraudulence.ID, UnstableBlock.ID), TheChaser.Enums.THE_CHASER, 2);
+        UnlockTracker.addCard(GaleStrike.ID);
+        UnlockTracker.addCard(Fraudulence.ID);
+        UnlockTracker.addCard(UnstableBlock.ID);
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(AbstractUnlock.UnlockType.RELIC, AcidSolution.ID, BrokenTicker.ID, CloakOfAssassin.ID), TheChaser.Enums.THE_CHASER, 3);
+        UnlockTracker.addRelic(AcidSolution.ID);
+        UnlockTracker.addRelic(BrokenTicker.ID);
+        UnlockTracker.addRelic(CloakOfAssassin.ID);
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(ShadowForm.ID, Phrenitis.ID, StrategicRetreat.ID), TheChaser.Enums.THE_CHASER, 4);
+        UnlockTracker.addCard(ShadowForm.ID);
+        UnlockTracker.addCard(Phrenitis.ID);
+        UnlockTracker.addCard(StrategicRetreat.ID);
+
+
     }
     
     // ================ /ADD CARDS/ ===================

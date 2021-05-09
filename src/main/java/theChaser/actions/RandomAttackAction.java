@@ -8,9 +8,11 @@ package theChaser.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theChaser.cards.ChaserCard;
 import theChaser.powers.TargetPower;
 
 import java.util.ArrayList;
@@ -18,23 +20,24 @@ import java.util.Iterator;
 
 public class RandomAttackAction extends AbstractGameAction {
     private DamageInfo info;
+    private AbstractCard card;
     private boolean isTag = false;
     private boolean tagFirst = false;
 
-    public RandomAttackAction(DamageInfo info, AttackEffect effect) {
-        this.info = info;
+    public RandomAttackAction(AbstractCard card, AttackEffect effect) {
+        this.card = card;
         this.actionType = ActionType.DAMAGE;
         this.attackEffect = effect;
-        this.source = info.owner;
+        this.source = AbstractDungeon.player;
     }
 
-    public RandomAttackAction(DamageInfo info, AttackEffect effect, boolean tagFirst) {
-        this(info, effect);
+    public RandomAttackAction(AbstractCard card, AttackEffect effect, boolean tagFirst) {
+        this(card, effect);
         this.tagFirst = true;
     }
 
-    public RandomAttackAction(DamageInfo info, AttackEffect effect, boolean isTag, int amt) {
-        this(info, effect);
+    public RandomAttackAction(AbstractCard card, AttackEffect effect, boolean isTag, int amt) {
+        this(card, effect);
         this.isTag = isTag;
         this.amount = amt;
     }
@@ -46,6 +49,8 @@ public class RandomAttackAction extends AbstractGameAction {
             this.target = AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster) null, true, AbstractDungeon.cardRandomRng);
         }
         if (this.target != null) {
+            this.card.calculateCardDamage((AbstractMonster)this.target);
+            this.info = new DamageInfo(AbstractDungeon.player, this.card.damage, this.damageType);
             this.addToTop(new DamageAction(this.target, this.info, this.attackEffect));
             if (this.isTag) {
                 this.addToTop(new ApplyPowerAction(this.target, this.source, new TargetPower(this.target, this.amount), this.amount));

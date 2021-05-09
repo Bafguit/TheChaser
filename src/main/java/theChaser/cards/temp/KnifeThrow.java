@@ -14,36 +14,37 @@ import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 import theChaser.TheChaserMod;
 import theChaser.actions.RandomAttackAction;
+import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class BladeDanceAlt extends ChaserCard {
+public class KnifeThrow extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Blade Dance");
-    public static final String IMG = makeCardPath("BladeDance.png");
+    public static final String ID = TheChaserMod.makeID("Knife Throw");
+    public static final String IMG = makeCardPath("KnifeThrow.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.COLORLESS;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int AMOUNT = 3;
     private static final int UP_AMOUNT = 1;
 
-    public BladeDanceAlt() {
+    public KnifeThrow() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, AMOUNT);
-        this.exhaust = true;
     }
 
     public void onChoseThisOption() {
-        this.addToBot(new MakeTempCardInHandAction(this));
+        for(int i = 0; i < this.magicNumber; i++) {
+            this.addToBot(new TargetAttackAction());
+        }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
     }
 
     @Override

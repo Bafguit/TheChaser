@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -24,7 +25,7 @@ public class TargetPotion extends AbstractPotion {
         super(NAME, ID, PotionRarity.UNCOMMON,
                 PotionSize.SPIKY, PotionColor.NONE);
         this.isThrown = true;
-        this.labOutlineColor = new Color(100, 100, 255, 1);
+        this.labOutlineColor = CardHelper.getColor(100, 100, 255).cpy();
     }
 
     @Override

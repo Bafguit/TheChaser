@@ -7,7 +7,7 @@
     ]
   },
         "theChaser:Shadow Potion": {
-                "NAME": "병 속의 그림자",
+                "NAME": "단지 속의 그림자",
                 "DESCRIPTIONS": [
                         "#b",
                         " 턴 동안 #y은신 합니다."

@@ -22,9 +22,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class RBO7 extends CustomRelic {
     public static final String ID = makeID("R-B0-7");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("rb7.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/rb7.png"));
 
     public RBO7() {
-        super(ID, IMG, RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, IMG, IMG_OUT, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     public void atTurnStart() {

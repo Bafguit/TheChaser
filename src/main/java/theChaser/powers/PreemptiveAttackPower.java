@@ -71,10 +71,10 @@ public class PreemptiveAttackPower extends AbstractPower implements CloneablePow
 
     @Override
     public void updateDescription() {
-        if (this.amount > 1) {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
+        if (this.amount == 1) {
+            this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1];
         } else {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[3] + this.amount + DESCRIPTIONS[4];
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[3];
         }
     }
 

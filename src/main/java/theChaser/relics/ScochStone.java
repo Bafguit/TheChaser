@@ -18,9 +18,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class ScochStone extends CustomRelic {
     public static final String ID = makeID("Scoch Stone");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ston.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/ston.png"));
 
     public ScochStone() {
-        super(ID, IMG, RelicTier.COMMON, LandingSound.HEAVY);
+        super(ID, IMG, IMG_OUT, RelicTier.COMMON, LandingSound.HEAVY);
     }
 
     @Override

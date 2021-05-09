@@ -68,7 +68,7 @@ public class HidePower extends AbstractPower implements CloneablePowerInterface,
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.amount + (this.amount == 1 ? DESCRIPTIONS[1] : DESCRIPTIONS[2]);
     }
 
     @Override

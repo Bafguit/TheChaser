@@ -18,9 +18,10 @@ import static theChaser.TheChaserMod.makeRelicPath;
 public class ShadowInMask extends CustomRelic {
     public static final String ID = makeID("Shadow In Mask");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("mask.png"));
+    private static final Texture IMG_OUT = TextureLoader.getTexture(makeRelicPath("outline/mask.png"));
 
     public ShadowInMask() {
-        super(ID, IMG, RelicTier.BOSS, LandingSound.FLAT);
+        super(ID, IMG, IMG_OUT, RelicTier.BOSS, LandingSound.FLAT);
     }
 
     @Override

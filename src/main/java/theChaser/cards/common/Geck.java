@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.red.Clash;
 import com.megacrit.cardcrawl.cards.red.ThunderClap;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.powers.BleedingPower;
 import theChaser.powers.TargetPower;
 import theChaser.powers.UnfortifiedPower;
 
@@ -60,11 +62,9 @@ public class Geck extends ChaserCard {
             }
         }
 
-        Iterator var4 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
 
-        while(var4.hasNext()) {
-            AbstractMonster mom = (AbstractMonster)var4.next();
-            this.addToBot(new ApplyPowerAction(mom, p, new UnfortifiedPower(m, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        for(AbstractMonster mos : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            this.addToBot(new ApplyPowerAction(mos, p, new UnfortifiedPower(mos, p, this.magicNumber), this.magicNumber));
         }
     }
 

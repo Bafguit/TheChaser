@@ -3,18 +3,17 @@
     "NAME": "Throwing Knife",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage to a random enemy. Preferentially attack an enemy on thechaser:Target."
   },
-  "theChaser:Acrobatics": {
-    "NAME": "Ac?%ro?>$a?ti?c?s",
-    "DESCRIPTION": "Draw !M! cards. NL Discard 1 card. NL Exhaust."
+  "theChaser:Bloody Wind": {
+    "NAME": "Bloody Wind",
+    "DESCRIPTION": "Apply !M! thechaser:Bleeding to ALL enemies."
   },
-  "theChaser:Blade Dance": {
-    "NAME": "B無la$d?eD@@a&n?ce",
-    "DESCRIPTION": "Add !M! *Shivs into your hand. NL Exhaust"
+  "theChaser:Camouflage": {
+    "NAME": "Camouflage",
+    "DESCRIPTION": "Gain 1 *Fake thechaser:Sore !M! times."
   },
-  "theChaser:Outmaneuver": {
-    "NAME": "Ou?t$#m@ane?%uv$er",
-    "DESCRIPTION": "Next turn, NL gain [E] [E]. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Next turn, NL gain [E] [E] [E]. NL Exhaust"
+  "theChaser:Knife Throw": {
+    "NAME": "Knife Throw",
+    "DESCRIPTION": "Attack thechaser:Target !M! times."
   },
   "theChaser:Continuous Slash Alt": {
     "NAME": "Continuous Slash Alt",
@@ -40,6 +39,14 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "theChaser:Alert": {
+    "NAME": "Alert",
+    "DESCRIPTION": "Gain !B! Block. NL Gain *Fake thechaser:Sore !M! times and increase amount of cards used this turn by !M!."
+  },
+  "theChaser:Blitzkrieg": {
+    "NAME": "Blitzkrieg",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 1 thechaser:Unfortified."
+  },
   "theChaser:Brass": {
     "NAME": "Brass",
     "DESCRIPTION": "Apply !M! thechaser:Bleeding."
@@ -50,8 +57,8 @@
   },
   "theChaser:Continuous Slash": {
     "NAME": "Continuous Slash",
-    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Rapid: Add 1 *Continuous *Slash *Alt into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Rapid: Add 2 *Continuous *Slash *Alt into your hand."
+    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 1 *Continuous *Slash *Alt into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 2 *Continuous *Slash *Alt into your hand."
   },
   "theChaser:Delusive Strike": {
     "NAME": "Delusive Strike",
@@ -97,15 +104,11 @@
   },
   "theChaser:Stalling": {
     "NAME": "Stalling",
-    "DESCRIPTION": "Deal !D! damage NL Amount of cards used this turn + !M!"
+    "DESCRIPTION": "Deal !D! damage NL Gain *Fake thechaser:Sore !M! times and increase amount of cards used this turn by !M!."
   },
   "theChaser:Thornmail": {
     "NAME": "Thornmail",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! thechaser:Bleeding to ALL enemies."
-  },
-  "theChaser:Vigilance": {
-    "NAME": "Vigilance",
-    "DESCRIPTION": "Gain !B! Block. NL Amount of cards used this turn + !M!"
   },
   "theChaser:Watch": {
     "NAME": "Watch",
@@ -130,11 +133,7 @@
   },
   "theChaser:Big Picture": {
     "NAME": "Big Picture",
-    "DESCRIPTION": "After you gain Debuff, gain !M! Strength."
-  },
-  "theChaser:Blitzkrieg": {
-    "NAME": "Blitzkrieg",
-    "DESCRIPTION": "Deal !D! damage. NL Apply 1 thechaser:Unfortified."
+    "DESCRIPTION": "After you gain Debuff yourself, gain !M! Strength."
   },
   "theChaser:Break Armour": {
     "NAME": "Break Armour",
@@ -147,16 +146,25 @@
   },
   "theChaser:Chance": {
     "NAME": "Chance",
-    "DESCRIPTION": "Gain !B! Block. NL thechaser:Rapid: Cost of random card in your hand will be 0 during this turn."
+    "DESCRIPTION": "Gain !B! Block. NL thechaser:Swift: Cost of random card in your hand will be 0 during this turn."
   },
   "theChaser:Conquest": {
     "NAME": "Conquest",
     "DESCRIPTION": "Gain Strength by amount of Debuffs you have. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain Strength by amount of Debuffs you have."
+    "UPGRADE_DESCRIPTION": "Gain Strength by amount of Debuffs you have.",
+    "EXTENDED_DESCRIPTION": [
+      "Gain Strength by amount of Debuffs(",
+      ") you have.",
+      " NL Exhaust."
+    ]
   },
   "theChaser:Disguise": {
     "NAME": "Disguise",
-    "DESCRIPTION": "Gain !B! Block. NL Repeat by amount of Debuffs you have."
+    "DESCRIPTION": "Gain !B! Block. NL Repeat for each Debuff you have.",
+    "EXTENDED_DESCRIPTION": [
+      "Gain !B! Block. NL Repeat for each Debuff(",
+      ") you have."
+    ]
   },
   "theChaser:Fall Technique": {
     "NAME": "Fall Technique",
@@ -172,6 +180,10 @@
     "DESCRIPTION": "Deal !D! Damage. NL If you have Weak, deal double.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have Weak, deal triple."
   },
+  "theChaser:Flexibility": {
+    "NAME": "Flexibility",
+    "DESCRIPTION": "Choose two: NL Attack thechaser:Target !M! times, gain *Fake thechaser:Sore !M! times, or apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
+  },
   "theChaser:Gale Strike": {
     "NAME": "Gale Strike",
     "DESCRIPTION": "Apply 1 thechaser:Target and deal !D! damage X times to ALL enemies. Attack thechaser:Target X times."
@@ -182,7 +194,7 @@
   },
   "theChaser:Hidden Dagger": {
     "NAME": "Hidden Dagger",
-    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Rapid: upgrade ALL *Throwing *Knife in your hand."
+    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Swift: Upgrade ALL *Throwing *Knife in your hand."
   },
   "theChaser:Internal Hemorrhage": {
     "NAME": "Internal Hemorrhage",
@@ -217,15 +229,10 @@
     "NAME": "Ready To Counter",
     "DESCRIPTION": "Gain !B! Block X times. NL Add X *Throwing *Knife+ into your hand."
   },
-  "theChaser:Recall": {
-    "NAME": "Recall",
-    "DESCRIPTION": "Choose two: NL Add !M! *Shiv into your hand, draw !M! cards and discard 1 card, or gain [E] [E] Next turn.  NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose two: NL Add !M! *Shiv into your hand, draw !M! cards and discard 1 card, or gain [E] [E] [E] Next turn.  NL Exhaust."
-  },
   "theChaser:Replica Dagger": {
     "NAME": "Replica Dagger",
-    "DESCRIPTION": "At the start of your turn, add a *Throwing *Kife into your hand. If there's no thechaser:Target, instead, Apply 1 thechaser:Target to a random enemy.",
-    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a *Throwing *Kife into your hand. If there's no thechaser:Target, instead, Apply 1 thechaser:Target to a random enemy."
+    "DESCRIPTION": "At the start of your turn, add a *Throwing *Kife into your hand. If there's no thechaser:Target, instead, apply 1 thechaser:Target to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a *Throwing *Kife into your hand. If there's no thechaser:Target, instead, apply 1 thechaser:Target to a random enemy."
   },
   "theChaser:Secret Card": {
     "NAME": "Secret Card",
@@ -233,12 +240,12 @@
   },
   "theChaser:Sequence": {
     "NAME": "Sequence",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Rapid: Instead, deal !D! damage !M! times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL Rapid: Instead, deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL thechaser:Swift: Instead, deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL thechaser:Swift: Instead, deal !D! damage !M! times."
   },
   "theChaser:Space Out": {
     "NAME": "Space Out",
-    "DESCRIPTION": "After thechaser:Target Attack, gain !B! Block."
+    "DESCRIPTION": "After thechaser:Target *Attack, gain !M! Block."
   },
   "theChaser:Testing": {
     "NAME": "Testing",
@@ -255,7 +262,7 @@
   },
   "theChaser:Weakness Strike": {
     "NAME": "Weakness Strike",
-    "DESCRIPTION": "Deal !D! damage for each Debuff the enemy has."
+    "DESCRIPTION": "Deal !D! damage. Repeat for each Debuff the enemy has."
   },
   "theChaser:Win The Exchange": {
     "NAME": "Win The Exchange",
@@ -267,16 +274,16 @@
   },
   "theChaser:Absolute Advantage": {
     "NAME": "Absolute Advantage",
-    "DESCRIPTION": "Gain [E] . Draw 1 card for each Debuff type enemies have. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] . Draw 1 card for each Debuff type enemies have. NL Exhaust."
+    "DESCRIPTION": "Gain [E] . Draw 1 card for each Debuff enemies have. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] . Draw 1 card for each Debuff enemies have. NL Exhaust."
   },
   "theChaser:Approach Run": {
     "NAME": "Approach Run",
-    "DESCRIPTION": "Amount of cards used this turn + 4 NL thechaser:Rapid: Instead, Apply !M! thechaser:Bleeding to ALL enemies. Exhaust."
+    "DESCRIPTION": "Increase amount of cards used this turn by !M!. NL thechaser:Swift: Instead, apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
   },
   "theChaser:Diplade": {
     "NAME": "Diplade",
-    "DESCRIPTION": "Whenever you play a card which cost is not 0, Add 1 *Throwing *Knife into your hand."
+    "DESCRIPTION": "Whenever you play a card which cost is not 0, add 1 *Throwing *Knife into your hand."
   },
   "theChaser:Dual Wielding": {
     "NAME": "Dual Wielding",
@@ -320,12 +327,12 @@
   },
   "theChaser:Strategic Retreat": {
     "NAME": "Strategic Retreat",
-    "DESCRIPTION": "*보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL remove this card from deck.",
-    "UPGRADE_DESCRIPTION": "보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다."
+    "DESCRIPTION": "Escape from a non-boss combat. Receive no rewards. NL Remove this card from deck.",
+    "UPGRADE_DESCRIPTION": "Retain. Escape from a non-boss combat. Receive no rewards. NL Remove this card from deck."
   },
   "theChaser:Unwary": {
     "NAME": "Unwary",
-    "DESCRIPTION": "thechaser:Target *Attack applies thechaser:Unfortified"
+    "DESCRIPTION": "thechaser:Target *Attack applies thechaser:Unfortified."
   },
   "theChaser:Vitality": {
     "NAME": "Vitality",
@@ -339,10 +346,10 @@
   },
   "theChaser:Walkout": {
     "NAME": "Walkout",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 주고 thechaser:표적 을 1 부여합니다. 이번 턴에 사용한 카드 수만큼 thechaser:표적 *공격 후 턴을 종료합니다.",
+    "DESCRIPTION": "Deal !D! damage and apply 1 thechaser:Target to ALL enemies. Attack thechaser:Target by amount of cards used this turn. NL End your turn.",
     "EXTENDED_DESCRIPTION": [
-      "적 전체에게 피해를 !D! 주고 thechaser:표적 을 1 부여합니다. 이번 턴에 사용한 카드 수(",
-      ") 만큼 thechaser:표적 *공격 후 턴을 종료합니다."
+      "Deal !D! damage and apply 1 thechaser:Target to ALL enemies. Attack thechaser:Target by amount of cards(",
+      ") used this turn. NL End your turn."
     ]
   },
   "theChaser:Wile": {

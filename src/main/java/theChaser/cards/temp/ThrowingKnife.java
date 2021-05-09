@@ -2,6 +2,7 @@ package theChaser.cards.temp;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.red.SwordBoomerang;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
@@ -32,7 +33,7 @@ public class ThrowingKnife extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new RandomAttackAction(new DamageInfo(p, this.damage), AttackEffect.BLUNT_LIGHT, true));
+        addToBot(new RandomAttackAction(this, AttackEffect.BLUNT_LIGHT, true));
     }
 
     @Override
