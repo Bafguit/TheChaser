@@ -340,7 +340,7 @@ public class TheChaserMod implements
 
 
         Color maroon = new Color(0.4F, 0, 0, 1).cpy();
-        Color dark = new Color(100, 100, 255, 255).cpy();
+        Color dark = new Color(50, 50, 255, 255).cpy();
         BaseMod.addPotion(AcidPotion.class, maroon, maroon, Color.YELLOW, AcidPotion.ID, TheChaser.Enums.THE_CHASER);
         BaseMod.addPotion(ShadowPotion.class, dark, null, null, ShadowPotion.ID, TheChaser.Enums.THE_CHASER);
         BaseMod.addPotion(TargetPotion.class, Color.WHITE, Color.RED, null, TargetPotion.ID, TheChaser.Enums.THE_CHASER);

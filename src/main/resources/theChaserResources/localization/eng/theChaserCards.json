@@ -182,7 +182,7 @@
   },
   "theChaser:Flexibility": {
     "NAME": "Flexibility",
-    "DESCRIPTION": "Choose two: NL Attack thechaser:Target !M! times, gain *Fake thechaser:Sore !M! times, or apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Choose twice: NL Attack thechaser:Target !M! times, gain *Fake thechaser:Sore !M! times, or apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
   },
   "theChaser:Gale Strike": {
     "NAME": "Gale Strike",
@@ -223,7 +223,7 @@
   },
   "theChaser:Ragewind": {
     "NAME": "Ragewind",
-    "DESCRIPTION": "Attack thechaser:Target !M! times. NL Parmanently increase this card's thechaser:Target *Attack amount by 1. NL 소멸"
+    "DESCRIPTION": "Attack thechaser:Target !M! times. NL Parmanently increase this card's thechaser:Target *Attack amount by 1. NL Exhaust."
   },
   "theChaser:Ready To Counter": {
     "NAME": "Ready To Counter",
@@ -339,7 +339,7 @@
     "DESCRIPTION": "Heal HP by thechaser:Target *Attack amount this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. Heal HP by thechaser:Target *Attack amount this turn. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "Heal HP by thechaser:Taget *Attack amount(",
+      "Heal HP by thechaser:Target *Attack amount(",
       ") this turn. NL Exhaust.",
       "Retain. "
     ]

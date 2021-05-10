@@ -7,6 +7,7 @@ package theChaser.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -50,7 +51,7 @@ public class RandomAttackAction extends AbstractGameAction {
         }
         if (this.target != null) {
             this.card.calculateCardDamage((AbstractMonster)this.target);
-            this.info = new DamageInfo(AbstractDungeon.player, this.card.damage, this.damageType);
+            this.info = new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn);
             this.addToTop(new DamageAction(this.target, this.info, this.attackEffect));
             if (this.isTag) {
                 this.addToTop(new ApplyPowerAction(this.target, this.source, new TargetPower(this.target, this.amount), this.amount));
