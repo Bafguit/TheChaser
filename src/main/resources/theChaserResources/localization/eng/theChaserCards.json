@@ -283,7 +283,7 @@
   },
   "theChaser:Diplade": {
     "NAME": "Diplade",
-    "DESCRIPTION": "Whenever you play a card which cost is not 0, add 1 *Throwing *Knife into your hand."
+    "DESCRIPTION": "Whenever you play an Attack card which cost is not 0, add 1 *Throwing *Knife into your hand."
   },
   "theChaser:Dual Wielding": {
     "NAME": "Dual Wielding",
