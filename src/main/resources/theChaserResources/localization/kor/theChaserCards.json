@@ -284,7 +284,7 @@
   },
   "theChaser:Diplade": {
     "NAME": "이중 칼날",
-    "DESCRIPTION": "비용이 0이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
+    "DESCRIPTION": "비용이 0이 아닌 공격 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
   },
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",
