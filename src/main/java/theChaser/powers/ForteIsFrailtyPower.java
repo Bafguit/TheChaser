@@ -55,16 +55,18 @@ public class ForteIsFrailtyPower extends AbstractPower implements CloneablePower
     }
 
     public void onSpecificTrigger() {
-        for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            for(AbstractPower p : m.powers) {
+        if(AbstractDungeon.getCurrRoom().phase == COMBAT) {
+            for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+                for(AbstractPower p : m.powers) {
+                    if(p.type == PowerType.BUFF) {
+                       p.type = PowerType.DEBUFF;
+                   }
+                }
+            }
+            for(AbstractPower p : AbstractDungeon.player.powers) {
                 if(p.type == PowerType.BUFF) {
                     p.type = PowerType.DEBUFF;
                 }
-            }
-        }
-        for(AbstractPower p : AbstractDungeon.player.powers) {
-            if(p.type == PowerType.BUFF) {
-                p.type = PowerType.DEBUFF;
             }
         }
     }
