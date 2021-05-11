@@ -290,8 +290,8 @@ public class TheChaser extends CustomPlayer {
     public List<CutscenePanel> getCutscenePanels() {
         List<CutscenePanel> panels = new ArrayList();
         panels.add(new CutscenePanel("theChaserResources/images/scene/chaser1.png", "ATTACK_DAGGER_5"));
-        panels.add(new CutscenePanel("MoonworksResources/images/scene/starbreaker2.png", "TURN_EFFECT"));
-        panels.add(new CutscenePanel("MoonworksResources/images/scene/starbreaker3.png", "CEILING_DUST_3"));
+        panels.add(new CutscenePanel("theChaserResources/images/scene/starbreaker2.png", "TURN_EFFECT"));
+        panels.add(new CutscenePanel("theChaserResources/images/scene/starbreaker3.png", "CEILING_DUST_3"));
         return panels;
     }
 
