@@ -23,7 +23,7 @@ public class SpaceOut extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int B = 2;
+    private static final int B = 1;
     private static final int U_B = 1;
 
     public SpaceOut() {
