@@ -198,8 +198,7 @@
   },
   "theChaser:Open Sore": {
     "NAME": "아물지 않은 상처",
-    "DESCRIPTION": "thechaser:출혈 이 감소하지 않습니다.",
-    "UPGRADE_DESCRIPTION": "선천성. thechaser:출혈 이 감소하지 않습니다."
+    "DESCRIPTION": "thechaser:출혈 이 감소한 후 !M! 만큼 증가합니다."
   },
   "theChaser:Paralyze": {
     "NAME": "마비",
@@ -284,7 +283,7 @@
   },
   "theChaser:Diplade": {
     "NAME": "이중 칼날",
-    "DESCRIPTION": "비용이 0이 아닌 공격 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
+    "DESCRIPTION": "비용이 0이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
   },
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",

@@ -31,7 +31,7 @@ public class Chance extends ChaserCard {
 
     private static final int COST = 0;
     private static final int BLOCK = 4;
-    private static final int UP_BLOCK = 4;
+    private static final int UP_BLOCK = 3;
 
     public Chance() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 0);

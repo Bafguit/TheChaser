@@ -35,8 +35,8 @@ public class ApproachRun extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int UP_COST = 0;
-    private static final int TURN = 5;
+    private static final int TURN = 7;
+    private static final int UP_TURN = 3;
 
     public ApproachRun() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TURN);
@@ -67,7 +67,7 @@ public class ApproachRun extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeBaseCost(UP_COST);
+        upgradeMagicNumber(UP_TURN);
     }
 
 }

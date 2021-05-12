@@ -31,8 +31,8 @@ public class Brass extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int UP_COST = 0;
-    private static final int TAG = 5;
+    private static final int TAG = 7;
+    private static final int UP_TAG = 3;
 
     public Brass() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);
@@ -45,7 +45,7 @@ public class Brass extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeBaseCost(UP_COST);
+        upgradeMagicNumber(UP_TAG);
     }
 
 }

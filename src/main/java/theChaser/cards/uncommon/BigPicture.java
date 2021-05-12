@@ -22,7 +22,7 @@ public class BigPicture extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 1;
+    private static final int DAMAGE = 2;
 
     public BigPicture() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, DAMAGE);

@@ -30,12 +30,12 @@ public class OpenSore extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new OpenSorePower(p)));
+        addToBot(new ApplyPowerAction(p, p, new OpenSorePower(p, this.magicNumber)));
     }
 
 
     @Override
     public void upgradeCard() {
-        this.isInnate = true;
+        upgradeMagicNumber(1);
     }
 }

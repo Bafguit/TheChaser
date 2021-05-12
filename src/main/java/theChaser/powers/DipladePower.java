@@ -47,7 +47,7 @@ public class DipladePower extends AbstractPower implements CloneablePowerInterfa
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if(card.type == CardType.ATTACK && card.costForTurn != 0) {
+        if(card.costForTurn != 0) {
             this.flash();
             this.addToBot(new MakeTempCardInHandAction(new ThrowingKnife(), this.amount));
         }

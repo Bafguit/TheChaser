@@ -1,7 +1,7 @@
 {
   "theChaser:Throwing Knife": {
     "NAME": "Throwing Knife",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage to a random enemy. Preferentially attack an enemy on thechaser:Target."
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage to a random enemy. Preferentially attack an enemy on thechaser:Target. Exhaust."
   },
   "theChaser:Bloody Wind": {
     "NAME": "Bloody Wind",
@@ -202,8 +202,7 @@
   },
   "theChaser:Open Sore": {
     "NAME": "Open Sore",
-    "DESCRIPTION": "thechaser:Bleeding no longer reduced.",
-    "UPGRADE_DESCRIPTION": "Innate. thechaser:Bleeding no longer reduced."
+    "DESCRIPTION": "After thechaser:Bleeding decreased, increase by !M! ."
   },
   "theChaser:Paralyze": {
     "NAME": "Paralyze",
@@ -283,7 +282,7 @@
   },
   "theChaser:Diplade": {
     "NAME": "Diplade",
-    "DESCRIPTION": "Whenever you play an Attack card which cost is not 0, add 1 *Throwing *Knife into your hand."
+    "DESCRIPTION": "Whenever you play a card which cost is not 0, add 1 *Throwing *Knife into your hand."
   },
   "theChaser:Dual Wielding": {
     "NAME": "Dual Wielding",
@@ -307,7 +306,7 @@
   },
   "theChaser:Phrenitis": {
     "NAME": "Phrenitis",
-    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Target, thechaser:Unfortified. NL Exhaust."
+    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Target, and thechaser:Unfortified. NL Exhaust."
   },
   "theChaser:Preemptive Attack": {
     "NAME": "Preemptive Attack",

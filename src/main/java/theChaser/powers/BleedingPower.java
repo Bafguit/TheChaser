@@ -73,16 +73,21 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
     public void getBleedingDamage(int amount) {
         for(int i = 0; i < amount; i++) {
             this.flashWithoutSound();
+            if(amount > 1) {
+                this.addToTop(new WaitAction(0.3F));
+            }
             this.owner.damage(new DamageInfo(null, this.amount, DamageInfo.DamageType.HP_LOSS));
-            if (AbstractDungeon.player.hasPower(OpenSorePower.POWER_ID)) {
+            AbstractPower sore = AbstractDungeon.player.getPower(OpenSorePower.POWER_ID);
+            if (sore != null && sore.amount > 0 && this.amount > 0) {
                 AbstractDungeon.player.getPower(OpenSorePower.POWER_ID).flashWithoutSound();
+                int add = sore.amount - 1;
+                if(add > 0) {
+                    this.amount += add;
+                }
             } else if (this.amount > 1) {
                 this.amount--;
             } else if (this.amount == 1) {
                 addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-            }
-            if(amount > 1) {
-                this.addToTop(new WaitAction(0.3F));
             }
         }
     }

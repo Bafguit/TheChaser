@@ -19,8 +19,7 @@ public class ForteIsFrailtyPatch {
 /*
     @SpirePatch(
             clz = ApplyPowerAction.class,
-            method = SpirePatch.CONSTRUCTOR,
-            paramtypez = {AbstractCreature.class, AbstractCreature.class, AbstractPower.class, int.class, boolean.class, AbstractGameAction.AttackEffect.class}
+            method = "update"
     )
 
     public static class BuffToDebuffAction {
@@ -30,6 +29,9 @@ public class ForteIsFrailtyPatch {
         public static ExprEditor Instrument() {
             return new ExprEditor() {
                 public void edit(MethodCall m) throws CannotCompileException {
+                    if(m.getLineNumber() == 132) {
+                        m.replace("$_ = $proceed($$); ");
+                    }
                     if (m.getClassName().equals("com.megacrit.cardcrawl.actions.common.ApplyPowerAction") && m.getMethodName().equals("setValues")) {
                         m.replace("$_ = $proceed($$); if(com.megacrit.cardcrawl.dungeons.AbstractDungeon.player.hasPower(theChaser.powers.ForteIsFrailtyPower.POWER_ID) && powerToApply.type == com.megacrit.cardcrawl.powers.AbstractPower.PowerType.BUFF) { powerToApply.type = com.megacrit.cardcrawl.powers.AbstractPower.PowerType.DEBUFF; }");
                     }

@@ -87,7 +87,8 @@
   "theChaser:Open Sore": {
     "NAME": "Open Sore",
     "DESCRIPTIONS": [
-      "#yBleeding no longer reduced."
+      "After #yBleeding decreased, increase by #b",
+      " ."
     ]
   },
   "theChaser:Big Picture": {

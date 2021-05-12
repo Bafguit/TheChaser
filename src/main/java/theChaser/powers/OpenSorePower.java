@@ -27,11 +27,12 @@ public class OpenSorePower extends AbstractPower implements CloneablePowerInterf
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/sore84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theChaserResources/images/powers/sore32.png");
 
-    public OpenSorePower(final AbstractCreature owner) {
+    public OpenSorePower(final AbstractCreature owner, int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
+        this.amount = amount;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -44,11 +45,11 @@ public class OpenSorePower extends AbstractPower implements CloneablePowerInterf
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new OpenSorePower(owner);
+        return new OpenSorePower(owner, amount);
     }
 }

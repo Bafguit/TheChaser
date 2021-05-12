@@ -3,6 +3,7 @@ package theChaser.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.green.CripplingPoison;
 import com.megacrit.cardcrawl.cards.green.Envenom;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import theChaser.TheChaserMod;
 import theChaser.util.TextureLoader;
 
@@ -55,7 +57,7 @@ public class ForteIsFrailtyPower extends AbstractPower implements CloneablePower
     }
 
     public void onSpecificTrigger() {
-        if(AbstractDungeon.getCurrRoom().phase == COMBAT) {
+        if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 for(AbstractPower p : m.powers) {
                     if(p.type == PowerType.BUFF) {
