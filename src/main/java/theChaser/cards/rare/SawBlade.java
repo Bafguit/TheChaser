@@ -25,7 +25,6 @@ public class SawBlade extends ChaserCard {
 
     private static final int COST = 3;
     private static final int MAGIC = 1;
-    private static final int UP_MAGIC = 1;
 
     public SawBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, MAGIC);
@@ -38,6 +37,6 @@ public class SawBlade extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(UP_MAGIC);
+        this.isInnate = true;
     }
 }

@@ -24,7 +24,7 @@ public class Hack extends ChaserCard {
     private static final int COST = 2;
     private static final int DAMAGE = 2;
     private static final int UP_TAG = 1;
-    private static final int TAG = 7;
+    private static final int TAG = 6;
 
     public Hack() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, TAG);

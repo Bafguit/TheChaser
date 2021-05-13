@@ -42,13 +42,12 @@ public class ReadyToCounter extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = -1;
-    private static final int DMG = 6;
+    private static final int DMG = 5;
     private static final int UP_DMG = 2;
     private static ChaserCard c = new ThrowingKnife();
 
     public ReadyToCounter() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, DMG, 0);
-        c.upgrade();
         this.cardsToPreview = c;
     }
 

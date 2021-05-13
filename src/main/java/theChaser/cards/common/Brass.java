@@ -31,8 +31,8 @@ public class Brass extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int TAG = 7;
-    private static final int UP_TAG = 3;
+    private static final int TAG = 6;
+    private static final int UP_TAG = 2;
 
     public Brass() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);

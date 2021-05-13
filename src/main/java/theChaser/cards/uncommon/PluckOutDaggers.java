@@ -33,7 +33,7 @@ public class PluckOutDaggers extends ChaserCard implements OnAfterTargetAttackSu
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 3;
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 5;
     private static final int UP_TAG = 2;
     private static final int TAG = 3;
 

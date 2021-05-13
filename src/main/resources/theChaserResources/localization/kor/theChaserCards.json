@@ -74,7 +74,11 @@
   },
   "theChaser:Identify": {
     "NAME": "식별",
-    "DESCRIPTION": "피해를 !D! 줍니다. thechaser:표적 을 !M! 부여합니다."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 사용한 카드 수만큼 피해가 증가합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "피해를 !D! 줍니다. NL 이번 턴에 사용한 카드 수(",
+      ") 만큼 피해가 증가합니다."
+    ]
   },
   "theChaser:Leave Traces": {
     "NAME": "흔적 남기기",
@@ -315,7 +319,8 @@
   },
   "theChaser:Saw Blade": {
     "NAME": "톱날",
-    "DESCRIPTION": "카드를 사용할 때마다 적 전체에게 thechaser:출혈 을 !M! 부여합니다."
+    "DESCRIPTION": "카드를 사용할 때마다 적 전체에게 thechaser:출혈 을 !M! 부여합니다.",
+    "UPGRADE_DESCRIPTION": "선천성. 카드를 사용할 때마다 적 전체에게 thechaser:출혈 을 !M! 부여합니다."
   },
   "theChaser:Shadow Form": {
     "NAME": "그림자의 형상",

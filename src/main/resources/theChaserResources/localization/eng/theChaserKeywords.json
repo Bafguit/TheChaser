@@ -1,19 +1,19 @@
 [
   {
-    "PROPER_NAME": "Target Attack",
+    "PROPER_NAME": "Targeting",
     "NAMES": [
-      "target",
-      "Target"
+      "targeting",
+      "Targeting"
     ],
-    "DESCRIPTION": "Whenever after player or monster attack, damage to ALL enemies on #yTarget."
+    "DESCRIPTION": "After a player or monster attacks, all creatures with #yTargeting take #b2 damage."
   },
   {
-    "PROPER_NAME": "Unfortified",
+    "PROPER_NAME": "Blindsided",
     "NAMES": [
-      "unfortified",
-      "Unfortified"
+      "blindsided",
+      "Blindsided"
     ],
-    "DESCRIPTION": "Receive #b30% more damage for each stack. Max stack is #b3 ."
+    "DESCRIPTION": "Target receives b30% more damage for each stack of Blindsided (up to a maximum of #b3.)"
   },
   {
     "PROPER_NAME": "Bleeding",
@@ -21,7 +21,7 @@
       "bleeding",
       "Bleeding"
     ],
-    "DESCRIPTION": "Whenever attack, lose HP and reduced by 1."
+    "DESCRIPTION": "Whenever this creature attacks, it loses #b1 HP and the total amount of #yBleeding is reduced by #b1."
   },
   {
     "PROPER_NAME": "Hide",
@@ -29,7 +29,7 @@
       "hide",
       "Hide"
     ],
-    "DESCRIPTION": "ALL enemies stop action. Instantly end when attack."
+    "DESCRIPTION": "ALL enemies become #yStunned. Fades away after an attack is played."
   },
   {
     "PROPER_NAME": "Swift",
@@ -37,15 +37,23 @@
       "swift",
       "Swift:"
     ],
-    "DESCRIPTION": "If you used 4 cards or more this turn, invoke additional effect."
+    "DESCRIPTION": "If you have played 4 cards or more this turn, trigger an additional effect."
+  },
+    {
+    "PROPER_NAME": "Quickstep",
+    "NAMES": [
+      "quickstep",
+      "Quickstep"
+    ],
+    "DESCRIPTION": "Simulate playing cards, for use with #ySwift effects."
   },
   {
-    "PROPER_NAME": "Fake Sore",
+    "PROPER_NAME": "Proxy",
     "NAMES": [
-      "sore",
-      "Sore"
+      "proxy",
+      "Proxy"
     ],
-    "DESCRIPTION": "A Debuff which has no effect."
+    "DESCRIPTION": "Applies a debuff which has no effect."
   },
   {
     "PROPER_NAME": "",

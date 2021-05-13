@@ -1,6 +1,6 @@
 {
   "theChaser:Acid Potion": {
-    "NAME": "Acid Potion",
+    "NAME": "Bottled Hemorrhage",
     "DESCRIPTIONS": [
       "Apply #b",
       " #yBleeding to an enemy."
@@ -16,7 +16,7 @@
         "theChaser:Target Potion": {
                 "NAME": "Target Potion",
                 "DESCRIPTIONS": [
-                        "Attack #yTarget #b",
+                        "Trigger #yTargeting #b",
                         " times."
                 ]
         }

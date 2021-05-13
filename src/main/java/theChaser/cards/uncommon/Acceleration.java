@@ -37,6 +37,6 @@ public class Acceleration extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(UP_STR);
+        upgradeBaseCost(0);
     }
 }

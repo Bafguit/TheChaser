@@ -22,7 +22,7 @@ public class ThrowingKnife extends ChaserCard {
     public static final CardColor COLOR = CardColor.COLORLESS;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 3;
     private static final int UP_DMG = 2;
 
     public ThrowingKnife() {
