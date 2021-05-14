@@ -61,7 +61,7 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if(card.type == AbstractCard.CardType.ATTACK) {
-            flashWithoutSound();
+            flash();
             addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount)));
             this.strCount += this.amount;
         }

@@ -22,8 +22,8 @@ public class FallTechnique extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int BLOCK = 14;
-    private static final int UP_BLOCK = 2;
+    private static final int BLOCK = 15;
+    private static final int UP_BLOCK = 3;
     private static final int WEAK = 2;
     private static final int UP_WEAK = -1;
 

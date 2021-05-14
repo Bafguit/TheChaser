@@ -32,7 +32,7 @@ public class Sequence extends ChaserCard {
     private static final int COST = 0;
     private static final int DAMAGE = 3;
     private static final int UP_DAMAGE = 1;
-    private static final int MAGIC = 5;
+    private static final int MAGIC = 3;
 
     public Sequence() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, MAGIC);

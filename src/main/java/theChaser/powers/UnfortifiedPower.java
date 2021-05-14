@@ -67,7 +67,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            return damage * (1.0F + (0.3F * this.amount));
+            return damage * (1.0F + (0.2F * this.amount));
         } else {
             return damage;
         }
@@ -75,7 +75,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + this.amount * 30 + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.amount * 20 + DESCRIPTIONS[1];
     }
 
     @Override

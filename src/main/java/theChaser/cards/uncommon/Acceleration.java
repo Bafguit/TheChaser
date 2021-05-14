@@ -23,7 +23,6 @@ public class Acceleration extends ChaserCard {
 
     private static final int COST = 1;
     private static final int STR = 1;
-    private static final int UP_STR = 1;
 
     public Acceleration() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, STR);

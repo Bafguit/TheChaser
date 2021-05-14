@@ -37,12 +37,13 @@ public class IncisiveBlade extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 14;
     private static final int UP_DAMAGE = 5;
 
     public IncisiveBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
         this.exhaust = true;
+        this.isEthereal = true;
     }
 
     @Override

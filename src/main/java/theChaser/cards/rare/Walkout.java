@@ -47,7 +47,7 @@ public class Walkout extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 3;
     private static final int UP_DAMAGE = 5;
 
     public Walkout() {

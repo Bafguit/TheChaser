@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.powers.PenetrativePower;
 import theChaser.powers.UnwaryPower;
 
 import static theChaser.TheChaserMod.makeCardPath;

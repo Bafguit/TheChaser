@@ -13,7 +13,7 @@
       "blindsided",
       "Blindsided"
     ],
-    "DESCRIPTION": "Target receives b30% more damage for each stack of Blindsided (up to a maximum of #b3.)"
+    "DESCRIPTION": "Target receives b20% more damage for each stack of Blindsided (up to a maximum of #b3.)"
   },
   {
     "PROPER_NAME": "Bleeding",

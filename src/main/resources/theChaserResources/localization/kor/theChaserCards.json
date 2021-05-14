@@ -1,7 +1,7 @@
 {
   "theChaser:Throwing Knife": {
     "NAME": "수리검",
-    "DESCRIPTION": "휘발성 NL 무작위 적에게 피해를 !D! 줍니다. thechaser:표적 을 가진 적을 우선적으로 공격합니다."
+    "DESCRIPTION": "휘발성. 무작위 적에게 피해를 !D! 줍니다. thechaser:표적 을 가진 적을 우선적으로 공격합니다. 소멸."
   },
   "theChaser:Bloody Wind": {
     "NAME": "피바람",
@@ -307,7 +307,7 @@
   },
   "theChaser:Incisive Blade": {
     "NAME": "예리한 칼날",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸"
+    "DESCRIPTION": "휘발성. 피해를 !D! 줍니다. NL 소멸"
   },
   "theChaser:Phrenitis": {
     "NAME": "착란",
@@ -337,7 +337,7 @@
   },
   "theChaser:Unwary": {
     "NAME": "방심",
-    "DESCRIPTION": "thechaser:표적 *공격 이 thechaser:무방비 를 부여합니다."
+    "DESCRIPTION": "thechaser:표적 *공격 이 thechaser:무방비 를 부여합니다. thechaser:표적 *공격 의 피해가 1 감소합니다."
   },
   "theChaser:Vitality": {
     "NAME": "활력",

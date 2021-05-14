@@ -28,7 +28,7 @@ public class Throes extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 13;
+    private static final int DAMAGE = 12;
     private static final int UP_DMG = 5;
 
     public Throes() {

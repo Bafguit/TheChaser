@@ -27,7 +27,7 @@ public class Flexibility extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 2;
-    private static final int UNT = 3;
+    private static final int UNT = 2;
     private static final int UP_UNT = 1;
 
     public Flexibility() {

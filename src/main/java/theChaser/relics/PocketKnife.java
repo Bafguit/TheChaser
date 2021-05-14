@@ -25,7 +25,7 @@ public class PocketKnife extends CustomRelic implements OnAfterTargetAttackSubsc
 
     public void atTurnStart() {
         this.isDone = false;
-        this.counter = 2;
+        this.counter = 3;
     }
 
     @Override

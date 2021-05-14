@@ -61,13 +61,7 @@ public class ScarStab extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ArrayList<AttackEffect> effects = new ArrayList<>();
-        effects.add(AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
-        effects.add(AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
-        effects.add(AbstractGameAction.AttackEffect.SLASH_VERTICAL);
-        Random random = new Random();
-
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(random.nextInt(effects.size()))));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_DIAGONAL));
         addToBot(new InstantBleedingDamageAction(m, this.upgraded ? 2 : 1));
     }
 
