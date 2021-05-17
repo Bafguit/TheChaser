@@ -311,7 +311,7 @@
   },
   "theChaser:Phrenitis": {
     "NAME": "착란",
-    "DESCRIPTION": "약화, 취약, 손상, 중독, thechaser:출혈, thechaser:표적, thechaser:무방비 를 1 부여합니다. NL 소멸"
+    "DESCRIPTION": "약화, 취약, 손상, 중독, thechaser:출혈, thechaser:표적, thechaser:가짜 *상처, thechaser:무방비 를 1 부여합니다. NL 소멸"
   },
   "theChaser:Preemptive Attack": {
     "NAME": "선제 공격",

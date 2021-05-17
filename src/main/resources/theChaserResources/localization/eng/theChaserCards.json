@@ -1,7 +1,7 @@
 {
 	  "theChaser:Throwing Knife": {
 	    "NAME": "Throwing Knife",
-	    "DESCRIPTION": "Ethereal. NL Deal !D! damage to a random enemy. Enemies affected by thechaser:Targeting are prioritized."
+	    "DESCRIPTION": "Ethereal. NL Deal !D! damage to a random enemy. Enemies affected by thechaser:Targeting are prioritized. Exhaust."
 	  },
 	  "theChaser:Bloody Wind": {
 	    "NAME": "Bloody Wind",
@@ -57,12 +57,12 @@
 	  },
 	  "theChaser:Continuous Slash": {
 	    "NAME": "Continuous Slash",
-	    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 1 *Followup *Slash into your hand.",
-	    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 2 *Followup *Slash into your hand."
+	    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 2 *Followup *Slash into your hand.",
+	    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 2 *Followup *Slash+ into your hand."
 	  },
 	  "theChaser:Delusive Strike": {
 	    "NAME": "Illusionary Strike",
-	    "DESCRIPTION": "Deal !D! damage. NL If you are #yWeakened, gain [E] [E]."
+	    "DESCRIPTION": "Deal !D! damage. NL If you are Weak, gain [E] [E]."
 	  },
 	  "theChaser:Fatal Blitz": {
 	    "NAME": "Fatal Blitz",
@@ -137,7 +137,7 @@
 	  },
 	  "theChaser:Big Picture": {
 	    "NAME": "Grand Plan",
-	    "DESCRIPTION": "Whenever a debuff is applied to you, gain !M! Strength."
+	    "DESCRIPTION": "Whenever you apply a debuff to yourself, gain !M! Strength."
 	  },
 	  "theChaser:Break Armour": {
 	    "NAME": "Armorslayer",
@@ -206,11 +206,11 @@
 	  },
 	  "theChaser:Open Sore": {
 	    "NAME": "Open Sore",
-	    "DESCRIPTION": "After thechaser:Bleeding decreases, increase it by !M! ."
+	    "DESCRIPTION": "After thechaser:Bleeding decreases, increase it by !M!."
 	  },
 	  "theChaser:Paralyze": {
 	    "NAME": "Paralyze",
-	    "DESCRIPTION": "Enemy loses Strength equal to the cumulative stacks of ALL debuffs they have. NL Exhaust."
+	    "DESCRIPTION": "Enemy loses Strength equal to the amount of unique debuffs on them. NL Exhaust."
 	  },
 	  "theChaser:Penetrate": {
 	    "NAME": "Penetrate",
@@ -294,7 +294,7 @@
 	  },
 	  "theChaser:Forte Is Frailty": {
 	    "NAME": "Lust for Power",
-	    "DESCRIPTION": "All your buffs count as debuffs for the purposes of effects which check for the amount of debuffs on you."
+	    "DESCRIPTION": "All your buffs count as debuffs, for the purposes of effects which check for debuffs on you."
 	  },
 	  "theChaser:Fraudulence": {
 	    "NAME": "Hunter's Guard",
@@ -310,7 +310,7 @@
 	  },
 	  "theChaser:Phrenitis": {
 	    "NAME": "Phrenitis",
-	    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, and thechaser:Blindsided. NL Exhaust."
+	    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, thechaser:Proxy, and thechaser:Blindsided. NL Exhaust."
 	  },
 	  "theChaser:Preemptive Attack": {
 	    "NAME": "Preemptive Offense",

@@ -1,7 +1,7 @@
 {
   "theChaser:Shadow In Necklace": {
     "NAME": "Shadowed Necklace",
-    "FLAVOR": "A necklace with a small glass bottle, made out of the abyssal darkness.",
+    "FLAVOR": "A necklace with a small glass bottle, created from the abyssal darkness.",
     "DESCRIPTIONS": [
       "At the start of each combat, apply #b2 #yTargeting to a random enemy."
     ]
@@ -15,7 +15,7 @@
   },
   "theChaser:R-B0-7": {
     "NAME": "R-B0-7",
-    "FLAVOR": "A dangerous secret weapon, though its fatality is complemented with an infamous drug.",
+    "FLAVOR": "A dangerous secret weapon. Its lethality is complemented with an infamous drug.",
     "DESCRIPTIONS": [
       "At the start of each turn, enemies which have debuffs lose #b5 #yHP."
     ]
@@ -45,21 +45,21 @@
     "NAME": "Masked Shadows",
     "FLAVOR": "Behind a mask, nobody can see the abyss.",
     "DESCRIPTIONS": [
-      "Replaces #pShadowed #pNecklace At the start of each turn, apply #b1 #yTarget to ALL enemies and attack #yTarget once."
+      "Replaces #pShadowed #pNecklace. At the start of your turn, apply #b1 #yTargeting to ALL enemies and trigger #yTargeting once."
     ]
   },
   "theChaser:Pocket Knife": {
     "NAME": "Pocket Knife",
     "FLAVOR": "A portable knife used to cut ropes.",
     "DESCRIPTIONS": [
-      "After #yTarget is triggered for the second time each turn, gain [E] ."
+      "After #yTarget is triggered for the fourth time each turn, gain [E] ."
     ]
   },
   "theChaser:Acid Solution": {
     "NAME": "Acid Solution",
     "FLAVOR": "Extremely corrosive. Hopefully no one else carelessly sprinkles this on something...or someone.",
     "DESCRIPTIONS": [
-      "Every time you play an Attack, if you are #yWeak, apply #b1 #yWeak to the enemy. If you are #yFrail, remove all Block from the enemy."
+      "Whenever you play an Attack, if you are #yWeak, apply #b1 #yWeak to the enemy. If you are #yFrail, remove all Block from the enemy."
     ]
   },
   "theChaser:Box Cutter": {

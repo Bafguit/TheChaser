@@ -14,6 +14,7 @@ import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 import theChaser.powers.BleedingPower;
+import theChaser.powers.FakeSorePower;
 import theChaser.powers.TargetPower;
 import theChaser.powers.UnfortifiedPower;
 
@@ -80,6 +81,7 @@ public class Phrenitis extends ChaserCard {
         addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, 1), 1, true));
         addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, 1), 1, true));
         addToBot(new ApplyPowerAction(m, p, new TargetPower(m, 1), 1, true));
+        addToBot(new ApplyPowerAction(m, p, new FakeSorePower(m, 1), 1, true));
         addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, 1), 1, true));
     }
 
