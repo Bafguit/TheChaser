@@ -56,7 +56,6 @@ public class ContinuousSlash extends ChaserCard {
             ChaserCard temp = new ContinuousSlashAlt();
             if(this.upgraded) temp.upgrade();
             addToBot(new MakeTempCardInHandAction(temp));
-            addToBot(new MakeTempCardInHandAction(temp));
         }
     }
 

@@ -67,9 +67,7 @@ public class Walkout extends ChaserCard {
         this.addToBot(new VFXAction(new DieDieDieEffect(), 0.5F));
         this.addToBot(new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.SHORT, ScreenShake.ShakeIntensity.MED));
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new TargetPower(mo, 1), 1, true));
-        }
+        
         for(int i = 0; i < ChaserUtil.getCardCountPerTurn(); i++) {
             addToBot(new TargetAttackAction());
         }

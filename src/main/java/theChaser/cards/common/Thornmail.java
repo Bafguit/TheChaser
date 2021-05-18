@@ -33,7 +33,7 @@ public class Thornmail extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int BLOCK = 7;
+    private static final int BLOCK = 8;
     private static final int UP_BLOCK = 2;
     private static final int BLD = 2;
     private static final int UP_BLD = 1;

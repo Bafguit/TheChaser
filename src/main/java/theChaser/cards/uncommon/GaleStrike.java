@@ -65,10 +65,6 @@ public class GaleStrike extends ChaserCard {
             p.getRelic("Chemical X").flash();
         }
 
-        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new TargetPower(mo, 1), 1, true));
-        }
-
         if(effect > 0) {
 
             for (int i = 0; i < effect; i++) {

@@ -16,12 +16,12 @@
     "DESCRIPTION": "thechaser:표적 을 !M! 번 공격합니다."
   },
   "theChaser:Continuous Slash Alt": {
-    "NAME": "연속 베기",
-    "DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL 소멸"
+    "NAME": "흐름 베기",
+    "DESCRIPTION": "휘발성. 피해를 !D! 만큼 2 번 줍니다. NL 소멸"
   },
   "theChaser:Sequence Flow": {
     "NAME": "연결 동작",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸"
+    "DESCRIPTION": "휘발성. 피해를 !D! 줍니다. NL 소멸"
   },
   "theChaser:Reaction Shot": {
     "NAME": "반응 사격",
@@ -57,8 +57,8 @@
   },
   "theChaser:Continuous Slash": {
     "NAME": "연속 베기",
-    "DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL thechaser:신속: 이 효과가 없고 소멸 을 가진 *연속 *베기 카드를 2장 얻습니다.",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL thechaser:신속: 이 효과가 없고 소멸 을 가진 *연속 *베기+ 카드를 2장 얻습니다."
+    "DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL thechaser:신속: *흐름 *베기 카드를 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL thechaser:신속: *흐름 *베기+ 카드를 1장 얻습니다."
   },
   "theChaser:Delusive Strike": {
     "NAME": "속임수 타격",
@@ -186,7 +186,7 @@
   },
   "theChaser:Gale Strike": {
     "NAME": "광풍 타격",
-    "DESCRIPTION": "적 전체에게 thechaser:표적 을 1 부여하고 피해를 !D! 만큼 X 번 줍니다. thechaser:표적 을 X 번 공격합니다."
+    "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 X 번 줍니다. thechaser:표적 을 X 번 공격합니다."
   },
   "theChaser:Hack": {
     "NAME": "난도질",
@@ -226,7 +226,7 @@
   },
   "theChaser:Ready To Counter": {
     "NAME": "반격 준비",
-    "DESCRIPTION": "방어도를 !B! 만큼 X 번 얻습니다. NL *수리검+ 카드를 X 장 얻습니다."
+    "DESCRIPTION": "방어도를 !B! 만큼 X 번 얻습니다. NL *수리검 카드를 X 장 얻습니다."
   },
   "theChaser:Replica Dagger": {
     "NAME": "복제품 단검",
@@ -238,9 +238,8 @@
     "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 thechaser:표적 을 !M! 번 공격합니다."
   },
   "theChaser:Sequence": {
-    "NAME": "연속된 동작",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL *연결 *동작 카드를 1장 얻습니다. NL thechaser:신속: 대신 피해를 !D! 만큼 4번 줍니다.",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *연결 *동작+ 카드를 1장 얻습니다. NL thechaser:신속: 대신 피해를 !D! 만큼 4번 줍니다."
+    "NAME": "연속 동작",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *연결 *동작 카드를 !M! 장 얻습니다. NL thechaser:신속: 대신 피해를 !D! 만큼 4번 줍니다."
   },
   "theChaser:Space Out": {
     "NAME": "간격 두기",
@@ -351,9 +350,9 @@
   },
   "theChaser:Walkout": {
     "NAME": "퇴장",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 주고 thechaser:표적 을 1 부여합니다. 이번 턴에 사용한 카드 수만큼 thechaser:표적 *공격 후 턴을 종료합니다.",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수만큼 thechaser:표적 *공격 후 턴을 종료합니다.",
     "EXTENDED_DESCRIPTION": [
-      "적 전체에게 피해를 !D! 주고 thechaser:표적 을 1 부여합니다. 이번 턴에 사용한 카드 수(",
+      "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수(",
       ") 만큼 thechaser:표적 *공격 후 턴을 종료합니다."
     ]
   },

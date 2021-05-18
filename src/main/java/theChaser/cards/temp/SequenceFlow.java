@@ -35,6 +35,7 @@ public class SequenceFlow extends ChaserCard {
     public SequenceFlow() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
         this.exhaust = true;
+        this.isEthereal = true;
     }
 
     @Override

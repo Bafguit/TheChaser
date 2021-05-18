@@ -32,7 +32,7 @@ public class Sequence extends ChaserCard {
     private static final int COST = 0;
     private static final int DAMAGE = 3;
     private static final int UP_DAMAGE = 1;
-    private static final int MAGIC = 3;
+    private static final int MAGIC = 1;
 
     public Sequence() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, MAGIC);
@@ -58,21 +58,17 @@ public class Sequence extends ChaserCard {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
         } else {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             ChaserCard temp = new SequenceFlow();
-            if(this.upgraded) temp.upgrade();
-            addToBot(new MakeTempCardInHandAction(temp, 1));
+            addToBot(new MakeTempCardInHandAction(temp, this.magicNumber));
         }
     }
 
     @Override
     public void upgradeCard() {
         upgradeDamage(UP_DAMAGE);
-        ChaserCard temp = new SequenceFlow();
-        temp.upgrade();
-        this.cardsToPreview = temp;
+        upgradeMagicNumber(1);
     }
 
 }

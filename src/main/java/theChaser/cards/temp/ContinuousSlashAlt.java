@@ -31,6 +31,7 @@ public class ContinuousSlashAlt extends ChaserCard {
     public ContinuousSlashAlt() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
         this.exhaust = true;
+        this.isEthereal = true;
     }
 
     @Override

@@ -17,11 +17,11 @@
 	  },
 	  "theChaser:Continuous Slash Alt": {
 	    "NAME": "Followup Slash",
-	    "DESCRIPTION": "Deal !D! damage twice. NL Exhaust."
+	    "DESCRIPTION": "Ethereal. Deal !D! damage twice. NL Exhaust."
 	  },
 	  "theChaser:Sequence Flow": {
 	    "NAME": "Sequence Flow",
-	    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
+	    "DESCRIPTION": "Ethereal. Deal !D! damage. NL Exhaust."
 	  },
 	  "theChaser:Reaction Shot": {
 	    "NAME": "Reactive Shot",
@@ -57,8 +57,8 @@
 	  },
 	  "theChaser:Continuous Slash": {
 	    "NAME": "Continuous Slash",
-	    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 2 *Followup *Slash into your hand.",
-	    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 2 *Followup *Slash+ into your hand."
+	    "DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 1 *Followup *Slash into your hand.",
+	    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL thechaser:Swift: Add 1 *Followup *Slash+ into your hand."
 	  },
 	  "theChaser:Delusive Strike": {
 	    "NAME": "Illusionary Strike",
@@ -190,7 +190,7 @@
 	  },
 	  "theChaser:Gale Strike": {
 	    "NAME": "Gale Strike",
-	    "DESCRIPTION": "Apply 1 thechaser:Targeting and deal !D! damage X times to ALL enemies. Trigger thechaser:Targeting X times."
+	    "DESCRIPTION": "Deal !D! damage X times to ALL enemies. Trigger thechaser:Targeting X times."
 	  },
 	  "theChaser:Hack": {
 	    "NAME": "Hack Away",
@@ -243,8 +243,7 @@
 	  },
 	  "theChaser:Sequence": {
 	    "NAME": "Slash Sequence",
-	    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage !M! times instead.",
-	    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage !M! times instead."
+	    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage !M! times instead."
 	  },
 	  "theChaser:Space Out": {
 	    "NAME": "Combat Spacing",
@@ -350,9 +349,9 @@
 	  },
 	  "theChaser:Walkout": {
 	    "NAME": "Bloodhound",
-	    "DESCRIPTION": "Deal !D! damage and apply 1 thechaser:Targeting to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn. NL End your turn.",
+	    "DESCRIPTION": "Deal !D! damage to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn. NL End your turn.",
 	    "EXTENDED_DESCRIPTION": [
-	      "Deal !D! damage and apply 1 thechaser:Targeting to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn (",
+	      "Deal !D! damage to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn (",
 	      " cards). NL End your turn."
 	    ]
 	  },

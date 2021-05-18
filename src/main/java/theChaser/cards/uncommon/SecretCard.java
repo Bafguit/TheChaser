@@ -33,7 +33,7 @@ public class SecretCard extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 0;
-    private static final int TAR = 1;
+    private static final int TAR = 2;
     private static final int UP_TAR = 1;
 
     public SecretCard() {

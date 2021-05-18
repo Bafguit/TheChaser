@@ -29,7 +29,7 @@ public class DelusiveStrike extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 12;
+    private static final int DAMAGE = 15;
     private static final int UP_DMG = 3;
 
     public DelusiveStrike() {
