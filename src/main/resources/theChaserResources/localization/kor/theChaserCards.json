@@ -9,11 +9,11 @@
   },
   "theChaser:Camouflage": {
     "NAME": "위장",
-    "DESCRIPTION": "*가짜 thechaser:상처 를 !M! 번 얻습니다."
+    "DESCRIPTION": "thechaser:잔상처 를 !M! 번 얻습니다."
   },
   "theChaser:Knife Throw": {
     "NAME": "단검 투척",
-    "DESCRIPTION": "thechaser:표적 을 !M! 번 공격합니다."
+    "DESCRIPTION": "!M! 번 thechaser:겨냥합니다."
   },
   "theChaser:Continuous Slash Alt": {
     "NAME": "흐름 베기",
@@ -41,7 +41,7 @@
   },
   "theChaser:Alert": {
     "NAME": "경계",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *가짜 thechaser:상처 를 !M! 번 얻고 이번 턴에 사용한 카드 수가 !M! 증가합니다."
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:잔상처 를 !M! 번 얻고 이번 턴에 사용한 카드 수가 !M! 증가합니다."
   },
   "theChaser:Blitzkrieg": {
     "NAME": "급습",
@@ -86,7 +86,7 @@
   },
   "theChaser:Linger": {
     "NAME": "여운",
-    "DESCRIPTION": "방어도 를 !B! 얻습니다. NL thechaser:표적 을 !M! 번 공격합니다."
+    "DESCRIPTION": "방어도 를 !B! 얻습니다. NL !M! 번 thechaser:겨냥합니다."
   },
   "theChaser:Makeready": {
     "NAME": "정비",
@@ -94,7 +94,7 @@
   },
   "theChaser:Passing": {
     "NAME": "넘기기",
-    "DESCRIPTION": "방어도 를 !B! 얻습니다. 이번 턴에 thechaser:표적 *공격 을 했다면, 카드를 2 장 뽑습니다."
+    "DESCRIPTION": "방어도 를 !B! 얻습니다. 이번 턴에 thechaser:겨냥했다면, 카드를 2 장 뽑습니다."
   },
   "theChaser:Random Throw": {
     "NAME": "수리검 난사",
@@ -106,7 +106,7 @@
   },
   "theChaser:Stalling": {
     "NAME": "시간 벌기",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL *가짜 thechaser:상처 를 !M! 번 얻고 이번 턴에 사용한 카드 수가 !M! 증가합니다."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:잔상처 를 !M! 번 얻고 이번 턴에 사용한 카드 수가 !M! 증가합니다."
   },
   "theChaser:Thornmail": {
     "NAME": "가시갑옷",
@@ -182,11 +182,11 @@
   },
   "theChaser:Flexibility": {
     "NAME": "적응성",
-    "DESCRIPTION": "두 번 선택: NL thechaser:표적 을 !M! 번 공격하거나, *가짜 thechaser:상처 를 !M! 번 얻거나, 적 전체에게 thechaser:출혈 을 !M! 부여합니다. NL 소멸."
+    "DESCRIPTION": "두 번 선택: NL !M! 번 thechaser:겨냥하거나, thechaser:잔상처 를 !M! 번 얻거나, 적 전체에게 thechaser:출혈 을 !M! 부여합니다. NL 소멸."
   },
   "theChaser:Gale Strike": {
     "NAME": "광풍 타격",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 X 번 줍니다. thechaser:표적 을 X 번 공격합니다."
+    "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 X 번 줍니다. X 번 thechaser:겨냥합니다."
   },
   "theChaser:Hack": {
     "NAME": "난도질",
@@ -214,15 +214,15 @@
   },
   "theChaser:Penetrative": {
     "NAME": "예리함",
-    "DESCRIPTION": "thechaser:표적 *공격 의 피해가 !M! 증가합니다."
+    "DESCRIPTION": "thechaser:겨냥 의 피해가 !M! 증가합니다."
   },
   "theChaser:Pluck Out Daggers": {
     "NAME": "단검 뽑아내기",
-    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 이 카드의 비용이 [E] 감소합니다. NL 피해를 !D! 만큼 !M! 번 줍니다."
+    "DESCRIPTION": "이번 턴에 thechaser:겨냥 한 횟수만큼 이 카드의 비용이 [E] 감소합니다. NL 피해를 !D! 만큼 !M! 번 줍니다."
   },
   "theChaser:Ragewind": {
     "NAME": "휘몰아치기",
-    "DESCRIPTION": "thechaser:표적 을 !M! 번 공격합니다. NL 카드를 사용하면 이 카드의 thechaser:표적 *공격 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
+    "DESCRIPTION": "!M! 번 thechaser:겨냥합니다. NL 카드를 사용하면 이 카드의 thechaser:겨냥 횟수를 영구적으로 1 증가시킵니다. NL 소멸"
   },
   "theChaser:Ready To Counter": {
     "NAME": "반격 준비",
@@ -235,7 +235,7 @@
   },
   "theChaser:Secret Card": {
     "NAME": "숨겨둔 패",
-    "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 thechaser:표적 을 !M! 번 공격합니다."
+    "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 !M! 번 thechaser:겨냥합니다."
   },
   "theChaser:Sequence": {
     "NAME": "연속 동작",
@@ -243,8 +243,8 @@
   },
   "theChaser:Space Out": {
     "NAME": "간격 두기",
-    "DESCRIPTION": "thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다.",
-    "UPGRADE_DESCRIPTION": "선천성. thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다."
+    "DESCRIPTION": "thechaser:겨냥 할 때마다 방어도를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. thechaser:겨냥 할 때마다 방어도를 !M! 얻습니다."
   },
   "theChaser:Testing": {
     "NAME": "탐색전",
@@ -291,7 +291,7 @@
   },
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",
-    "DESCRIPTION": "이번 턴 동안 thechaser:표적 *공격 이 두 번씩 발동됩니다."
+    "DESCRIPTION": "이번 턴 동안 thechaser:겨냥 이 두 번씩 발동됩니다."
   },
   "theChaser:Forte Is Frailty": {
     "NAME": "강점이자 약점",
@@ -311,11 +311,11 @@
   },
   "theChaser:Phrenitis": {
     "NAME": "착란",
-    "DESCRIPTION": "약화, 취약, 손상, 중독, thechaser:출혈, thechaser:표적, thechaser:가짜 *상처, thechaser:무방비 를 1 부여합니다. NL 소멸"
+    "DESCRIPTION": "약화, 취약, 손상, 중독, thechaser:출혈, thechaser:표적, thechaser:잔상처, thechaser:무방비 를 1 부여합니다. NL 소멸"
   },
   "theChaser:Preemptive Attack": {
     "NAME": "선제 공격",
-    "DESCRIPTION": "턴 시작 시 카드를 1장 뽑고 thechaser:표적 을 1번 공격합니다."
+    "DESCRIPTION": "턴 시작 시 카드를 1장 뽑고 1번 thechaser:겨냥합니다."
   },
   "theChaser:Saw Blade": {
     "NAME": "톱날",
@@ -324,7 +324,7 @@
   },
   "theChaser:Shadow Form": {
     "NAME": "그림자의 형상",
-    "DESCRIPTION": "매 턴 시작 시 thechaser:표적 *공격 의 피해가 !M! 증가합니다."
+    "DESCRIPTION": "매 턴 시작 시 thechaser:겨냥 의 피해가 !M! 증가합니다."
   },
   "theChaser:Stealage": {
     "NAME": "훔치기",
@@ -337,24 +337,24 @@
   },
   "theChaser:Unwary": {
     "NAME": "방심",
-    "DESCRIPTION": "thechaser:표적 *공격 이 thechaser:무방비 를 부여합니다."
+    "DESCRIPTION": "thechaser:겨냥 이 thechaser:무방비 를 부여합니다."
   },
   "theChaser:Vitality": {
     "NAME": "활력",
-    "DESCRIPTION": "이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. NL 소멸",
-    "UPGRADE_DESCRIPTION": "보존. 이번 턴 thechaser:표적 *공격 횟수만큼 체력을 회복합니다. NL 소멸",
+    "DESCRIPTION": "이번 턴에 thechaser:겨냥 한 횟수만큼 체력을 회복합니다. NL 소멸",
+    "UPGRADE_DESCRIPTION": "보존. 이번 턴에 thechaser:겨냥 한 횟수만큼 체력을 회복합니다. NL 소멸",
     "EXTENDED_DESCRIPTION": [
-      "이번 턴 thechaser:표적 *공격 횟수(",
+      "이번 턴에 thechaser:겨냥 한 횟수(",
       ") 만큼 체력을 회복합니다. NL 소멸",
       "보존. "
     ]
   },
   "theChaser:Walkout": {
     "NAME": "퇴장",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수만큼 thechaser:표적 *공격 후 턴을 종료합니다.",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수만큼 thechaser:겨냥 한 후 턴을 종료합니다.",
     "EXTENDED_DESCRIPTION": [
       "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수(",
-      ") 만큼 thechaser:표적 *공격 후 턴을 종료합니다."
+      ") 만큼 thechaser:겨냥 한 후 턴을 종료합니다."
     ]
   },
   "theChaser:Wile": {

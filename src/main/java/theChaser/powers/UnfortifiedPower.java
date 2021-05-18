@@ -52,10 +52,10 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
     public void stackPower(int stackAmount) {
         if (this.amount == -1) {
             System.out.println(this.name + " does not stack");
-        } else if (this.amount < 3){
-            this.amount = Math.min(this.amount + stackAmount, 3);
-        } else if(this.amount == 3) {
-            this.amount = 3;
+        } else if (this.amount < 5){
+            this.amount = Math.min(this.amount + stackAmount, 5);
+        } else if(this.amount == 5) {
+            this.amount = 5;
         }
     }
 
@@ -67,7 +67,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            return damage * (1.0F + (0.2F * this.amount));
+            return damage * (1.0F + (0.12F * this.amount));
         } else {
             return damage;
         }
@@ -75,7 +75,7 @@ public class UnfortifiedPower extends AbstractPower implements CloneablePowerInt
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + this.amount * 20 + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.amount * 12 + DESCRIPTIONS[1];
     }
 
     @Override

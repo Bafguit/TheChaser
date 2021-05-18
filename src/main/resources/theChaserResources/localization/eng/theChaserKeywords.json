@@ -13,7 +13,7 @@
       "blindsided",
       "Blindsided"
     ],
-    "DESCRIPTION": "Target receives #b20% more damage for each stack of #yBlindsided (up to a maximum of #b3.)"
+    "DESCRIPTION": "Target receives #b12% more damage for each stack of #yBlindsided (up to a maximum of #b5.)"
   },
   {
     "PROPER_NAME": "Bleeding",
@@ -29,7 +29,7 @@
       "hide",
       "Hide"
     ],
-    "DESCRIPTION": "ALL enemies become #yStunned. Fades away after an Attack is played."
+    "DESCRIPTION": "ALL enemies become #yStunned. Fades away after an Attack is played or #yTargeting is triggered."
   },
   {
     "PROPER_NAME": "Swift",
