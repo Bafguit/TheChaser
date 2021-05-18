@@ -337,7 +337,7 @@
   },
   "theChaser:Unwary": {
     "NAME": "방심",
-    "DESCRIPTION": "thechaser:표적 *공격 이 thechaser:무방비 를 부여합니다. thechaser:표적 *공격 의 피해가 1 감소합니다."
+    "DESCRIPTION": "thechaser:표적 *공격 이 thechaser:무방비 를 부여합니다."
   },
   "theChaser:Vitality": {
     "NAME": "활력",

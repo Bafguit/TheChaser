@@ -336,7 +336,7 @@
 	  },
 	  "theChaser:Unwary": {
 	    "NAME": "Confounding Assault",
-	    "DESCRIPTION": "Dealing damage by triggering thechaser:Targeting also applies thechaser:Blindsided. Whenever you deal damage by triggering thechaser:Targeting, deal 1 less damage."
+	    "DESCRIPTION": "Dealing damage by triggering thechaser:Targeting also applies thechaser:Blindsided."
 	  },
 	  "theChaser:Vitality": {
 	    "NAME": "Joy From Misfortune",

@@ -55,8 +55,8 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
 
     public static int getTargetDamage() {
         AbstractPower pnt = AbstractDungeon.player.getPower(PenetrativePower.POWER_ID);
-        AbstractPower unw = AbstractDungeon.player.getPower(UnwaryPower.POWER_ID);
-        return Math.max(TarAtkDmg + (pnt != null ? pnt.amount : 0) - (unw != null ? 1 : 0), 0);
+        //AbstractPower unw = AbstractDungeon.player.getPower(UnwaryPower.POWER_ID);
+        return Math.max(TarAtkDmg + (pnt != null ? pnt.amount : 0), 0);
     }
 
     public static int getTargetAttackCount() {

@@ -25,7 +25,7 @@ public class UnstableBlock extends ChaserCard {
 
     private static final int COST = 2;
     private static final int BLOCK = 25;
-    private static final int UP_BLOCK = 3;
+    private static final int UP_BLOCK = 2;
     private static final int WEAK = 1;
 
     public UnstableBlock() {
