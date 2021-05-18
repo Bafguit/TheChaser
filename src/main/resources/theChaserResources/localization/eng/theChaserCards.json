@@ -247,7 +247,8 @@
 	  },
 	  "theChaser:Space Out": {
 	    "NAME": "Combat Spacing",
-	    "DESCRIPTION": "Whenever you trigger thechaser:Targeting, gain !M! Block."
+	    "DESCRIPTION": "Whenever you trigger thechaser:Targeting, gain !M! Block.",
+	    "UPGRADE_DESCRIPTION": "Innate. Whenever you trigger thechaser:Targeting, gain !M! Block."
 	  },
 	  "theChaser:Testing": {
 	    "NAME": "Test the Waters",

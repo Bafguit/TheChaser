@@ -47,7 +47,7 @@ public class ReplicaDaggerPower extends AbstractPower implements CloneablePowerI
     }
 
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         if(ChaserUtil.canAttack()) {
             this.flash();
             this.addToBot(new MakeTempCardInHandAction(new ThrowingKnife(), this.amount));

@@ -243,7 +243,8 @@
   },
   "theChaser:Space Out": {
     "NAME": "간격 두기",
-    "DESCRIPTION": "thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다."
+    "DESCRIPTION": "thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. thechaser:표적 *공격 을 할 때마다 방어도를 !M! 얻습니다."
   },
   "theChaser:Testing": {
     "NAME": "탐색전",
