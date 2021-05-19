@@ -26,7 +26,7 @@ public class Identify extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 6;
 
     public Identify() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);

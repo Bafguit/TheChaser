@@ -29,22 +29,23 @@ public class Throes extends ChaserCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 12;
-    private static final int UP_DMG = 5;
+    private static final int UP_DMG = 3;
 
     public Throes() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 3);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_HEAVY));
-        addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, 3), 3));
+        addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, this.magicNumber), this.magicNumber));
         addToBot(new ApplyPowerAction(p, p, new VulnerablePower(p, 1, false), 1));
     }
 
     @Override
     public void upgradeCard() {
         upgradeDamage(UP_DMG);
+        upgradeMagicNumber(2);
     }
 
 }

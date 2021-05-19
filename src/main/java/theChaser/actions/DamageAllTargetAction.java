@@ -40,7 +40,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (this.firstFrame) {
+        if (this.firstFrame && this.monsters != null) {
             boolean playedMusic = false;
 
             for(AbstractMonster m : this.monsters) {
@@ -58,7 +58,7 @@ public class DamageAllTargetAction extends AbstractGameAction {
         }
 
         this.tickDuration();
-        if (this.isDone) {
+        if (this.isDone && this.monsters != null) {
 
             for(AbstractMonster m : this.monsters) {
                 if (!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {

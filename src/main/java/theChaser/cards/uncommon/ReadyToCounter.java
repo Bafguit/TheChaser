@@ -42,13 +42,11 @@ public class ReadyToCounter extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = -1;
-    private static final int DMG = 5;
+    private static final int DMG = 6;
     private static final int UP_DMG = 2;
-    private static ChaserCard c = new ThrowingKnife();
 
     public ReadyToCounter() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, DMG, 0);
-        this.cardsToPreview = c;
     }
 
     @Override
@@ -67,10 +65,15 @@ public class ReadyToCounter extends ChaserCard {
             p.getRelic("Chemical X").flash();
         }
 
-        for (int i = 0; i < effect; i++) {
-            addToBot(new GainBlockAction(p, this.block, true));
+        if(effect > 0) {
+            for (int i = 0; i < effect; i++) {
+                addToBot(new GainBlockAction(p, this.block, true));
+            }
+
+            for (int i = 0; i < effect; i++) {
+                addToBot(new TargetAttackAction());
+            }
         }
-        addToBot(new MakeTempCardInHandAction(c, effect));
 
     }
 

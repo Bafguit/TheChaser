@@ -226,12 +226,12 @@
   },
   "theChaser:Ready To Counter": {
     "NAME": "반격 준비",
-    "DESCRIPTION": "방어도를 !B! 만큼 X 번 얻습니다. NL *수리검 카드를 X 장 얻습니다."
+    "DESCRIPTION": "방어도를 !B! 만큼 X 번 얻습니다. X 번 thechaser:겨냥합니다."
   },
   "theChaser:Replica Dagger": {
     "NAME": "복제품 단검",
-    "DESCRIPTION": "턴 시작 시 *수리검 카드를 1장 얻습니다. thechaser:표적 을 가진 적이 없다면, 대신 무작위 적에게 thechaser:표적 을 1 부여합니다.",
-    "UPGRADE_DESCRIPTION": "선천성. 턴 시작 시 *수리검 카드를 1장 얻습니다. thechaser:표적 을 가진 적이 없다면, 대신 무작위 적에게 thechaser:표적 을 1 부여합니다."
+    "DESCRIPTION": "턴 시작 시 *수리검 카드를 1장 얻고 무작위 적에게 thechaser:표적 을 1 부여합니다.",
+    "UPGRADE_DESCRIPTION": "선천성. 턴 시작 시 *수리검 카드를 1장 얻고 무작위 적에게 thechaser:표적 을 1 부여합니다."
   },
   "theChaser:Secret Card": {
     "NAME": "숨겨둔 패",
@@ -252,12 +252,12 @@
   },
   "theChaser:Throes": {
     "NAME": "발악",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 3 부여합니다. NL 취약 을 1 얻습니다."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 !M! 부여합니다. NL 취약 을 1 얻습니다."
   },
   "theChaser:Unstable Block": {
     "NAME": "불안정한 막기",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 취약 을 1 얻습니다.",
-    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:무방비 를 1 얻습니다."
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 취약 을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:무방비 를 !M! 얻습니다."
   },
   "theChaser:Weakness Strike": {
     "NAME": "약점 타격",
@@ -303,7 +303,7 @@
   },
   "theChaser:Hide": {
     "NAME": "은신",
-    "DESCRIPTION": "!M! 턴 동안 thechaser:은신 합니다. NL 소멸"
+    "DESCRIPTION": "!M! 턴 동안 thechaser:은신합니다. NL 소멸"
   },
   "theChaser:Incisive Blade": {
     "NAME": "예리한 칼날",
@@ -332,8 +332,8 @@
   },
   "theChaser:Strategic Retreat": {
     "NAME": "작전상 후퇴",
-    "DESCRIPTION": "*보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다.",
-    "UPGRADE_DESCRIPTION": "보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다."
+    "DESCRIPTION": "보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다.",
+    "UPGRADE_DESCRIPTION": "선천성. 보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다."
   },
   "theChaser:Unwary": {
     "NAME": "방심",

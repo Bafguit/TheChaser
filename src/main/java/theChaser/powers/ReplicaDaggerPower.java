@@ -47,12 +47,10 @@ public class ReplicaDaggerPower extends AbstractPower implements CloneablePowerI
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
+    public void atStartOfTurn() {
         if(ChaserUtil.canAttack()) {
             this.flash();
             this.addToBot(new MakeTempCardInHandAction(new ThrowingKnife(), this.amount));
-        } else {
-            this.flash();
             AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster) null, true, AbstractDungeon.cardRandomRng);
             this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new TargetPower(m, this.amount)));
         }

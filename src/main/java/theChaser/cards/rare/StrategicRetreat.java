@@ -44,11 +44,12 @@ public class StrategicRetreat extends ChaserCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 3;
+    private static final int COST = 0;
 
     public StrategicRetreat() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.selfRetain = true;
     }
 
     @Override
@@ -102,7 +103,7 @@ public class StrategicRetreat extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        this.selfRetain = true;
+        this.isInnate = true;
     }
 
 }

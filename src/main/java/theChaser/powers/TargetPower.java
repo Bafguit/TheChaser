@@ -53,7 +53,7 @@ public class TargetPower extends AbstractPower implements CloneablePowerInterfac
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + ChaserUtil.getTargetDamage() + DESCRIPTIONS[1] + " NL " + DESCRIPTIONS[2] + amount + (this.amount == 1 ? DESCRIPTIONS[3] : DESCRIPTIONS[4]);
+        description = DESCRIPTIONS[0] + ChaserUtil.getTargetDamage() + DESCRIPTIONS[1] + DESCRIPTIONS[2] + amount + (this.amount == 1 ? DESCRIPTIONS[3] : DESCRIPTIONS[4]);
     }
 
     @Override

@@ -230,12 +230,12 @@
 	  },
 	  "theChaser:Ready To Counter": {
 	    "NAME": "Counter Manoeuvre",
-	    "DESCRIPTION": "Gain !B! Block X times. NL Add X *Throwing *Knife into your hand."
+	    "DESCRIPTION": "Gain !B! Block X times. Trigger thechaser:Targeting X times."
 	  },
 	  "theChaser:Replica Dagger": {
 	    "NAME": "Replicating Daggers",
-	    "DESCRIPTION": "At the start of your turn, add a *Throwing *Knife into your hand. If no enemies are affected by thechaser:Targeting, apply 1 thechaser:Targeting to a random enemy instead.",
-	    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Throwing *Knife into your hand. If no enemies are affected by thechaser:Targeting, apply 1 thechaser:Targeting to a random enemy instead."
+	    "DESCRIPTION": "At the start of your turn, add a *Throwing *Knife into your hand and apply 1 thechaser:Targeting to a random enemy.",
+	    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Throwing *Knife into your hand and apply 1 thechaser:Targeting to a random enemy."
 	  },
 	  "theChaser:Secret Card": {
 	    "NAME": "Fighter's Trick",
@@ -256,12 +256,12 @@
 	  },
 	  "theChaser:Throes": {
 	    "NAME": "Throes of Rage",
-	    "DESCRIPTION": "Deal !D! damage and apply 3 thechaser:Blindsided. NL Gain 1 Vulnerable."
+	    "DESCRIPTION": "Deal !D! damage and apply !M! thechaser:Blindsided. NL Gain 1 Vulnerable."
 	  },
 	  "theChaser:Unstable Block": {
 	    "NAME": "Unstable Defense",
-	    "DESCRIPTION": "Gain !B! Block and 1 Vulnerable.",
-	    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 thechaser:Blindsided."
+	    "DESCRIPTION": "Gain !B! Block and !M! Vulnerable.",
+	    "UPGRADE_DESCRIPTION": "Gain !B! Block and !M! thechaser:Blindsided."
 	  },
 	  "theChaser:Weakness Strike": {
 	    "NAME": "Weakpoint Strike",
@@ -331,8 +331,8 @@
 	  },
 	  "theChaser:Strategic Retreat": {
 	    "NAME": "Strategic Retreat",
-	    "DESCRIPTION": "Escape from a non-boss combat. Receive no rewards. NL Remove this card from your master deck.",
-	    "UPGRADE_DESCRIPTION": "Retain. NL Escape from a non-boss combat. Receive no rewards. NL Remove this card from your master deck."
+	    "DESCRIPTION": "Retain. Escape from a non-boss combat. Receive no rewards. NL Remove this card from your master deck.",
+	    "UPGRADE_DESCRIPTION": "Innate. Retain. NL Escape from a non-boss combat. Receive no rewards. NL Remove this card from your master deck."
 	  },
 	  "theChaser:Unwary": {
 	    "NAME": "Confounding Assault",

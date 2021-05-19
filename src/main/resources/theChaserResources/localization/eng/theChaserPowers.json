@@ -126,7 +126,7 @@
     "NAME": "Replicating Daggers",
     "DESCRIPTIONS": [
       "At the start of your turn, add #b",
-      " #yThrowing #yKnife into your hand. If no enemies are affected by #yTargeting, apply #b",
+      " #yThrowing #yKnife into your hand and apply #b",
       " #yTargeting to a random enemy instead."
     ]
   },
@@ -134,9 +134,7 @@
     "NAME": "Proxy",
     "DESCRIPTIONS": [
       "This creature receives #b",
-      "% more damage. Lasts for #b",
-      " turn.",
-      " turns."
+      "% more damage."
     ]
   },
   "theChaser:": {

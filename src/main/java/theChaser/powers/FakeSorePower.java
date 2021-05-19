@@ -33,7 +33,7 @@ public class FakeSorePower extends AbstractPower implements CloneablePowerInterf
         this.amount = amount;
 
         type = PowerType.DEBUFF;
-        isTurnBased = true;
+        isTurnBased = false;
 
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
@@ -43,11 +43,7 @@ public class FakeSorePower extends AbstractPower implements CloneablePowerInterf
 
     @Override
     public void atEndOfRound() {
-        if(this.amount > 1) {
-            this.amount--;
-        } else if(this.amount == 1) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-        }
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
 
     @Override
@@ -61,7 +57,7 @@ public class FakeSorePower extends AbstractPower implements CloneablePowerInterf
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + 5 * this.amount + DESCRIPTIONS[1] + this.amount + (this.amount == 1 ? DESCRIPTIONS[2] : DESCRIPTIONS[3]);
+        description = DESCRIPTIONS[0] + 5 * this.amount + DESCRIPTIONS[1];
     }
 
     @Override
