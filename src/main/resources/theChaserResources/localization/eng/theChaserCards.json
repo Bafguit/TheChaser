@@ -45,7 +45,7 @@
 	  },
 	  "theChaser:Blitzkrieg": {
 	    "NAME": "Blitzkrieg",
-	    "DESCRIPTION": "Deal !D! damage. NL Apply 1 thechaser:Blindsided."
+	    "DESCRIPTION": "Deal !D! damage. NL Apply !M! thechaser:Blindsided."
 	  },
 	  "theChaser:Brass": {
 	    "NAME": "Brass Tacks",
@@ -70,10 +70,10 @@
 	  },
 	  "theChaser:Geck": {
 	    "NAME": "Nullify Defenses",
-	    "DESCRIPTION": "Apply !M! thechaser:Blindsided to ALL enemies."
+	    "DESCRIPTION": "Apply !M! thechaser:Blindsided and thechaser:Targeting to ALL enemies."
 	  },
 	  "theChaser:Identify": {
-	    "NAME": "Rough Up",
+	    "NAME": "Inertial Strike",
 	    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the amount of cards played this turn.",
 	    "EXTENDED_DESCRIPTION": [
 	      "Deal !D! damage. NL Deals additional damage equal to the amount of cards played this turn (",

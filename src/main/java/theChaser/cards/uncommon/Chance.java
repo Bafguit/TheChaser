@@ -51,7 +51,7 @@ public class Chance extends ChaserCard {
         if(ChaserUtil.isAccel()) {
             ArrayList<AbstractCard> cards = new ArrayList<>();
             for(AbstractCard c : p.hand.group) {
-                if(c.costForTurn > 0 || !c.freeToPlay()) {
+                if(c.costForTurn > 0 && !c.freeToPlay()) {
                     cards.add(c);
                 }
             }

@@ -45,7 +45,7 @@
   },
   "theChaser:Blitzkrieg": {
     "NAME": "급습",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 1 부여합니다."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비 를 !M! 부여합니다."
   },
   "theChaser:Brass": {
     "NAME": "놋쇠",
@@ -70,10 +70,10 @@
   },
   "theChaser:Geck": {
     "NAME": "깔보기",
-    "DESCRIPTION": "적 전체에게 thechaser:무방비 를 !M! 부여합니다."
+    "DESCRIPTION": "적 전체에게 thechaser:무방비 를 !M!, thechaser:표적 을 !M! 부여합니다."
   },
   "theChaser:Identify": {
-    "NAME": "식별",
+    "NAME": "관성 타격",
     "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 사용한 카드 수만큼 피해가 증가합니다.",
     "EXTENDED_DESCRIPTION": [
       "피해를 !D! 줍니다. NL 이번 턴에 사용한 카드 수(",

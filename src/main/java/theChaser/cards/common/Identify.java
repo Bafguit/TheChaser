@@ -30,6 +30,7 @@ public class Identify extends ChaserCard {
 
     public Identify() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
+        this.tags.add(CardTags.STRIKE);
     }
 
     public void applyPowers() {

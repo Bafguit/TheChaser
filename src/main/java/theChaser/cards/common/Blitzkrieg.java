@@ -38,21 +38,22 @@ public class Blitzkrieg extends ChaserCard {
 
     private static final int COST = 0;
     private static final int DMG = 5;
-    private static final int UP_DMG = 3;
+    private static final int UP_DMG = 1;
 
     public Blitzkrieg() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DMG, 0, 0);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DMG, 0, 1);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, 1)));
+        addToBot(new ApplyPowerAction(m, p, new UnfortifiedPower(m, p, this.magicNumber)));
     }
 
     @Override
     public void upgradeCard() {
         upgradeDamage(UP_DMG);
+        upgradeMagicNumber(1);
     }
 
 }

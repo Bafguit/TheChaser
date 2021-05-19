@@ -65,6 +65,7 @@ public class Geck extends ChaserCard {
 
         for(AbstractMonster mos : AbstractDungeon.getCurrRoom().monsters.monsters) {
             this.addToBot(new ApplyPowerAction(mos, p, new UnfortifiedPower(mos, p, this.magicNumber), this.magicNumber));
+            this.addToBot(new ApplyPowerAction(mos, p, new TargetPower(mos, this.magicNumber), this.magicNumber));
         }
     }
 

@@ -43,7 +43,6 @@ public class UnstableBlock extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(1);
     }
 
 }
