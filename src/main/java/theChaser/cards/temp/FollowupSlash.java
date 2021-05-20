@@ -14,9 +14,9 @@ import theChaser.characters.TheChaser;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class ContinuousSlashAlt extends ChaserCard {
+public class FollowupSlash extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Continuous Slash Alt");
+    public static final String ID = TheChaserMod.makeID("Followup Slash");
     public static final String IMG = makeCardPath("ContinuousSlash.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
@@ -28,7 +28,7 @@ public class ContinuousSlashAlt extends ChaserCard {
     private static final int DAMAGE = 2;
     private static final int UP_DMG = 1;
 
-    public ContinuousSlashAlt() {
+    public FollowupSlash() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
         this.exhaust = true;
         this.isEthereal = true;

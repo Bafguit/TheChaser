@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
-import theChaser.cards.temp.ContinuousSlashAlt;
 import theChaser.cards.temp.SequenceFlow;
 import theChaser.characters.TheChaser;
 

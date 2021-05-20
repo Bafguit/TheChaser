@@ -23,9 +23,9 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class ReactionShot extends ChaserCard {
+public class ReactiveShot extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Reaction Shot");
+    public static final String ID = TheChaserMod.makeID("Reactive Shot");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("ReactionShot.png");
@@ -45,7 +45,7 @@ public class ReactionShot extends ChaserCard {
     private static final int TAG = 2;
     private static final int UP_TAG = 1;
 
-    public ReactionShot() {
+    public ReactiveShot() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, TAG);
         loadJokeCardImage(this, IMG_BETA);
     }

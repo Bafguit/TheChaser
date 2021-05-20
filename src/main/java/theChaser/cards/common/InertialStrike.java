@@ -15,9 +15,9 @@ import theChaser.powers.TargetPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
 
-public class Identify extends ChaserCard {
+public class InertialStrike extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Identify");
+    public static final String ID = TheChaserMod.makeID("Inertial Strike");
     public static final String IMG = makeCardPath("Identify.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -28,7 +28,7 @@ public class Identify extends ChaserCard {
     private static final int COST = 1;
     private static final int DAMAGE = 6;
 
-    public Identify() {
+    public InertialStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
         this.tags.add(CardTags.STRIKE);
     }

@@ -25,8 +25,8 @@ import theChaser.cards.common.*;
 import theChaser.cards.rare.*;
 import theChaser.cards.starter.ChaserDefend;
 import theChaser.cards.starter.ChaserStrike;
-import theChaser.cards.starter.ReactionShot;
-import theChaser.cards.starter.Recluse;
+import theChaser.cards.starter.ReactiveShot;
+import theChaser.cards.starter.FlawedStealth;
 import theChaser.cards.temp.*;
 import theChaser.cards.uncommon.*;
 import theChaser.characters.TheChaser;
@@ -426,8 +426,8 @@ public class TheChaserMod implements
         //BASIC
         BaseMod.addCard(new ChaserStrike());
         BaseMod.addCard(new ChaserDefend());
-        BaseMod.addCard(new ReactionShot());
-        BaseMod.addCard(new Recluse());
+        BaseMod.addCard(new ReactiveShot());
+        BaseMod.addCard(new FlawedStealth());
         //COMMON
         BaseMod.addCard(new Alert());
         BaseMod.addCard(new Blitzkrieg());
@@ -437,7 +437,7 @@ public class TheChaserMod implements
         BaseMod.addCard(new DelusiveStrike());
         BaseMod.addCard(new FatalBlitz());
         BaseMod.addCard(new Geck());
-        BaseMod.addCard(new Identify());
+        BaseMod.addCard(new InertialStrike());
         BaseMod.addCard(new LeaveTraces());
         BaseMod.addCard(new Linger());
         BaseMod.addCard(new Makeready());
@@ -505,7 +505,7 @@ public class TheChaserMod implements
         //TEMP
         BaseMod.addCard(new BloodyWind());
         BaseMod.addCard(new Camouflage());
-        BaseMod.addCard(new ContinuousSlashAlt());
+        BaseMod.addCard(new FollowupSlash());
         BaseMod.addCard(new KnifeThrow());
         BaseMod.addCard(new SequenceFlow());
         BaseMod.addCard(new ThrowingKnife());

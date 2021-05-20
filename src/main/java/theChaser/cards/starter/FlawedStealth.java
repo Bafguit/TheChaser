@@ -21,9 +21,9 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class Recluse extends ChaserCard {
+public class FlawedStealth extends ChaserCard {
 
-    public static final String ID = TheChaserMod.makeID("Recluse");
+    public static final String ID = TheChaserMod.makeID("Flawed Stealth");
     public static final String IMG = makeCardPath("Recluse.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
@@ -35,7 +35,7 @@ public class Recluse extends ChaserCard {
     private static final int BLOCK = 9;
     private static final int UP_BLOCK = 3;
 
-    public Recluse() {
+    public FlawedStealth() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 0);
     }
 

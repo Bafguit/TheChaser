@@ -11,23 +11,23 @@
 	    "NAME": "Camouflage",
 	    "DESCRIPTION": "Gain 1 thechaser:Proxy !M! times."
 	  },
+	  "theChaser:Followup Slash": {
+	  	"NAME": "Followup Slash",
+		"DESCRIPTION": "Ethereal. Deal !D! damage twice. NL Exhaust."
+	  },
 	  "theChaser:Knife Throw": {
 	    "NAME": "Knife Throw",
 	    "DESCRIPTION": "Trigger thechaser:Targeting !M! times."
-	  },
-	  "theChaser:Continuous Slash Alt": {
-	    "NAME": "Followup Slash",
-	    "DESCRIPTION": "Ethereal. Deal !D! damage twice. NL Exhaust."
 	  },
 	  "theChaser:Sequence Flow": {
 	    "NAME": "Sequence Flow",
 	    "DESCRIPTION": "Ethereal. Deal !D! damage. NL Exhaust."
 	  },
-	  "theChaser:Reaction Shot": {
+	  "theChaser:Reactive Shot": {
 	    "NAME": "Reactive Shot",
 	    "DESCRIPTION": "Deal !D! damage and apply !M! thechaser:Targeting to a random enemy."
 	  },
-	  "theChaser:Recluse": {
+	  "theChaser:Flawed Stealth": {
 	    "NAME": "Flawed Stealth",
 	    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Frail."
 	  },
@@ -72,7 +72,7 @@
 	    "NAME": "Nullify Defenses",
 	    "DESCRIPTION": "Apply !M! thechaser:Blindsided and thechaser:Targeting to ALL enemies."
 	  },
-	  "theChaser:Identify": {
+	  "theChaser:Inertial Strike": {
 	    "NAME": "Inertial Strike",
 	    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the amount of cards played this turn.",
 	    "EXTENDED_DESCRIPTION": [
@@ -141,8 +141,8 @@
 	  },
 	  "theChaser:Break Armour": {
 	    "NAME": "Armorslayer",
-	    "DESCRIPTION": "Remove ALL stacks of thechaser:Targeting on the enemy. Apply Vulnerable and Weak equal to the amount removed.",
-	    "UPGRADE_DESCRIPTION": "Remove ALL stacks of thechaser:Targeting on the enemy. Apply Vulnerable, Weak, and thechaser:Blindsided equal to the amount removed."
+	    "DESCRIPTION": "Remove ALL stacks of thechaser:Targeting on the enemy. Apply Vulnerable, Weak, and thechaser:Bleeding equal to the amount removed. Exhaust.",
+	    "UPGRADE_DESCRIPTION": "Apply Vulnerable, Weak, and thechaser:Bleeding equal to the amount of thechaser:Targeting on the enemy. Exhaust."
 	  },
 	  "theChaser:Bulwark": {
 	    "NAME": "Strong Bulwark",

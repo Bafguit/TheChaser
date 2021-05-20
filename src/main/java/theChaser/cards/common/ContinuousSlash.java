@@ -6,14 +6,13 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.red.Clash;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.cards.ChaserCard;
-import theChaser.cards.temp.ContinuousSlashAlt;
+import theChaser.cards.temp.FollowupSlash;
 import theChaser.characters.TheChaser;
 
 import static theChaser.TheChaserMod.makeCardPath;
@@ -34,7 +33,7 @@ public class ContinuousSlash extends ChaserCard {
 
     public ContinuousSlash() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 0);
-        this.cardsToPreview = new ContinuousSlashAlt();
+        this.cardsToPreview = new FollowupSlash();
     }
 
     @Override
@@ -53,7 +52,7 @@ public class ContinuousSlash extends ChaserCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.NONE, true));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.NONE, true));
         if(ChaserUtil.isAccel()) {
-            ChaserCard temp = new ContinuousSlashAlt();
+            ChaserCard temp = new FollowupSlash();
             if(this.upgraded) temp.upgrade();
             addToBot(new MakeTempCardInHandAction(temp));
         }
@@ -62,7 +61,7 @@ public class ContinuousSlash extends ChaserCard {
     @Override
     public void upgradeCard() {
         upgradeDamage(UP_DMG);
-        ChaserCard temp = new ContinuousSlashAlt();
+        ChaserCard temp = new FollowupSlash();
         temp.upgrade();
         this.cardsToPreview = temp;
     }

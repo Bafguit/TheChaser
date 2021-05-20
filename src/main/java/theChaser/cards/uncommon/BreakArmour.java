@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theChaser.TheChaserMod;
@@ -32,6 +33,7 @@ public class BreakArmour extends ChaserCard {
 
     public BreakArmour() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
     }
 
     @Override
@@ -47,14 +49,15 @@ public class BreakArmour extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {
+        AbstractPower power = m.getPower(TargetPower.POWER_ID);
+        if(power != null) {
             int amt = m.getPower(TargetPower.POWER_ID).amount;
-            addToBot(new RemoveSpecificPowerAction(m, p, m.getPower(TargetPower.POWER_ID)));
+            if(this.upgraded) {
+                addToBot(new RemoveSpecificPowerAction(m, p, m.getPower(TargetPower.POWER_ID)));
+            }
             addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, amt, false)));
             addToBot(new ApplyPowerAction(m, p, new WeakPower(m, amt, false)));
-            if(this.upgraded) {
-                addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, amt)));
-            }
+            addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, amt)));
         }
     }
 

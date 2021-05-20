@@ -10,14 +10,12 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.characters.TheSilent;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
@@ -25,10 +23,10 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theChaser.TheChaserMod;
-import theChaser.cards.starter.ReactionShot;
+import theChaser.cards.starter.ReactiveShot;
 import theChaser.cards.starter.ChaserDefend;
 import theChaser.cards.starter.ChaserStrike;
-import theChaser.cards.starter.Recluse;
+import theChaser.cards.starter.FlawedStealth;
 import theChaser.relics.ShadowInNecklace;
 import theChaser.util.TextureLoader;
 
@@ -170,12 +168,12 @@ public class TheChaser extends CustomPlayer {
         retVal.add(ChaserStrike.ID);
         retVal.add(ChaserStrike.ID);
         retVal.add(ChaserStrike.ID);
-        retVal.add(ReactionShot.ID);
+        retVal.add(ReactiveShot.ID);
         retVal.add(ChaserDefend.ID);
         retVal.add(ChaserDefend.ID);
         retVal.add(ChaserDefend.ID);
         retVal.add(ChaserDefend.ID);
-        retVal.add(Recluse.ID);
+        retVal.add(FlawedStealth.ID);
 
         return retVal;
     }
@@ -243,7 +241,7 @@ public class TheChaser extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Recluse();
+        return new FlawedStealth();
     }
 
     // The class name as it appears next to your player name in-game
