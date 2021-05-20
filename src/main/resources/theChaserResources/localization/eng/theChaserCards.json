@@ -206,7 +206,7 @@
 	  },
 	  "theChaser:Open Sore": {
 	    "NAME": "Open Sore",
-	    "DESCRIPTION": "After thechaser:Bleeding decreases, increase it by !M!."
+	    "DESCRIPTION": "At the start of your turn, apply !M! thechaser:Bleeding to ALL enemies."
 	  },
 	  "theChaser:Paralyze": {
 	    "NAME": "Paralyze",

@@ -19,8 +19,8 @@ public class InstantBleedingDamageAction extends AbstractGameAction {
 
     public void update() {
         if(!this.target.isDeadOrEscaped()) {
-            if (this.target.hasPower(BleedingPower.POWER_ID)) {
-                BleedingPower bleedingPower = (BleedingPower) this.target.getPower(BleedingPower.POWER_ID);
+            BleedingPower bleedingPower = (BleedingPower) this.target.getPower(BleedingPower.POWER_ID);
+            if (bleedingPower != null) {
                 bleedingPower.getBleedingDamage(this.amount);
             }
         }

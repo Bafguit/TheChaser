@@ -3,17 +3,22 @@ package theChaser.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.NoxiousFumesPower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
 import theChaser.TheChaserMod;
 import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
 import theChaser.util.TextureLoader;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class OpenSorePower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
@@ -41,6 +46,21 @@ public class OpenSorePower extends AbstractPower implements CloneablePowerInterf
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
         updateDescription();
+    }
+
+    @Override
+    public void atStartOfTurnPostDraw() {
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.flash();
+            Iterator var1 = AbstractDungeon.getMonsters().monsters.iterator();
+
+            while(var1.hasNext()) {
+                AbstractMonster m = (AbstractMonster)var1.next();
+                if (!m.isDead && !m.isDying) {
+                    this.addToBot(new ApplyPowerAction(m, this.owner, new BleedingPower(m, this.owner, this.amount), this.amount));
+                }
+            }
+        }
     }
 
     @Override

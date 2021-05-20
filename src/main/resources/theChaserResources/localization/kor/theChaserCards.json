@@ -202,7 +202,7 @@
   },
   "theChaser:Open Sore": {
     "NAME": "아물지 않은 상처",
-    "DESCRIPTION": "thechaser:출혈이 감소한 후 !M! 만큼 증가합니다."
+    "DESCRIPTION": "내 턴 시작 시 적 전체에게 thechaser:출혈을 !M! 부여합니다."
   },
   "theChaser:Paralyze": {
     "NAME": "마비",

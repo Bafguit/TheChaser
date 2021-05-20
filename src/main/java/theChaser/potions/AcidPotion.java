@@ -45,7 +45,7 @@ public class AcidPotion extends AbstractPotion {
 
     @Override
     public int getPotency(int i) {
-        return 6;
+        return 7;
     }
 
     @Override

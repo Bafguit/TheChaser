@@ -59,8 +59,8 @@
   "theChaser:Bleeding": {
     "NAME": "출혈",
     "DESCRIPTIONS": [
-      "공격할 때마다 체력을 #r",
-      " 잃고 중첩이 #b1 감소합니다."
+      "턴 시작 시 체력을 #b",
+      " 잃고, #y출혈 을 잃습니다. #y출혈 이 #b2 이상이었다면, 대신 #b1 로 감소합니다. 공격 카드를 사용할 때마다 #y출혈 이 #b1 증가합니다."
     ]
   },
   "theChaser:Hide": {
@@ -87,8 +87,8 @@
   "theChaser:Open Sore": {
     "NAME": "아물지 않은 상처",
     "DESCRIPTIONS": [
-      "적의 #y출혈 이 감소한 후 #b",
-      " 만큼 증가합니다."
+      "내 턴 시작 시 적 전체에게 #y출혈 을 #b",
+      " 부여합니다."
     ]
   },
   "theChaser:Big Picture": {

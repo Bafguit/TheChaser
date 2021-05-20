@@ -21,7 +21,7 @@
       "bleeding",
       "Bleeding"
     ],
-    "DESCRIPTION": "Whenever this creature attacks, it loses #b1 HP and the total amount of #yBleeding is reduced by #b1."
+    "DESCRIPTION": "#yBleeding creatures lose HP at the start of their turn, then remove #yBleeding. If #yBleeding was 2 or more, reduce #yBleeding to #b1 instead. Whenever you play an Attack, increase #yBleeding by #b1."
   },
   {
     "PROPER_NAME": "Hide",

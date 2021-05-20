@@ -33,6 +33,7 @@ import theChaser.characters.TheChaser;
 import theChaser.potions.AcidPotion;
 import theChaser.potions.ShadowPotion;
 import theChaser.potions.TargetPotion;
+import theChaser.powers.*;
 import theChaser.relics.*;
 import theChaser.util.IDCheckDontTouchPls;
 import theChaser.util.TextureLoader;
@@ -40,6 +41,7 @@ import theChaser.util.TextureLoader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 import java.util.Properties;
 
 //TODO: DON'T MASS RENAME/REFACTOR
@@ -98,7 +100,7 @@ public class TheChaserMod implements
     
     // Colors (RGB)
     // Character Color
-    public static final Color DEFAULT_NAVY = CardHelper.getColor(77, 77, 255);
+    public static final Color DEFAULT_NAVY = CardHelper.getColor(77, 77, 255).cpy();
     
     // Potion Colors in RGB
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
@@ -344,6 +346,24 @@ public class TheChaserMod implements
         BaseMod.addPotion(AcidPotion.class, maroon, maroon, Color.YELLOW, AcidPotion.ID, TheChaser.Enums.THE_CHASER);
         BaseMod.addPotion(ShadowPotion.class, dark, null, null, ShadowPotion.ID, TheChaser.Enums.THE_CHASER);
         BaseMod.addPotion(TargetPotion.class, Color.WHITE, Color.RED, null, TargetPotion.ID, TheChaser.Enums.THE_CHASER);
+
+        BaseMod.addPower(AccelerationPower.class, AccelerationPower.POWER_ID);
+        BaseMod.addPower(BigPicturePower.class, BigPicturePower.POWER_ID);
+        BaseMod.addPower(BleedingPower.class, BleedingPower.POWER_ID);
+        BaseMod.addPower(DipladePower.class, DipladePower.POWER_ID);
+        BaseMod.addPower(DualWieldingPower.class, DualWieldingPower.POWER_ID);
+        BaseMod.addPower(FakeSorePower.class, FakeSorePower.POWER_ID);
+        BaseMod.addPower(ForteIsFrailtyPower.class, ForteIsFrailtyPower.POWER_ID);
+        BaseMod.addPower(HidePower.class, OpenSorePower.POWER_ID);
+        BaseMod.addPower(PenetrativePower.class, PenetrativePower.POWER_ID);
+        BaseMod.addPower(PreemptiveAttackPower.class, PreemptiveAttackPower.POWER_ID);
+        BaseMod.addPower(ReplicaDaggerPower.class, ReplicaDaggerPower.POWER_ID);
+        BaseMod.addPower(SawBladePower.class, SawBladePower.POWER_ID);
+        BaseMod.addPower(ShadowFormPower.class, ShadowFormPower.POWER_ID);
+        BaseMod.addPower(SpaceOutPower.class, SpaceOutPower.POWER_ID);
+        BaseMod.addPower(TargetPower.class, TargetPower.POWER_ID);
+        BaseMod.addPower(UnfortifiedPower.class, UnfortifiedPower.POWER_ID);
+        BaseMod.addPower(UnwaryPower.class, UnwaryPower.POWER_ID);
 
         /*
         // =============== EVENTS =================

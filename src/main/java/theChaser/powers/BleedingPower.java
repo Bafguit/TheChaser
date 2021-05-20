@@ -8,7 +8,9 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -17,23 +19,26 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.powers.ThornsPower;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import theChaser.TheChaserMod;
 import theChaser.actions.BleedAction;
 import theChaser.actions.InstantBleedingDamageAction;
+import theChaser.actions.LoseBleedingHPAction;
 import theChaser.util.TextureLoader;
 
 import java.util.ArrayList;
 
-public class BleedingPower extends AbstractPower implements CloneablePowerInterface {
+public class BleedingPower extends AbstractPower implements CloneablePowerInterface, HealthBarRenderPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = TheChaserMod.makeID("Bleeding");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private static final Color color = new Color(0.4F, 0, 0, 1).cpy();
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/Bleeding84.png");
@@ -57,39 +62,23 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
     }
 
     @Override
-    public void update(int slot) {
-        super.update(slot);
-        this.updateDescription();
-    }
-
-    @Override
-    public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
-        if(info.type == DamageInfo.DamageType.NORMAL) {
-            this.addToTop(new InstantBleedingDamageAction(this.owner, 1));
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        if(card.type.equals(AbstractCard.CardType.ATTACK)) {
+            this.amount++;
         }
-        return damageAmount;
     }
 
     public void getBleedingDamage(int amount) {
+        this.flashWithoutSound();
         for(int i = 0; i < amount; i++) {
-            this.flashWithoutSound();
-            if(amount > 1) {
-                this.addToTop(new WaitAction(0.3F));
-            }
-            this.owner.damage(new DamageInfo(null, this.amount, DamageInfo.DamageType.HP_LOSS));
-            AbstractPower sore = AbstractDungeon.player.getPower(OpenSorePower.POWER_ID);
-            if (sore != null && sore.amount > 0 && this.amount > 0) {
-                AbstractDungeon.player.getPower(OpenSorePower.POWER_ID).flashWithoutSound();
-                int add = sore.amount - 1;
-                if(add > 0) {
-                    this.amount += add;
-                }
-            } else if (this.amount > 1) {
-                this.amount--;
-            } else if (this.amount == 1) {
-                addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-            }
+            this.addToBot(new LoseHPAction(this.owner, this.owner, this.amount));
         }
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        this.flashWithoutSound();
+        this.addToBot(new LoseBleedingHPAction(this));
     }
 
     @Override
@@ -100,6 +89,16 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
     @Override
     public AbstractPower makeCopy() {
         return new BleedingPower(owner, source, amount);
+    }
+
+    @Override
+    public int getHealthBarAmount() {
+        return this.amount;
+    }
+
+    @Override
+    public Color getColor() {
+        return color;
     }
 
 }
