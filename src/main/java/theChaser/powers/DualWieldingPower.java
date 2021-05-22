@@ -49,7 +49,7 @@ public class DualWieldingPower extends AbstractPower implements CloneablePowerIn
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
+    public void atEndOfRound() {
         addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
 
