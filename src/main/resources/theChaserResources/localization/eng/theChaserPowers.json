@@ -60,7 +60,7 @@
     "NAME": "Bleeding",
     "DESCRIPTIONS": [
       "At the start of its turn, loses #b",
-      " HP, then remove #yBleeding. If #yBleeding was 2 or more, reduce #yBleeding to #b1 instead. Whenever you play an Attack, increase #yBleeding by #b1."
+      " HP, then reduce #yBleeding by half. Whenever you play an Attack, increase #yBleeding by #b1."
     ]
   },
   "theChaser:Hide": {

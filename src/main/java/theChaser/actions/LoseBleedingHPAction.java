@@ -5,7 +5,9 @@
 
 package theChaser.actions;
 
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -17,29 +19,25 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
 public class LoseBleedingHPAction extends AbstractGameAction {
-    private static final float DURATION = 0.33F;
     private AbstractPower power;
+    private boolean isInstant;
 
-    public LoseBleedingHPAction(AbstractPower power) {
+    public LoseBleedingHPAction(AbstractPower power, boolean isInstant) {
         this.setValues(power.owner, power.owner, power.amount);
         this.actionType = ActionType.DAMAGE;
         this.power = power;
         this.attackEffect = AttackEffect.NONE;
-        this.duration = 0.33F;
+        this.isInstant = isInstant;
+        this.duration = this.startDuration = isInstant ? 0.1F : 0.33F;
     }
 
     public void update() {
-        if (this.duration == 0.33F && this.target.currentHealth > 0) {
-            AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY, this.attackEffect));
-        }
 
         this.tickDuration();
         if (this.isDone) {
             this.target.damage(new DamageInfo(this.source, this.amount, DamageType.HP_LOSS));
-            if(this.amount > 1) {
-                this.power.amount = 1;
-            } else if(this.amount == 1) {
-                this.addToBot(new RemoveSpecificPowerAction(this.source, this.source, this.power));
+            if(!this.isInstant) {
+                this.addToBot(new ReducePowerAction(this.source, this.source, this.power, MathUtils.ceil(this.amount / 2)));
             }
             if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
                 AbstractDungeon.actionManager.clearPostCombatActions();

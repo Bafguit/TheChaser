@@ -69,16 +69,16 @@ public class BleedingPower extends AbstractPower implements CloneablePowerInterf
     }
 
     public void getBleedingDamage(int amount) {
-        this.flashWithoutSound();
         for(int i = 0; i < amount; i++) {
-            this.addToBot(new LoseHPAction(this.owner, this.owner, this.amount));
+            this.flashWithoutSound();
+            this.addToBot(new LoseBleedingHPAction(this, true));
         }
     }
 
     @Override
     public void atStartOfTurn() {
         this.flashWithoutSound();
-        this.addToBot(new LoseBleedingHPAction(this));
+        this.addToBot(new LoseBleedingHPAction(this, false));
     }
 
     @Override
