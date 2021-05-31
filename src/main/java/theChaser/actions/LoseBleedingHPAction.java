@@ -37,7 +37,7 @@ public class LoseBleedingHPAction extends AbstractGameAction {
         if (this.isDone) {
             this.target.damage(new DamageInfo(this.source, this.amount, DamageType.HP_LOSS));
             if(!this.isInstant) {
-                this.addToBot(new ReducePowerAction(this.source, this.source, this.power, MathUtils.ceil(this.amount / 2)));
+                this.addToBot(new ReducePowerAction(this.source, this.source, this.power, (int) Math.ceil((float) this.amount / 2)));
             }
             if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
                 AbstractDungeon.actionManager.clearPostCombatActions();

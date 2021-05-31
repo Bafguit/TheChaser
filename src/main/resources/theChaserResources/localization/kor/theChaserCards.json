@@ -130,8 +130,7 @@
   },
   "theChaser:Attack First": {
     "NAME": "선공",
-    "DESCRIPTION": "[E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 1 장 감소합니다.",
-    "UPGRADE_DESCRIPTION": "[E] [E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 1 장 감소합니다."
+    "DESCRIPTION": "[E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 !M! 장 감소합니다."
   },
   "theChaser:Big Picture": {
     "NAME": "큰 그림",

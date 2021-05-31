@@ -132,8 +132,7 @@
 	  },
 	  "theChaser:Attack First": {
 	    "NAME": "Take Initiative",
-	    "DESCRIPTION": "Gain [E] [E]. NL At the start of your next turn, draw 1 less card.",
-	    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL At the start of your next turn, draw 1 less card."
+	    "DESCRIPTION": "Gain [E] [E]. NL At the start of your next turn, draw !M! less card."
 	  },
 	  "theChaser:Big Picture": {
 	    "NAME": "Grand Plan",

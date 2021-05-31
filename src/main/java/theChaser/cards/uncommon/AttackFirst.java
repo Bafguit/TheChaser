@@ -32,7 +32,7 @@ public class AttackFirst extends ChaserCard {
 
     private static final int COST = 0;
     private static final int ENERGY = 2;
-    private static final int UP_ENERGY = 1;
+    private static final int UP_ENERGY = -1;
 
     public AttackFirst() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, ENERGY);
@@ -40,8 +40,8 @@ public class AttackFirst extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainEnergyAction(this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, 1)));
+        addToBot(new GainEnergyAction(2));
+        addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, this.magicNumber)));
     }
 
     @Override
