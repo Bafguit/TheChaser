@@ -29,7 +29,7 @@ public class Throes extends ChaserCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 12;
-    private static final int UP_DMG = 3;
+    private static final int UP_DMG = 4;
 
     public Throes() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, 3);
@@ -45,7 +45,7 @@ public class Throes extends ChaserCard {
     @Override
     public void upgradeCard() {
         upgradeDamage(UP_DMG);
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 
 }
