@@ -52,8 +52,8 @@ public class BreakArmour extends ChaserCard {
         AbstractPower power = m.getPower(TargetPower.POWER_ID);
         if(power != null) {
             int amt = m.getPower(TargetPower.POWER_ID).amount;
-            if(this.upgraded) {
-                addToBot(new RemoveSpecificPowerAction(m, p, m.getPower(TargetPower.POWER_ID)));
+            if(!this.upgraded) {
+                addToBot(new RemoveSpecificPowerAction(m, p, power));
             }
             addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, amt, false)));
             addToBot(new ApplyPowerAction(m, p, new WeakPower(m, amt, false)));
