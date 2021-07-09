@@ -1,0 +1,86 @@
+{
+  "theChaser:Shadow In Necklace": {
+    "NAME": "목걸이 속의 그림자",
+    "FLAVOR": "심연의 어둠이 담긴 작은 유리병으로 만들어졌습니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 시 무작위 적에게 #y표적 을 #b2 부여합니다."
+    ]
+  },
+  "theChaser:Cloak Of Assassin": {
+    "NAME": "암살자의 망토",
+    "FLAVOR": "뛰어난 위장 성능을 자랑하는 망토입니다. 양산품입니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 시 #b2 턴 동안 #y은신 합니다."
+    ]
+  },
+  "theChaser:R-B0-7": {
+    "NAME": "R-B0-7",
+    "FLAVOR": "유명한 약품에서 치료 효과만 빼낸 위험한 비밀무기입니다.",
+    "DESCRIPTIONS": [
+      "내 턴 시작 시 #y해로운 #y효과 를 가진 모든 적이 체력을 #b5 잃습니다."
+    ]
+  },
+  "theChaser:Broken Ticker": {
+    "NAME": "고장난 회중시계",
+    "FLAVOR": "이미 고장났지만 시곗바늘이 째각대는 소리는 여전히 들린다고 합니다.",
+    "DESCRIPTIONS": [
+      "모든 적이 #y둔화 상태로 전투를 시작합니다."
+    ]
+  },
+  "theChaser:Scoch Stone": {
+    "NAME": "연마석",
+    "FLAVOR": "이 이상한 돌로 어떻게 연마를 한다는 걸까요?",
+    "DESCRIPTIONS": [
+      "#y표적 #y공격 의 피해가 #b1 증가합니다."
+    ]
+  },
+  "theChaser:Letter Of Request": {
+    "NAME": "의뢰서",
+    "FLAVOR": "의뢰주를 알 수 없는 의뢰서입니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 시 적 전체에게 #y표적 을 #b3 부여합니다."
+    ]
+  },
+  "theChaser:Shadow In Mask": {
+    "NAME": "가면 속의 그림자",
+    "FLAVOR": "가면 뒤에는 항상 심연의 어둠이 숨어 있습니다.",
+    "DESCRIPTIONS": [
+      "#p목걸이 #p속의 #p그림자 와 교체됩니다. 내 턴 시작 시 적 전체에게 #y표적 을 #b1 부여하고 #y표적 을 #b1 번 공격합니다."
+    ]
+  },
+  "theChaser:Pocket Knife": {
+    "NAME": "주머니칼",
+    "FLAVOR": "밧줄을 자르는 데에 쓰이는 휴대용 칼입니다.",
+    "DESCRIPTIONS": [
+      "매 턴마다 #b4 번째 #y표적 #y공격 을 한 후에 [E] 를 얻습니다."
+    ]
+  },
+  "theChaser:Acid Solution": {
+    "NAME": "산성 용액",
+    "FLAVOR": "누구한테 뿌리는 용도로 쓰는 사람은 없겠죠?",
+    "DESCRIPTIONS": [
+      "내가 #y약화 상태라면, 공격한 적에게 약화를 #b1 부여합니다. 내가 #y손상 상태라면, 공격한 적의 모든 #y방어도 를 없앱니다."
+    ]
+  },
+  "theChaser:Box Cutter": {
+    "NAME": "커터칼",
+    "FLAVOR": "매우 특이하게 생긴 칼입니다. 용도는 알 수 없습니다.",
+    "DESCRIPTIONS": [
+      "매 턴마다 첫 #y표적 #y공격 이 #b2 번 더 발동됩니다."
+    ]
+  },
+  "theChaser:Rusty Helmet": {
+    "NAME": "녹슨 투구",
+    "FLAVOR": "과거의 전쟁에서 사용되었던 구식 투구입니다.",
+    "DESCRIPTIONS": [
+      "내 턴 시작 시 적 전체에게 #y무방비 를 #b1 부여합니다."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  }
+}
