@@ -1,11 +1,11 @@
 {
   "theChaser:Throwing Knife": {
-    "NAME": "수리검thdosls. jjju",
-    "DESCRIPTION": "휘발성. 무작위 적에게 피해를 !D! 줍니다. thechaser:표적을 가진 적을 우선적으로 공격합니다. 소멸."
+    "NAME": "手裏剣",
+    "DESCRIPTION": "エセリアル。 ランダムな敵に !D! ダメージを与える。 thechaser:標的　を持つ敵を優先する。 廃棄。"
   },
   "theChaser:Bloody Wind": {
     "NAME": "피바람",
-    "DESCRIPTION": "적 전체에게 thechaser:출혈을 !M! 부여합니다."
+    "DESCRIPTION": "적 전체에게 thechaser:출혈을 !M!。부여합니다."
   },
   "theChaser:Camouflage": {
     "NAME": "위장",
