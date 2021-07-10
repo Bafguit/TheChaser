@@ -4,342 +4,337 @@
     "DESCRIPTION": "エセリアル。 ランダムな敵に !D! ダメージを与える。 thechaser:標的　を持つ敵を優先する。 廃棄。"
   },
   "theChaser:Bloody Wind": {
-    "NAME": "피바람",
-    "DESCRIPTION": "적 전체에게 thechaser:출혈을 !M!。부여합니다."
+    "NAME": "血の風",
+    "DESCRIPTION": "敵全体に thechaser:出血 !M! を与える。"
   },
   "theChaser:Camouflage": {
-    "NAME": "위장",
-    "DESCRIPTION": "thechaser:잔상처를 !M! 번 얻습니다."
+    "NAME": "カモフラージュ",
+    "DESCRIPTION": "thechaser:偽傷 を !M! 回得る。"
   },
   "theChaser:Knife Throw": {
-    "NAME": "단검 투척",
-    "DESCRIPTION": "!M! 번 thechaser:겨냥합니다."
+    "NAME": "短剣投擲",
+    "DESCRIPTION": "!M! 回 thechaser:狙う。"
   },
   "theChaser:Followup Slash": {
-    "NAME": "후속 베기",
-    "DESCRIPTION": "휘발성. 피해를 !D! 만큼 2 번 줍니다. NL 소멸."
+    "NAME": "ビハインド・スラッシュ",
+    "DESCRIPTION": "エセリアル。 !D! ダメージを 2 回与える。 廃棄。"
   },
   "theChaser:Sequence Flow": {
-    "NAME": "연결 동작",
-    "DESCRIPTION": "휘발성. 피해를 !D! 줍니다. NL 소멸."
+    "NAME": "シーケンス・フロー",
+    "DESCRIPTION": "エセリアル。 !D! ダメージを与える。 廃棄。"
   },
   "theChaser:Reactive Shot": {
-    "NAME": "반응 사격",
-    "DESCRIPTION": "무작위 적에게 피해를 !D! 주고 thechaser:표적을 !M! 부여합니다."
+    "NAME": "反応射撃",
+    "DESCRIPTION": "ランダムな敵に !D! ダメージと thechaser:標的 !M! を与える。"
   },
   "theChaser:Flawed Stealth": {
-    "NAME": "은둔자",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손상을 1 얻습니다."
+    "NAME": "隠遁者",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 脆弱化 !M! を得る。"
   },
   "theChaser:Strike": {
-    "NAME": "타격",
-    "DESCRIPTION": "피해를 !D! 줍니다."
+    "NAME": "ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。"
   },
   "theChaser:Defend": {
-    "NAME": "수비",
-    "DESCRIPTION": "방어도를 !B! 얻습니다."
+    "NAME": "防御",
+    "DESCRIPTION": "!B! ブロック を得る。"
   },
   "theChaser:Alert": {
-    "NAME": "경계",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:잔상처를 !M! 번 얻습니다. NL thechaser:빠른발 !M!."
+    "NAME": "警戒",
+    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:偽傷 を !M! 回得る。 NL thechaser:捷歩 !M!。"
   },
   "theChaser:Blitzkrieg": {
-    "NAME": "급습",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비를 !M! 부여합니다."
+    "NAME": "急襲",
+    "DESCRIPTION": "!D! ダメージを与える。 NL thechaser:無防備 !M! を与える。"
   },
   "theChaser:Brass": {
-    "NAME": "놋쇠",
-    "DESCRIPTION": "thechaser:출혈을 !M! 부여합니다."
+    "NAME": "真鍮",
+    "DESCRIPTION": "thechaser:出血 !M! を与える。"
   },
   "theChaser:Chase": {
-    "NAME": "추적",
-    "DESCRIPTION": "피해를 !D! 줍니다. thechaser:표적을 가진 적 수만큼 카드를 뽑습니다."
+    "NAME": "追跡",
+    "DESCRIPTION": "!D! ダメージを与える。 thechaser:標的 を持った敵の数だけカードを引く。"
   },
   "theChaser:Continuous Slash": {
-    "NAME": "연속 베기",
-    "DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL thechaser:신속: *후속 *베기 카드를 1 장 얻습니다.",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL thechaser:신속: *후속 *베기+ 카드를 1 장 얻습니다."
+    "NAME": "デュアル・スラッシュ",
+    "DESCRIPTION": "!D! ダメージを 2 回与える。 NL thechaser:迅速: *ビハインド・スラッシュ を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを 2 回与える。 NL thechaser:迅速: *ビハインド・スラッシュ+ を1枚手札に加える。"
   },
   "theChaser:Delusive Strike": {
-    "NAME": "속임수 타격",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 내가 약화 상태라면, [E] [E] 를 얻습니다."
+    "NAME": "デルーシブ・ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 自分が 脱力 を受けている場合は [E] [E] を得る。"
   },
   "theChaser:Fatal Blitz": {
-    "NAME": "치명적인 돌격",
-    "DESCRIPTION": "피해를 !D! 줍니다. thechaser:출혈을 !M! 부여합니다."
+    "NAME": "フェータル・ブリッツ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL thechaser:出血 !M! を与える。"
   },
   "theChaser:Geck": {
-    "NAME": "깔보기",
-    "DESCRIPTION": "적 전체에게 thechaser:무방비를 !M!, thechaser:표적을 !M! 부여합니다."
+    "NAME": "防御無効化",
+    "DESCRIPTION": "敵全体に thechaser:無防備 !M! と thechaser:標的 !M! を与える。"
   },
   "theChaser:Inertial Strike": {
-    "NAME": "관성 타격",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 사용한 카드 수만큼 피해가 증가합니다.",
+    "NAME": "イナーシャル・ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL このターンに使ったカード数だけダメージが増える。",
     "EXTENDED_DESCRIPTION": [
-      "피해를 !D! 줍니다. NL 이번 턴에 사용한 카드 수(",
-      ") 만큼 피해가 증가합니다."
+      "!D! ダメージを与える。 NL このターンに使ったカード数(",
+      ")だけダメージが増える。"
     ]
   },
   "theChaser:Leave Traces": {
-    "NAME": "흔적 남기기",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 주고 thechaser:표적을 !M! 부여합니다."
+    "NAME": "リーブ・トレース",
+    "DESCRIPTION": "敵全体に !D! ダメージと thechaser:標的 !M! を与える。"
   },
   "theChaser:Linger": {
-    "NAME": "여운",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL !M! 번 thechaser:겨냥합니다."
+    "NAME": "余韻",
+    "DESCRIPTION": "!B! ブロック を得る。 NL !M! 回 thechaser:狙う。"
   },
   "theChaser:Makeready": {
-    "NAME": "정비",
-    "DESCRIPTION": "카드를 !M! 장 뽑습니다. 이 카드가 이번 턴에 처음 사용하는 카드라면, 1 장 더 뽑습니다."
+    "NAME": "整備",
+    "DESCRIPTION": "カードを !M! 枚引く。 このカードがこのターンの最初のカードなら、もう1枚引く。"
   },
   "theChaser:Passing": {
-    "NAME": "넘기기",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. 이번 턴에 thechaser:겨냥했다면, 카드를 2 장 뽑습니다."
+    "NAME": "パーシング",
+    "DESCRIPTION": "!B! ブロック を得る。 このターンに thechaser:狙い を定めたら、カードを2枚引く。"
   },
   "theChaser:Random Throw": {
-    "NAME": "수리검 난사",
-    "DESCRIPTION": "*수리검 카드를 !M! 장 얻습니다."
+    "NAME": "ランドム・スロー",
+    "DESCRIPTION": "*手裏剣 を !M! 枚手札に加える。"
   },
   "theChaser:Scar Stab": {
-    "NAME": "상처 찌르기",
-    "DESCRIPTION": "피해를 !D! 줍니다. 적이 thechaser:출혈 상태라면, thechaser:출혈 피해를 즉시 !M! 회 받습니다."
+    "NAME": "ゴー・スカー",
+    "DESCRIPTION": "!D! ダメージを与える。 敵が thechaser:出血 を受けている場合は thechaser:出血 ダメージを !M! 回与える。"
   },
   "theChaser:Stalling": {
-    "NAME": "시간 벌기",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:잔상처를 !M! 번 얻습니다. NL thechaser:빠른발 !M!."
+    "NAME": "ストーリング",
+    "DESCRIPTION": "!D! ダメージを与える。 NL thechaser:偽傷 を !M! 回得る。 NL thechaser:捷歩 !M!。"
   },
   "theChaser:Thornmail": {
-    "NAME": "가시갑옷",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 적 전체에게 thechaser:출혈을 !M! 부여합니다."
+    "NAME": "刺の鎧",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 敵全体に thechaser:出血 !M! を与える。"
   },
   "theChaser:Watch": {
-    "NAME": "주시",
-    "DESCRIPTION": "thechaser:표적을 !M! 부여합니다. NL 소멸."
+    "NAME": "注視",
+    "DESCRIPTION": "thechaser:標的 !M! を与える。 NL 廃棄。"
   },
   "theChaser:Wound": {
-    "NAME": "상처내기",
-    "DESCRIPTION": "피해를 !D! 줍니다. thechaser:출혈을 !M! 부여합니다."
+    "NAME": "オーペン・ベーン",
+    "DESCRIPTION": "!D! ダメージを与える。 thechaser:出血 !M! を与える。"
   },
   "theChaser:Acceleration": {
-    "NAME": "가속",
-    "DESCRIPTION": "공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다."
+    "NAME": "加速",
+    "DESCRIPTION": "「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。"
   },
   "theChaser:Aggravate": {
-    "NAME": "악화",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 thechaser:출혈 상태인 적이 thechaser:출혈 피해를 즉시 !M! 회 받습니다."
+    "NAME": "悪化",
+    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:出血 を受けている敵全体に thrchaser:出血 ダメージを !M! 回与える。"
   },
   "theChaser:Attack First": {
-    "NAME": "선공",
-    "DESCRIPTION": "[E] [E] 를 얻습니다. 다음 턴 시작에 뽑는 카드 수가 !M! 장 감소합니다."
+    "NAME": "先攻",
+    "DESCRIPTION": "[E] [E] を得る。 次のターンにカードを !M! 枚少なく引く。"
   },
   "theChaser:Big Picture": {
-    "NAME": "큰 그림",
-    "DESCRIPTION": "스스로 디버프를 얻을 때마다 힘을 !M! 얻습니다."
+    "NAME": "グランド・プラン",
+    "DESCRIPTION": "自らデバフを得る時、 筋力 !M! を得る。"
   },
   "theChaser:Break Armour": {
-    "NAME": "장갑 돌파",
-    "DESCRIPTION": "적이 가진 thechaser:표적을 제거하고 그 수치만큼 취약, 약화, thechaser:출혈을 부여합니다. 소멸.",
-    "UPGRADE_DESCRIPTION": "적이 가진 thechaser:표적 수치만큼 취약, 약화, thechaser:출혈을 부여합니다. 소멸."
+    "NAME": "装甲突破",
+    "DESCRIPTION": "敵の thechaser:標的 を除去し、その分だけ 弱体、 脱力、 thrchaser:出血 を与える。 廃棄。",
+    "UPGRADE_DESCRIPTION": "敵の thechaser:標的 ほど 弱体、 脱力、 thrchaser:出血 を与える。 廃棄。"
   },
   "theChaser:Bulwark": {
-    "NAME": "공수겸비",
-    "DESCRIPTION": "힘을 !M! 얻습니다. NL 민첩을 !M! 얻습니다."
+    "NAME": "攻守兼備",
+    "DESCRIPTION": "筋力 !M! を得る。 NL 敏捷性 !M! を得る。"
   },
   "theChaser:Chance": {
-    "NAME": "기회",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:신속: 무작위 카드의 비용을 이번 턴 동안 0 으로 만듭니다."
+    "NAME": "機会",
+    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:迅速: このターンの間手札のランダムなカード 1 枚のコストが 0 になる。"
   },
   "theChaser:Conquest": {
-    "NAME": "극복",
-    "DESCRIPTION": "내가 가진 디버프 수만큼 힘을 얻습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "내가 가진 디버프 수만큼 힘을 얻습니다.",
+    "NAME": "克服",
+    "DESCRIPTION": "自分のデバフの数だけ 筋力 を得る。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "自分のデバフの数だけ 筋力 を得る。",
     "EXTENDED_DESCRIPTION": [
-      "내가 가진 디버프 수(",
-      ") 만큼 힘을 얻습니다.",
-      " NL 소멸."
+      "自分のデバフの数(",
+      ")だけ 筋力 を得る。",
+      " NL 廃棄。"
     ]
   },
   "theChaser:Disguise": {
-    "NAME": "감추기",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 내가 가진 디버프 수만큼 반복합니다.",
+    "NAME": "隠匿",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 내가 가진 디버프 수만큼 반복합니다.",
     "EXTENDED_DESCRIPTION": [
-      "방어도를 !B! 얻습니다. NL 내가 가진 디버프 수(",
+      "!B! ブロック を得る。 NL 내가 가진 디버프 수(",
       ") 만큼 반복합니다."
     ]
   },
   "theChaser:Fall Technique": {
-    "NAME": "낙법",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. 약화를 !M! 얻습니다."
+    "NAME": "受け身",
+    "DESCRIPTION": "!B! ブロック を得る。 약화를 !M! 얻습니다."
   },
   "theChaser:Feeble Defend": {
-    "NAME": "허술한 수비",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 내가 손상 상태라면, !M! 배의 방어도를 얻습니다."
+    "NAME": "フィーブル・デフェンド",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 내가 손상 상태라면, !M! 배의 방어도를 얻습니다."
   },
   "theChaser:Feeble Strike": {
-    "NAME": "허술한 타격",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 내가 약화 상태라면, !M! 배의 피해를 줍니다."
+    "NAME": "フィーブル・ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 내가 약화 상태라면, !M! 배의 피해를 줍니다."
   },
   "theChaser:Flexibility": {
-    "NAME": "적응성",
+    "NAME": "適応性",
     "DESCRIPTION": "두 번 선택: NL !M! 번 thechaser:겨냥하거나, thechaser:잔상처를 !M! 번 얻거나, 적 전체에게 thechaser:출혈을 !M! 부여합니다. NL 소멸."
   },
   "theChaser:Gale Strike": {
-    "NAME": "광풍 타격",
+    "NAME": "ストーム・ストライク",
     "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 X 번 줍니다. X 번 thechaser:겨냥합니다."
   },
   "theChaser:Hack": {
-    "NAME": "난도질",
+    "NAME": "めった切り",
     "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다."
   },
   "theChaser:Hidden Dagger": {
-    "NAME": "숨겨둔 단검",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. *수리검 카드를 !M! 장 얻습니다. NL thechaser:신속: 손에 있는 모든 *수리검 카드를 강화합니다."
+    "NAME": "秘密短剣",
+    "DESCRIPTION": "!B! ブロック を得る。 *수리검 카드를 !M! 장 얻습니다. NL thechaser:신속: 손에 있는 모든 *수리검 카드를 강화합니다."
   },
   "theChaser:Internal Hemorrhage": {
-    "NAME": "내출혈",
+    "NAME": "内出血",
     "DESCRIPTION": "적 전체에게 thechaser:출혈을 !M! 부여하고 약화를 2 부여합니다. NL 소멸."
   },
   "theChaser:Open Sore": {
-    "NAME": "아물지 않은 상처",
+    "NAME": "オーペン・ソー",
     "DESCRIPTION": "내 턴 시작 시 적 전체에게 thechaser:출혈을 !M! 부여합니다."
   },
   "theChaser:Paralyze": {
-    "NAME": "마비",
+    "NAME": "麻痺",
     "DESCRIPTION": "적이 가진 디버프 수만큼 힘을 감소시킵니다. NL 소멸."
   },
   "theChaser:Penetrate": {
-    "NAME": "관통 사격",
-    "DESCRIPTION": "피해를 !D! 줍니다. 취약을 !M! 부여합니다. 적이 이미 취약 상태라면 대신 thechaser:무방비를 !M! 부여합니다."
+    "NAME": "貫通射撃",
+    "DESCRIPTION": "!D! ダメージを与える。 취약을 !M! 부여합니다. 적이 이미 취약 상태라면 대신 thechaser:무방비를 !M! 부여합니다."
   },
   "theChaser:Penetrative": {
-    "NAME": "예리함",
+    "NAME": "ピアシング・ブロー",
     "DESCRIPTION": "thechaser:겨냥의 피해가 !M! 증가합니다."
   },
   "theChaser:Pluck Out Daggers": {
-    "NAME": "단검 뽑아내기",
+    "NAME": "短剣抜き",
     "DESCRIPTION": "이번 턴에 thechaser:겨냥한 횟수만큼 이 카드의 비용이 [E] 감소합니다. NL 피해를 !D! 만큼 !M! 번 줍니다."
   },
   "theChaser:Ragewind": {
-    "NAME": "휘몰아치기",
+    "NAME": "レージ・ウィンド",
     "DESCRIPTION": "!M! 번 thechaser:겨냥합니다. NL 카드를 사용하면 이 카드의 thechaser:겨냥 횟수를 영구적으로 1 증가시킵니다. NL 소멸."
   },
   "theChaser:Ready To Counter": {
-    "NAME": "반격 준비",
+    "NAME": "カウンター・マヌーバー",
     "DESCRIPTION": "방어도를 !B! 만큼 X 번 얻습니다. X 번 thechaser:겨냥합니다."
   },
   "theChaser:Replica Dagger": {
-    "NAME": "복제품 단검",
+    "NAME": "レプリカ短剣",
     "DESCRIPTION": "턴 시작 시 *수리검 카드를 1장 얻고 무작위 적에게 thechaser:표적을 1 부여합니다.",
     "UPGRADE_DESCRIPTION": "선천성. 턴 시작 시 *수리검 카드를 1장 얻고 무작위 적에게 thechaser:표적을 1 부여합니다."
   },
   "theChaser:Secret Card": {
-    "NAME": "숨겨둔 패",
+    "NAME": "シークレット・カード",
     "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 !M! 번 thechaser:겨냥합니다."
   },
   "theChaser:Sequence": {
-    "NAME": "연속 동작",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL *연결 *동작 카드를 !M! 장 얻습니다. NL thechaser:신속: 대신 피해를 !D! 만큼 4 번 줍니다."
+    "NAME": "シーケンス",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *연결 *동작 카드를 !M! 장 얻습니다. NL thechaser:신속: 대신 피해를 !D! 만큼 4 번 줍니다."
   },
   "theChaser:Space Out": {
-    "NAME": "간격 두기",
+    "NAME": "スペース・アウト",
     "DESCRIPTION": "thechaser:겨냥할 때마다 방어도를 !M! 얻습니다.",
     "UPGRADE_DESCRIPTION": "선천성. thechaser:겨냥할 때마다 방어도를 !M! 얻습니다."
   },
   "theChaser:Testing": {
-    "NAME": "탐색전",
+    "NAME": "探索戦",
     "DESCRIPTION": "적 전체에게 피해를 !D! 주고 취약을 !M! 부여합니다."
   },
   "theChaser:Throes": {
-    "NAME": "발악",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL thechaser:무방비를 !M! 부여합니다. NL 취약을 1 얻습니다."
+    "NAME": "あがき",
+    "DESCRIPTION": "!D! ダメージを与える。 NL thechaser:무방비를 !M! 부여합니다. NL 취약을 1 얻습니다."
   },
   "theChaser:Unstable Block": {
-    "NAME": "불안정한 막기",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 취약을 !M! 얻습니다.",
-    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:무방비를 !M! 얻습니다."
+    "NAME": "不安定な防御",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 취약을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL thechaser:무방비를 !M! 얻습니다."
   },
   "theChaser:Weakness Strike": {
-    "NAME": "약점 타격",
-    "DESCRIPTION": "피해를 !D! 줍니다. 적이 가진 디버프 수만큼 반복합니다."
+    "NAME": "ウィークポイント・ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 적이 가진 디버프 수만큼 반복합니다."
   },
   "theChaser:Win The Exchange": {
-    "NAME": "이득교환",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 thechaser:무방비 상태라면 [E] 를 얻고 카드를 1 장 뽑습니다."
+    "NAME": "利得交換",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 적이 thechaser:무방비 상태라면 [E] 를 얻고 카드를 1 장 뽑습니다."
   },
   "theChaser:Wither": {
-    "NAME": "위축",
+    "NAME": "萎縮",
     "DESCRIPTION": "약화를 99 부여합니다. 소멸."
   },
   "theChaser:Absolute Advantage": {
-    "NAME": "절대 우위",
+    "NAME": "アブソルート・エッジ",
     "DESCRIPTION": "[E] 를 얻습니다. 적 전체의 디버프 수만큼 카드를 뽑습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "[E] [E] 를 얻습니다. 적 전체의 디버프 수만큼 카드를 뽑습니다. NL 소멸.",
-    "EXTENDED_DESCRIPTION": [
-      "[E] 를 얻습니다. 적 전체의 디버프 수(",
-      ") 만큼 카드를 뽑습니다. NL 소멸",
-      "[E] "
-    ]
+    "UPGRADE_DESCRIPTION": "[E] [E] 를 얻습니다. 적 전체의 디버프 수만큼 카드를 뽑습니다. NL 소멸."
   },
   "theChaser:Approach Run": {
-    "NAME": "도움닫기",
+    "NAME": "助走",
     "DESCRIPTION": "thechaser:빠른발 !M!. NL thechaser:신속: 대신 적 전체에게 thechaser:출혈을 !M! 부여합니다. NL 소멸."
   },
   "theChaser:Diplade": {
-    "NAME": "이중 칼날",
+    "NAME": "ダブル・ブレード",
     "DESCRIPTION": "비용이 0이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
   },
   "theChaser:Dual Wielding": {
-    "NAME": "쌍수",
+    "NAME": "双手",
     "DESCRIPTION": "이번 턴 동안 thechaser:겨냥이 두 번씩 발동됩니다."
   },
   "theChaser:Forte Is Frailty": {
-    "NAME": "강점이자 약점",
+    "NAME": "ラスト・パワー",
     "DESCRIPTION": "모든 버프가 디버프로 인식됩니다."
   },
   "theChaser:Fraudulence": {
-    "NAME": "기만",
-    "DESCRIPTION": "적 전체의 디버프 하나당 방어도를 !B! 얻습니다."
+    "NAME": "欺瞞",
+    "DESCRIPTION": "적 전체의 디버프 하나당 !B! ブロック を得る。"
   },
   "theChaser:Hide": {
-    "NAME": "은신",
-    "DESCRIPTION": "!M! 턴 동안 thechaser:은신합니다. NL 소멸."
+    "NAME": "隱身",
+    "DESCRIPTION": "!M! ターン間 thechaser:隱身 状態になる。 NL 소멸."
   },
   "theChaser:Incisive Blade": {
-    "NAME": "예리한 칼날",
-    "DESCRIPTION": "휘발성. 피해를 !D! 줍니다. NL 소멸."
+    "NAME": "インサイシブ・ブレード",
+    "DESCRIPTION": "휘발성. !D! ダメージを与える。 NL 소멸."
   },
   "theChaser:Phrenitis": {
-    "NAME": "착란",
+    "NAME": "錯乱",
     "DESCRIPTION": "약화, 취약, 손상, 중독, thechaser:출혈, thechaser:표적, thechaser:잔상처, thechaser:무방비를 1 부여합니다. NL 소멸."
   },
   "theChaser:Preemptive Attack": {
-    "NAME": "선제 공격",
+    "NAME": "先制攻撃",
     "DESCRIPTION": "턴 시작 시 카드를 1장 뽑고 1번 thechaser:겨냥합니다."
   },
   "theChaser:Saw Blade": {
-    "NAME": "톱날",
+    "NAME": "チェーンソー・ブレード",
     "DESCRIPTION": "카드를 사용할 때마다 적 전체에게 thechaser:출혈을 !M! 부여합니다.",
     "UPGRADE_DESCRIPTION": "선천성. 카드를 사용할 때마다 적 전체에게 thechaser:출혈을 !M! 부여합니다."
   },
   "theChaser:Shadow Form": {
-    "NAME": "그림자의 형상",
+    "NAME": "暗転化",
     "DESCRIPTION": "매 턴 시작 시 thechaser:겨냥의 피해가 !M! 증가합니다."
   },
   "theChaser:Stealage": {
-    "NAME": "훔치기",
-    "DESCRIPTION": "피해를 !D! 줍니다. 골드를 !M! 얻습니다. NL 소멸."
+    "NAME": "盗癖",
+    "DESCRIPTION": "!D! ダメージを与える。 골드를 !M! 얻습니다. NL 소멸."
   },
   "theChaser:Strategic Retreat": {
-    "NAME": "작전상 후퇴",
+    "NAME": "作戦上の後退",
     "DESCRIPTION": "보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다.",
     "UPGRADE_DESCRIPTION": "선천성. 보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다."
   },
   "theChaser:Unwary": {
-    "NAME": "방심",
+    "NAME": "放心",
     "DESCRIPTION": "thechaser:겨냥이 thechaser:무방비를 부여합니다."
   },
   "theChaser:Vitality": {
-    "NAME": "활력",
+    "NAME": "活力",
     "DESCRIPTION": "이번 턴에 thechaser:겨냥한 횟수만큼 체력을 회복합니다. NL 소멸.",
     "UPGRADE_DESCRIPTION": "보존. 이번 턴에 thechaser:겨냥한 횟수만큼 체력을 회복합니다. NL 소멸.",
     "EXTENDED_DESCRIPTION": [
@@ -349,16 +344,16 @@
     ]
   },
   "theChaser:Walkout": {
-    "NAME": "퇴장",
-    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수만큼 thechaser:겨냥한 후 턴을 종료합니다.",
+    "NAME": "退場",
+    "DESCRIPTION": "적 전체에게 !D! ダメージを与える。 이번 턴에 사용한 카드 수만큼 thechaser:겨냥한 후 턴을 종료합니다.",
     "EXTENDED_DESCRIPTION": [
-      "적 전체에게 피해를 !D! 줍니다. 이번 턴에 사용한 카드 수(",
+      "적 전체에게 !D! ダメージを与える。 이번 턴에 사용한 카드 수(",
       ") 만큼 thechaser:겨냥한 후 턴을 종료합니다."
     ]
   },
   "theChaser:Wile": {
-    "NAME": "권모술수",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 취약, 약화, thechaser:무방비를 !M! 부여합니다."
+    "NAME": "権謀術数",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 취약, 약화, thechaser:무방비를 !M! 부여합니다."
   },
 
 
