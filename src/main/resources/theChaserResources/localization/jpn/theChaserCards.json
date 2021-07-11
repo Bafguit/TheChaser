@@ -229,7 +229,7 @@
   },
   "theChaser:Replica Dagger": {
     "NAME": "レプリカ短剣",
-    "DESCRIPTION": "ターン開始時に、 *手裏剣 を 1 枚手札に加えランダムな敵に thechaser:標的 1 を与える。",
+    "DESCRIPTION": "ターン開始時に、 *手裏剣 を 1 枚手札に加え、ランダムな敵に thechaser:標的 1 を与える。",
     "UPGRADE_DESCRIPTION": "天賦。 ターン開始時に、 *手裏剣 を 1 枚手札に加えランダムな敵に thechaser:標的 1 を与える。"
   },
   "theChaser:Secret Card": {
@@ -302,7 +302,7 @@
   },
   "theChaser:Hide": {
     "NAME": "隱身",
-    "DESCRIPTION": "!M! ターン間 thechaser:隱身 状態になる。 NL 廃棄。"
+    "DESCRIPTION": "!M! ターン間 thechaser:隠匿 する。 NL 廃棄。"
   },
   "theChaser:Incisive Blade": {
     "NAME": "インサイシブ・ブレード",
@@ -318,8 +318,8 @@
   },
   "theChaser:Saw Blade": {
     "NAME": "チェーンソー・ブレード",
-    "DESCRIPTION": "カードを 1 枚プレイするたび、敵全体に thechaser:出血 !M! を与える。",
-    "UPGRADE_DESCRIPTION": "天賦。 カードを 1 枚プレイするたび、敵全体に thechaser:出血 !M! を与える。"
+    "DESCRIPTION": "カードをプレイするたび、敵全体に thechaser:出血 !M! を与える。",
+    "UPGRADE_DESCRIPTION": "天賦。 カードをプレイするたび、敵全体に thechaser:出血 !M! を与える。"
   },
   "theChaser:Shadow Form": {
     "NAME": "暗転化",

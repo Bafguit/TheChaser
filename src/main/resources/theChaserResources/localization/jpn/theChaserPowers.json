@@ -1,139 +1,139 @@
 {
 
   "theChaser:Dual Wielding": {
-    "NAME": "쌍수",
+    "NAME": "双手",
     "DESCRIPTIONS": [
-      "이번 턴 동안 #y겨냥 이 #b2 번씩 발동됩니다."
+      "このターンに #y狙い が #b2 回発動する。"
     ]
   },
   "theChaser:Forte Is Frailty": {
-    "NAME": "강점이자 약점",
+    "NAME": "ラスト・パワー",
     "DESCRIPTIONS": [
-      "모든 버프가 디버프로 인식됩니다."
+      "全てのバフをデバフと認識する。"
     ]
   },
   "theChaser:Penetrative": {
-    "NAME": "예리함",
+    "NAME": "ピアシング・ブロー",
     "DESCRIPTIONS": [
-      "#y겨냥 의 피해가 #b",
-      " 증가합니다."
+      "#y狙い が #b",
+      " の追加ダメージを与える。"
     ]
   },
   "theChaser:Shadow Form": {
-    "NAME": "그림자의 형상",
+    "NAME": "暗転化",
     "DESCRIPTIONS": [
-      "턴 시작 시 #y표적 #y공격 의 피해가 #b",
-      " 증가합니다."
+      "ターン開始時に、 #y狙い のダメージを #b",
+      " 増加する。"
     ]
   },
   "theChaser:Space Out": {
-    "NAME": "간격 두기",
+    "NAME": "スペース・アウト",
     "DESCRIPTIONS": [
-      "#y겨냥 할 때마다 방어도를 #b",
-      " 얻습니다."
+      "#y狙う たびに #b",
+      " ブロック を得る。"
     ]
   },
   "theChaser:Target": {
-    "NAME": "표적",
+    "NAME": "標的",
     "DESCRIPTIONS": [
-      "플레이어 또는 적이 #y공격 한 후, #y표적 을 가진 모든 적에게 피해를 #b",
-      " 줍니다. NL ",
-      "지속 턴수: #b",
-      " 턴",
-      " 턴"
+      "プレイヤーまたは敵が #yアタック した後に 標的 を受けている敵全体に #b",
+      " ダメージを与える。 NL ",
+      "#b",
+      " ターン持続。",
+      " ターン持続。"
     ]
   },
   "theChaser:Unfortified": {
-    "NAME": "무방비",
+    "NAME": "無防備",
     "DESCRIPTIONS": [
-      "공격 피해를 #b",
-      "% 더 받습니다."
+      "アタックのダメージをさらに #b",
+      "% 受ける。"
     ]
   },
   "theChaser:Unwary": {
-    "NAME": "방심",
+    "NAME": "放心",
     "DESCRIPTIONS": [
-      "#y겨냥 이 #y무방비 를 부여합니다."
+      "#y狙い が #y無防備 を与える。"
     ]
   },
   "theChaser:Bleeding": {
-    "NAME": "출혈",
+    "NAME": "出血",
     "DESCRIPTIONS": [
-      "턴 시작 시 체력을 #b",
-      " 잃고, #y출혈 이 절반으로 감소합니다. 공격 카드를 사용할 때마다 #y출혈 이 #b1 증가합니다."
+      "ターン開始時、HPを #b",
+      " 失い、出血が折半減少する。 プレイヤーが「アタック」カードをプレイすると出血が #b1 増加する。"
     ]
   },
   "theChaser:Hide": {
-    "NAME": "은신",
+    "NAME": "隠匿",
     "DESCRIPTIONS": [
-      "모든 적이 행동을 중지합니다. 적을 공격하면 종료됩니다. NL 지속 턴 수: #b",
-      " 턴",
-      " 턴"
+      "敵全体の行動を止める。敵をアタックしたり狙えば終了する。 NL #b",
+      " ターン持続。",
+      " ターン持続。"
     ]
   },
   "theChaser:Puzzled": {
-    "NAME": "어리둥절",
+    "NAME": "呆然",
     "DESCRIPTIONS": [
-      "분명 방금 전까지만 해도 눈앞에 적이 있었는데 말이죠..."
+      "こいつ、どこに消えたんだ！"
     ]
   },
   "theChaser:Acceleration": {
-    "NAME": "가속",
+    "NAME": "加速",
     "DESCRIPTIONS": [
-      "공격 카드를 사용할 때마다 임시로 #y힘 을 #b",
-      " 얻습니다."
+      "「アタック」をプレイするたびに臨時の #y筋力 を #b",
+      " 得る。"
     ]
   },
   "theChaser:Open Sore": {
-    "NAME": "아물지 않은 상처",
+    "NAME": "オーペン・ソー",
     "DESCRIPTIONS": [
-      "내 턴 시작 시 적 전체에게 #y출혈 을 #b",
-      " 부여합니다."
+      "ターン開始時に、敵全体に #y出血 #b",
+      " を与える。"
     ]
   },
   "theChaser:Big Picture": {
-    "NAME": "큰 그림",
+    "NAME": "グランド・プラン",
     "DESCRIPTIONS": [
-      "스스로 디버프를 얻을 때마다 #y힘 을 #b",
-      " 얻습니다."
+      "自らデバフを得る時、 #y筋力 #b",
+      " を得る。"
     ]
   },
   "theChaser:Saw Blade": {
-    "NAME": "톱날",
+    "NAME": "チェーンソー・ブレード",
     "DESCRIPTIONS": [
-      "카드를 사용할 때마다 적 전체에게 #y출혈 을 #b",
-      " 부여합니다."
+      "カードをプレイするたび、敵全体に #y出血 #b",
+      " を与える。"
     ]
   },
   "theChaser:Diplade": {
-    "NAME": "이중 칼날",
+    "NAME": "ダブル・ブレード",
     "DESCRIPTIONS": [
-      "비용이 0이 아닌 카드를 사용할 때마다 #y수리검 카드를 #b",
-      " 장 얻습니다."
+      "[E] が #b0 じゃないカードをプレイするたびに #y手裏剣 を #b",
+      " 枚手札に加える。"
     ]
   },
   "theChaser:Preemptive Attack": {
-    "NAME": "선제 공격",
+    "NAME": "先制攻撃",
     "DESCRIPTIONS": [
-      "턴 시작 시 카드를 #b",
-      "1 장 뽑고 #b1 번 #y겨냥 합니다.",
-      " 장 뽑고 #b",
-      " 번 #y겨냥 합니다."
+      "ターン開始時に、カードを #b",
+      "1 枚引き、 #b1 回 #y狙う。",
+      " 枚引き、 #b",
+      " 回 #y狙う。"
     ]
   },
   "theChaser:Replica Dagger": {
-    "NAME": "복제품 단검",
+    "NAME": "レプリカ短剣",
     "DESCRIPTIONS": [
-      "턴 시작 시 #y수리검 카드를 #b",
-      " 장 얻고 무작위 적에게 #y표적 을 #b",
-      " 부여합니다."
+      "ターン開始時に、 #y手裏剣 を #b",
+      " 枚手札に加え、ランダムな敵に #y標的 #b",
+      " を与える。"
     ]
   },
   "theChaser:Fake Sore": {
-    "NAME": "잔상처",
+    "NAME": "偽傷",
     "DESCRIPTIONS": [
-      "공격 피해를 #b",
-      "% 더 받습니다."
+      "アタックのダメージをさらに #b",
+      "% 受ける。"
     ]
   },
   "theChaser:": {
