@@ -34,6 +34,7 @@ public class FatalBlitz extends ChaserCard {
 
     public FatalBlitz() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, BLEED);
+        loadJokeCardImage(this, "FatalBlitz");
     }
 
     @Override

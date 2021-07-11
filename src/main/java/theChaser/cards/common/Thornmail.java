@@ -26,7 +26,6 @@ public class Thornmail extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Thornmail");
     public static final String IMG = makeCardPath("Thornmail.png");
-    public static final String IMG_BETA = makeCardPath("beta/Thornmail.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -41,7 +40,7 @@ public class Thornmail extends ChaserCard {
 
     public Thornmail() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, BLD);
-        loadJokeCardImage(this, IMG_BETA);
+        loadJokeCardImage(this, "Thornmail");
     }
 
     @Override

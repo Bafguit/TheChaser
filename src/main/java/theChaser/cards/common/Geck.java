@@ -47,6 +47,7 @@ public class Geck extends ChaserCard {
 
     public Geck() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);
+        loadJokeCardImage(this, "Geck");
     }
 
     @Override

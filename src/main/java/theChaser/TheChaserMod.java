@@ -598,6 +598,8 @@ public class TheChaserMod implements
         switch (Settings.language.name()) {
             case "KOR":
                 return "kor";
+            case "JPN":
+                return "jpn";
             default:
                 return "eng";
         }

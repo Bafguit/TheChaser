@@ -1,7 +1,7 @@
 {
   "theChaser:Throwing Knife": {
     "NAME": "手裏剣",
-    "DESCRIPTION": "エセリアル。 ランダムな敵に !D! ダメージを与える。 thechaser:標的　を持つ敵を優先する。 廃棄。"
+    "DESCRIPTION": "エセリアル 。 ランダムな敵に !D! ダメージを与える。 thechaser:標的 を持つ敵を優先する。 廃棄 。"
   },
   "theChaser:Bloody Wind": {
     "NAME": "血の風",
@@ -13,15 +13,15 @@
   },
   "theChaser:Knife Throw": {
     "NAME": "短剣投擲",
-    "DESCRIPTION": "!M! 回 thechaser:狙う。"
+    "DESCRIPTION": "!M! 回 thechaser:狙う 。"
   },
   "theChaser:Followup Slash": {
-    "NAME": "ビハインド・スラッシュ",
-    "DESCRIPTION": "エセリアル。 !D! ダメージを 2 回与える。 廃棄。"
+    "NAME": "バック・スラッシュ",
+    "DESCRIPTION": "エセリアル 。 !D! ダメージを 2 回与える。 廃棄 。"
   },
   "theChaser:Sequence Flow": {
     "NAME": "シーケンス・フロー",
-    "DESCRIPTION": "エセリアル。 !D! ダメージを与える。 廃棄。"
+    "DESCRIPTION": "エセリアル 。 !D! ダメージを与える。 廃棄 。"
   },
   "theChaser:Reactive Shot": {
     "NAME": "反応射撃",
@@ -56,16 +56,16 @@
     "DESCRIPTION": "!D! ダメージを与える。 thechaser:標的 を持った敵の数だけカードを引く。"
   },
   "theChaser:Continuous Slash": {
-    "NAME": "デュアル・スラッシュ",
-    "DESCRIPTION": "!D! ダメージを 2 回与える。 NL thechaser:迅速: *ビハインド・スラッシュ を1枚手札に加える。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを 2 回与える。 NL thechaser:迅速: *ビハインド・スラッシュ+ を1枚手札に加える。"
+    "NAME": "フロー・スラッシュ",
+    "DESCRIPTION": "!D! ダメージを 2 回与える。 NL thechaser:迅速 : *ビハインド・スラッシュ を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを 2 回与える。 NL thechaser:迅速 : *ビハインド・スラッシュ+ を1枚手札に加える。"
   },
   "theChaser:Delusive Strike": {
-    "NAME": "デルーシブ・ストライク",
+    "NAME": "トリック・ストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL 自分が 脱力 を受けている場合は [E] [E] を得る。"
   },
   "theChaser:Fatal Blitz": {
-    "NAME": "フェータル・ブリッツ",
+    "NAME": "パイオー・ブリッツ",
     "DESCRIPTION": "!D! ダメージを与える。 NL thechaser:出血 !M! を与える。"
   },
   "theChaser:Geck": {
@@ -73,7 +73,7 @@
     "DESCRIPTION": "敵全体に thechaser:無防備 !M! と thechaser:標的 !M! を与える。"
   },
   "theChaser:Inertial Strike": {
-    "NAME": "イナーシャル・ストライク",
+    "NAME": "フロー・ストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL このターンに使ったカード数だけダメージが増える。",
     "EXTENDED_DESCRIPTION": [
       "!D! ダメージを与える。 NL このターンに使ったカード数(",
@@ -86,7 +86,7 @@
   },
   "theChaser:Linger": {
     "NAME": "余韻",
-    "DESCRIPTION": "!B! ブロック を得る。 NL !M! 回 thechaser:狙う。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL !M! 回 thechaser:狙う 。"
   },
   "theChaser:Makeready": {
     "NAME": "整備",
@@ -114,7 +114,7 @@
   },
   "theChaser:Watch": {
     "NAME": "注視",
-    "DESCRIPTION": "thechaser:標的 !M! を与える。 NL 廃棄。"
+    "DESCRIPTION": "thechaser:標的 !M! を与える。 NL 廃棄 。"
   },
   "theChaser:Wound": {
     "NAME": "オーペン・ベーン",
@@ -126,7 +126,7 @@
   },
   "theChaser:Aggravate": {
     "NAME": "悪化",
-    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:出血 を受けている敵全体に thrchaser:出血 ダメージを !M! 回与える。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:出血 を受けている敵全体に thechaser:出血 ダメージを !M! 回与える。"
   },
   "theChaser:Attack First": {
     "NAME": "先攻",
@@ -138,8 +138,8 @@
   },
   "theChaser:Break Armour": {
     "NAME": "装甲突破",
-    "DESCRIPTION": "敵の thechaser:標的 を除去し、pその分だけ 弱体、 脱力、 thrchaser:出血 を与える。 廃棄。",
-    "UPGRADE_DESCRIPTION": "敵の thechaser:標的 ほど 弱体、 脱力、 thrchaser:出血 を与える。 廃棄。"
+    "DESCRIPTION": "敵の thechaser:標的 を除去し、pその分だけ 弱体 、 脱力 、 thechaser:出血 を与える。 廃棄 。",
+    "UPGRADE_DESCRIPTION": "敵の thechaser:標的 ほど 弱体 、 脱力 、 thechaser:出血 を与える。 廃棄 。"
   },
   "theChaser:Bulwark": {
     "NAME": "攻守兼備",
@@ -147,16 +147,16 @@
   },
   "theChaser:Chance": {
     "NAME": "機会",
-    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:迅速: このターンの間手札のランダムなカード 1 枚のコストが 0 になる。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:迅速 : このターンの間手札のランダムなカード 1 枚のコストが 0 になる。"
   },
   "theChaser:Conquest": {
     "NAME": "克服",
-    "DESCRIPTION": "自分のデバフの数だけ 筋力 を得る。 NL 廃棄。",
+    "DESCRIPTION": "自分のデバフの数だけ 筋力 を得る。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "自分のデバフの数だけ 筋力 を得る。",
     "EXTENDED_DESCRIPTION": [
       "自分のデバフの数(",
       ")だけ 筋力 を得る。",
-      " NL 廃棄。"
+      " NL 廃棄 。"
     ]
   },
   "theChaser:Disguise": {
@@ -172,20 +172,20 @@
     "DESCRIPTION": "!B! ブロック を得る。 脱力 !M! を得る。"
   },
   "theChaser:Feeble Defend": {
-    "NAME": "フィーブル・デフェンド",
+    "NAME": "コンカー・デフェンド",
     "DESCRIPTION": "!B! ブロック を得る。 NL 自分が 脆弱化 を受けている場合は !M! 倍の ブロック を得る。"
   },
   "theChaser:Feeble Strike": {
-    "NAME": "フィーブル・ストライク",
+    "NAME": "コンカー・ストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL 自分が 脱力 を受けている場合は !M! 倍のダメージを与える。"
   },
   "theChaser:Flexibility": {
     "NAME": "適応性",
-    "DESCRIPTION": "二回選択: NL !M! 回 thechaser:狙ったり、 thechaser:偽傷 を !M! 回得たり、 敵全体に thechaser:出血 !M! を与える。 NL 廃棄。"
+    "DESCRIPTION": "二回選択: NL !M! 回 thechaser:狙ったり 、 thechaser:偽傷 を !M! 回得たり、 敵全体に thechaser:出血 !M! を与える。 NL 廃棄 。"
   },
   "theChaser:Gale Strike": {
     "NAME": "ストーム・ストライク",
-    "DESCRIPTION": "敵全体に !D! ダメージを X 回与える。 X 回 thechaser:狙う。"
+    "DESCRIPTION": "敵全体に !D! ダメージを X 回与える。 X 回 thechaser:狙う 。"
   },
   "theChaser:Hack": {
     "NAME": "めった切り",
@@ -193,11 +193,11 @@
   },
   "theChaser:Hidden Dagger": {
     "NAME": "秘密短剣",
-    "DESCRIPTION": "!B! ブロック を得る。 *手裏剣 を !M! 枚手札に加える。 NL thechaser:迅速: 手札の *手裏剣 すべてをアップグレードする。"
+    "DESCRIPTION": "!B! ブロック を得る。 *手裏剣 を !M! 枚手札に加える。 NL thechaser:迅速 : 手札の *手裏剣 すべてをアップグレードする。"
   },
   "theChaser:Internal Hemorrhage": {
     "NAME": "内出血",
-    "DESCRIPTION": "敵全体に thechaser:出血 !M! と 脱力 2 を与える。 NL 廃棄。"
+    "DESCRIPTION": "敵全体に thechaser:出血 !M! と 脱力 2 を与える。 NL 廃棄 。"
   },
   "theChaser:Open Sore": {
     "NAME": "オーペン・ソー",
@@ -205,7 +205,7 @@
   },
   "theChaser:Paralyze": {
     "NAME": "麻痺",
-    "DESCRIPTION": "敵のデバフの数だけ 筋力 を失う。 NL 廃棄。"
+    "DESCRIPTION": "敵のデバフの数だけ 筋力 を失う。 NL 廃棄 。"
   },
   "theChaser:Penetrate": {
     "NAME": "貫通射撃",
@@ -221,29 +221,29 @@
   },
   "theChaser:Ragewind": {
     "NAME": "レージ・ウィンド",
-    "DESCRIPTION": "!M! 回 thechaser:狙う。 NL プレイ時にこのカードの thechaser:狙い 回数を永続的に 1 増加する。 廃棄。"
+    "DESCRIPTION": "!M! 回 thechaser:狙う 。 NL プレイ時にこのカードの thechaser:狙い 回数を永続的に 1 増加する。 廃棄 。"
   },
   "theChaser:Ready To Counter": {
-    "NAME": "カウンター・マヌーバー",
-    "DESCRIPTION": "!B! ブロックを X 回得る。 X 回 thechaser:狙う。"
+    "NAME": "カウンター・パース",
+    "DESCRIPTION": "!B! ブロックを X 回得る。 X 回 thechaser:狙う 。"
   },
   "theChaser:Replica Dagger": {
     "NAME": "レプリカ短剣",
     "DESCRIPTION": "ターン開始時に、 *手裏剣 を 1 枚手札に加え、ランダムな敵に thechaser:標的 1 を与える。",
-    "UPGRADE_DESCRIPTION": "天賦。 ターン開始時に、 *手裏剣 を 1 枚手札に加えランダムな敵に thechaser:標的 1 を与える。"
+    "UPGRADE_DESCRIPTION": "天賦 。 ターン開始時に、 *手裏剣 を 1 枚手札に加えランダムな敵に thechaser:標的 1 を与える。"
   },
   "theChaser:Secret Card": {
     "NAME": "シークレット・カード",
-    "DESCRIPTION": "カードを 1 枚引く。引いたカードが「アタック」の場合、 !M! 回 thechaser:狙う。"
+    "DESCRIPTION": "カードを 1 枚引く。引いたカードが「アタック」の場合、 !M! 回 thechaser:狙う 。"
   },
   "theChaser:Sequence": {
     "NAME": "シーケンス",
-    "DESCRIPTION": "!D! ダメージを与える。 NL *シーケンス・フロー を !M! 枚手札に加える。 NL thechaser:迅速: !D! ダメージを 2 回与える。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL *シーケンス・フロー を !M! 枚手札に加える。 NL thechaser:迅速 : !D! ダメージを 2 回与える。"
   },
   "theChaser:Space Out": {
     "NAME": "スペース・アウト",
     "DESCRIPTION": "thechaser:狙う たびに !M! ブロック を得る。",
-    "UPGRADE_DESCRIPTION": "天賦。 thechaser:狙う たびに !M! ブロック を得る。"
+    "UPGRADE_DESCRIPTION": "天賦 。 thechaser:狙う たびに !M! ブロック を得る。"
   },
   "theChaser:Testing": {
     "NAME": "探索戦",
@@ -259,7 +259,7 @@
     "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL thechaser:無防備 !M! を得る。"
   },
   "theChaser:Weakness Strike": {
-    "NAME": "ウィークポイント・ストライク",
+    "NAME": "ポイント・ストライク",
     "DESCRIPTION": "!D! ダメージを与える。 敵のデバフ数だけ繰り返す。"
   },
   "theChaser:Win The Exchange": {
@@ -268,21 +268,21 @@
   },
   "theChaser:Wither": {
     "NAME": "萎縮",
-    "DESCRIPTION": "脱力 99 を与える。 廃棄。"
+    "DESCRIPTION": "脱力 99 を与える。 廃棄 。"
   },
   "theChaser:Absolute Advantage": {
     "NAME": "アブソルート・エッジ",
-    "DESCRIPTION": "[E] を得る。 敵全体のデバフの数だけカードを枚引く。 NL 廃棄。",
-    "UPGRADE_DESCRIPTION": "[E] [E] を得る。 敵全体のデバフの数だけカードを枚引く。 NL 廃棄。",
+    "DESCRIPTION": "[E] を得る。 敵全体のデバフの数だけカードを枚引く。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "[E] [E] を得る。 敵全体のデバフの数だけカードを枚引く。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
       "[E] を得る。 敵全体のデバフの数(",
-      ")だけカードを枚引く。 NL 廃棄。",
+      ")だけカードを枚引く。 NL 廃棄 。",
       "[E] "
     ]
   },
   "theChaser:Approach Run": {
     "NAME": "助走",
-    "DESCRIPTION": "thechaser:捷歩 !M!。 NL thechaser:迅速: 敵全体に thechaser:出血 !M! を与える。 NL 廃棄。"
+    "DESCRIPTION": "thechaser:捷歩 !M!。 NL thechaser:迅速 : 敵全体に thechaser:出血 !M! を与える。 NL 廃棄 。"
   },
   "theChaser:Diplade": {
     "NAME": "ダブル・ブレード",
@@ -302,37 +302,37 @@
   },
   "theChaser:Hide": {
     "NAME": "隱身",
-    "DESCRIPTION": "!M! ターン間 thechaser:隠匿 する。 NL 廃棄。"
+    "DESCRIPTION": "!M! ターン間 thechaser:隠匿 する。 NL 廃棄 。"
   },
   "theChaser:Incisive Blade": {
-    "NAME": "インサイシブ・ブレード",
-    "DESCRIPTION": "エセリアル。 !D! ダメージを与える。 NL 廃棄。"
+    "NAME": "シャープ・ブレード",
+    "DESCRIPTION": "エセリアル。 !D! ダメージを与える。 NL 廃棄 。"
   },
   "theChaser:Phrenitis": {
     "NAME": "錯乱",
-    "DESCRIPTION": "脱力、 弱体、 脆弱化、 毒, thechaser:出血、 thechaser:標的、 thechaser:偽傷、 thechaser:無防備 1 を与える。 NL 廃棄。"
+    "DESCRIPTION": "脱力 、 弱体 、 脆弱化 、 毒 、 thechaser:出血 、 thechaser:標的 、 thechaser:偽傷 、 thechaser:無防備 1 を与える。 NL 廃棄 。"
   },
   "theChaser:Preemptive Attack": {
     "NAME": "先制攻撃",
-    "DESCRIPTION": "ターン開始時に、カードを 1 枚引き、 1 回 thechaser:狙う。"
+    "DESCRIPTION": "ターン開始時に、カードを 1 枚引き、 1 回 thechaser:狙う 。"
   },
   "theChaser:Saw Blade": {
-    "NAME": "チェーンソー・ブレード",
+    "NAME": "スパイク・ブレード",
     "DESCRIPTION": "カードをプレイするたび、敵全体に thechaser:出血 !M! を与える。",
-    "UPGRADE_DESCRIPTION": "天賦。 カードをプレイするたび、敵全体に thechaser:出血 !M! を与える。"
+    "UPGRADE_DESCRIPTION": "天賦 。 カードをプレイするたび、敵全体に thechaser:出血 !M! を与える。"
   },
   "theChaser:Shadow Form": {
     "NAME": "暗転化",
-    "DESCRIPTION": "ターン開始時に、 thechaser:狙い のダメージを 2 増加する。"
+    "DESCRIPTION": "ターン開始時に、 thechaser:狙い のダメージを 2 増加する 。"
   },
   "theChaser:Stealage": {
     "NAME": "盗癖",
-    "DESCRIPTION": "!D! ダメージを与える。 !M! ゴールド得る。 NL 廃棄。"
+    "DESCRIPTION": "!D! ダメージを与える。 !M! ゴールド得る。 NL 廃棄 。"
   },
   "theChaser:Strategic Retreat": {
     "NAME": "作戦上の後退",
-    "DESCRIPTION": "保留。 *ボス 以外の戦闘から逃げる。報酬は得られない。 NL プレイ時にこのカードを取り外す。",
-    "UPGRADE_DESCRIPTION": "天賦。 保留。 *ボス 以外の戦闘から逃げる。報酬は得られない。 NL プレイ時にこのカードを取り外す。"
+    "DESCRIPTION": "保留 。 *ボス 以外の戦闘から逃げる。報酬は得られない。 NL プレイ時にこのカードを取り外す。",
+    "UPGRADE_DESCRIPTION": "天賦 。 保留 。 *ボス 以外の戦闘から逃げる。報酬は得られない。 NL プレイ時にこのカードを取り外す。"
   },
   "theChaser:Unwary": {
     "NAME": "放心",
@@ -340,8 +340,8 @@
   },
   "theChaser:Vitality": {
     "NAME": "活力",
-    "DESCRIPTION": "このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄。",
-    "UPGRADE_DESCRIPTION": "保留。 このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄。",
+    "DESCRIPTION": "このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "保留。 このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
       "このターンに thechaser:狙った 回数(",
       ")だけHPを回復する。 NL 廃棄。",
@@ -350,15 +350,15 @@
   },
   "theChaser:Walkout": {
     "NAME": "退場",
-    "DESCRIPTION": "敵全体に !D! ダメージを与える。このターンにプレイしたカードの数だけ thechaser:狙う。 ターンを終了する。",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。このターンにプレイしたカードの数だけ thechaser:狙う 。 ターンを終了する。",
     "EXTENDED_DESCRIPTION": [
       "敵全体に !D! ダメージを与える。このターンにプレイしたカードの数(",
-      ")だけ thechaser:狙う。 ターンを終了する。"
+      ")だけ thechaser:狙う 。 ターンを終了する。"
     ]
   },
   "theChaser:Wile": {
     "NAME": "権謀術数",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 弱体、 脱力、 thechaser:無防備 !M! を与える。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 弱体 、 脱力 、 thechaser:無防備 !M! を与える。"
   },
 
 

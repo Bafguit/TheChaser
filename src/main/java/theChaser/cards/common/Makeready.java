@@ -27,6 +27,7 @@ public class Makeready extends ChaserCard {
 
     public Makeready() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, DRAW);
+        loadJokeCardImage(this, "Makeready");
     }
 
     @Override

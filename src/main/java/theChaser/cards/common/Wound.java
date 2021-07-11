@@ -31,6 +31,7 @@ public class Wound extends ChaserCard {
 
     public Wound() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, TAG);
+        loadJokeCardImage(this, "Wound");
     }
 
     @Override

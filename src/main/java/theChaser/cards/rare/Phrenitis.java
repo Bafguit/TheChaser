@@ -37,7 +37,6 @@ public class Phrenitis extends ChaserCard {
 
     public static final String ID = TheChaserMod.makeID("Phrenitis");
     public static final String IMG = makeCardPath("Phrenitis.png");
-    public static final String IMG_BETA = makeCardPath("beta/Phrenitis.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -49,7 +48,7 @@ public class Phrenitis extends ChaserCard {
 
     public Phrenitis() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        loadJokeCardImage(this, IMG_BETA);
+        loadJokeCardImage(this, "Phrenitis");
         this.exhaust = true;
     }
 

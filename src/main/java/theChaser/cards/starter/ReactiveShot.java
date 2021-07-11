@@ -29,7 +29,6 @@ public class ReactiveShot extends ChaserCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("ReactionShot.png");
-    public static final String IMG_BETA = makeCardPath("beta/ReactionShot.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -47,7 +46,7 @@ public class ReactiveShot extends ChaserCard {
 
     public ReactiveShot() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DAMAGE, 0, TAG);
-        loadJokeCardImage(this, IMG_BETA);
+        loadJokeCardImage(this, "ReactionShot");
     }
 
     @Override

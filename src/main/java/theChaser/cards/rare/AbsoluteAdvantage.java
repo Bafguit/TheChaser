@@ -50,7 +50,7 @@ public class AbsoluteAdvantage extends ChaserCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if(ChaserUtil.hasDebuff() > 0) {
+        if(ChaserUtil.hasDebuff()) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
@@ -60,7 +60,7 @@ public class AbsoluteAdvantage extends ChaserCard {
         
         String lang = Settings.language.name();
         if(lang.equals("KOR") || lang.equals("JPN")) {
-            this.rawDescription = (this.upgraded ? this.extendedDescription[2] : "") + this.extendedDescription[0] + getDebuffs() + this.extendedDescription[1];
+            this.rawDescription = (this.upgraded ? this.extendedDescription[2] : "") + this.extendedDescription[0] + ChaserUtil.getAllDebuffAmount() + this.extendedDescription[1];
 
             this.initializeDescription();
         }

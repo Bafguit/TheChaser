@@ -35,6 +35,7 @@ public class Watch extends ChaserCard {
 
     public Watch() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);
+        loadJokeCardImage(this, "Watch");
         this.exhaust = true;
     }
 

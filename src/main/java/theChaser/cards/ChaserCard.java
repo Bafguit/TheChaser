@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import theChaser.util.TextureLoader;
 
+import static theChaser.TheChaserMod.makeCardPath;
+
 public abstract class ChaserCard extends CustomCard {
 
     // Custom Abstract Cards can be a bit confusing. While this is a simple base for simply adding a second magic number,
@@ -77,7 +79,8 @@ public abstract class ChaserCard extends CustomCard {
         }
     }
 
-    public static void loadJokeCardImage(AbstractCard card, String img) {
+    public static void loadJokeCardImage(AbstractCard card, String name) {
+        String img = makeCardPath("beta/" + name + ".png");
         if (card instanceof ChaserCard) {
             ((ChaserCard) card).betaArtPath = img;
         }
