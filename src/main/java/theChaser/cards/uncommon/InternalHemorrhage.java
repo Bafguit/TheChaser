@@ -27,7 +27,7 @@ public class InternalHemorrhage extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 2;
-    private static final int WEAK = 5;
+    private static final int WEAK = 6;
     private static final int UP_WEAK = 3;
 
     public InternalHemorrhage() {

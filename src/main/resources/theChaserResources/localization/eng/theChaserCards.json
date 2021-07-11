@@ -242,7 +242,7 @@
 	  },
 	  "theChaser:Sequence": {
 	    "NAME": "Slash Sequence",
-	    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage !M! times instead."
+	    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage 2 times."
 	  },
 	  "theChaser:Space Out": {
 	    "NAME": "Combat Spacing",
@@ -281,7 +281,7 @@
 	  },
 	  "theChaser:Approach Run": {
 	    "NAME": "High-Speed Advance",
-	    "DESCRIPTION": "thechaser:Quickstep !M!. NL thechaser:Swift: Apply !M! thechaser:Bleeding to ALL enemies instead. NL Exhaust."
+	    "DESCRIPTION": "thechaser:Quickstep !M!. NL thechaser:Swift: Apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
 	  },
 	  "theChaser:Diplade": {
 	    "NAME": "Blade Genesis",

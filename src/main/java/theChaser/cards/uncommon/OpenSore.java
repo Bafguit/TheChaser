@@ -22,7 +22,7 @@ public class OpenSore extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int B = 2;
+    private static final int B = 3;
 
     public OpenSore() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, B);
@@ -36,6 +36,6 @@ public class OpenSore extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(1);
+        upgradeMagicNumber(2);
     }
 }

@@ -35,8 +35,8 @@ public class ApproachRun extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 1;
-    private static final int TURN = 7;
-    private static final int UP_TURN = 3;
+    private static final int TURN = 10;
+    private static final int UP_TURN = 5;
 
     public ApproachRun() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TURN);
@@ -60,9 +60,8 @@ public class ApproachRun extends ChaserCard {
             for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 addToBot(new ApplyPowerAction(mo, p, new BleedingPower(mo, p, this.magicNumber)));
             }
-        } else {
-            addToBot(new AddCardPerTurnAction(this.magicNumber));
         }
+        addToBot(new AddCardPerTurnAction(this.magicNumber));
     }
 
     @Override

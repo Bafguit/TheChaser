@@ -48,20 +48,13 @@ public class Sequence extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if(ChaserUtil.isAccel()) {
-            ArrayList<AbstractGameAction.AttackEffect> effects = new ArrayList<>();
-            effects.add(AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
-            effects.add(AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
-            effects.add(AbstractGameAction.AttackEffect.SLASH_VERTICAL);
-
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), effects.get(AbstractDungeon.cardRandomRng.random.nextInt(3))));
-        } else {
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-            ChaserCard temp = new SequenceFlow();
-            addToBot(new MakeTempCardInHandAction(temp, this.magicNumber));
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
+        ChaserCard temp = new SequenceFlow();
+        addToBot(new MakeTempCardInHandAction(temp, this.magicNumber));
     }
 
     @Override

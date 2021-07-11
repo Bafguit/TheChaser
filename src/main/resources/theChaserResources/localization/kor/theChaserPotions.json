@@ -16,8 +16,8 @@
         "theChaser:Target Potion": {
                 "NAME": "표식 포션",
                 "DESCRIPTIONS": [
-                        "#y표적 을 #b",
-                        " 번 공격합니다."
+                        "#b",
+                        " 번 #y겨냥 합니다."
                 ]
         }
 }

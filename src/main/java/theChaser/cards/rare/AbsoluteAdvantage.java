@@ -50,15 +50,16 @@ public class AbsoluteAdvantage extends ChaserCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if(getDebuffs() > 0) {
+        if(ChaserUtil.hasDebuff() > 0) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
 
     public void applyPowers() {
         super.applyPowers();
-
-        if(Settings.language.name().equals("KOR")) {
+        
+        String lang = Settings.language.name();
+        if(lang.equals("KOR") || lang.equals("JPN")) {
             this.rawDescription = (this.upgraded ? this.extendedDescription[2] : "") + this.extendedDescription[0] + getDebuffs() + this.extendedDescription[1];
 
             this.initializeDescription();
@@ -69,24 +70,10 @@ public class AbsoluteAdvantage extends ChaserCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainEnergyAction(this.magicNumber));
 
-        int count = getDebuffs();
+        int count = ChaserUtil.getAllDebuffAmount();
         if(count > 0) {
             addToBot(new DrawCardAction(p, count));
         }
-    }
-
-    private int getDebuffs() {
-        ArrayList<AbstractPower> ps = new ArrayList<>();
-
-        for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            for(AbstractPower power : mo.powers) {
-                if(power.type == AbstractPower.PowerType.DEBUFF && !ps.contains(power)) {
-                    ps.add(power);
-                }
-            }
-        }
-
-        return ps.size();
     }
 
     @Override
