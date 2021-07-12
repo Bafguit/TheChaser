@@ -29,7 +29,7 @@
   },
   "theChaser:Flawed Stealth": {
     "NAME": "隠遁者",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 脆弱化 !M! を得る。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 脆弱化 1 を得る。"
   },
   "theChaser:Strike": {
     "NAME": "ストライク",
@@ -306,7 +306,7 @@
   },
   "theChaser:Incisive Blade": {
     "NAME": "シャープ・ブレード",
-    "DESCRIPTION": "エセリアル。 !D! ダメージを与える。 NL 廃棄 。"
+    "DESCRIPTION": "エセリアル 。 !D! ダメージを与える。 NL 廃棄 。"
   },
   "theChaser:Phrenitis": {
     "NAME": "錯乱",
