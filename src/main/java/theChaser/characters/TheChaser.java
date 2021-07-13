@@ -5,10 +5,13 @@ import basemod.animations.SpineAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -104,15 +107,20 @@ public class TheChaser extends CustomPlayer {
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
-    // =============== CHARACTER CLASS START =================
+    // =============== CHARACTER CLASS START =================\
+
+    @Override
+    public void renderPlayerImage(SpriteBatch sb) {
+        sr.setPremultipliedAlpha(false);
+        super.renderPlayerImage(sb);
+        sr.setPremultipliedAlpha(true);
+    }
 
     public TheChaser(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "theChaserResources/images/char/theChaser/orb/vfx.png", null,
                 new SpineAnimation(
-                        THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F));
-        this.loadAnimation(THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F);
-
+                        THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 2.75F));
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
@@ -126,15 +134,10 @@ public class TheChaser extends CustomPlayer {
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
 
-        // =============== ANIMATIONS =================  
-/*
-        loadAnimation(
-                THE_DEFAULT_SKELETON_ATLAS,
-                THE_DEFAULT_SKELETON_JSON,
-                1.0f);
-        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
+        // =============== ANIMATIONS =================
+        this.loadAnimation(THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 2.75F);
+        AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
         e.setTime(e.getEndTime() * MathUtils.random());
-*/
         // =============== /ANIMATIONS/ =================
 
 
@@ -291,6 +294,17 @@ public class TheChaser extends CustomPlayer {
         panels.add(new CutscenePanel("theChaserResources/images/scene/chaser2.png", "TURN_EFFECT"));
         panels.add(new CutscenePanel("theChaserResources/images/scene/chaser3.png", "CEILING_DUST_3"));
         return panels;
+    }
+
+    @Override
+    public void damage(DamageInfo info) {
+        if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.output > currentBlock) {
+            AnimationState.TrackEntry e = state.setAnimation(0, "Hit", false);
+            state.addAnimation(0,"Idle", true, 0.0f);
+            e.setTimeScale(1f);
+        }
+
+        super.damage(info);
     }
 
     // Should return a string containing what text is shown when your character is

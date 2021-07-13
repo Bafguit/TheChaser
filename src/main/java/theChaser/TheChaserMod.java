@@ -138,8 +138,8 @@ public class TheChaserMod implements
     public static final String BADGE_IMAGE = "theChaserResources/images/Badge.png";
     
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "theChaserResources/images/char/theChaser/TheChaser/TheChaser_Temp.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "theChaserResources/images/char/theChaser/TheChaser/TheChaser_Temp.json";
+    public static final String THE_DEFAULT_SKELETON_ATLAS = "theChaserResources/images/char/theChaser/TheChaser/TheChaser.atlas";
+    public static final String THE_DEFAULT_SKELETON_JSON = "theChaserResources/images/char/theChaser/TheChaser/TheChaser.json";
 
     // =============== MAKE IMAGE PATHS =================
     

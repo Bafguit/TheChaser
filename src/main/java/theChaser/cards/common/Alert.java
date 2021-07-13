@@ -35,6 +35,7 @@ public class Alert extends ChaserCard {
 
     public Alert() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, MAGIC);
+        loadJokeCardImage(this, "Alert");
     }
 
     @Override

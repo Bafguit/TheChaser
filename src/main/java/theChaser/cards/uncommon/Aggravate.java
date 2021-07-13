@@ -38,6 +38,7 @@ public class Aggravate extends ChaserCard {
 
     public Aggravate() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, 1);
+        loadJokeCardImage(this, "Aggravate");
     }
 
     @Override

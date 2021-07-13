@@ -42,6 +42,7 @@ public class Blitzkrieg extends ChaserCard {
 
     public Blitzkrieg() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, DMG, 0, 1);
+        loadJokeCardImage(this, "Blitzkrieg");
     }
 
     @Override

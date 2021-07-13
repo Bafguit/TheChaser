@@ -36,6 +36,7 @@ public class Brass extends ChaserCard {
 
     public Brass() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TAG);
+        loadJokeCardImage(this, "Brass");
     }
 
     @Override
