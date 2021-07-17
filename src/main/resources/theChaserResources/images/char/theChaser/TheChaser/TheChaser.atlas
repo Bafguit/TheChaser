@@ -6,99 +6,99 @@ filter: Linear,Linear
 repeat: none
 shadow
   rotate: false
-  xy: 1, 1479
-  size: 998, 157
-  orig: 998, 157
+  xy: 1, 1058
+  size: 713, 112
+  orig: 713, 112
   offset: 0, 0
   index: -1
 body
   rotate: false
-  xy: 669, 739
-  size: 350, 430
-  orig: 350, 430
+  xy: 479, 529
+  size: 250, 307
+  orig: 250, 307
   offset: 0, 0
   index: -1
 cpae_back
   rotate: false
   xy: 1, 1
-  size: 787, 736
-  orig: 787, 736
+  size: 562, 526
+  orig: 562, 526
   offset: 0, 0
   index: -1
 arm_l
   rotate: false
-  xy: 790, 1
-  size: 232, 241
-  orig: 232, 241
+  xy: 845, 838
+  size: 166, 172
+  orig: 166, 172
   offset: 0, 0
   index: -1
 head
   rotate: false
-  xy: 1, 1638
-  size: 251, 225
-  orig: 251, 225
+  xy: 664, 838
+  size: 179, 161
+  orig: 179, 161
   offset: 0, 0
   index: -1
 feet_r
   rotate: false
-  xy: 487, 1774
-  size: 97, 185
-  orig: 97, 185
+  xy: 565, 225
+  size: 69, 132
+  orig: 69, 132
   offset: 0, 0
   index: -1
 feet_l
   rotate: false
-  xy: 487, 1638
-  size: 169, 134
-  orig: 169, 134
+  xy: 703, 200
+  size: 121, 96
+  orig: 121, 96
   offset: 0, 0
   index: -1
 leg_lower_l
   rotate: false
-  xy: 369, 1638
-  size: 116, 276
-  orig: 116, 276
+  xy: 711, 1
+  size: 83, 197
+  orig: 83, 197
   offset: 0, 0
   index: -1
 leg_upper_l
   rotate: false
-  xy: 790, 244
-  size: 202, 188
-  orig: 202, 188
+  xy: 565, 1
+  size: 144, 134
+  orig: 144, 134
   offset: 0, 0
   index: -1
 leg_lower_r
   rotate: false
-  xy: 669, 1171
-  size: 256, 245
-  orig: 256, 245
+  xy: 479, 838
+  size: 183, 175
+  orig: 183, 175
   offset: 0, 0
   index: -1
 leg_upper_r
   rotate: false
-  xy: 790, 434
-  size: 155, 221
-  orig: 155, 221
+  xy: 716, 1001
+  size: 111, 158
+  orig: 111, 158
   offset: 0, 0
   index: -1
 arm_upper_r
   rotate: false
-  xy: 1, 1865
-  size: 190, 120
-  orig: 190, 120
+  xy: 565, 137
+  size: 136, 86
+  orig: 136, 86
   offset: 0, 0
   index: -1
 arm_lower_r
   rotate: false
-  xy: 254, 1638
-  size: 113, 293
-  orig: 113, 293
+  xy: 716, 1161
+  size: 81, 209
+  orig: 81, 209
   offset: 0, 0
   index: -1
 cpae_front
   rotate: false
-  xy: 1, 739
-  size: 666, 738
-  orig: 666, 738
+  xy: 1, 529
+  size: 476, 527
+  orig: 476, 527
   offset: 0, 0
   index: -1

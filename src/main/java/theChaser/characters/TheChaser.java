@@ -120,7 +120,7 @@ public class TheChaser extends CustomPlayer {
         super(name, setClass, orbTextures,
                 "theChaserResources/images/char/theChaser/orb/vfx.png", null,
                 new SpineAnimation(
-                        THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 2.75F));
+                        THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F));
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
@@ -135,7 +135,7 @@ public class TheChaser extends CustomPlayer {
 
 
         // =============== ANIMATIONS =================
-        this.loadAnimation(THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 2.75F);
+        this.loadAnimation(THE_DEFAULT_SKELETON_ATLAS, THE_DEFAULT_SKELETON_JSON, 1.0F);
         AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
         e.setTime(e.getEndTime() * MathUtils.random());
         // =============== /ANIMATIONS/ =================
