@@ -59,7 +59,20 @@ public class DamageAllTargetAction extends AbstractGameAction {
 
         this.tickDuration();
         if (this.isDone && this.monsters != null) {
-
+            for(AbstractRelic r : AbstractDungeon.player.relics) {
+                if(r instanceof OnTargetAttackSubscriber) {
+                    this.damage = ((OnTargetAttackSubscriber) r).onTargetAttack(this.monsters, this.damage);
+            
+            for(AbstractCard p : AbstractDungeon.player.powers) {
+                if(p instanceof OnTargetAttackSubscriber) {
+                    this.damage = ((OnTargetAttackSubscriber) p).onTargetAttack(this.monsters, this.damage);
+            
+            for(AbstractCard c : AbstractDungeon.player.hand.group) {
+                if(c instanceof OnTargetAttackSubscriber) {
+                    this.damage = ((OnTargetAttackSubscriber) c).onTargetAttack(this.monsters, this.damage);
+            
+            if(this.damage > 0) {
+            
             for(AbstractMonster m : this.monsters) {
                 if (!m.isDeadOrEscaped() && m.hasPower(TargetPower.POWER_ID)) {
                     m.getPower(TargetPower.POWER_ID).flashWithoutSound();
@@ -87,6 +100,8 @@ public class DamageAllTargetAction extends AbstractGameAction {
 
             if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
                 AbstractDungeon.actionManager.clearPostCombatActions();
+            }
+            
             }
         }
 

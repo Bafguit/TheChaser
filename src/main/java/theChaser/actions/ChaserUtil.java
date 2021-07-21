@@ -54,9 +54,7 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
     }
 
     public static int getTargetDamage() {
-        AbstractPower pnt = AbstractDungeon.player.getPower(PenetrativePower.POWER_ID);
-        //AbstractPower unw = AbstractDungeon.player.getPower(UnwaryPower.POWER_ID);
-        return Math.max(TarAtkDmg + (pnt != null ? pnt.amount : 0), 0);
+        return TarAtkDmg;
     }
 
     public static int getTargetAttackCount() {
@@ -213,13 +211,13 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
         if(canAttack()) {
             if(AbstractDungeon.player.hasPower(DualWieldingPower.POWER_ID)) {
                 AbstractDungeon.player.getPower(DualWieldingPower.POWER_ID).flash();
-                addToBot(new VFXAction(new DaggerTargetEffect(AbstractDungeon.getMonsters().shouldFlipVfx(), getTargetCount()), 0.0F));
-                addToBot(new DamageAllTargetAction(getTargetDamage(), getTarget()));
+                addToTop(new VFXAction(new DaggerTargetEffect(AbstractDungeon.getMonsters().shouldFlipVfx(), getTargetCount()), 0.0F));
+                addToTop(new DamageAllTargetAction(getTargetDamage(), getTarget()));
                 TarAtkCnt++;
                 TarAtkCntPerTurn++;
             }
-            addToBot(new VFXAction(new DaggerTargetEffect(AbstractDungeon.getMonsters().shouldFlipVfx(), getTargetCount()), 0.0F));
-            addToBot(new DamageAllTargetAction(getTargetDamage(), getTarget()));
+            addToTop(new VFXAction(new DaggerTargetEffect(AbstractDungeon.getMonsters().shouldFlipVfx(), getTargetCount()), 0.0F));
+            addToTop(new DamageAllTargetAction(getTargetDamage(), getTarget()));
             TarAtkCnt++;
             TarAtkCntPerTurn++;
         }
