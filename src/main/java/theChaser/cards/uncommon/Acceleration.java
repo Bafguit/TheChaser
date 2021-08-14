@@ -26,6 +26,7 @@ public class Acceleration extends ChaserCard {
 
     public Acceleration() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, STR);
+        this.isEthereal = true;
     }
 
     @Override
@@ -36,6 +37,6 @@ public class Acceleration extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeBaseCost(0);
+        this.isEthereal = false;
     }
 }

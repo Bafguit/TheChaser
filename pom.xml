@@ -6,7 +6,7 @@
     <groupId>chaser</groupId>
     <artifactId>TheChaser</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>TheChaser</name>
-    <version>1.19</version>
+    <version>1.20</version>
     <description>A character mod adds The Chaser.</description>
 
     <properties>

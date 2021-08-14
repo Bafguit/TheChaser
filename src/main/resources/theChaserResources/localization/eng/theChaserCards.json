@@ -124,7 +124,8 @@
 	  },
 	  "theChaser:Acceleration": {
 	    "NAME": "Acceleration",
-	    "DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength."
+	    "DESCRIPTION": "Ethereal. Whenever you play an Attack, gain !M! temporary Strength.",
+		"UPGRADE_DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength."
 	  },
 	  "theChaser:Aggravate": {
 	    "NAME": "Aggravate",
@@ -148,7 +149,7 @@
 	    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity."
 	  },
 	  "theChaser:Chance": {
-	    "NAME": "Hunter's Luck",
+	    "NAME": "Chaser's Luck",
 	    "DESCRIPTION": "Gain !B! Block. NL thechaser:Swift: Reduce the cost of a random card in your hand to 0 this turn."
 	  },
 	  "theChaser:Conquest": {
@@ -197,7 +198,7 @@
 	  },
 	  "theChaser:Hidden Dagger": {
 	    "NAME": "Hidden Dagger",
-	    "DESCRIPTION": "Gain !B! Block. Add 1 *Throwing *Knife into your hand. NL thechaser:Swift: Upgrade ALL *Throwing *Knife cards in your hand."
+	    "DESCRIPTION": "Gain !B! Block. Add !M! *Throwing *Knife into your hand. NL thechaser:Swift: Upgrade ALL *Throwing *Knife cards in your hand."
 	  },
 	  "theChaser:Internal Hemorrhage": {
 	    "NAME": "Internal Hemorrhage",
@@ -237,7 +238,7 @@
 	    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Throwing *Knife into your hand and apply 1 thechaser:Targeting to a random enemy."
 	  },
 	  "theChaser:Secret Card": {
-	    "NAME": "Fighter's Trick",
+	    "NAME": "Chaser's Trick",
 	    "DESCRIPTION": "Draw 1 card. NL If it's an Attack, trigger thechaser:Targeting !M! times."
 	  },
 	  "theChaser:Sequence": {
@@ -246,8 +247,7 @@
 	  },
 	  "theChaser:Space Out": {
 	    "NAME": "Combat Spacing",
-	    "DESCRIPTION": "Whenever you trigger thechaser:Targeting, gain !M! Block.",
-	    "UPGRADE_DESCRIPTION": "Innate. Whenever you trigger thechaser:Targeting, gain !M! Block."
+	    "DESCRIPTION": "Whenever you trigger thechaser:Targeting, gain !M! Block."
 	  },
 	  "theChaser:Testing": {
 	    "NAME": "Test the Waters",
@@ -296,12 +296,12 @@
 	    "DESCRIPTION": "All your buffs count as debuffs, for the purposes of effects which check for debuffs on you."
 	  },
 	  "theChaser:Fraudulence": {
-	    "NAME": "Hunter's Guard",
+	    "NAME": "Chaser's Guard",
 	    "DESCRIPTION": "Gain !B! Block for each unique debuff on ALL enemies."
 	  },
 	  "theChaser:Hide": {
 	    "NAME": "Perfected Stealth",
-	    "DESCRIPTION": "thechaser:Hide for !M! turns. NL Exhaust."
+	    "DESCRIPTION": "Ethereal. Innate. thechaser:Hide for !M! turns. NL Exhaust."
 	  },
 	  "theChaser:Incisive Blade": {
 	    "NAME": "Neckcutter",
@@ -315,6 +315,11 @@
 	    "NAME": "Preemptive Offense",
 	    "DESCRIPTION": "At the start of your turn, draw 1 additional card and trigger thechaser:Targeting once."
 	  },
+	"theChaser:Prepay": {
+		"NAME": "Prepay",
+		"DESCRIPTION": "This turn, your next X cards cost 0. Exhaust.",
+		"UPGRADE_DESCRIPTION": "This turn, your next X cards cost 0. Draw X cards. Exhaust."
+	},
 	  "theChaser:Saw Blade": {
 	    "NAME": "Sawblades",
 	    "DESCRIPTION": "Whenever you play a card, apply !M! thechaser:Bleeding to ALL enemies.",
@@ -327,11 +332,6 @@
 	  "theChaser:Stealage": {
 	    "NAME": "Shakedown",
 	    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Gold. NL Exhaust."
-	  },
-	  "theChaser:Strategic Retreat": {
-	    "NAME": "Strategic Retreat",
-	    "DESCRIPTION": "Retain. Escape from a non-boss combat. Receive no rewards. NL Remove this card from your master deck.",
-	    "UPGRADE_DESCRIPTION": "Innate. Retain. NL Escape from a non-boss combat. Receive no rewards. NL Remove this card from your master deck."
 	  },
 	  "theChaser:Unwary": {
 	    "NAME": "Confounding Assault",

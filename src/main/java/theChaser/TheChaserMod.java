@@ -41,7 +41,6 @@ import theChaser.util.TextureLoader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Base64;
 import java.util.Properties;
 
 //TODO: DON'T MASS RENAME/REFACTOR
@@ -517,7 +516,7 @@ public class TheChaserMod implements
         BaseMod.addCard(new SawBlade());
         BaseMod.addCard(new ShadowForm());
         BaseMod.addCard(new Stealage());
-        BaseMod.addCard(new StrategicRetreat());
+        BaseMod.addCard(new Prepay());
         BaseMod.addCard(new Unwary());
         BaseMod.addCard(new Vitality());
         BaseMod.addCard(new Walkout());
@@ -553,10 +552,10 @@ public class TheChaserMod implements
         UnlockTracker.addRelic(AcidSolution.ID);
         UnlockTracker.addRelic(BrokenTicker.ID);
         UnlockTracker.addRelic(CloakOfAssassin.ID);
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(ShadowForm.ID, Phrenitis.ID, StrategicRetreat.ID), TheChaser.Enums.THE_CHASER, 4);
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(ShadowForm.ID, Phrenitis.ID, Prepay.ID), TheChaser.Enums.THE_CHASER, 4);
         UnlockTracker.addCard(ShadowForm.ID);
         UnlockTracker.addCard(Phrenitis.ID);
-        UnlockTracker.addCard(StrategicRetreat.ID);
+        UnlockTracker.addCard(Prepay.ID);
 
 
     }

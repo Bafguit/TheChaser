@@ -122,7 +122,8 @@
   },
   "theChaser:Acceleration": {
     "NAME": "가속",
-    "DESCRIPTION": "공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다."
+    "DESCRIPTION": "휘발성. 공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다."
   },
   "theChaser:Aggravate": {
     "NAME": "악화",
@@ -146,7 +147,7 @@
     "DESCRIPTION": "힘을 !M! 얻습니다. NL 민첩을 !M! 얻습니다."
   },
   "theChaser:Chance": {
-    "NAME": "기회",
+    "NAME": "추적자의 행운",
     "DESCRIPTION": "방어도를 !B! 얻습니다. NL thechaser:신속: 무작위 카드의 비용을 이번 턴 동안 0 으로 만듭니다."
   },
   "theChaser:Conquest": {
@@ -233,7 +234,7 @@
     "UPGRADE_DESCRIPTION": "선천성. 턴 시작 시 *수리검 카드를 1장 얻고 무작위 적에게 thechaser:표적을 1 부여합니다."
   },
   "theChaser:Secret Card": {
-    "NAME": "숨겨둔 패",
+    "NAME": "추적자의 속임수",
     "DESCRIPTION": "카드를 1장 뽑습니다. NL 뽑은 카드가 공격 카드라면 !M! 번 thechaser:겨냥합니다."
   },
   "theChaser:Sequence": {
@@ -242,8 +243,7 @@
   },
   "theChaser:Space Out": {
     "NAME": "간격 두기",
-    "DESCRIPTION": "thechaser:겨냥할 때마다 방어도를 !M! 얻습니다.",
-    "UPGRADE_DESCRIPTION": "선천성. thechaser:겨냥할 때마다 방어도를 !M! 얻습니다."
+    "DESCRIPTION": "thechaser:겨냥할 때마다 방어도를 !M! 얻습니다."
   },
   "theChaser:Testing": {
     "NAME": "탐색전",
@@ -286,7 +286,7 @@
   },
   "theChaser:Diplade": {
     "NAME": "이중 칼날",
-    "DESCRIPTION": "비용이 0이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
+    "DESCRIPTION": "비용이 0 이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
   },
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",
@@ -297,12 +297,12 @@
     "DESCRIPTION": "모든 버프가 디버프로 인식됩니다."
   },
   "theChaser:Fraudulence": {
-    "NAME": "기만",
+    "NAME": "추적자의 수호",
     "DESCRIPTION": "적 전체의 디버프 하나당 방어도를 !B! 얻습니다."
   },
   "theChaser:Hide": {
     "NAME": "은신",
-    "DESCRIPTION": "!M! 턴 동안 thechaser:은신합니다. NL 소멸."
+    "DESCRIPTION": "선천성. 휘발성. !M! 턴 동안 thechaser:은신합니다. NL 소멸."
   },
   "theChaser:Incisive Blade": {
     "NAME": "예리한 칼날",
@@ -316,6 +316,11 @@
     "NAME": "선제 공격",
     "DESCRIPTION": "턴 시작 시 카드를 1장 뽑고 1번 thechaser:겨냥합니다."
   },
+  "theChaser:Prepay": {
+    "NAME": "선불",
+    "DESCRIPTION": "이번 턴 동안 다음에 사용하는 카드 X 장의 비용이 0 이 됩니다. 소멸.",
+    "UPGRADE_DESCRIPTION": "이번 턴 동안 다음에 사용하는 카드 X 장의 비용이 0 이 됩니다. 카드를 X 장 뽑습니다. 소멸."
+  },
   "theChaser:Saw Blade": {
     "NAME": "톱날",
     "DESCRIPTION": "카드를 사용할 때마다 적 전체에게 thechaser:출혈을 !M! 부여합니다.",
@@ -328,11 +333,6 @@
   "theChaser:Stealage": {
     "NAME": "훔치기",
     "DESCRIPTION": "피해를 !D! 줍니다. 골드를 !M! 얻습니다. NL 소멸."
-  },
-  "theChaser:Strategic Retreat": {
-    "NAME": "작전상 후퇴",
-    "DESCRIPTION": "보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다.",
-    "UPGRADE_DESCRIPTION": "선천성. 보존. *보스 가 아닌 적에게서 도망칩니다. 보상은 얻을 수 없습니다. NL 사용 후 덱에서 제거됩니다."
   },
   "theChaser:Unwary": {
     "NAME": "방심",

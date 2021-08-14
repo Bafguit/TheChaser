@@ -34,7 +34,7 @@ public class ApproachRun extends ChaserCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int TURN = 10;
     private static final int UP_TURN = 5;
 

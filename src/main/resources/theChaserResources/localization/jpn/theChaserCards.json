@@ -122,7 +122,8 @@
   },
   "theChaser:Acceleration": {
     "NAME": "加速",
-    "DESCRIPTION": "「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。"
+    "DESCRIPTION": "エセリアル 。 「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。",
+    "UPGRADE_DESCRIPTION": "「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。"
   },
   "theChaser:Aggravate": {
     "NAME": "悪化",
@@ -146,7 +147,7 @@
     "DESCRIPTION": "筋力 !M! を得る。 NL 敏捷性 !M! を得る。"
   },
   "theChaser:Chance": {
-    "NAME": "機会",
+    "NAME": "追跡者の幸運",
     "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:迅速 : このターンの間手札のランダムなカード 1 枚のコストが 0 になる。"
   },
   "theChaser:Conquest": {
@@ -233,7 +234,7 @@
     "UPGRADE_DESCRIPTION": "天賦 。 ターン開始時に、 *手裏剣 を 1 枚手札に加えランダムな敵に thechaser:標的 1 を与える。"
   },
   "theChaser:Secret Card": {
-    "NAME": "シークレット・カード",
+    "NAME": "追跡者のトリック",
     "DESCRIPTION": "カードを 1 枚引く。引いたカードが「アタック」の場合、 !M! 回 thechaser:狙う 。"
   },
   "theChaser:Sequence": {
@@ -242,8 +243,7 @@
   },
   "theChaser:Space Out": {
     "NAME": "スペース・アウト",
-    "DESCRIPTION": "thechaser:狙う たびに !M! ブロック を得る。",
-    "UPGRADE_DESCRIPTION": "天賦 。 thechaser:狙う たびに !M! ブロック を得る。"
+    "DESCRIPTION": "thechaser:狙う たびに !M! ブロック を得る。"
   },
   "theChaser:Testing": {
     "NAME": "探索戦",
@@ -297,12 +297,12 @@
     "DESCRIPTION": "全てのバフをデバフと認識する。"
   },
   "theChaser:Fraudulence": {
-    "NAME": "欺瞞",
+    "NAME": "追跡者の守護",
     "DESCRIPTION": "敵全体のデバフの数だけ !B! ブロック を得る。"
   },
   "theChaser:Hide": {
     "NAME": "隱身",
-    "DESCRIPTION": "!M! ターン間 thechaser:隠匿 する。 NL 廃棄 。"
+    "DESCRIPTION": "エセリアル 。 天賦 。 !M! ターン間 thechaser:隠匿 する。 NL 廃棄 。"
   },
   "theChaser:Incisive Blade": {
     "NAME": "シャープ・ブレード",
@@ -316,6 +316,11 @@
     "NAME": "先制攻撃",
     "DESCRIPTION": "ターン開始時に、カードを 1 枚引き、 1 回 thechaser:狙う 。"
   },
+  "theChaser:Prepay": {
+    "NAME": "先拂",
+    "DESCRIPTION": "このターン、次の X 枚のカードのコストは 0 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "このターン、次の X 枚のカードのコストは 0 。カードを !M! 枚引く。 NL 廃棄 。"
+  },
   "theChaser:Saw Blade": {
     "NAME": "スパイク・ブレード",
     "DESCRIPTION": "カードをプレイするたび、敵全体に thechaser:出血 !M! を与える。",
@@ -328,11 +333,6 @@
   "theChaser:Stealage": {
     "NAME": "盗癖",
     "DESCRIPTION": "!D! ダメージを与える。 !M! ゴールド得る。 NL 廃棄 。"
-  },
-  "theChaser:Strategic Retreat": {
-    "NAME": "作戦上の後退",
-    "DESCRIPTION": "保留 。 *ボス 以外の戦闘から逃げる。報酬は得られない。 NL プレイ時にこのカードを取り外す。",
-    "UPGRADE_DESCRIPTION": "天賦 。 保留 。 *ボス 以外の戦闘から逃げる。報酬は得られない。 NL プレイ時にこのカードを取り外す。"
   },
   "theChaser:Unwary": {
     "NAME": "放心",

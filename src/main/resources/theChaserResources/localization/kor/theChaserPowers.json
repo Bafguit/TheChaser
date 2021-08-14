@@ -136,6 +136,14 @@
       "% 더 받습니다."
     ]
   },
+  "theChaser:FreeCard": {
+    "NAME": "선불",
+    "DESCRIPTIONS": [
+      "이번 턴, 다음 카드의 에너지 비용을 무시합니다.",
+      "이번 턴, 다음 #b",
+      " 장의 카드의 에너지 비용을 무시합니다."
+    ]
+  },
   "theChaser:": {
     "NAME": "",
     "DESCRIPTIONS": [

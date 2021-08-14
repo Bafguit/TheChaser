@@ -136,6 +136,14 @@
       "% 受ける。"
     ]
   },
+  "theChaser:FreeCard": {
+    "NAME": "先拂",
+    "DESCRIPTIONS": [
+      "このターン、次にプレイするカードのコストを無視する。",
+      "このターン、次にプレイする #b",
+      " 枚のカードのコストを無視する。"
+    ]
+  },
   "theChaser:": {
     "NAME": "",
     "DESCRIPTIONS": [

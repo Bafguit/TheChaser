@@ -30,7 +30,6 @@ public class Sequence extends ChaserCard {
 
     private static final int COST = 0;
     private static final int DAMAGE = 3;
-    private static final int UP_DAMAGE = 1;
     private static final int MAGIC = 1;
 
     public Sequence() {
@@ -59,7 +58,6 @@ public class Sequence extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeDamage(UP_DAMAGE);
         upgradeMagicNumber(1);
     }
 

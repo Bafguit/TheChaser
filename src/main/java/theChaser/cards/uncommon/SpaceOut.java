@@ -38,6 +38,6 @@ public class SpaceOut extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        this.isInnate = true;
+        upgradeMagicNumber(U_B);
     }
 }

@@ -137,6 +137,14 @@
       "% more damage."
     ]
   },
+  "theChaser:FreeCard": {
+    "NAME": "Prepay",
+    "DESCRIPTIONS": [
+      "This turn, ignore energy cost on the next card you play.",
+      "This turn, ignore energy cost on the next #b",
+      " cards you play."
+    ]
+  },
   "theChaser:": {
     "NAME": "",
     "DESCRIPTIONS": [

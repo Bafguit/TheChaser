@@ -32,7 +32,7 @@ public class Linger extends ChaserCard {
     private static final int COST = 1;
     private static final int BLOCK = 8;
     private static final int UP_BLOCK = 2;
-    private static final int TAR = 1;
+    private static final int TAR = 2;
     private static final int UP_TAR = 1;
 
     public Linger() {

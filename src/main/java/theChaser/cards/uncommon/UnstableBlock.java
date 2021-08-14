@@ -24,7 +24,7 @@ public class UnstableBlock extends ChaserCard {
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
     private static final int COST = 2;
-    private static final int BLOCK = 25;
+    private static final int BLOCK = 30;
     private static final int WEAK = 1;
 
     public UnstableBlock() {
