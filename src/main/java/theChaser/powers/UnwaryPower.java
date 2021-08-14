@@ -50,7 +50,7 @@ public class UnwaryPower extends AbstractPower implements CloneablePowerInterfac
     public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
         flash();
         for(AbstractMonster m : mo) {
-            addToBot(new ApplyPowerAction(m, this.owner, new UnfortifiedPower(m, this.owner, 1), 1, true));
+            addToTop(new ApplyPowerAction(m, this.owner, new UnfortifiedPower(m, this.owner, 1), 1, true));
         }
     }
 

@@ -58,6 +58,6 @@ public class SpaceOutPower extends AbstractPower implements CloneablePowerInterf
     @Override
     public void onAfterTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
         flash();
-        addToBot(new GainBlockAction(this.owner, this.amount, true));
+        addToTop(new GainBlockAction(this.owner, this.amount, true));
     }
 }

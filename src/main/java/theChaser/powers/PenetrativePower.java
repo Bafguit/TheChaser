@@ -11,7 +11,7 @@ import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.util.TextureLoader;
 
-public class PenetrativePower extends AbstractPower implements CloneablePowerInterface {
+public class PenetrativePower extends AbstractPower implements CloneablePowerInterface, OnTargetAttackSubscriber {
     public AbstractCreature source;
 
     public static final String POWER_ID = TheChaserMod.makeID("Penetrative");
@@ -38,6 +38,11 @@ public class PenetrativePower extends AbstractPower implements CloneablePowerInt
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
         updateDescription();
+    }
+    
+    @Override
+    public int onTargetAttack(ArrayList<AbstractMonster> mo, int damage) {
+        return damage + this.amount;
     }
 
     @Override
