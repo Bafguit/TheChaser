@@ -122,11 +122,6 @@
 	    "NAME": "Open Vein",
 	    "DESCRIPTION": "Deal !D! damage. NL Apply !M! thechaser:Bleeding."
 	  },
-	  "theChaser:Acceleration": {
-	    "NAME": "Acceleration",
-	    "DESCRIPTION": "Ethereal. Whenever you play an Attack, gain !M! temporary Strength.",
-		"UPGRADE_DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength."
-	  },
 	  "theChaser:Aggravate": {
 	    "NAME": "Aggravate",
 	    "DESCRIPTION": "Gain !B! Block. NL Trigger thechaser:Bleeding once on all enemies affected by thechaser:Bleeding."
@@ -162,6 +157,10 @@
 	      " NL Exhaust."
 	    ]
 	  },
+	"theChaser:Diplade": {
+		"NAME": "Blade Genesis",
+		"DESCRIPTION": "Whenever you play a Skill that doesn't cost 0, add 1 *Throwing *Knife to your hand."
+	},
 	  "theChaser:Disguise": {
 	    "NAME": "Disguise",
 	    "DESCRIPTION": "Gain !B! Block. NL Repeat for each unique debuff on you.",
@@ -279,13 +278,13 @@
 	    "DESCRIPTION": "Gain [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL Exhaust.",
 	    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL Exhaust."
 	  },
+	"theChaser:Acceleration": {
+		"NAME": "Acceleration",
+		"DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength."
+	},
 	  "theChaser:Approach Run": {
 	    "NAME": "High-Speed Advance",
 	    "DESCRIPTION": "thechaser:Quickstep !M!. NL thechaser:Swift: Apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
-	  },
-	  "theChaser:Diplade": {
-	    "NAME": "Blade Genesis",
-	    "DESCRIPTION": "Whenever you play a card that doesn't cost 0, add 1 *Throwing *Knife to your hand."
 	  },
 	  "theChaser:Dual Wielding": {
 	    "NAME": "Dual Wielding",
@@ -301,7 +300,7 @@
 	  },
 	  "theChaser:Hide": {
 	    "NAME": "Perfected Stealth",
-	    "DESCRIPTION": "Ethereal. Innate. thechaser:Hide for !M! turns. NL Exhaust."
+	    "DESCRIPTION": "thechaser:Hide for !M! turns. NL Exhaust."
 	  },
 	  "theChaser:Incisive Blade": {
 	    "NAME": "Neckcutter",

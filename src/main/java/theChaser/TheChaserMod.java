@@ -467,7 +467,6 @@ public class TheChaserMod implements
         BaseMod.addCard(new Watch());
         BaseMod.addCard(new Wound());
         //UNCOMMON
-        BaseMod.addCard(new Acceleration());
         BaseMod.addCard(new Aggravate());
         BaseMod.addCard(new AttackFirst());
         BaseMod.addCard(new BigPicture());
@@ -475,6 +474,7 @@ public class TheChaserMod implements
         BaseMod.addCard(new Bulwark());
         BaseMod.addCard(new Chance());
         BaseMod.addCard(new Conquest());
+        BaseMod.addCard(new Diplade());
         BaseMod.addCard(new Disguise());
         BaseMod.addCard(new FallTechnique());
         BaseMod.addCard(new FeebleDefend());
@@ -504,8 +504,8 @@ public class TheChaserMod implements
         BaseMod.addCard(new Wither());
         //RARE
         BaseMod.addCard(new AbsoluteAdvantage());
+        BaseMod.addCard(new Acceleration());
         BaseMod.addCard(new ApproachRun());
-        BaseMod.addCard(new Diplade());
         BaseMod.addCard(new DualWielding());
         BaseMod.addCard(new ForteIsFrailty());
         BaseMod.addCard(new Fraudulence());

@@ -6,8 +6,8 @@
     <groupId>chaser</groupId>
     <artifactId>TheChaser</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>TheChaser</name>
-    <version>1.20</version>
-    <description>A character mod adds The Chaser.</description>
+    <version>1.21</version>
+    <description>A character mod adds The Chaser!</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

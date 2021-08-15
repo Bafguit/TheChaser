@@ -43,6 +43,10 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
         AbstractDungeon.actionManager.addToBottom(action);
     }
 
+    private static void addToTop(AbstractGameAction action) {
+        AbstractDungeon.actionManager.addToTop(action);
+    }
+
     private static boolean isFirstCard = true;
 
     public static int getTargetCount() {

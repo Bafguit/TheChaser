@@ -34,15 +34,13 @@ public class Hide extends ChaserCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
-    private static final int COST = 0;
+    private static final int COST = 3;
     private static final int TURN = 2;
     private static final int UP_TURN = 1;
 
     public Hide() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TURN);
-        this.isEthereal = true;
         this.exhaust = true;
-        this.isInnate = true;
     }
 
     @Override

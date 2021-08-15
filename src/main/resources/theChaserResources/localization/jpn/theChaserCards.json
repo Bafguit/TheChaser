@@ -120,11 +120,6 @@
     "NAME": "オーペン・ベーン",
     "DESCRIPTION": "!D! ダメージを与える。 thechaser:出血 !M! を与える。"
   },
-  "theChaser:Acceleration": {
-    "NAME": "加速",
-    "DESCRIPTION": "エセリアル 。 「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。",
-    "UPGRADE_DESCRIPTION": "「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。"
-  },
   "theChaser:Aggravate": {
     "NAME": "悪化",
     "DESCRIPTION": "!B! ブロック を得る。 NL thechaser:出血 を受けている敵全体に thechaser:出血 ダメージを !M! 回与える。"
@@ -159,6 +154,10 @@
       ")だけ 筋力 を得る。",
       " NL 廃棄 。"
     ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "ダブル・ブレード",
+    "DESCRIPTION": "[E] が 0 じゃない「スキル」をプレイするたびに *手裏剣 を 1 枚手札に加える。"
   },
   "theChaser:Disguise": {
     "NAME": "隠匿",
@@ -280,13 +279,13 @@
       "[E] "
     ]
   },
+  "theChaser:Acceleration": {
+    "NAME": "加速",
+    "DESCRIPTION": "「アタック」をプレイするたびに臨時の 筋力 を !M! 得る。"
+  },
   "theChaser:Approach Run": {
     "NAME": "助走",
     "DESCRIPTION": "thechaser:捷歩 !M!。 NL thechaser:迅速 : 敵全体に thechaser:出血 !M! を与える。 NL 廃棄 。"
-  },
-  "theChaser:Diplade": {
-    "NAME": "ダブル・ブレード",
-    "DESCRIPTION": "[E] が 0 じゃないカードをプレイするたびに *手裏剣 を 1 枚手札に加える。"
   },
   "theChaser:Dual Wielding": {
     "NAME": "双手",
@@ -302,7 +301,7 @@
   },
   "theChaser:Hide": {
     "NAME": "隱身",
-    "DESCRIPTION": "エセリアル 。 天賦 。 !M! ターン間 thechaser:隠匿 する。 NL 廃棄 。"
+    "DESCRIPTION": "!M! ターン間 thechaser:隠匿 する。 NL 廃棄 。"
   },
   "theChaser:Incisive Blade": {
     "NAME": "シャープ・ブレード",

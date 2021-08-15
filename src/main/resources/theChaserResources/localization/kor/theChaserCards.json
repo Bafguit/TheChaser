@@ -120,11 +120,6 @@
     "NAME": "상처내기",
     "DESCRIPTION": "피해를 !D! 줍니다. thechaser:출혈을 !M! 부여합니다."
   },
-  "theChaser:Acceleration": {
-    "NAME": "가속",
-    "DESCRIPTION": "휘발성. 공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다.",
-    "UPGRADE_DESCRIPTION": "공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다."
-  },
   "theChaser:Aggravate": {
     "NAME": "악화",
     "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 thechaser:출혈 상태인 적이 thechaser:출혈 피해를 즉시 !M! 회 받습니다."
@@ -159,6 +154,10 @@
       ") 만큼 힘을 얻습니다.",
       " NL 소멸."
     ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "이중 칼날",
+    "DESCRIPTION": "비용이 0 이 아닌 스킬 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
   },
   "theChaser:Disguise": {
     "NAME": "감추기",
@@ -280,13 +279,13 @@
       "[E] "
     ]
   },
+  "theChaser:Acceleration": {
+    "NAME": "가속",
+    "DESCRIPTION": "공격 카드를 사용할 때마다 임시로 힘을 !M! 얻습니다."
+  },
   "theChaser:Approach Run": {
     "NAME": "도움닫기",
     "DESCRIPTION": "thechaser:빠른발 !M!. NL thechaser:신속: 적 전체에게 thechaser:출혈을 !M! 부여합니다. NL 소멸."
-  },
-  "theChaser:Diplade": {
-    "NAME": "이중 칼날",
-    "DESCRIPTION": "비용이 0 이 아닌 카드를 사용할 때마다 *수리검 카드를 1 장 얻습니다."
   },
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",
@@ -302,7 +301,7 @@
   },
   "theChaser:Hide": {
     "NAME": "은신",
-    "DESCRIPTION": "선천성. 휘발성. !M! 턴 동안 thechaser:은신합니다. NL 소멸."
+    "DESCRIPTION": "!M! 턴 동안 thechaser:은신합니다. NL 소멸."
   },
   "theChaser:Incisive Blade": {
     "NAME": "예리한 칼날",

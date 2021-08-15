@@ -24,7 +24,6 @@ public class SpaceOut extends ChaserCard {
 
     private static final int COST = 1;
     private static final int B = 1;
-    private static final int U_B = 1;
 
     public SpaceOut() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, B);
@@ -38,6 +37,6 @@ public class SpaceOut extends ChaserCard {
 
     @Override
     public void upgradeCard() {
-        upgradeMagicNumber(U_B);
+        upgradeMagicNumber(1);
     }
 }

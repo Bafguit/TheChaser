@@ -6,10 +6,14 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
+import theChaser.patches.interfaces.OnTargetAttackSubscriber;
 import theChaser.util.TextureLoader;
+
+import java.util.ArrayList;
 
 public class PenetrativePower extends AbstractPower implements CloneablePowerInterface, OnTargetAttackSubscriber {
     public AbstractCreature source;

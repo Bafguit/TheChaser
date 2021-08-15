@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.powers.ThornsPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
+import theChaser.patches.interfaces.OnTargetAttackSubscriber;
 import theChaser.powers.TargetPower;
 
 import java.util.ArrayList;
@@ -60,16 +61,22 @@ public class DamageAllTargetAction extends AbstractGameAction {
         this.tickDuration();
         if (this.isDone && this.monsters != null) {
             for(AbstractRelic r : AbstractDungeon.player.relics) {
-                if(r instanceof OnTargetAttackSubscriber) {
+                if (r instanceof OnTargetAttackSubscriber) {
                     this.damage = ((OnTargetAttackSubscriber) r).onTargetAttack(this.monsters, this.damage);
+                }
+            }
             
-            for(AbstractCard p : AbstractDungeon.player.powers) {
-                if(p instanceof OnTargetAttackSubscriber) {
+            for(AbstractPower p : AbstractDungeon.player.powers) {
+                if (p instanceof OnTargetAttackSubscriber) {
                     this.damage = ((OnTargetAttackSubscriber) p).onTargetAttack(this.monsters, this.damage);
+                }
+            }
             
             for(AbstractCard c : AbstractDungeon.player.hand.group) {
-                if(c instanceof OnTargetAttackSubscriber) {
+                if (c instanceof OnTargetAttackSubscriber) {
                     this.damage = ((OnTargetAttackSubscriber) c).onTargetAttack(this.monsters, this.damage);
+                }
+            }
             
             if(this.damage > 0) {
             
