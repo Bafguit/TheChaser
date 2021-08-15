@@ -86,8 +86,7 @@
 	  },
 	  "theChaser:Linger": {
 	    "NAME": "Malicious Trick",
-	    "DESCRIPTION": "Gain !B! Block. NL Trigger thechaser:Targeting once.",
-	    "UPGRADED_DESCRIPTION": "Gain !B! Block. NL Trigger thechaser:Targeting twice."
+	    "DESCRIPTION": "Gain !B! Block. NL Trigger thechaser:Targeting !M! times."
 	  },
 	  "theChaser:Makeready": {
 	    "NAME": "Preparation",
