@@ -87,7 +87,7 @@ public class TheChaserMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
-        PostInitializeSubscriber, SetUnlocksSubscriber{
+        PostInitializeSubscriber{
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(TheChaserMod.class.getName());
@@ -544,31 +544,6 @@ public class TheChaserMod implements
         new AutoAdd("TheChaser").packageFilter(ChaserCard.class).setDefaultSeen(true).cards();
 */
         logger.info("Done adding cards!");
-    }
-
-    public void receiveSetUnlocks() {
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(ReplicaDagger.ID, BigPicture.ID, SawBlade.ID), TheChaser.Enums.THE_CHASER, 0);
-        UnlockTracker.addCard(ReplicaDagger.ID);
-        UnlockTracker.addCard(BigPicture.ID);
-        UnlockTracker.addCard(SawBlade.ID);
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(AbstractUnlock.UnlockType.RELIC, BoxCutter.ID, LetterOfRequest.ID, PocketKnife.ID), TheChaser.Enums.THE_CHASER, 1);
-        UnlockTracker.addRelic(BoxCutter.ID);
-        UnlockTracker.addRelic(LetterOfRequest.ID);
-        UnlockTracker.addRelic(PocketKnife.ID);
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(GaleStrike.ID, Fraudulence.ID, UnstableBlock.ID), TheChaser.Enums.THE_CHASER, 2);
-        UnlockTracker.addCard(GaleStrike.ID);
-        UnlockTracker.addCard(Fraudulence.ID);
-        UnlockTracker.addCard(UnstableBlock.ID);
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(AbstractUnlock.UnlockType.RELIC, AcidSolution.ID, BrokenTicker.ID, CloakOfAssassin.ID), TheChaser.Enums.THE_CHASER, 3);
-        UnlockTracker.addRelic(AcidSolution.ID);
-        UnlockTracker.addRelic(BrokenTicker.ID);
-        UnlockTracker.addRelic(CloakOfAssassin.ID);
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(ShadowForm.ID, Phrenitis.ID, Prepay.ID), TheChaser.Enums.THE_CHASER, 4);
-        UnlockTracker.addCard(ShadowForm.ID);
-        UnlockTracker.addCard(Phrenitis.ID);
-        UnlockTracker.addCard(Prepay.ID);
-
-
     }
     
     // ================ /ADD CARDS/ ===================
