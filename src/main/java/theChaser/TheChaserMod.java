@@ -11,6 +11,9 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -36,11 +39,16 @@ import theChaser.potions.TargetPotion;
 import theChaser.powers.*;
 import theChaser.relics.*;
 import theChaser.util.IDCheckDontTouchPls;
+import theChaser.util.LocalKeyword;
+import theChaser.util.LocalKeywordInfo;
 import theChaser.util.TextureLoader;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Properties;
 
 //TODO: DON'T MASS RENAME/REFACTOR
@@ -139,6 +147,9 @@ public class TheChaserMod implements
     // Atlas and JSON files for the Animations
     public static final String THE_DEFAULT_SKELETON_ATLAS = "theChaserResources/images/char/theChaser/TheChaser/TheChaser.atlas";
     public static final String THE_DEFAULT_SKELETON_JSON = "theChaserResources/images/char/theChaser/TheChaser/TheChaser.json";
+
+    public static LocalKeyword localKeyword = new LocalKeyword();
+    public static ArrayList<LocalKeywordInfo> localKeywordInfo = new ArrayList<LocalKeywordInfo>();
 
     // =============== MAKE IMAGE PATHS =================
     
@@ -589,8 +600,48 @@ public class TheChaserMod implements
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
                 getModID() + "Resources/localization/" + getLanguage() + "/theChaserCharacter.json");
-        
+
+        Gson gson = new Gson();
+        String json = Gdx.files.internal(getModID() + "Resources/localization/" + getLanguage() + "/theChaserKeywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = (Keyword[])gson.fromJson(json, Keyword[].class);
+        if (keywords != null) {
+            int var7 = keywords.length;
+            for(int var8 = 0; var8 < var7; ++var8) {
+                Keyword keyword = keywords[var8];
+                LocalKeywordInfo locKeyInfo = new LocalKeywordInfo();
+                locKeyInfo.NAME = keyword.PROPER_NAME;
+                locKeyInfo.DESCRIPTION = keyword.DESCRIPTION;
+                localKeywordInfo.add(locKeyInfo);
+
+            }
+        }
+
+        FileHandle fileHandle = Gdx.files.internal(getModID() + "Resources/localization/" + getLanguage() + "/localizedKeyword.json");
+        String f = fileHandle.readString(String.valueOf(StandardCharsets.UTF_8));
+        JsonObject locKey = (new JsonParser()).parse(f).getAsJsonObject();
+        localKeyword.Targeting = locKey.get("Targeting").getAsString();
+        localKeyword.Trigger = locKey.get("Trigger").getAsString();
+        localKeyword.Blindsided = locKey.get("Blindsided").getAsString();
+        localKeyword.Bleeding = locKey.get("Bleeding").getAsString();
+        localKeyword.Hide = locKey.get("Hide").getAsString();
+        localKeyword.Swift = locKey.get("Swift").getAsString();
+        localKeyword.Quickstep = locKey.get("Quickstep").getAsString();
+        localKeyword.Proxy = locKey.get("Proxy").getAsString();
+
         logger.info("Done edittting strings");
+    }
+
+    public static LocalKeywordInfo getKeywordInfo(String name) {
+        for(LocalKeywordInfo info : localKeywordInfo) {
+            if(info.NAME.equals(name)) {
+                return info;
+            }
+        }
+
+        LocalKeywordInfo temp = new LocalKeywordInfo();
+        temp.NAME = "[MISSING NAME]";
+        temp.DESCRIPTION = "[MISSING DESCRIPTION]";
+        return temp;
     }
 
     public String getLanguage() {
@@ -599,6 +650,8 @@ public class TheChaserMod implements
                 return "kor";
             case "JPN":
                 return "jpn";
+            case "SPA":
+                return "spa";
             default:
                 return "eng";
         }

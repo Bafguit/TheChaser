@@ -1,0 +1,68 @@
+[
+  {
+    "PROPER_NAME": "Objetivo",
+    "NAMES": [
+      "objetivo",
+      "Objetivo"
+    ],
+    "DESCRIPTION": "Cuando tu personaje o un enemigo ataque, todas las criaturas con #yObjetivo sufren #b2 de daño."
+  },
+  {
+    "PROPER_NAME": "Ciego",
+    "NAMES": [
+      "ciego",
+      "Ciego"
+    ],
+    "DESCRIPTION": "El objetivo recibe #b15% más de daño por cada acumulación de #yCiego (se acumula hasta #b4.)"
+  },
+  {
+    "PROPER_NAME": "Sangrado",
+    "NAMES": [
+      "sangrado",
+      "Sangrado"
+    ],
+    "DESCRIPTION": "Criaturas con #ySangrado pierden PV al comienzo de su turno, luego reduce #ySangrado a la mitad. Cada vez que juegues un Ataque, incrementa #ySangrado por #b1."
+  },
+  {
+    "PROPER_NAME": "Evade",
+    "NAMES": [
+      "evade",
+      "Evade"
+    ],
+    "DESCRIPTION": "TODOS los enemigos sufren de #yAturdido. Desaparece después de que juegues un Ataque o #yObjetivo sea activado."
+  },
+  {
+    "PROPER_NAME": "Ágil",
+    "NAMES": [
+      "ágil",
+      "Ágil:"
+    ],
+    "DESCRIPTION": "Si has jugado 4 cartas o más en este turno, activa un efecto adicional."
+  },
+  {
+    "PROPER_NAME": "Paso Rápido",
+    "NAMES": [
+      "paso rápido",
+      "Paso Rápido",
+      "paso",
+      "Paso"
+    ],
+    "DESCRIPTION": "Simula jugar cartas, para el uso de cartas con efectos de #yÁgil."
+  },
+  {
+    "PROPER_NAME": "Cicatriz",
+    "NAMES": [
+      "cicatriz",
+      "Cicatriz"
+    ],
+    "DESCRIPTION": "El objetivo recibe #b5% más de daño por cada acumulación de #yCicatriz."
+  },
+  {
+    "PROPER_NAME": "",
+    "NAMES": [
+      "",
+      ""
+    ],
+    "DESCRIPTION": ""
+  }
+]

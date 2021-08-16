@@ -1,0 +1,23 @@
+{
+  "theChaser:Acid Potion": {
+    "NAME": "Hemorragia Embotellada",
+    "DESCRIPTIONS": [
+      "Aplica #b",
+      " #ySangrado a un enemigo."
+    ]
+  },
+  "theChaser:Shadow Potion": {
+    "NAME": "Sombra Enfrascada",
+    "DESCRIPTIONS": [
+      "#yEvade por #b",
+      " turno."
+    ]
+  },
+  "theChaser:Target Potion": {
+    "NAME": "Poción con Objetivo",
+    "DESCRIPTIONS": [
+      "Activa #yObjetivo #b",
+      " veces."
+    ]
+  }
+}

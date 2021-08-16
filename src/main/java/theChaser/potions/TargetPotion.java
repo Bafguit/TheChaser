@@ -1,9 +1,11 @@
 package theChaser.potions;
 
+import basemod.BaseMod;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -42,6 +44,12 @@ public class TargetPotion extends AbstractPotion {
 
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
+        String keywordName = TheChaserMod.localKeyword.Targeting;
+        this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keywordName).NAME, TheChaserMod.getKeywordInfo(keywordName).DESCRIPTION));
+        if(Settings.language.name().equals("KOR") || Settings.language.name().equals("JPN")) {
+            String keyName = TheChaserMod.localKeyword.Trigger;
+            this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keyName).NAME, TheChaserMod.getKeywordInfo(keyName).DESCRIPTION));
+        }
     }
 
     @Override

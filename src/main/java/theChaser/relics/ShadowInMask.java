@@ -1,13 +1,17 @@
 package theChaser.relics;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import theChaser.TheChaserMod;
 import theChaser.actions.TargetAttackAction;
 import theChaser.powers.TargetPower;
 import theChaser.util.TextureLoader;
@@ -22,6 +26,15 @@ public class ShadowInMask extends CustomRelic {
 
     public ShadowInMask() {
         super(ID, IMG, IMG_OUT, RelicTier.BOSS, LandingSound.FLAT);
+        this.tips.clear();
+        this.tips.add(new PowerTip(this.name, this.description));
+        String keywordName = TheChaserMod.localKeyword.Targeting;
+        this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keywordName).NAME, TheChaserMod.getKeywordInfo(keywordName).DESCRIPTION));
+        if(Settings.language.name().equals("KOR") || Settings.language.name().equals("JPN")) {
+            String keyName = TheChaserMod.localKeyword.Trigger;
+            this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keyName).NAME, TheChaserMod.getKeywordInfo(keyName).DESCRIPTION));
+        }
+        this.initializeTips();
     }
 
     @Override

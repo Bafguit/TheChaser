@@ -1,0 +1,386 @@
+{
+  "theChaser:Throwing Knife": {
+    "NAME": "Cuchillo de Lanzar",
+    "DESCRIPTION": "Etérea. Causa !D! de daño a todos los enemigos. Enemigos afectados por thechaser:Objetivo se priorizan. Agota."
+  },
+  "theChaser:Bloody Wind": {
+    "NAME": "Viento Sangriento",
+    "DESCRIPTION": "Aplica !M! thechaser:Sangrado a TODOS los enemigos."
+  },
+  "theChaser:Camouflage": {
+    "NAME": "Camuflaje",
+    "DESCRIPTION": "Obtén 1 thechaser:Cicatriz !M! veces."
+  },
+  "theChaser:Followup Slash": {
+    "NAME": "Corte Sucesivo",
+    "DESCRIPTION": "Etérea. Haz !D! de daño dos veces. NL Agota."
+  },
+  "theChaser:Knife Throw": {
+    "NAME": "Lanzamiento de Cuchillo",
+    "DESCRIPTION": "Activa thechaser:Objetivo !M! veces."
+  },
+  "theChaser:Sequence Flow": {
+    "NAME": "Flujo en Secuencia",
+    "DESCRIPTION": "Etérea. Haz !D! de daño. NL Agota."
+  },
+  "theChaser:Reactive Shot": {
+    "NAME": "Disparo Reactivo",
+    "DESCRIPTION": "Haz !D! de daño y aplica !M! thechaser:Objetivo a un enemigo aleatorio."
+  },
+  "theChaser:Flawed Stealth": {
+    "NAME": "Sigilo Imperfecto",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Obtén 1 Fragil."
+  },
+  "theChaser:Strike": {
+    "NAME": "Golpe",
+    "DESCRIPTION": "Haz !D! de daño."
+  },
+  "theChaser:Defend": {
+    "NAME": "Defender",
+    "DESCRIPTION": "Obtén !B! Bloqueo."
+  },
+  "theChaser:Alert": {
+    "NAME": "En Alerta",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Obtén thechaser:Cicatriz !M! veces. NL thechaser:Paso *Rápido !M!."
+  },
+  "theChaser:Blitzkrieg": {
+    "NAME": "Ataque Relámpago",
+    "DESCRIPTION": "Haz !D! de daño. NL Aplica !M! thechaser:Ciego."
+  },
+  "theChaser:Brass": {
+    "NAME": "Picos de Bronce",
+    "DESCRIPTION": "Aplica !M! thechaser:Sangrado."
+  },
+  "theChaser:Chase": {
+    "NAME": "Persecución",
+    "DESCRIPTION": "Haz !D! de daño. Roba 1 carta por cada enemigo afectado por thechaser:Objetivo."
+  },
+  "theChaser:Continuous Slash": {
+    "NAME": "Corte Continuo",
+    "DESCRIPTION": "Haz !D! de daño dos veces. NL thechaser:Ágil: Agrega 1 *Corte *Sucesivo a tu mano.",
+    "UPGRADE_DESCRIPTION": "Haz !D! de daño dos veces. NL thechaser:Ágil: Agrega 1 *Corte *Sucesivo+ a tu mano."
+  },
+  "theChaser:Delusive Strike": {
+    "NAME": "Golpe Ilusionante",
+    "DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, obtén [E] [E]."
+  },
+  "theChaser:Fatal Blitz": {
+    "NAME": "Ataque Letal",
+    "DESCRIPTION": "Haz !D! de daño. NL Aplica !M! thechaser:Sangrado."
+  },
+  "theChaser:Geck": {
+    "NAME": "Anular Defensas",
+    "DESCRIPTION": "Aplica !M! thechaser:Ciego y thechaser:Objetivo a TODOS los enemigos."
+  },
+  "theChaser:Inertial Strike": {
+    "NAME": "Golpe Inercial",
+    "DESCRIPTION": "Haz !D! de daño. NL Haz daño adicional igual al número de cartas jugadas este turno.",
+    "EXTENDED_DESCRIPTION": [
+      "Haz !D! de daño. NL Haz daño adicional igual al número de cartas jugadas este turno (",
+      " cartas)."
+    ]
+  },
+  "theChaser:Leave Traces": {
+    "NAME": "Deja Marca",
+    "DESCRIPTION": "Haz !D! de daño y aplica !M! thechaser:Objetivo a TODOS los enemigos."
+  },
+  "theChaser:Linger": {
+    "NAME": "Truco Maligno",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Activa thechaser:Objetivo !M! veces."
+  },
+  "theChaser:Makeready": {
+    "NAME": "Preparación",
+    "DESCRIPTION": "Roba !M! cartas. Si esta carta es la primera en jugarse en tu turno, roba 1 carta más."
+  },
+  "theChaser:Passing": {
+    "NAME": "A Través",
+    "DESCRIPTION": "Obtén !B! Bloqueo. Si has jugado un Ataque en un enemigo afectado por thechaser:Objetivo en este turno, roba 2 cartas."
+  },
+  "theChaser:Random Throw": {
+    "NAME": "Desenfunda Cuchillos",
+    "DESCRIPTION": "Agrega !M! *Cuchillo *de *Lanzar a tu mano."
+  },
+  "theChaser:Scar Stab": {
+    "NAME": "Cicatrices de Sangre",
+    "DESCRIPTION": "Haz !D! de daño. NL Si el enemigo tiene thechaser:Sangrado, actívalo 1 vez.",
+    "UPGRADE_DESCRIPTION": "Haz !D! de daño. NL Si el enemigo tiene thechaser:Sangrado, actívalo 2 veces."
+  },
+  "theChaser:Stalling": {
+    "NAME": "Estancamiento",
+    "DESCRIPTION": "Haz !D! de daño. NL Obtén thechaser:Cicatriz !M! veces. NL thechaser:Paso *Rápido !M!."
+  },
+  "theChaser:Thornmail": {
+    "NAME": "Cota de Espinas",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Aplica !M! thechaser:Sangrado a TODOS los enemigos."
+  },
+  "theChaser:Watch": {
+    "NAME": "Observa",
+    "DESCRIPTION": "Aplica !M! thechaser:Objetivo. NL Agota."
+  },
+  "theChaser:Wound": {
+    "NAME": "Herida Grave",
+    "DESCRIPTION": "Haz !D! de daño. NL Aplica !M! thechaser:Sangrado."
+  },
+  "theChaser:Aggravate": {
+    "NAME": "Empeorar",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Activa thechaser:Sangrado una vez en todos los enemigos afectados por thechaser:Sangrado."
+  },
+  "theChaser:Attack First": {
+    "NAME": "Toma la Iniciativa",
+    "DESCRIPTION": "Obtén [E] [E]. NL Al comienzo de tu siguiente turno, roba !M! menos cartas."
+  },
+  "theChaser:Big Picture": {
+    "NAME": "Plan Maestro",
+    "DESCRIPTION": "Cada que apliques una desventaja a ti mismo, gana !M! Fuerza."
+  },
+  "theChaser:Break Armour": {
+    "NAME": "Destructor de Armaduras",
+    "DESCRIPTION": "Elimina TODAS las acumulaciones de thechaser:Objetivo en el enemigo. Aplica Vulnerable, Débil, y thechaser:Sangrado igual a la cantidad eliminada. Agota.",
+    "UPGRADE_DESCRIPTION": "Aplica Vulnerable, Débil, y thechaser:Sangrado igual a la cantidad de thechaser:Objetivo en el enemigo. Agota."
+  },
+  "theChaser:Bulwark": {
+    "NAME": "Baluarte Reforzado",
+    "DESCRIPTION": "Obtén !M! Fuerza. NL Obtén !M! Destreza."
+  },
+  "theChaser:Chance": {
+    "NAME": "Suerte del Persecutor",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL thechaser:Ágil: Reduce el costo de una carta al azar en tu mano a 0 por este turno."
+  },
+  "theChaser:Conquest": {
+    "NAME": "Espíritu de Conquista",
+    "DESCRIPTION": "Obtén Fuerza igual a la cantidad acumulada de TODAS las desventajas que tengas. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Obtén Fuerza igual a la cantidad acumulada de TODAS las desventajas que tengas.",
+    "EXTENDED_DESCRIPTION": [
+      "Obtén Fuerza igual a la cantidad acumulada de TODAS las desventajas que tengas (",
+      " Fuerza).",
+      " NL Agota."
+    ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "Génenis de Dagas",
+    "DESCRIPTION": "Cada vez que juegues una Habilidad que no cueste 0, agrega 1 *Cuchillo *de *Lanzar a tu mano."
+  },
+  "theChaser:Disguise": {
+    "NAME": "Engaño",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Repite por cada desventaja única que tengas.",
+    "EXTENDED_DESCRIPTION": [
+      "Obtén !B! Bloqueo. NL Repite por cada desventaja única que tengas (",
+      " desventajas)."
+    ]
+  },
+  "theChaser:Fall Technique": {
+    "NAME": "Caída Elusiva",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Obtén !M! Débil."
+  },
+  "theChaser:Feeble Defend": {
+    "NAME": "Defensa Engañosa",
+    "DESCRIPTION": "Obtén !B! Bloqueo. NL Si eres Fragil, duplica la cantidad de Bloqueo obtenido.",
+    "UPGRADE_DESCRIPTION": "Obtén !B! Bloqueo. NL Si eres Fragil, triplica la cantidad de Bloqueo obtenido."
+  },
+  "theChaser:Feeble Strike": {
+    "NAME": "Golpe Engañoso",
+    "DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, haz el doble de daño.",
+    "UPGRADE_DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, haz el triple de daño."
+  },
+  "theChaser:Flexibility": {
+    "NAME": "Flexibilidad",
+    "DESCRIPTION": "Escoge dos: NL Activa thechaser:Objetivo !M! veces; obtén thechaser:Cicatriz !M! veces; aplica !M! thechaser:Sangrado a TODOS los enemigos. NL Agota."
+  },
+  "theChaser:Gale Strike": {
+    "NAME": "Tormenta de Golpes",
+    "DESCRIPTION": "Haz !D! de daño X veces a TODOS los enemigos. Activa thechaser:Objetivo X veces."
+  },
+  "theChaser:Hack": {
+    "NAME": "Desgarre",
+    "DESCRIPTION": "Haz !D! de daño !M! veces."
+  },
+  "theChaser:Hidden Dagger": {
+    "NAME": "Daga Oculta",
+    "DESCRIPTION": "Obtén !B! Bloqueo. Agrega !M! *Cuchillo *de *Lanzar a tu mano. NL thechaser:Ágil: Mejora TODAS las cartas de *Cuchillo *de *Lanzar en tu mano."
+  },
+  "theChaser:Internal Hemorrhage": {
+    "NAME": "Hemorragia Interna",
+    "DESCRIPTION": "Aplica !M! thechaser:Sangrado y 2 Débil a TODOS los enemigos. NL Agota."
+  },
+  "theChaser:Open Sore": {
+    "NAME": "Llaga Abierta",
+    "DESCRIPTION": "Al comienzo de tu turno, aplica !M! thechaser:Sangrado a TODOS los enemigos."
+  },
+  "theChaser:Paralyze": {
+    "NAME": "Parálisis",
+    "DESCRIPTION": "El enemigo pierde Fuerza igual a la cantidad de desventajas que tenga. NL Agota."
+  },
+  "theChaser:Penetrate": {
+    "NAME": "Penetrante",
+    "DESCRIPTION": "Haz !D! de daño y aplica !M! Vulnerable. Si el enemigo ya tiene Vulnerable, aplica !M! thechaser:Ciego en su lugar."
+  },
+  "theChaser:Penetrative": {
+    "NAME": "Golpes Desgarradores",
+    "DESCRIPTION": "Cada que hagas daño activando thechaser:Objetivo, haz !M! de daño adicional."
+  },
+  "theChaser:Pluck Out Daggers": {
+    "NAME": "Dagas Extirpadoras",
+    "DESCRIPTION": "Cuesta 1 [E] menos por cada vez que actives thechaser:Objetivo en este turno. NL Haz !D! de daño !M! veces."
+  },
+  "theChaser:Ragewind": {
+    "NAME": "Vientos de Furia",
+    "DESCRIPTION": "Activa thechaser:Objetivo !M! veces. NL Incrementa permanentemente por 1 la activación de thechaser:Objetivo de esta carta. NL Agota."
+  },
+  "theChaser:Ready To Counter": {
+    "NAME": "Contra-Maniobra",
+    "DESCRIPTION": "Obtén !B! Bloqueo X veces. Activa thechaser:Objetivo X veces."
+  },
+  "theChaser:Replica Dagger": {
+    "NAME": "Dagas Replicantes",
+    "DESCRIPTION": "Al comienzo de tu turno, agrega un *Cuchillo *de *Lanzar a tu mano y aplica 1 thechaser:Objetivo a un enemigo aleatorio.",
+    "UPGRADE_DESCRIPTION": "Innata. NL Al comienzo de tu turno, agrega un *Cuchillo *de *Lanzar a tu mano y aplica 1 thechaser:Objetivo a un enemigo aleatorio."
+  },
+  "theChaser:Secret Card": {
+    "NAME": "Truco del Persecutor",
+    "DESCRIPTION": "Roba 1 carta. NL Si es un Ataque, activa thechaser:Objetivo !M! veces."
+  },
+  "theChaser:Sequence": {
+    "NAME": "Secuencia de Cortes",
+    "DESCRIPTION": "Haz !D! de daño. NL Agrega !M! *Flujo *en *Secuencia a tu mano. NL thechaser:Ágil: Haz !D! de daño 2 veces."
+  },
+  "theChaser:Space Out": {
+    "NAME": "Distancia de Combate",
+    "DESCRIPTION": "Cada vez que actives thechaser:Objetivo, obtén !M! Bloqueo."
+  },
+  "theChaser:Testing": {
+    "NAME": "Tanteando Terreno",
+    "DESCRIPTION": "Haz !D! de daño y aplica !M! Vulnerable a TODOS los enemigos."
+  },
+  "theChaser:Throes": {
+    "NAME": "Agonía de la Furia",
+    "DESCRIPTION": "Haz !D! de daño y aplica !M! thechaser:Ciego. NL Obtén 1 Vulnerable."
+  },
+  "theChaser:Unstable Block": {
+    "NAME": "Defensa Inestable",
+    "DESCRIPTION": "Obtén !B! Bloqueo y !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Obtén !B! Bloqueo y !M! thechaser:Ciego."
+  },
+  "theChaser:Weakness Strike": {
+    "NAME": "Golpe Crítico",
+    "DESCRIPTION": "Haz !D! de daño. Repite por cada desventaja única en el enemigo."
+  },
+  "theChaser:Win The Exchange": {
+    "NAME": "Gana el Intercambio",
+    "DESCRIPTION": "Haz !D! de daño. NL Si el enemigo tiene thechaser:Ciego, obtén [E] y roba 1 carta."
+  },
+  "theChaser:Wither": {
+    "NAME": "Marchitar",
+    "DESCRIPTION": "Aplica 99 Débil. Agota."
+  },
+  "theChaser:Absolute Advantage": {
+    "NAME": "Ventaja Absoluta",
+    "DESCRIPTION": "Obtén [E]. NL Roba 1 carta por cada desventaja única en TODOS los enemigos. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Obtén [E] [E]. NL Roba 1 carta por cada desventaja única en TODOS los enemigos. NL Agota."
+  },
+  "theChaser:Acceleration": {
+    "NAME": "Aceleración",
+    "DESCRIPTION": "Cada que juegues un Ataque, obtén !M! de Fuerza temporal."
+  },
+  "theChaser:Approach Run": {
+    "NAME": "Alta Velocidad",
+    "DESCRIPTION": "thechaser:Paso *Rápido !M!. NL thechaser:Ágil: Aplica !M! thechaser:Sangrado a TODOS los enemigos. NL Agota."
+  },
+  "theChaser:Dual Wielding": {
+    "NAME": "Empuñadura Doble",
+    "DESCRIPTION": "Cada que actives thechaser:Objetivo en este turno, actívalo dos veces."
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "Deseo de Poder",
+    "DESCRIPTION": "Todas tus ventajas cuentan como desventajas, para motivos de efectos que cuenten desventajas en tu personaje."
+  },
+  "theChaser:Fraudulence": {
+    "NAME": "Guardia del Persecutor",
+    "DESCRIPTION": "Obtén !B! Bloqueo por cada desventaja única en TODOS los enemigos."
+  },
+  "theChaser:Hide": {
+    "NAME": "Sigilo Perfecto",
+    "DESCRIPTION": "thechaser:Evade por !M! turnos. NL Agota."
+  },
+  "theChaser:Incisive Blade": {
+    "NAME": "Corta-Cuellos",
+    "DESCRIPTION": "Etérea. Haz !D! de daño. NL Agota."
+  },
+  "theChaser:Phrenitis": {
+    "NAME": "Frenitis",
+    "DESCRIPTION": "Aplica 1 Débil, Vulnerable, Fragil, Veneno, thechaser:Sangrado, thechaser:Objetivo, thechaser:Cicatriz, y thechaser:Ciego. NL Agota."
+  },
+  "theChaser:Preemptive Attack": {
+    "NAME": "Ataque Anticipado",
+    "DESCRIPTION": "Al comienzo de tu turno, roba 1 carta adicional y activa thechaser:Objetivo una vez."
+  },
+  "theChaser:Prepay": {
+    "NAME": "Pago Anticipado",
+    "DESCRIPTION": "En este turno, tu siguiente carta de tipo X cuesta 0. Agota.",
+    "UPGRADE_DESCRIPTION": "En este turno, tu siguiente carta de tipo X cuesta 0. Roba X cartas. Agota."
+  },
+  "theChaser:Saw Blade": {
+    "NAME": "Hoja de Sierra",
+    "DESCRIPTION": "Cada que juegues una carta, aplica !M! thechaser:Sangrado a TODOS los enemigos.",
+    "UPGRADE_DESCRIPTION": "Innata. Cada que juegues una carta, aplica !M! thechaser:Sangrado a TODOS los enemigos."
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "Forma de Espectro",
+    "DESCRIPTION": "Al comienzo de tu turno, incrementa el daño aplicado por 1 cuando thechaser:Objetivo es activado."
+  },
+  "theChaser:Stealage": {
+    "NAME": "Depuración",
+    "DESCRIPTION": "Haz !D! de daño. NL Obtén !M! de Oro. NL Agota."
+  },
+  "theChaser:Unwary": {
+    "NAME": "Asalto Confuso",
+    "DESCRIPTION": "Daño aplicado con thechaser:Objetivo también aplica thechaser:Ciego."
+  },
+  "theChaser:Vitality": {
+    "NAME": "Alegría de la Desgracia",
+    "DESCRIPTION": "Cura PV igual a la cantidad de veces que has activado thechaser:Objetivo en este turno. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Cura PV igual a la cantidad de veces que has activado thechaser:Objetivo en este turno. NL Agota.",
+    "EXTENDED_DESCRIPTION": [
+      "Cura PV igual a la cantidad de veces que has activado thechaser:Objetivo en este turno (",
+      " PV sanados). NL Agota.",
+      "Retiene. NL"
+    ]
+  },
+  "theChaser:Walkout": {
+    "NAME": "Perseguidor Implacable.",
+    "DESCRIPTION": "Haz !D! de daño a TODOS los enemigos. Activa thechaser:Objetivo igual a la cantidad de cartas jugadas en este turno. NL Termina tu turno.",
+    "EXTENDED_DESCRIPTION": [
+      "Haz !D! de daño a TODOS los enemigos. Activa thechaser:Objetivo igual a la cantidad de cartas jugadas en este turno (",
+      " cartas). NL Termina tu turno."
+    ]
+  },
+  "theChaser:Wile": {
+    "NAME": "Vestigio Cruel",
+    "DESCRIPTION": "Haz !D! de daño. NL Aplica !M! Vulnerable, Débil, y thechaser:Ciego."
+  },
+  "theChaser:A": {
+    "NAME": "",
+    "DESCRIPTION": ""
+  },
+  "theChaser:B": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "theChaser:C": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      ""
+    ]
+  },
+  "theChaser:D": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      ""
+    ]
+  }
+}

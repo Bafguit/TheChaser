@@ -1,0 +1,86 @@
+{
+  "theChaser:Shadow In Necklace": {
+    "NAME": "Collar de Sombras",
+    "FLAVOR": "Un collar con una pequeña botella de cristal, creado desde la abismal oscuridad.",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada combate, aplica #b2 #yObjetivo a un enemigo aleatorio."
+    ]
+  },
+  "theChaser:Cloak Of Assassin": {
+    "NAME": " Capa de Asesino",
+    "FLAVOR": "Esta capa fabricada en serie cuenta con el camuflaje más adecuado.",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada combate, #yEvade por #b2 turnos."
+    ]
+  },
+  "theChaser:R-B0-7": {
+    "NAME": "R-B0-7",
+    "FLAVOR": "Una peligrosa arma secreta. Su letalidad se ha reforzado con una droga infame.",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada turno, enemigos con desventajas pierden #b5 #yPV."
+    ]
+  },
+  "theChaser:Broken Ticker": {
+    "NAME": "Reloj Averiado",
+    "FLAVOR": "Está roto, pero aún se oye un débil tic-tac.",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada combate, aplica #yLento a TODOS los enemigos."
+    ]
+  },
+  "theChaser:Scoch Stone": {
+    "NAME": "Piedra Escocesa",
+    "FLAVOR": "Piedra gris de grano fino utilizada para afilar armas.",
+    "DESCRIPTIONS": [
+      "Cada vez que hagas daño activando #yObjetivo, haz #b1 más de daño."
+    ]
+  },
+  "theChaser:Letter Of Request": {
+    "NAME": "Carta de Solicitud",
+    "FLAVOR": "Una carta de solicitud de un cliente desconocido.",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada combate, aplica #b3 #yObjetivo a TODOS los enemigos."
+    ]
+  },
+  "theChaser:Shadow In Mask": {
+    "NAME": "Sombras Enmascaradas",
+    "FLAVOR": "Detrás de una máscara, nadie puede ver el abismo.",
+    "DESCRIPTIONS": [
+      "Sustituye #pCollar #pde #pSombras. Al comienzo de tu turno, aplica #b1 #yObjetivo a TODOS los enemigos y activa #yObjetivo una vez."
+    ]
+  },
+  "theChaser:Pocket Knife": {
+    "NAME": "Navaja de Bolsillo",
+    "FLAVOR": "Navaja portátil utilizada para cortar cuerdas.",
+    "DESCRIPTIONS": [
+      "Después de que #yObjetivo sea activado por cuarta vez en un mismo turno, obtén [E] ."
+    ]
+  },
+  "theChaser:Acid Solution": {
+    "NAME": "Solución Ácida",
+    "FLAVOR": "Extremadamente corrosiva. Esperemos que nadie más riegue esto imprudentemente sobre algo... o alguien.",
+    "DESCRIPTIONS": [
+      "Cada vez que juegues un Ataque, si estás #yDébil, aplica #b1 #yDébil al enemigo. Si estás #yFragil, elimina todo el Bloqueo del enemigo."
+    ]
+  },
+  "theChaser:Box Cutter": {
+    "NAME": "Cúter",
+    "FLAVOR": "Una espada muy peculiar. Tan peculiar, que su propósito es desconocido.",
+    "DESCRIPTIONS": [
+      "Tu primer Ataque que activa #yObjetivo cada turno, lo activa dos veces."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  },
+  "theChaser:Rusty Helmet": {
+    "NAME": "Casco Oxidado",
+    "FLAVOR": "Un viejo casco utilizado en las guerras del pasado. Es poco probable que se utilice hoy en día.",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada turno, aplica #b1 #yCiego a TODOS los enemigos."
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  
+  "theChaser:Dual Wielding": {
+    "NAME": "Empuñadura Doble",
+    "DESCRIPTIONS": [
+      "En este turno, cada vez que actives #yObjetivo, actívalo dos veces."
+    ]
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "Deseo de Poder",
+    "DESCRIPTIONS": [
+      "Por el resto de este combate, todas tus ventajas cuentan como desventajas por motivos de efectos que cuenten desventajas en tu personaje."
+    ]
+  },
+  "theChaser:Penetrative": {
+    "NAME": "Golpes Desgarradores",
+    "DESCRIPTIONS": [
+      "Cada vez que hagas daño activando #yObjetivo, haz #b",
+      " de daño adicional."
+    ]
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "Forma de Espectro",
+    "DESCRIPTIONS": [
+      "Al comienzo de tu turno, incrementa el daño aplicado cuando actives #yObjetivo por #b",
+      "."
+    ]
+  },
+  "theChaser:Space Out": {
+    "NAME": "Distancia de Combate",
+    "DESCRIPTIONS": [
+      "Cada vez que actives #yObjetivo, obtén #b",
+      " Bloqueo."
+    ]
+  },
+  "theChaser:Target": {
+    "NAME": "Objetivo",
+    "DESCRIPTIONS": [
+      "Después de que el jugador o un enemigo ataque, esta criatura sufre #b",
+      " de daño adicional. NL ",
+      "Dura #b",
+      " turno.",
+      " turnos."
+    ]
+  },
+  "theChaser:Unfortified": {
+    "NAME": "Ciego",
+    "DESCRIPTIONS": [
+      "Esta criatura recibe #b",
+      "% más de daño."
+    ]
+  },
+  "theChaser:Unwary": {
+    "NAME": "Asalto Confuso",
+    "DESCRIPTIONS": [
+      "Hacer daño activando #yObjetivo también aplica #yCiego."
+    ]
+  },
+  "theChaser:Bleeding": {
+    "NAME": "Sangrado",
+    "DESCRIPTIONS": [
+      "Al comienzo de su turno, pierde #b",
+      " PV, luego reduce la mitad de #ySangrado. Cada vez que juegues un Ataque, incrementa #ySangrado por #b1."
+    ]
+  },
+  "theChaser:Hide": {
+    "NAME": "Evade",
+    "DESCRIPTIONS": [
+      "TODOS los enemigos sufren de #yAturdido. Desaparece después de que juegues un Ataque o #yObjetivo sea activado. NL dura por #b",
+      " turno.",
+      " turnos."
+    ]
+  },
+  "theChaser:Puzzled": {
+    "NAME": "Desconcertado",
+    "DESCRIPTIONS": [
+      "Esta criatura no pretende hacer nada, debido a la confusión."
+    ]
+  },
+  "theChaser:Acceleration": {
+    "NAME": "Aceleración",
+    "DESCRIPTIONS": [
+      "Cada vez que juegues un Ataque, obtén #b",
+      " de #yFuerza temporal."
+    ]
+  },
+  "theChaser:Open Sore": {
+    "NAME": "Llaga Abierta",
+    "DESCRIPTIONS": [
+      "Al comienzo de tu turno, aplica #b",
+      " de #ySangrado a TODOS los enemigos."
+    ]
+  },
+  "theChaser:Big Picture": {
+    "NAME": "Plan Maestro",
+    "DESCRIPTIONS": [
+      "Cada vez que apliques una desventaja a tu personaje, obtén #b",
+      " de #yFuerza."
+    ]
+  },
+  "theChaser:Saw Blade": {
+    "NAME": "Hoja de Sierra",
+    "DESCRIPTIONS": [
+      "Cada vez que juegues una carta, aplica #b",
+      " de #ySangrado a TODOS los enemigos."
+    ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "Génenis de Dagas",
+    "DESCRIPTIONS": [
+      "Cada vez que juegues una carta que no cueste 0, agrega #b",
+      " #yCuchillo #yde #yLanzar a tu mano."
+    ]
+  },
+  "theChaser:Preemptive Attack": {
+    "NAME": "Ataque Anticipado",
+    "DESCRIPTIONS": [
+      "Al comienzo de tu turno, roba #b",
+      " carta y activa #yObjetivo ",
+      " una vez.",
+      " cartas y activa #yObjetivo #b",
+      " veces."
+    ]
+  },
+  "theChaser:Replica Dagger": {
+    "NAME": "Dagas Replicantes",
+    "DESCRIPTIONS": [
+      "Al comienzo de tu turno, agrega #b",
+      " #yCuchillo #yde #yLanzar a tu mano y aplica #b",
+      " #yObjetivo a un enemigo al azar."
+    ]
+  },
+  "theChaser:Fake Sore": {
+    "NAME": "Cicatriz",
+    "DESCRIPTIONS": [
+      "Esta criatura recibe #b",
+      "% más de daño."
+    ]
+  },
+  "theChaser:FreeCard": {
+    "NAME": "Pago Anticipado",
+    "DESCRIPTIONS": [
+      "En este turno, ignora el costo de energía de la siguiente carta que juegues.",
+      "En este turno, ignora el costo de energía en las siguientes #b",
+      " cartas que juegues."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "",
+      ""
+    ]
+  }
+}

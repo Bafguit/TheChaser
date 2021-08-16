@@ -1,10 +1,14 @@
 package theChaser.relics;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import theChaser.TheChaserMod;
 import theChaser.patches.interfaces.OnAfterTargetAttackSubscriber;
 import theChaser.util.TextureLoader;
 
@@ -21,6 +25,15 @@ public class PocketKnife extends CustomRelic implements OnAfterTargetAttackSubsc
     public PocketKnife() {
         super(ID, IMG, IMG_OUT, RelicTier.BOSS, LandingSound.FLAT);
         this.isDone = false;
+        this.tips.clear();
+        this.tips.add(new PowerTip(this.name, this.description));
+        String keywordName = TheChaserMod.localKeyword.Targeting;
+        this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keywordName).NAME, TheChaserMod.getKeywordInfo(keywordName).DESCRIPTION));
+        if(Settings.language.name().equals("KOR") || Settings.language.name().equals("JPN")) {
+            String keyName = TheChaserMod.localKeyword.Trigger;
+            this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keyName).NAME, TheChaserMod.getKeywordInfo(keyName).DESCRIPTION));
+        }
+        this.initializeTips();
     }
 
     public void atTurnStart() {
