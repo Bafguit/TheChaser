@@ -1,7 +1,7 @@
 {
   "theChaser:Throwing Knife": {
     "NAME": "Cuchillo de Lanzar",
-    "DESCRIPTION": "Etérea. Causa !D! de daño a todos los enemigos. Enemigos afectados por thechaser:Objetivo se priorizan. Agota."
+    "DESCRIPTION": "Etérea. Causa !D! de daño a un enemigo al azar. Enemigos afectados por thechaser:Objetivo se priorizan. Agota."
   },
   "theChaser:Bloody Wind": {
     "NAME": "Viento Sangriento",
@@ -29,7 +29,7 @@
   },
   "theChaser:Flawed Stealth": {
     "NAME": "Sigilo Imperfecto",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Obtén 1 Fragil."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Obtén 1 Fragil."
   },
   "theChaser:Strike": {
     "NAME": "Golpe",
@@ -37,11 +37,11 @@
   },
   "theChaser:Defend": {
     "NAME": "Defender",
-    "DESCRIPTION": "Obtén !B! Bloqueo."
+    "DESCRIPTION": "Gana !B! de Bloqueo."
   },
   "theChaser:Alert": {
     "NAME": "En Alerta",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Obtén thechaser:Cicatriz !M! veces. NL thechaser:Paso *Rápido !M!."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Obtén thechaser:Cicatriz !M! veces. NL thechaser:Paso *Rápido !M!."
   },
   "theChaser:Blitzkrieg": {
     "NAME": "Ataque Relámpago",
@@ -86,7 +86,7 @@
   },
   "theChaser:Linger": {
     "NAME": "Truco Maligno",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Activa thechaser:Objetivo !M! veces."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Activa thechaser:Objetivo !M! veces."
   },
   "theChaser:Makeready": {
     "NAME": "Preparación",
@@ -94,7 +94,7 @@
   },
   "theChaser:Passing": {
     "NAME": "A Través",
-    "DESCRIPTION": "Obtén !B! Bloqueo. Si has jugado un Ataque en un enemigo afectado por thechaser:Objetivo en este turno, roba 2 cartas."
+    "DESCRIPTION": "Gana !B! de Bloqueo. Si has jugado un Ataque en un enemigo afectado por thechaser:Objetivo en este turno, roba 2 cartas."
   },
   "theChaser:Random Throw": {
     "NAME": "Desenfunda Cuchillos",
@@ -111,7 +111,7 @@
   },
   "theChaser:Thornmail": {
     "NAME": "Cota de Espinas",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Aplica !M! thechaser:Sangrado a TODOS los enemigos."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Aplica !M! thechaser:Sangrado a TODOS los enemigos."
   },
   "theChaser:Watch": {
     "NAME": "Observa",
@@ -123,7 +123,7 @@
   },
   "theChaser:Aggravate": {
     "NAME": "Empeorar",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Activa thechaser:Sangrado una vez en todos los enemigos afectados por thechaser:Sangrado."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Activa thechaser:Sangrado una vez en todos los enemigos afectados por thechaser:Sangrado."
   },
   "theChaser:Attack First": {
     "NAME": "Toma la Iniciativa",
@@ -144,7 +144,7 @@
   },
   "theChaser:Chance": {
     "NAME": "Suerte del Persecutor",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL thechaser:Ágil: Reduce el costo de una carta al azar en tu mano a 0 por este turno."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL thechaser:Ágil: Reduce el costo de una carta al azar en tu mano a 0 por este turno."
   },
   "theChaser:Conquest": {
     "NAME": "Espíritu de Conquista",
@@ -162,20 +162,20 @@
   },
   "theChaser:Disguise": {
     "NAME": "Engaño",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Repite por cada desventaja única que tengas.",
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Repite por cada desventaja única que tengas.",
     "EXTENDED_DESCRIPTION": [
-      "Obtén !B! Bloqueo. NL Repite por cada desventaja única que tengas (",
+      "Gana !B! de Bloqueo. NL Repite por cada desventaja única que tengas (",
       " desventajas)."
     ]
   },
   "theChaser:Fall Technique": {
     "NAME": "Caída Elusiva",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Obtén !M! Débil."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Obtén !M! Débil."
   },
   "theChaser:Feeble Defend": {
     "NAME": "Defensa Engañosa",
-    "DESCRIPTION": "Obtén !B! Bloqueo. NL Si eres Fragil, duplica la cantidad de Bloqueo obtenido.",
-    "UPGRADE_DESCRIPTION": "Obtén !B! Bloqueo. NL Si eres Fragil, triplica la cantidad de Bloqueo obtenido."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Si eres Fragil, duplica la cantidad de Bloqueo obtenido.",
+    "UPGRADE_DESCRIPTION": "Gana !B! de Bloqueo. NL Si eres Fragil, triplica la cantidad de Bloqueo obtenido."
   },
   "theChaser:Feeble Strike": {
     "NAME": "Golpe Engañoso",
@@ -196,7 +196,7 @@
   },
   "theChaser:Hidden Dagger": {
     "NAME": "Daga Oculta",
-    "DESCRIPTION": "Obtén !B! Bloqueo. Agrega !M! *Cuchillo *de *Lanzar a tu mano. NL thechaser:Ágil: Mejora TODAS las cartas de *Cuchillo *de *Lanzar en tu mano."
+    "DESCRIPTION": "Gana !B! de Bloqueo. Agrega !M! *Cuchillo *de *Lanzar a tu mano. NL thechaser:Ágil: Mejora TODAS las cartas de *Cuchillo *de *Lanzar en tu mano."
   },
   "theChaser:Internal Hemorrhage": {
     "NAME": "Hemorragia Interna",
@@ -228,7 +228,7 @@
   },
   "theChaser:Ready To Counter": {
     "NAME": "Contra-Maniobra",
-    "DESCRIPTION": "Obtén !B! Bloqueo X veces. Activa thechaser:Objetivo X veces."
+    "DESCRIPTION": "Gana !B! de Bloqueo X veces. Activa thechaser:Objetivo X veces."
   },
   "theChaser:Replica Dagger": {
     "NAME": "Dagas Replicantes",
@@ -245,7 +245,7 @@
   },
   "theChaser:Space Out": {
     "NAME": "Distancia de Combate",
-    "DESCRIPTION": "Cada vez que actives thechaser:Objetivo, obtén !M! Bloqueo."
+    "DESCRIPTION": "Cada vez que actives thechaser:Objetivo, gana !M! de Bloqueo."
   },
   "theChaser:Testing": {
     "NAME": "Tanteando Terreno",
@@ -257,8 +257,8 @@
   },
   "theChaser:Unstable Block": {
     "NAME": "Defensa Inestable",
-    "DESCRIPTION": "Obtén !B! Bloqueo y !M! Vulnerable.",
-    "UPGRADE_DESCRIPTION": "Obtén !B! Bloqueo y !M! thechaser:Ciego."
+    "DESCRIPTION": "Gana !B! de Bloqueo y !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Gana !B! de Bloqueo y !M! thechaser:Ciego."
   },
   "theChaser:Weakness Strike": {
     "NAME": "Golpe Crítico",
@@ -295,7 +295,7 @@
   },
   "theChaser:Fraudulence": {
     "NAME": "Guardia del Persecutor",
-    "DESCRIPTION": "Obtén !B! Bloqueo por cada desventaja única en TODOS los enemigos."
+    "DESCRIPTION": "Gana !B! de Bloqueo por cada desventaja única en TODOS los enemigos."
   },
   "theChaser:Hide": {
     "NAME": "Sigilo Perfecto",
