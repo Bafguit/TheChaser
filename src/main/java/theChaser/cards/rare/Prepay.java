@@ -25,9 +25,11 @@ import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 import theChaser.TheChaserMod;
+import theChaser.actions.InterfaceXCostAction;
 import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.patches.interfaces.OnXCostSubscriber;
 import theChaser.powers.FreeCardPower;
 import theChaser.powers.HidePower;
 
@@ -44,7 +46,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class Prepay extends ChaserCard {
+public class Prepay extends ChaserCard implements OnXCostSubscriber {
 
     public static final String ID = TheChaserMod.makeID("Prepay");
     public static final String IMG = makeCardPath("Prepay.png");
@@ -63,31 +65,18 @@ public class Prepay extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
-        int effect = EnergyPanel.totalCount;
-        if (this.energyOnUse != -1) {
-            effect = this.energyOnUse;
-        }
-
-        if (!this.freeToPlayOnce) {
-            p.energy.use(EnergyPanel.totalCount);
-        }
-
-        if (p.hasRelic("Chemical X")) {
-            effect += 2;
-            p.getRelic("Chemical X").flash();
-        }
-
-        if(effect > 0) {
-            if(this.upgraded) {
-                addToBot(new DrawCardAction(effect));
-            }
-            addToBot(new ApplyPowerAction(p, p, new FreeCardPower(p, effect)));
-        }
+        addToBot(new InterfaceXCostAction(this, m));
     }
 
     @Override
     public void upgradeCard() {
     }
 
+    @Override
+    public void onXCost(AbstractPlayer p, AbstractMonster m, int x) {
+        addToTop(new ApplyPowerAction(p, p, new FreeCardPower(p, x)));
+        if(this.upgraded) {
+            addToTop(new DrawCardAction(x));
+        }
+    }
 }

@@ -46,7 +46,7 @@ public class TargetPotion extends AbstractPotion {
         this.tips.add(new PowerTip(this.name, this.description));
         String keywordName = TheChaserMod.localKeyword.Targeting;
         this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keywordName).NAME, TheChaserMod.getKeywordInfo(keywordName).DESCRIPTION));
-        if(Settings.language.name().equals("KOR") || Settings.language.name().equals("JPN")) {
+        if(TheChaserMod.getLanguage().equals("kor") || TheChaserMod.getLanguage().equals("jpn")) {
             String keyName = TheChaserMod.localKeyword.Trigger;
             this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keyName).NAME, TheChaserMod.getKeywordInfo(keyName).DESCRIPTION));
         }

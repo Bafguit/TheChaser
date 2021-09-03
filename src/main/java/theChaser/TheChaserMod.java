@@ -619,7 +619,7 @@ public class TheChaserMod implements
         return temp;
     }
 
-    public String getLanguage() {
+    public static String getLanguage() {
         switch (Settings.language.name()) {
             case "KOR":
                 return "kor";

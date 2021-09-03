@@ -1,0 +1,86 @@
+{
+  "theChaser:Shadow In Necklace": {
+    "NAME": "Shadowed Necklace",
+    "FLAVOR": "A necklace with a small glass bottle, created from the abyssal darkness.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #b2 #yTargeting to a random enemy."
+    ]
+  },
+  "theChaser:Cloak Of Assassin": {
+    "NAME": "Assassin's Cloak",
+    "FLAVOR": "This mass-produced cloak boasts the most reliable camouflage.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yHide for #b2 turns."
+    ]
+  },
+  "theChaser:R-B0-7": {
+    "NAME": "R-B0-7",
+    "FLAVOR": "A dangerous secret weapon. Its lethality is complemented with an infamous drug.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, enemies which have debuffs lose #b5 #yHP."
+    ]
+  },
+  "theChaser:Broken Ticker": {
+    "NAME": "Broken Ticker",
+    "FLAVOR": "It is already broken, yet a faint ticking can still be heard.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #ySlow to ALL enemies."
+    ]
+  },
+  "theChaser:Scoch Stone": {
+    "NAME": "Scotch Stone",
+    "FLAVOR": "A fine-grained grey stone used for sharpening weapons.",
+    "DESCRIPTIONS": [
+      "Whenever you deal damage by triggering #yTargeting, deal #b1 additional damage."
+    ]
+  },
+  "theChaser:Letter Of Request": {
+    "NAME": "Letter of Request",
+    "FLAVOR": "A letter of request from an unknown client.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #b3 #yTargeting to ALL enemies."
+    ]
+  },
+  "theChaser:Shadow In Mask": {
+    "NAME": "Masked Shadows",
+    "FLAVOR": "Behind a mask, nobody can see the abyss.",
+    "DESCRIPTIONS": [
+      "Replaces #pShadowed #pNecklace. At the start of your turn, apply #b1 #yTargeting to ALL enemies and trigger #yTargeting once."
+    ]
+  },
+  "theChaser:Pocket Knife": {
+    "NAME": "Pocket Knife",
+    "FLAVOR": "A portable knife used to cut ropes.",
+    "DESCRIPTIONS": [
+      "After #yTarget is triggered for the fourth time each turn, gain [E] ."
+    ]
+  },
+  "theChaser:Acid Solution": {
+    "NAME": "Acid Solution",
+    "FLAVOR": "Extremely corrosive. Hopefully no one else carelessly sprinkles this on something...or someone.",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack, if you are #yWeak, apply #b1 #yWeak to the enemy. If you are #yFrail, remove all Block from the enemy."
+    ]
+  },
+  "theChaser:Box Cutter": {
+    "NAME": "Box Cutter",
+    "FLAVOR": "A very peculiar sword. So peculiar, that its purpose is unknown.",
+    "DESCRIPTIONS": [
+      "Your first Attack that triggers #yTargeting each turn triggers it #btwice."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  },
+  "theChaser:Rusty Helmet": {
+    "NAME": "Rusty Helmet",
+    "FLAVOR": "An old helmet used in wars of the past. It's unlikely to see use today.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, apply #b1 #yBlindsided to ALL enemies."
+    ]
+  }
+}

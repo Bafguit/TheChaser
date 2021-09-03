@@ -1,0 +1,66 @@
+[
+  {
+    "PROPER_NAME": "Targeting",
+    "NAMES": [
+      "targeting",
+      "Targeting"
+    ],
+    "DESCRIPTION": "After a player or monster attacks, all creatures with #yTargeting take #b2 damage."
+  },
+  {
+    "PROPER_NAME": "Blindsided",
+    "NAMES": [
+      "blindsided",
+      "Blindsided"
+    ],
+    "DESCRIPTION": "Target receives #b15% more damage for each stack of #yBlindsided (up to a maximum of #b4.)"
+  },
+  {
+    "PROPER_NAME": "Bleeding",
+    "NAMES": [
+      "bleeding",
+      "Bleeding"
+    ],
+    "DESCRIPTION": "#yBleeding creatures lose HP at the start of their turn, then reduce #yBleeding by half. Whenever you play an Attack, increase #yBleeding by #b1."
+  },
+  {
+    "PROPER_NAME": "Hide",
+    "NAMES": [
+      "hide",
+      "Hide"
+    ],
+    "DESCRIPTION": "ALL enemies become #yStunned. Fades away after an Attack is played or #yTargeting is triggered."
+  },
+  {
+    "PROPER_NAME": "Swift",
+    "NAMES": [
+      "swift",
+      "Swift:"
+    ],
+    "DESCRIPTION": "If you have played 4 or more cards this turn, trigger an additional effect."
+  },
+    {
+    "PROPER_NAME": "Quickstep",
+    "NAMES": [
+      "quickstep",
+      "Quickstep"
+    ],
+    "DESCRIPTION": "Simulate playing cards, for use with #ySwift effects."
+  },
+  {
+    "PROPER_NAME": "Proxy",
+    "NAMES": [
+      "proxy",
+      "Proxy"
+    ],
+    "DESCRIPTION": "Target receives #b5% more damage for each stack of #yProxy."
+  },
+  {
+    "PROPER_NAME": "",
+    "NAMES": [
+      "",
+      ""
+    ],
+    "DESCRIPTION": ""
+  }
+]

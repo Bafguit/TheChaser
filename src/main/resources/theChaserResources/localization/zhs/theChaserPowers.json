@@ -1,0 +1,155 @@
+{
+
+  "theChaser:Dual Wielding": {
+    "NAME": "Dual Wielding",
+    "DESCRIPTIONS": [
+      "This turn, whenever you trigger #yTargeting, trigger it twice."
+    ]
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "Lust for Power",
+    "DESCRIPTIONS": [
+      "For the rest of this combat, all your buffs count as debuffs for the purposes of effects which check for debuffs on you."
+    ]
+  },
+  "theChaser:Penetrative": {
+    "NAME": "Piercing Blows",
+    "DESCRIPTIONS": [
+      "Whenever you deal damage by triggering #yTargeting, deal #b",
+      " additional damage."
+    ]
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "Spectre Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, increase damage dealt when triggering #yTargeting by #b",
+      "."
+    ]
+  },
+  "theChaser:Space Out": {
+    "NAME": "Combat Spacing",
+    "DESCRIPTIONS": [
+      "Whenever you trigger #yTargeting, gain #b",
+      " Block."
+    ]
+  },
+  "theChaser:Target": {
+    "NAME": "Targeting",
+    "DESCRIPTIONS": [
+      "After a player or monster attacks, this creature takes #b",
+      " additional damage. NL ",
+      "Lasts for #b",
+      " turn.",
+      " turns."
+    ]
+  },
+  "theChaser:Unfortified": {
+    "NAME": "Blindsided",
+    "DESCRIPTIONS": [
+      "This creature receives #b",
+      "% more damage."
+    ]
+  },
+  "theChaser:Unwary": {
+    "NAME": "Confounding Assault",
+    "DESCRIPTIONS": [
+      "Dealing damage by triggering #yTargeting also applies #yBlindsided."
+    ]
+  },
+  "theChaser:Bleeding": {
+    "NAME": "Bleeding",
+    "DESCRIPTIONS": [
+      "At the start of its turn, loses #b",
+      " HP, then reduce #yBleeding by half. Whenever you play an Attack, increase #yBleeding by #b1."
+    ]
+  },
+  "theChaser:Hide": {
+    "NAME": "Hide",
+    "DESCRIPTIONS": [
+      "ALL enemies become #yStunned. Fades away after an Attack is played or #yTargeting is triggered. NL Lasts for #b",
+      " turn.",
+      " turns."
+    ]
+  },
+  "theChaser:Puzzled": {
+    "NAME": "Perplexed",
+    "DESCRIPTIONS": [
+      "This creature does not intend to do anything, out of confusion."
+    ]
+  },
+  "theChaser:Acceleration": {
+    "NAME": "Acceleration",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack, gain #b",
+      " temporary #yStrength."
+    ]
+  },
+  "theChaser:Open Sore": {
+    "NAME": "Open Sore",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yBleeding to ALL enemies."
+    ]
+  },
+  "theChaser:Big Picture": {
+    "NAME": "Grand Plan",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to yourself, gain #b",
+      " #yStrength."
+    ]
+  },
+  "theChaser:Saw Blade": {
+    "NAME": "Sawblades",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, apply #b",
+      " #yBleeding to ALL enemies."
+    ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "Blade Genesis",
+    "DESCRIPTIONS": [
+      "Whenever you play a card that doesn't cost 0, add #b",
+      " #yThrowing #yKnife to your hand."
+    ]
+  },
+  "theChaser:Preemptive Attack": {
+    "NAME": "Preemptive Offense",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw #b",
+      " card and trigger #yTargeting ",
+      " once.",
+      " cards and trigger #yTargeting #b",
+      " times."
+    ]
+  },
+  "theChaser:Replica Dagger": {
+    "NAME": "Replicating Daggers",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yThrowing #yKnife into your hand and apply #b",
+      " #yTargeting to a random enemy."
+    ]
+  },
+  "theChaser:Fake Sore": {
+    "NAME": "Proxy",
+    "DESCRIPTIONS": [
+      "This creature receives #b",
+      "% more damage."
+    ]
+  },
+  "theChaser:FreeCard": {
+    "NAME": "Prepay",
+    "DESCRIPTIONS": [
+      "This turn, ignore energy cost on the next card you play.",
+      "This turn, ignore energy cost on the next #b",
+      " cards you play."
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "",
+      ""
+    ]
+  }
+}

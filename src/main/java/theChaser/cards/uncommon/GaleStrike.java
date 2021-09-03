@@ -7,15 +7,20 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.blue.ReinforcedBody;
+import com.megacrit.cardcrawl.cards.red.Whirlwind;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MayhemPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import theChaser.TheChaserMod;
+import theChaser.actions.InterfaceXCostAction;
 import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
+import theChaser.patches.interfaces.OnXCostSubscriber;
 import theChaser.powers.TargetPower;
 import theChaser.powers.UnfortifiedPower;
 
@@ -30,7 +35,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class GaleStrike extends ChaserCard {
+public class GaleStrike extends ChaserCard implements OnXCostSubscriber {
 
     public static final String ID = TheChaserMod.makeID("Gale Strike");
     public static final String IMG = makeCardPath("GaleStrike.png");
@@ -51,33 +56,7 @@ public class GaleStrike extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int effect = EnergyPanel.totalCount;
-        if (this.energyOnUse != -1) {
-            effect = this.energyOnUse;
-        }
-
-        if (!this.freeToPlayOnce) {
-            p.energy.use(EnergyPanel.totalCount);
-        }
-
-        if (p.hasRelic("Chemical X")) {
-            effect += 2;
-            p.getRelic("Chemical X").flash();
-        }
-
-        if(effect > 0) {
-
-            for (int i = 0; i < effect; i++) {
-                this.addToBot(new SFXAction("ATTACK_HEAVY"));
-                this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-                addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE, true));
-            }
-
-            for (int i = 0; i < effect; i++) {
-                addToBot(new TargetAttackAction());
-            }
-        }
-
+        addToBot(new InterfaceXCostAction(this, m));
     }
 
     @Override
@@ -85,4 +64,16 @@ public class GaleStrike extends ChaserCard {
         upgradeDamage(UP_DMG);
     }
 
+    @Override
+    public void onXCost(AbstractPlayer p, AbstractMonster m, int x) {
+        for(int i = 0; i < x; i++) {
+            addToTop(new TargetAttackAction());
+        }
+
+        for(int i = 0; i < x; i++) {
+            addToTop(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE, true));
+            addToTop(new VFXAction(p, new CleaveEffect(), 0.1F));
+            addToTop(new SFXAction("ATTACK_HEAVY"));
+        }
+    }
 }

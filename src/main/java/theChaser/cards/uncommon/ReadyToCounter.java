@@ -14,10 +14,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import theChaser.TheChaserMod;
+import theChaser.actions.InterfaceXCostAction;
 import theChaser.actions.TargetAttackAction;
 import theChaser.cards.ChaserCard;
 import theChaser.cards.temp.ThrowingKnife;
 import theChaser.characters.TheChaser;
+import theChaser.patches.interfaces.OnXCostSubscriber;
 import theChaser.powers.TargetPower;
 
 import static theChaser.TheChaserMod.makeCardPath;
@@ -31,7 +33,7 @@ import static theChaser.TheChaserMod.makeCardPath;
 // Abstract Dynamic Card builds up on Abstract Default Card even more and makes it so that you don't need to add
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
-public class ReadyToCounter extends ChaserCard {
+public class ReadyToCounter extends ChaserCard implements OnXCostSubscriber {
 
     public static final String ID = TheChaserMod.makeID("Ready To Counter");
     public static final String IMG = makeCardPath("ReadyToCounter.png");
@@ -51,30 +53,7 @@ public class ReadyToCounter extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int effect = EnergyPanel.totalCount;
-        if (this.energyOnUse != -1) {
-            effect = this.energyOnUse;
-        }
-
-        if (!this.freeToPlayOnce) {
-            p.energy.use(EnergyPanel.totalCount);
-        }
-
-        if (p.hasRelic("Chemical X")) {
-            effect += 2;
-            p.getRelic("Chemical X").flash();
-        }
-
-        if(effect > 0) {
-            for (int i = 0; i < effect; i++) {
-                addToBot(new GainBlockAction(p, this.block, true));
-            }
-
-            for (int i = 0; i < effect; i++) {
-                addToBot(new TargetAttackAction());
-            }
-        }
-
+        addToBot(new InterfaceXCostAction(this, m));
     }
 
     @Override
@@ -82,4 +61,14 @@ public class ReadyToCounter extends ChaserCard {
         upgradeBlock(UP_DMG);
     }
 
+    @Override
+    public void onXCost(AbstractPlayer p, AbstractMonster m, int x) {
+        for(int i = 0; i < x; i++) {
+            addToTop(new TargetAttackAction());
+        }
+
+        for(int i = 0; i < x; i++) {
+            addToTop(new GainBlockAction(p, this.block, true));
+        }
+    }
 }

@@ -1,0 +1,23 @@
+{
+  "theChaser:Acid Potion": {
+    "NAME": "Bottled Hemorrhage",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " #yBleeding to an enemy."
+    ]
+  },
+        "theChaser:Shadow Potion": {
+                "NAME": "Shadow in a Jar",
+                "DESCRIPTIONS": [
+                        "#yHide for #b",
+                        " turn."
+                ]
+        },
+        "theChaser:Target Potion": {
+                "NAME": "Target Potion",
+                "DESCRIPTIONS": [
+                        "Trigger #yTargeting #b",
+                        " times."
+                ]
+        }
+}
