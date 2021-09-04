@@ -133,7 +133,7 @@
     "NAME": "偽傷",
     "DESCRIPTIONS": [
       "アタックのダメージをさらに #b",
-      "% 受ける。"
+      "% 与え受ける。"
     ]
   },
   "theChaser:FreeCard": {

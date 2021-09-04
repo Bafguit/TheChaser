@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.DoubleDamagePower;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
 import theChaser.util.TextureLoader;
@@ -53,6 +54,11 @@ public class FakeSorePower extends AbstractPower implements CloneablePowerInterf
         } else {
             return damage;
         }
+    }
+
+    @Override
+    public float atDamageGive(float damage, DamageInfo.DamageType type) {
+        return type == DamageInfo.DamageType.NORMAL ? damage * (1.0F + (0.05F * this.amount)) : damage;
     }
 
     @Override

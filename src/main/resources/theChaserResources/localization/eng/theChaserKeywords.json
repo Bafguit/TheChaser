@@ -53,7 +53,7 @@
       "proxy",
       "Proxy"
     ],
-    "DESCRIPTION": "Target receives #b5% more damage for each stack of #yProxy."
+    "DESCRIPTION": "Target gives and receives #b5% more damage for each stack of #yProxy."
   },
   {
     "PROPER_NAME": "",
