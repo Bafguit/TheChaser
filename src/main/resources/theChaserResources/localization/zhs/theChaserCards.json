@@ -57,8 +57,8 @@
 	},
 	"theChaser:Continuous Slash": {
 		"NAME": "连续斜线",
-		"DESCRIPTION": "造成 !D! 点伤害2次。 NL thechaser:迅速 : 增加一张 *后续斜线 到你的手牌。",
-		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害2次。 NL thechaser:迅速 : 增加一张 *后续斜线+ 到你的手牌。"
+		"DESCRIPTION": "造成 !D! 点伤害2次。 NL thechaser:迅速 ：增加一张 *后续斜线 到你的手牌。",
+		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害2次。 NL thechaser:迅速 ：增加一张 *后续斜线+ 到你的手牌。"
 	},
 	"theChaser:Delusive Strike": {
 		"NAME": "幻术打击",
@@ -135,8 +135,8 @@
 	},
 	"theChaser:Break Armour": {
 		"NAME": "摧毁盔甲",
-		"DESCRIPTION": "Remove ALL stacks of thechaser:Targeting on the enemy. Apply Vulnerable, Weak, and thechaser:Bleeding equal to the amount removed. 消耗 。",
-		"UPGRADE_DESCRIPTION": "Apply Vulnerable, Weak, and thechaser:Bleeding equal to the amount of thechaser:Targeting on the enemy. 消耗 。"
+		"DESCRIPTION": "移除敌人身上所有层的 thrchaser:靶子 。给予那层数的 易伤 ， 虚弱 和 thechaser:出血 。 消耗 。",
+		"UPGRADE_DESCRIPTION": "给予等于敌人拥有的 thechaser:瞄准 层数的 易伤 ， 虚弱 和 thechaser:出血 。 消耗 。"
 	},
 	"theChaser:Bulwark": {
 		"NAME": "空降",
@@ -144,15 +144,15 @@
 	},
 	"theChaser:Chance": {
 		"NAME": "示踪者的运气",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL thechaser:迅速 : Reduce the cost of a random card in your hand to 0 this turn."
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL thechaser:迅速 ：手牌中就有一张牌在这一回合耗能变为0。"
 	},
 	"theChaser:Conquest": {
 		"NAME": "征服精神",
-		"DESCRIPTION": "Gain Strength equal to the cumulative stacks of ALL debuffs you have. NL 消耗 。",
-		"UPGRADE_DESCRIPTION": "Gain Strength equal to the cumulative stacks of ALL debuffs you have.",
+		"DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1点 力量 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1点 力量 。",
 		"EXTENDED_DESCRIPTION": [
-			"Gain Strength equal to the cumulative stacks of ALL debuffs you have (",
-			" Strength).",
+			"对于您拥有的每个独特的负面状态，获得1点 力量 。（ ",
+			" 点 力量 ）",
 			" NL 消耗 。"
 		]
 	},
@@ -170,7 +170,7 @@
 	},
 	"theChaser:Fall Technique": {
 		"NAME": "摔倒技巧",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL Gain !M! Weak."
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 点 虚弱 。"
 	},
 	"theChaser:Feeble Defend": {
 		"NAME": "欺骗性防御",
@@ -188,19 +188,19 @@
 	},
 	"theChaser:Gale Strike": {
 		"NAME": "风暴打击",
-		"DESCRIPTION": "Deal !D! damage X times to ALL enemies. Trigger thechaser:Targeting X times."
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害X次。 thechaser:瞄准 X次。"
 	},
 	"theChaser:Hack": {
 		"NAME": "多次刺伤",
-		"DESCRIPTION": "Deal !D! damage !M! times."
+		"DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
 	},
 	"theChaser:Hidden Dagger": {
 		"NAME": "隐藏的匕首",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 Add !M! *Throwing *Knife into your hand. NL thechaser:迅速 : Upgrade ALL *Throwing *Knife cards in your hand."
+		"DESCRIPTION": "获得 !B! 点 格挡 。 增加 !M! 张 *后续斜线 到你的手牌。 NL thechaser:迅速 ：Upgrade ALL *Throwing *Knife cards in your hand."
 	},
 	"theChaser:Internal Hemorrhage": {
 		"NAME": "内部出血",
-		"DESCRIPTION": "Apply !M! thechaser:Bleeding and 2 Weak to ALL enemies. NL 消耗 。"
+		"DESCRIPTION": "给予所有敌人 !M! 层 thechaser:出血 和 虚弱 。 NL 消耗 。"
 	},
 	"theChaser:Open Sore": {
 		"NAME": "开放性疮",
@@ -241,7 +241,7 @@
 	},
 	"theChaser:Sequence": {
 		"NAME": "斜线序列",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL Add !M! *Sequence *Flow into your hand. NL thechaser:迅速 : Deal !D! damage 2 times."
+		"DESCRIPTION": "造成 !D! 点伤害。 NL Add !M! *Sequence *Flow into your hand. NL thechaser:迅速 ：Deal !D! damage 2 times."
 	},
 	"theChaser:Space Out": {
 		"NAME": "战斗间隔",
@@ -283,7 +283,7 @@
 	},
 	"theChaser:Approach Run": {
 		"NAME": "助跑",
-		"DESCRIPTION": "thechaser:谍报 !M!. NL thechaser:迅速 : Apply !M! thechaser:Bleeding to ALL enemies. NL 消耗 。"
+		"DESCRIPTION": "thechaser:谍报 !M!. NL thechaser:迅速 ：Apply !M! thechaser:Bleeding to ALL enemies. NL 消耗 。"
 	},
 	"theChaser:Dual Wielding": {
 		"NAME": "双手",
