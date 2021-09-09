@@ -29,7 +29,7 @@
 	},
 	"theChaser:Flawed Stealth": {
 		"NAME": "隐士",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 脆弱 。"
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 脆弱 。"
 	},
 	"theChaser:Strike": {
 		"NAME": "打击",
@@ -98,7 +98,7 @@
 	},
 	"theChaser:Random Throw": {
 		"NAME": "匕首横冲直撞",
-		"DESCRIPTION": "增加 !M! 张 *后续斜线 到你的手牌。"
+		"DESCRIPTION": "增加 !M! 张 *匕首 到你的手牌。"
 	},
 	"theChaser:Scar Stab": {
 		"NAME": "刺伤",
@@ -131,7 +131,7 @@
 	},
 	"theChaser:Big Picture": {
 		"NAME": "宏伟计划",
-		"DESCRIPTION": "每当你对自己施获得负面状态，获得 !M! 点 力量 。"
+		"DESCRIPTION": "每当你对自己施获得负面状态，获得 !M! 层 力量 。"
 	},
 	"theChaser:Break Armour": {
 		"NAME": "摧毁盔甲",
@@ -140,7 +140,7 @@
 	},
 	"theChaser:Bulwark": {
 		"NAME": "空降",
-		"DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点 敏捷 。"
+		"DESCRIPTION": "获得 !M! 层 力量 。 NL 获得 !M! 层 敏捷 。"
 	},
 	"theChaser:Chance": {
 		"NAME": "示踪者的运气",
@@ -148,39 +148,39 @@
 	},
 	"theChaser:Conquest": {
 		"NAME": "征服精神",
-		"DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1点 力量 。 NL 消耗 。",
+		"DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1层 力量 。 NL 消耗 。",
 		"UPGRADE_DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1点 力量 。",
 		"EXTENDED_DESCRIPTION": [
-			"对于您拥有的每个独特的负面状态，获得1点 力量 。（ ",
-			" 点 力量 ）",
+			"对于您拥有的每个独特的负面状态，获得1层 力量 。（ ",
+			" 负面状态）",
 			" NL 消耗 。"
 		]
 	},
 	"theChaser:Diplade": {
 		"NAME": "双刀片",
-		"DESCRIPTION": "Whenever you play a Skill that doesn't cost 0, add 1 *Throwing *Knife to your hand."
+		"DESCRIPTION": "每打出一张不为0的技能牌，增加 1 张 *后续斜线 到你的手牌。"
 	},
 	"theChaser:Disguise": {
 		"NAME": "遮盖",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL Repeat for each unique debuff on you.",
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 对您上的每个负面状态重复。",
 		"EXTENDED_DESCRIPTION": [
-			"获得 !B! 点 格挡 。 NL Repeat for each unique debuff on you (",
-			" debuffs)."
+			"获得 !B! 点 格挡 。 NL 对您上的每个负面状态重复。（ ",
+			" 负面状态）"
 		]
 	},
 	"theChaser:Fall Technique": {
 		"NAME": "摔倒技巧",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 点 虚弱 。"
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 虚弱 。"
 	},
 	"theChaser:Feeble Defend": {
 		"NAME": "欺骗性防御",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL If you are Frail, double the amount of Block gained.",
-		"UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL If you are Frail, triple the amount of Block gained."
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果您受到 脆弱 的影响，获得双倍的 格挡 。",
+		"UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果您受到 脆弱 的影响，获得三倍的 格挡 。"
 	},
 	"theChaser:Feeble Strike": {
 		"NAME": "欺骗性打击",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL If you are Weak, deal double damage.",
-		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL If you are Weak, deal triple damage."
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 如果您受到 虚弱 的影响，造成双倍的点伤害。",
+		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果您受到 虚弱 的影响，造成三倍的点伤害。"
 	},
 	"theChaser:Flexibility": {
 		"NAME": "灵活性",
@@ -196,7 +196,7 @@
 	},
 	"theChaser:Hidden Dagger": {
 		"NAME": "隐藏的匕首",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 增加 !M! 张 *后续斜线 到你的手牌。 NL thechaser:迅速 ：Upgrade ALL *Throwing *Knife cards in your hand."
+		"DESCRIPTION": "获得 !B! 点 格挡 。增加 !M! 张 *匕首 到你的手牌。 NL thechaser:迅速 ：Upgrade ALL *Throwing *Knife cards in your hand."
 	},
 	"theChaser:Internal Hemorrhage": {
 		"NAME": "内部出血",
@@ -228,20 +228,20 @@
 	},
 	"theChaser:Ready To Counter": {
 		"NAME": "准备反击",
-		"DESCRIPTION": "获得 !B! 点 格挡 X times. Trigger thechaser:Targeting X times."
+		"DESCRIPTION": "获得 !B! 点 格挡 X次。 thechaser:瞄准 X次。"
 	},
 	"theChaser:Replica Dagger": {
 		"NAME": "复制匕首",
-		"DESCRIPTION": "At the start of your turn, add a *Throwing *Knife into your hand and apply 1 thechaser:Targeting to a random enemy.",
-		"UPGRADE_DESCRIPTION": "固有 。 NL At the start of your turn, add a *Throwing *Knife into your hand and apply 1 thechaser:Targeting to a random enemy."
+		"DESCRIPTION": "At the start of your turn, 增加 1 张 *匕首 到你的手牌，随机对敌人给予 1 层 thechaser:靶子 。",
+		"UPGRADE_DESCRIPTION": "固有 。 NL At the start of your turn, 增加 1 张 *匕首 到你的手牌，随机对敌人给予 1 层 thechaser:靶子 。"
 	},
 	"theChaser:Secret Card": {
 		"NAME": "示踪者的诡计",
-		"DESCRIPTION": "Draw 1 card. NL If it's an Attack, trigger thechaser:Targeting !M! times."
+		"DESCRIPTION": "抽 1 张牌。 NL If it's an Attack, thechaser:瞄准 !M! 次。"
 	},
 	"theChaser:Sequence": {
 		"NAME": "斜线序列",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL Add !M! *Sequence *Flow into your hand. NL thechaser:迅速 ：Deal !D! damage 2 times."
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *序列流 到你的手牌。 NL thechaser:迅速 ：造成 !D! 点伤害2次。"
 	},
 	"theChaser:Space Out": {
 		"NAME": "战斗间隔",
@@ -249,20 +249,20 @@
 	},
 	"theChaser:Testing": {
 		"NAME": "技能测试",
-		"DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies."
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害并给予 !M! 层 易伤 。"
 	},
 	"theChaser:Throes": {
 		"NAME": "愤怒的阵阵",
-		"DESCRIPTION": "Deal !D! damage and apply !M! thechaser:Blindsided. NL Gain 1 Vulnerable."
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 thechaser:无防备 。 NL 获得1层 易伤 。"
 	},
 	"theChaser:Unstable Block": {
 		"NAME": "不稳定的防御",
-		"DESCRIPTION": "获得 !B! 点 格挡 。and !M! Vulnerable.",
-		"UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。and !M! thechaser:Blindsided."
+		"DESCRIPTION": "获得 !B! 点 格挡 。获得 !M! 层 易伤 。",
+		"UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。获得 !M! 层 thechaser:无防备 。"
 	},
 	"theChaser:Weakness Strike": {
 		"NAME": "弱点打击",
-		"DESCRIPTION": "造成 !D! 点伤害。 Repeat for each unique debuff on the enemy."
+		"DESCRIPTION": "造成 !D! 点伤害。 对敌人上的每个负面状态重复。"
 	},
 	"theChaser:Win The Exchange": {
 		"NAME": "赢得交流",
@@ -270,7 +270,7 @@
 	},
 	"theChaser:Wither": {
 		"NAME": "萎缩",
-		"DESCRIPTION": "Apply 99 Weak. 消耗 。"
+		"DESCRIPTION": "给予 99 层 虚弱 。 消耗 。"
 	},
 	"theChaser:Absolute Advantage": {
 		"NAME": "绝对优势",
@@ -279,11 +279,11 @@
 	},
 	"theChaser:Acceleration": {
 		"NAME": "加速",
-		"DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength."
+		"DESCRIPTION": "每打出一张攻击牌，获得 !M! 层临时 力量 。"
 	},
 	"theChaser:Approach Run": {
 		"NAME": "助跑",
-		"DESCRIPTION": "thechaser:谍报 !M!. NL thechaser:迅速 ：Apply !M! thechaser:Bleeding to ALL enemies. NL 消耗 。"
+		"DESCRIPTION": "thechaser:谍报 !M!。 NL thechaser:迅速 ：给予所有敌人 !M! 层 thechaser:出血 。 NL 消耗 。"
 	},
 	"theChaser:Dual Wielding": {
 		"NAME": "双手",
@@ -307,11 +307,11 @@
 	},
 	"theChaser:Phrenitis": {
 		"NAME": "错乱",
-		"DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, thechaser:Proxy, and thechaser:Blindsided. NL 消耗 。"
+		"DESCRIPTION": "给予 1 层 虚弱 ， 易伤 ， 脆弱 ， Poison ， thechaser:出血 ， thechaser:靶子 ， thechaser:假伤 ， 和 thechaser:无防备 。 NL 消耗 。"
 	},
 	"theChaser:Preemptive Attack": {
 		"NAME": "先发制人",
-		"DESCRIPTION": "At the start of your turn, draw 1 additional card and trigger thechaser:Targeting once."
+		"DESCRIPTION": "At the start of your turn, 抽 !M! 张牌， thechaser:瞄准 1 次。"
 	},
 	"theChaser:Prepay": {
 		"NAME": "先付",
@@ -320,8 +320,8 @@
 	},
 	"theChaser:Saw Blade": {
 		"NAME": "锯齿",
-		"DESCRIPTION": "Whenever you play a card, apply !M! thechaser:Bleeding to ALL enemies.",
-		"UPGRADE_DESCRIPTION": "固有 。 Whenever you play a card, apply !M! thechaser:Bleeding to ALL enemies."
+		"DESCRIPTION": "每打出一张牌，给予所有敌人 !M! 层 thechaser:出血 。",
+		"UPGRADE_DESCRIPTION": "固有 。 每打出一张牌，给予所有敌人 !M! 层 thechaser:出血 。"
 	},
 	"theChaser:Shadow Form": {
 		"NAME": "Spectre Form",
@@ -347,15 +347,15 @@
 	},
 	"theChaser:Walkout": {
 		"NAME": "退场",
-		"DESCRIPTION": "Deal !D! damage to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn. NL End your turn.",
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。 Trigger thechaser:Targeting equal to the amount of cards played this turn. NL End your turn.",
 		"EXTENDED_DESCRIPTION": [
-			"Deal !D! damage to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn (",
+			"对所有敌人造成 !D! 点伤害。 Trigger thechaser:Targeting equal to the amount of cards played this turn (",
 			" cards). NL End your turn."
 		]
 	},
 	"theChaser:Wile": {
 		"NAME": "残酷的毁灭",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL Apply !M! Vulnerable, Weak, and thechaser:Blindsided."
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 ， 虚弱 ， 和 thechaser:无防备 。"
 	},
 
 
