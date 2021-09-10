@@ -1,72 +1,72 @@
 {
   "theChaser:Shadow In Necklace": {
-    "NAME": "Shadowed Necklace",
-    "FLAVOR": "A necklace with a small glass bottle, created from the abyssal darkness.",
+    "NAME": "阴影项链",
+    "FLAVOR": "一条带有小玻璃瓶的项链，由深渊的黑暗制成。",
     "DESCRIPTIONS": [
-      "At the start of each combat, apply #b2 #yTargeting to a random enemy."
+      "At the start of each combat, 随机对敌人给予 #b2 层 #y靶子 。"
     ]
   },
   "theChaser:Cloak Of Assassin": {
-    "NAME": "Assassin's Cloak",
-    "FLAVOR": "This mass-produced cloak boasts the most reliable camouflage.",
+    "NAME": "刺客斗篷",
+    "FLAVOR": "这种批量生产的斗篷拥有最可靠的伪装。",
     "DESCRIPTIONS": [
-      "At the start of each combat, #yHide for #b2 turns."
+      "At the start of each combat, #y隐身 #b2 回合。"
     ]
   },
   "theChaser:R-B0-7": {
     "NAME": "R-B0-7",
-    "FLAVOR": "A dangerous secret weapon. Its lethality is complemented with an infamous drug.",
+    "FLAVOR": "危险的秘密武器。它的杀伤力与臭名昭著的药物相辅相成。",
     "DESCRIPTIONS": [
-      "At the start of each turn, enemies which have debuffs lose #b5 #yHP."
+      "在回合的开始，所有受到负面状态影响的敌人失去 #b5 点生命。"
     ]
   },
   "theChaser:Broken Ticker": {
-    "NAME": "Broken Ticker",
-    "FLAVOR": "It is already broken, yet a faint ticking can still be heard.",
+    "NAME": "破碎的代码",
+    "FLAVOR": "它已经破碎，但仍能听到微弱的滴答声。",
     "DESCRIPTIONS": [
-      "At the start of each combat, apply #ySlow to ALL enemies."
+      "At the start of each combat, 给予所有敌人 #y缓慢。"
     ]
   },
   "theChaser:Scoch Stone": {
-    "NAME": "Scotch Stone",
-    "FLAVOR": "A fine-grained grey stone used for sharpening weapons.",
+    "NAME": "苏格兰石",
+    "FLAVOR": "一种细粒度的灰色石头，用于磨锐武器。",
     "DESCRIPTIONS": [
-      "Whenever you deal damage by triggering #yTargeting, deal #b1 additional damage."
+      "使 #y瞄准 的伤害增加 #b1 。"
     ]
   },
   "theChaser:Letter Of Request": {
-    "NAME": "Letter of Request",
-    "FLAVOR": "A letter of request from an unknown client.",
+    "NAME": "请求书",
+    "FLAVOR": "一封来自未知客户的请求信。",
     "DESCRIPTIONS": [
-      "At the start of each combat, apply #b3 #yTargeting to ALL enemies."
+      "At the start of each combat, 给予所有敌人 #b3 层 #y靶子 。"
     ]
   },
   "theChaser:Shadow In Mask": {
-    "NAME": "Masked Shadows",
-    "FLAVOR": "Behind a mask, nobody can see the abyss.",
+    "NAME": "阴影面具",
+    "FLAVOR": "面具背后，谁也看不到深渊。",
     "DESCRIPTIONS": [
-      "Replaces #pShadowed #pNecklace. At the start of your turn, apply #b1 #yTargeting to ALL enemies and trigger #yTargeting once."
+      "Replaces #pShadowed #pNecklace. 在回合的开始，给予所有敌人 #b3 层 #y靶子 和 #y瞄准 #b1 次。"
     ]
   },
   "theChaser:Pocket Knife": {
-    "NAME": "Pocket Knife",
-    "FLAVOR": "A portable knife used to cut ropes.",
+    "NAME": "小刀",
+    "FLAVOR": "一种用来割绳子的便携式刀。",
     "DESCRIPTIONS": [
-      "After #yTarget is triggered for the fourth time each turn, gain [E] ."
+      "每回合 #y瞄准 #b4 次后，获得 [E] 。"
     ]
   },
   "theChaser:Acid Solution": {
-    "NAME": "Acid Solution",
-    "FLAVOR": "Extremely corrosive. Hopefully no one else carelessly sprinkles this on something...or someone.",
+    "NAME": "酸溶液",
+    "FLAVOR": "腐蚀性极强。希望没有其他人不小心把它洒在某物……或某人身上。",
     "DESCRIPTIONS": [
-      "Whenever you play an Attack, if you are #yWeak, apply #b1 #yWeak to the enemy. If you are #yFrail, remove all Block from the enemy."
+      "每打出一张攻击牌，如果您受到 虚弱 的影响， 给予 #b1 层 #y虚弱 。如果您受到 脆弱 的影响， remove all Block from the enemy."
     ]
   },
   "theChaser:Box Cutter": {
-    "NAME": "Box Cutter",
-    "FLAVOR": "A very peculiar sword. So peculiar, that its purpose is unknown.",
+    "NAME": "盒式切割机",
+    "FLAVOR": "很奇特的一把剑。如此奇特，其目的不明。",
     "DESCRIPTIONS": [
-      "Your first Attack that triggers #yTargeting each turn triggers it #btwice."
+      "每回合第一次瞄准后， #y瞄准 #b2 次。"
     ]
   },
   "theChaser:": {
@@ -77,10 +77,10 @@
     ]
   },
   "theChaser:Rusty Helmet": {
-    "NAME": "Rusty Helmet",
-    "FLAVOR": "An old helmet used in wars of the past. It's unlikely to see use today.",
+    "NAME": "生锈的头盔",
+    "FLAVOR": "过去战争中使用的旧头盔。今天不太可能看到使用。",
     "DESCRIPTIONS": [
-      "At the start of each turn, apply #b1 #yBlindsided to ALL enemies."
+      "在回合的开始，给予所有敌人 #b1 层 #y无防备"
     ]
   }
 }
