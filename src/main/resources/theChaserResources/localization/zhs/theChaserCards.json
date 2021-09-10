@@ -148,10 +148,10 @@
 	},
 	"theChaser:Conquest": {
 		"NAME": "征服精神",
-		"DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1层 力量 。 NL 消耗 。",
-		"UPGRADE_DESCRIPTION": "对于您拥有的每个独特的负面状态，获得1点 力量 。",
+		"DESCRIPTION": "对于您有的每个独特的负面状态，获得1层 力量 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "对于您有的每个独特的负面状态，获得1点 力量 。",
 		"EXTENDED_DESCRIPTION": [
-			"对于您拥有的每个独特的负面状态，获得1层 力量 。（ ",
+			"对于您有的每个独特的负面状态，获得1层 力量 。（ ",
 			" 负面状态）",
 			" NL 消耗 。"
 		]
@@ -184,7 +184,7 @@
 	},
 	"theChaser:Flexibility": {
 		"NAME": "灵活性",
-		"DESCRIPTION": "Choose two: NL Trigger thechaser:Targeting !M! times; gain thechaser:Proxy !M! times; apply !M! thechaser:Bleeding to ALL enemies. NL 消耗 。"
+		"DESCRIPTION": "选择两个： NL thechaser:瞄准 !M! 次；获得 1 层 thechaser:假伤 !M! 次；给予所有敌人 !M! 层 thechaser:出血 ； NL 消耗 。"
 	},
 	"theChaser:Gale Strike": {
 		"NAME": "风暴打击",
@@ -204,27 +204,27 @@
 	},
 	"theChaser:Open Sore": {
 		"NAME": "开放性疮",
-		"DESCRIPTION": "At the start of your turn, apply !M! thechaser:Bleeding to ALL enemies."
+		"DESCRIPTION": "在回合的开始，给予所有敌人 !M! 层 thechaser:出血 。"
 	},
 	"theChaser:Paralyze": {
 		"NAME": "瘫痪",
-		"DESCRIPTION": "Enemy loses Strength equal to the amount of unique debuffs on them. NL 消耗 。"
+		"DESCRIPTION": "对于您有的每个独特的负面状态，获得1层 力量 。 NL 消耗 。"
 	},
 	"theChaser:Penetrate": {
 		"NAME": "穿透射击",
-		"DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable. If the enemy is already Vulnerable, apply !M! thechaser:Blindsided instead."
+		"DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 易伤 。如果敌人受到 易伤 的影响，给予 X thechaser无防备 而不是 易伤 。"
 	},
 	"theChaser:Penetrative": {
 		"NAME": "刺耳的打击",
-		"DESCRIPTION": "Whenever you deal damage by triggering thechaser:Targeting, deal !M! additional damage."
+		"DESCRIPTION": "使 thechaser:瞄准 的伤害增加 !M! 。"
 	},
 	"theChaser:Pluck Out Daggers": {
 		"NAME": "拔出匕首",
-		"DESCRIPTION": "Costs 1 [E] less for each time you have triggered thechaser:Targeting this turn. NL Deal !D! damage !M! times."
+		"DESCRIPTION": "对于本回合 thechaser:瞄准 的次数，减少 1 [E] 费。 NL 造成 !D! 点伤害 !M! 次。"
 	},
 	"theChaser:Ragewind": {
 		"NAME": "狂暴之风",
-		"DESCRIPTION": "Trigger thechaser:Targeting !M! times. NL Permanently increase this card's thechaser:Targeting trigger amount by 1. NL 消耗 。"
+		"DESCRIPTION": "thechaser:瞄准 !M! 次。 NL Permanently increase this card's thechaser:Targeting trigger amount by 1. NL 消耗 。"
 	},
 	"theChaser:Ready To Counter": {
 		"NAME": "准备反击",
@@ -232,12 +232,12 @@
 	},
 	"theChaser:Replica Dagger": {
 		"NAME": "复制匕首",
-		"DESCRIPTION": "At the start of your turn, 增加 1 张 *匕首 到你的手牌，随机对敌人给予 1 层 thechaser:靶子 。",
-		"UPGRADE_DESCRIPTION": "固有 。 NL At the start of your turn, 增加 1 张 *匕首 到你的手牌，随机对敌人给予 1 层 thechaser:靶子 。"
+		"DESCRIPTION": "在回合的开始，增加 1 张 *匕首 到你的手牌和随机对敌人给予 1 层 thechaser:靶子 。",
+		"UPGRADE_DESCRIPTION": "固有 。 NL 在回合的开始，增加 1 张 *匕首 到你的手牌和随机对敌人给予 1 层 thechaser:靶子 。"
 	},
 	"theChaser:Secret Card": {
 		"NAME": "示踪者的诡计",
-		"DESCRIPTION": "抽 1 张牌。 NL If it's an Attack, thechaser:瞄准 !M! 次。"
+		"DESCRIPTION": "抽 1 张牌。 NL 如果该牌是攻击牌， thechaser:瞄准 !M! 次。"
 	},
 	"theChaser:Sequence": {
 		"NAME": "斜线序列",
@@ -245,7 +245,7 @@
 	},
 	"theChaser:Space Out": {
 		"NAME": "战斗间隔",
-		"DESCRIPTION": "Whenever you trigger thechaser:Targeting, gain !M! Block."
+		"DESCRIPTION": "每次 thechaser:瞄准 时，获得 !B! 点 格挡 。"
 	},
 	"theChaser:Testing": {
 		"NAME": "技能测试",
@@ -266,7 +266,7 @@
 	},
 	"theChaser:Win The Exchange": {
 		"NAME": "赢得交流",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL If the enemy has thechaser:Blindsided, gain [E] and draw 1 card."
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人受到 thechaser:无防备 的影响，获得 [E] 和抽 1 张牌。"
 	},
 	"theChaser:Wither": {
 		"NAME": "萎缩",
@@ -274,8 +274,8 @@
 	},
 	"theChaser:Absolute Advantage": {
 		"NAME": "绝对优势",
-		"DESCRIPTION": "Gain [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL 消耗 。",
-		"UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL 消耗 。"
+		"DESCRIPTION": "获得 [E] 。 NL 对于所有敌人拥有的每个独特的负面状态，抽 1 张牌。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 对于所有敌人拥有的每个独特的负面状态，抽 1 张牌。 NL 消耗 。"
 	},
 	"theChaser:Acceleration": {
 		"NAME": "加速",
@@ -287,19 +287,19 @@
 	},
 	"theChaser:Dual Wielding": {
 		"NAME": "双手",
-		"DESCRIPTION": "Whenever you trigger thechaser:Targeting this turn, trigger it twice."
+		"DESCRIPTION": "本回合， thechaser:瞄准 会触发两次。"
 	},
 	"theChaser:Forte Is Frailty": {
 		"NAME": "权力欲",
-		"DESCRIPTION": "All your buffs count as debuffs, for the purposes of effects which check for debuffs on you."
+		"DESCRIPTION": "所有正面状态都算作负面状态。"
 	},
 	"theChaser:Fraudulence": {
 		"NAME": "示踪者的守护",
-		"DESCRIPTION": "获得 !B! 点 格挡 。for each unique debuff on ALL enemies."
+		"DESCRIPTION": "对于所有敌人拥有的每个独特的负面状态，获得 !B! 点 格挡 。"
 	},
 	"theChaser:Hide": {
 		"NAME": "完美的隐身",
-		"DESCRIPTION": "thechaser:Hide for !M! turns. NL 消耗 。"
+		"DESCRIPTION": "thechaser:隐身 !M! 回合。 NL 消耗 。"
 	},
 	"theChaser:Incisive Blade": {
 		"NAME": "颈刀",
@@ -311,12 +311,12 @@
 	},
 	"theChaser:Preemptive Attack": {
 		"NAME": "先发制人",
-		"DESCRIPTION": "At the start of your turn, 抽 !M! 张牌， thechaser:瞄准 1 次。"
+		"DESCRIPTION": "在回合的开始，抽 !M! 张牌， thechaser:瞄准 1 次。"
 	},
 	"theChaser:Prepay": {
 		"NAME": "先付",
-		"DESCRIPTION": "This turn, your next X cards cost 0. 消耗 。",
-		"UPGRADE_DESCRIPTION": "This turn, your next X cards cost 0. Draw X cards. 消耗 。"
+		"DESCRIPTION": "本回合，下 X 张牌的费为 0 。 消耗 。",
+		"UPGRADE_DESCRIPTION": "本回合，下 X 张牌的费用为 0 。抽 X 张牌。 消耗 。"
 	},
 	"theChaser:Saw Blade": {
 		"NAME": "锯齿",
@@ -324,33 +324,33 @@
 		"UPGRADE_DESCRIPTION": "固有 。 每打出一张牌，给予所有敌人 !M! 层 thechaser:出血 。"
 	},
 	"theChaser:Shadow Form": {
-		"NAME": "Spectre Form",
-		"DESCRIPTION": "At the start of your turn, increase damage dealt when triggering thechaser:Targeting by !M!."
+		"NAME": "影子形态",
+		"DESCRIPTION": "在回合的开始，使 thechaser:瞄准 的伤害增加 !M! 。"
 	},
 	"theChaser:Stealage": {
 		"NAME": "偷盗",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL Gain !M! Gold. NL 消耗 。"
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 金 。 NL 消耗 。"
 	},
 	"theChaser:Unwary": {
 		"NAME": "失神",
-		"DESCRIPTION": "Dealing damage by triggering thechaser:Targeting also applies thechaser:Blindsided."
+		"DESCRIPTION": "瞄准会给予 1 层 thechaser:无防备 。"
 	},
 	"theChaser:Vitality": {
 		"NAME": "活力",
-		"DESCRIPTION": "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL 消耗 。",
-		"UPGRADE_DESCRIPTION": "Retain. NL Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL 消耗 。",
+		"DESCRIPTION": "对于本回合 thechaser:瞄准 的次数，回复 1 点生命。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "保留 。对于本回合 thechaser:瞄准 的次数，回复 1 点生命。 NL 消耗 。",
 		"EXTENDED_DESCRIPTION": [
-			"Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn (",
-			" HP healed). NL 消耗 。",
-			"Retain. NL"
+			"对于本回合 thechaser:瞄准 的次数，回复 1 点生命。（ ",
+			" 次 ） NL 消耗 。",
+			"保留 。"
 		]
 	},
 	"theChaser:Walkout": {
 		"NAME": "退场",
-		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。 Trigger thechaser:Targeting equal to the amount of cards played this turn. NL End your turn.",
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。 本回合每打出一张牌， thechaser:瞄准 1 次。 NL End your turn.",
 		"EXTENDED_DESCRIPTION": [
-			"对所有敌人造成 !D! 点伤害。 Trigger thechaser:Targeting equal to the amount of cards played this turn (",
-			" cards). NL End your turn."
+			"对所有敌人造成 !D! 点伤害。本回合每打出一张牌， thechaser:瞄准 1 次。（",
+			" 张牌） NL End your turn."
 		]
 	},
 	"theChaser:Wile": {
