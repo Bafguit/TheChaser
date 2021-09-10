@@ -123,26 +123,26 @@
     ]
   },
   "theChaser:Replica Dagger": {
-    "NAME": "Replicating Daggers",
+    "NAME": "复制匕首",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " #yThrowing #yKnife into your hand and apply #b",
-      " #yTargeting to a random enemy."
+      "在回合的开始，增加 #b",
+      " 张 #y匕首 到你的手牌和随机对敌人给予 #b",
+      " 层 #y靶子 。"
     ]
   },
   "theChaser:Fake Sore": {
-    "NAME": "Proxy",
+    "NAME": "假伤",
     "DESCRIPTIONS": [
       "This creature receives #b",
       "% more damage."
     ]
   },
   "theChaser:FreeCard": {
-    "NAME": "Prepay",
+    "NAME": "先付",
     "DESCRIPTIONS": [
-      "This turn, ignore energy cost on the next card you play.",
-      "This turn, ignore energy cost on the next #b",
-      " cards you play."
+      "本回合，下 #b1 张牌的费为 #b0 。",
+      "本回合，下 #b",
+      " 张牌的费为 #b0 。"
     ]
   },
   "theChaser:": {
