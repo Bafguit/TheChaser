@@ -311,7 +311,7 @@
 	},
 	"theChaser:Preemptive Attack": {
 		"NAME": "先发制人",
-		"DESCRIPTION": "在回合的开始，抽 !M! 张牌， thechaser:瞄准 1 次。"
+		"DESCRIPTION": "在回合的开始，抽 !M! 张牌和 thechaser:瞄准 1 次。"
 	},
 	"theChaser:Prepay": {
 		"NAME": "先付",
