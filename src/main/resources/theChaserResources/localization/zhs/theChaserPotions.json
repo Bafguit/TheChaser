@@ -1,23 +1,23 @@
 {
   "theChaser:Acid Potion": {
-    "NAME": "Bottled Hemorrhage",
+    "NAME": "瓶装出血",
     "DESCRIPTIONS": [
-      "Apply #b",
-      " #yBleeding to an enemy."
+      "给予敌人 #b",
+      " 层 #y出血 。"
     ]
   },
         "theChaser:Shadow Potion": {
-                "NAME": "Shadow in a Jar",
+                "NAME": "罐子里的影子",
                 "DESCRIPTIONS": [
-                        "#yHide for #b",
-                        " turn."
+                        "#y隐身 #b",
+                        " 回合。"
                 ]
         },
         "theChaser:Target Potion": {
-                "NAME": "Target Potion",
+                "NAME": "瞄准药水",
                 "DESCRIPTIONS": [
-                        "Trigger #yTargeting #b",
-                        " times."
+                        "#y瞄准 #b",
+                        " 次。"
                 ]
         }
 }
