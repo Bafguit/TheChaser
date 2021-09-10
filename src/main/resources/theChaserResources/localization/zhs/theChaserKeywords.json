@@ -1,57 +1,57 @@
 [
   {
-    "PROPER_NAME": "Targeting",
+    "PROPER_NAME": "靶子",
     "NAMES": [
-      "targeting",
-      "Targeting"
+      "靶子"
     ],
     "DESCRIPTION": "After a player or monster attacks, all creatures with #yTargeting take #b2 damage."
   },
   {
-    "PROPER_NAME": "Blindsided",
+    "PROPER_NAME": "瞄准",
     "NAMES": [
-      "blindsided",
-      "Blindsided"
+      "瞄准"
+    ],
+    "DESCRIPTION": "#y표적 을 가진 모든 적에게 피해를 #b2 줍니다."
+  },
+  {
+    "PROPER_NAME": "无防备",
+    "NAMES": [
+      "无防备"
     ],
     "DESCRIPTION": "Target receives #b15% more damage for each stack of #yBlindsided (up to a maximum of #b4.)"
   },
   {
-    "PROPER_NAME": "Bleeding",
+    "PROPER_NAME": "出血",
     "NAMES": [
-      "bleeding",
-      "Bleeding"
+      "出血"
     ],
     "DESCRIPTION": "#yBleeding creatures lose HP at the start of their turn, then reduce #yBleeding by half. Whenever you play an Attack, increase #yBleeding by #b1."
   },
   {
-    "PROPER_NAME": "Hide",
+    "PROPER_NAME": "隐身",
     "NAMES": [
-      "hide",
-      "Hide"
+      "隐身"
     ],
     "DESCRIPTION": "ALL enemies become #yStunned. Fades away after an Attack is played or #yTargeting is triggered."
   },
   {
-    "PROPER_NAME": "Swift",
+    "PROPER_NAME": "迅速",
     "NAMES": [
-      "swift",
-      "Swift:"
+      "迅速"
     ],
     "DESCRIPTION": "If you have played 4 or more cards this turn, trigger an additional effect."
   },
     {
-    "PROPER_NAME": "Quickstep",
+    "PROPER_NAME": "谍报",
     "NAMES": [
-      "quickstep",
-      "Quickstep"
+      "谍报"
     ],
     "DESCRIPTION": "Simulate playing cards, for use with #ySwift effects."
   },
   {
-    "PROPER_NAME": "Proxy",
+    "PROPER_NAME": "假",
     "NAMES": [
-      "proxy",
-      "Proxy"
+      "假"
     ],
     "DESCRIPTION": "Target receives #b5% more damage for each stack of #yProxy."
   },
