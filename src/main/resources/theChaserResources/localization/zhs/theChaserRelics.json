@@ -3,28 +3,28 @@
     "NAME": "阴影项链",
     "FLAVOR": "一条带有小玻璃瓶的项链，由深渊的黑暗制成。",
     "DESCRIPTIONS": [
-      "At the start of each combat, 随机对敌人给予 #b2 层 #y靶子 。"
+      "在每场战斗开始时，随机对敌人给予 #b2 层 #y靶子 。"
     ]
   },
   "theChaser:Cloak Of Assassin": {
     "NAME": "刺客斗篷",
     "FLAVOR": "这种批量生产的斗篷拥有最可靠的伪装。",
     "DESCRIPTIONS": [
-      "At the start of each combat, #y隐身 #b2 回合。"
+      "在每场战斗开始时， #y隐身 #b2 回合。"
     ]
   },
   "theChaser:R-B0-7": {
     "NAME": "R-B0-7",
     "FLAVOR": "危险的秘密武器。它的杀伤力与臭名昭著的药物相辅相成。",
     "DESCRIPTIONS": [
-      "在回合的开始，所有受到负面状态影响的敌人失去 #b5 点生命。"
+      "在每回合的开始，所有受到负面状态影响的敌人失去 #b5 点生命。"
     ]
   },
   "theChaser:Broken Ticker": {
     "NAME": "破碎的代码",
     "FLAVOR": "它已经破碎，但仍能听到微弱的滴答声。",
     "DESCRIPTIONS": [
-      "At the start of each combat, 给予所有敌人 #y缓慢。"
+      "在每场战斗开始时，给予所有敌人 #y缓慢 。"
     ]
   },
   "theChaser:Scoch Stone": {
@@ -38,14 +38,14 @@
     "NAME": "请求书",
     "FLAVOR": "一封来自未知客户的请求信。",
     "DESCRIPTIONS": [
-      "At the start of each combat, 给予所有敌人 #b3 层 #y靶子 。"
+      "在每场战斗开始时，给予所有敌人 #b3 层 #y靶子 。"
     ]
   },
   "theChaser:Shadow In Mask": {
     "NAME": "阴影面具",
     "FLAVOR": "面具背后，谁也看不到深渊。",
     "DESCRIPTIONS": [
-      "Replaces #pShadowed #pNecklace. 在回合的开始，给予所有敌人 #b3 层 #y靶子 和 #y瞄准 #b1 次。"
+      "替换 #p阴影项链 。 在回合的开始，给予所有敌人 #b1 层 #y靶子 和 #y瞄准 #b1 次。"
     ]
   },
   "theChaser:Pocket Knife": {
@@ -59,7 +59,7 @@
     "NAME": "酸溶液",
     "FLAVOR": "腐蚀性极强。希望没有其他人不小心把它洒在某物……或某人身上。",
     "DESCRIPTIONS": [
-      "每打出一张攻击牌，如果您受到 虚弱 的影响， 给予 #b1 层 #y虚弱 。如果您受到 脆弱 的影响， remove all Block from the enemy."
+      "每打出一张攻击牌，如果您受到 虚弱 的影响， 给予 #b1 层 #y虚弱 。如果您受到 脆弱 的影响，去除一名敌人的所有 格挡 值。"
     ]
   },
   "theChaser:Box Cutter": {
@@ -80,7 +80,7 @@
     "NAME": "生锈的头盔",
     "FLAVOR": "过去战争中使用的旧头盔。今天不太可能看到使用。",
     "DESCRIPTIONS": [
-      "在回合的开始，给予所有敌人 #b1 层 #y无防备"
+      "在每回合的开始，给予所有敌人 #b1 层 #y无防备"
     ]
   }
 }

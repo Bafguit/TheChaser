@@ -18,7 +18,7 @@
     "NAMES": [
       "无防备"
     ],
-    "DESCRIPTION": "Target receives #b15% more damage 对于每一层，（ 最多 #b4 层 ）"
+    "DESCRIPTION": "有无防备效果的生物从攻击中受到的伤害对于每一层增加 #b15% 。（ 最多 #b4 层 ）"
   },
   {
     "PROPER_NAME": "出血",
@@ -49,11 +49,11 @@
     "DESCRIPTION": "增加本回合打出的牌张数。"
   },
   {
-    "PROPER_NAME": "假",
+    "PROPER_NAME": "假伤",
     "NAMES": [
-      "假"
+      "假伤"
     ],
-    "DESCRIPTION": "Target receives #b5% more damage 对于每一层，"
+    "DESCRIPTION": "有假伤效果的生物从攻击中受到的伤害对于每一层增加 #b5% 。"
   },
   {
     "PROPER_NAME": "",

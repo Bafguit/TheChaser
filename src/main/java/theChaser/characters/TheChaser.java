@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
+import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -320,7 +321,7 @@ public class TheChaser extends CustomPlayer {
     // the full text that will be displayed as the first screen of the vampires event.
     @Override
     public String getVampireText() {
-        return TEXT[2];
+        return Vampires.DESCRIPTIONS[0];
     }
 
 }
