@@ -143,7 +143,7 @@
 		"DESCRIPTION": "获得 !M! 层 力量 。 NL 获得 !M! 层 敏捷 。"
 	},
 	"theChaser:Chance": {
-		"NAME": "示踪者的运气",
+		"NAME": "追击者的运气",
 		"DESCRIPTION": "获得 !B! 点 格挡 。 NL thechaser:迅速 ：手牌中就有一张牌在这一回合耗能变为0。"
 	},
 	"theChaser:Conquest": {
@@ -236,7 +236,7 @@
 		"UPGRADE_DESCRIPTION": "固有 。 NL 在回合的开始，增加 1 张 *匕首 到你的手牌和随机对敌人给予 1 层 thechaser:靶子 。"
 	},
 	"theChaser:Secret Card": {
-		"NAME": "示踪者的诡计",
+		"NAME": "追击者的诡计",
 		"DESCRIPTION": "抽 1 张牌。 NL 如果该牌是攻击牌， thechaser:瞄准 !M! 次。"
 	},
 	"theChaser:Sequence": {
@@ -294,7 +294,7 @@
 		"DESCRIPTION": "所有正面状态都算作负面状态。"
 	},
 	"theChaser:Fraudulence": {
-		"NAME": "示踪者的守护",
+		"NAME": "追击者的守护",
 		"DESCRIPTION": "对于所有敌人拥有的每个独特的负面状态，获得 !B! 点 格挡 。"
 	},
 	"theChaser:Hide": {
