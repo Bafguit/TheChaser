@@ -4,56 +4,56 @@
     "NAMES": [
       "靶子"
     ],
-    "DESCRIPTION": "After a player or monster attacks, all creatures with #yTargeting take #b2 damage."
+    "DESCRIPTION": "玩家或敌人 #y攻击 后，瞄准。"
   },
   {
     "PROPER_NAME": "瞄准",
     "NAMES": [
       "瞄准"
     ],
-    "DESCRIPTION": "#y표적 을 가진 모든 적에게 피해를 #b2 줍니다."
+    "DESCRIPTION": "对所有受 #y靶子 影响的敌人造成 2 点伤害。"
   },
   {
     "PROPER_NAME": "无防备",
     "NAMES": [
       "无防备"
     ],
-    "DESCRIPTION": "Target receives #b15% more damage for each stack of #yBlindsided (up to a maximum of #b4.)"
+    "DESCRIPTION": "Target receives #b15% more damage 对于每一层，（ 最多 #b4 层 ）"
   },
   {
     "PROPER_NAME": "出血",
     "NAMES": [
       "出血"
     ],
-    "DESCRIPTION": "#yBleeding creatures lose HP at the start of their turn, then reduce #yBleeding by half. Whenever you play an Attack, increase #yBleeding by #b1."
+    "DESCRIPTION": "在回合的开始，失去生命和将该值减半。每打出一张攻击牌，将此值增加 #b1 。"
   },
   {
     "PROPER_NAME": "隐身",
     "NAMES": [
       "隐身"
     ],
-    "DESCRIPTION": "ALL enemies become #yStunned. Fades away after an Attack is played or #yTargeting is triggered."
+    "DESCRIPTION": "所有敌人都会被眩晕。打出攻击或瞄准后消失。"
   },
   {
     "PROPER_NAME": "迅速",
     "NAMES": [
       "迅速"
     ],
-    "DESCRIPTION": "If you have played 4 or more cards this turn, trigger an additional effect."
+    "DESCRIPTION": "如果打出 #b4 张或更多牌，则触发额外效果。"
   },
     {
     "PROPER_NAME": "谍报",
     "NAMES": [
       "谍报"
     ],
-    "DESCRIPTION": "Simulate playing cards, for use with #ySwift effects."
+    "DESCRIPTION": "增加本回合打出的牌张数。"
   },
   {
     "PROPER_NAME": "假",
     "NAMES": [
       "假"
     ],
-    "DESCRIPTION": "Target receives #b5% more damage for each stack of #yProxy."
+    "DESCRIPTION": "Target receives #b5% more damage 对于每一层，"
   },
   {
     "PROPER_NAME": "",
