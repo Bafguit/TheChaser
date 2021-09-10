@@ -14,9 +14,11 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.beyond.Darkling;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.DaggerSprayEffect;
 import theChaser.cards.rare.Unwary;
+import theChaser.patches.interfaces.OnTargetAttackSubscriber;
 import theChaser.powers.*;
 
 import java.awt.*;
@@ -58,7 +60,13 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
     }
 
     public static int getTargetDamage() {
-        return TarAtkDmg;
+        int adDmg = 0;
+
+        if(AbstractDungeon.player != null && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && AbstractDungeon.player.hasPower(PenetrativePower.POWER_ID)) {
+            adDmg = AbstractDungeon.player.getPower(PenetrativePower.POWER_ID).amount;
+        }
+
+        return TarAtkDmg + adDmg;
     }
 
     public static int getTargetAttackCount() {

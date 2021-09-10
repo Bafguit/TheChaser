@@ -133,7 +133,7 @@
   "theChaser:Fake Sore": {
     "NAME": "Cicatriz",
     "DESCRIPTIONS": [
-      "Esta criatura da y recibe #b",
+      "Esta criatura recibe #b",
       "% más de daño."
     ]
   },

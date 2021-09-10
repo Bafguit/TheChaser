@@ -57,11 +57,6 @@ public class FakeSorePower extends AbstractPower implements CloneablePowerInterf
     }
 
     @Override
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage * (1.0F + (0.05F * this.amount)) : damage;
-    }
-
-    @Override
     public void updateDescription() {
         description = DESCRIPTIONS[0] + 5 * this.amount + DESCRIPTIONS[1];
     }

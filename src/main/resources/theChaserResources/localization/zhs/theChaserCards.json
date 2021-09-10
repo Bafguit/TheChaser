@@ -184,7 +184,7 @@
 	},
 	"theChaser:Flexibility": {
 		"NAME": "灵活性",
-		"DESCRIPTION": "选择两个： NL thechaser:瞄准 !M! 次；获得 1 层 thechaser:假伤 !M! 次；给予所有敌人 !M! 层 thechaser:出血 ； NL 消耗 。"
+		"DESCRIPTION": "消耗 。选择两个： NL thechaser:瞄准 !M! 次； NL 获得 1 层 thechaser:假伤 !M! 次； NL 给予所有敌人 !M! 层 thechaser:出血 ；"
 	},
 	"theChaser:Gale Strike": {
 		"NAME": "风暴打击",
@@ -196,7 +196,7 @@
 	},
 	"theChaser:Hidden Dagger": {
 		"NAME": "隐藏的匕首",
-		"DESCRIPTION": "获得 !B! 点 格挡 。增加 !M! 张 *匕首 到你的手牌。 NL thechaser:迅速 ：Upgrade ALL *Throwing *Knife cards in your hand."
+		"DESCRIPTION": "获得 !B! 点 格挡 。增加 !M! 张 *匕首 到你的手牌。 NL thechaser:迅速 ： 升级 手牌中的所有*匕首。"
 	},
 	"theChaser:Internal Hemorrhage": {
 		"NAME": "内部出血",
@@ -224,7 +224,7 @@
 	},
 	"theChaser:Ragewind": {
 		"NAME": "狂暴之风",
-		"DESCRIPTION": "thechaser:瞄准 !M! 次。 NL Permanently increase this card's thechaser:Targeting trigger amount by 1. NL 消耗 。"
+		"DESCRIPTION": "thechaser:瞄准 !M! 次。 NL 每打出一次，这张牌在本局游戏中的瞄准值永久性增加 1 。 NL 消耗 。"
 	},
 	"theChaser:Ready To Counter": {
 		"NAME": "准备反击",
@@ -307,7 +307,7 @@
 	},
 	"theChaser:Phrenitis": {
 		"NAME": "错乱",
-		"DESCRIPTION": "给予 1 层 虚弱 ， 易伤 ， 脆弱 ， Poison ， thechaser:出血 ， thechaser:靶子 ， thechaser:假伤 ， 和 thechaser:无防备 。 NL 消耗 。"
+		"DESCRIPTION": "给予 1 层 虚弱 ， 易伤 ， 脆弱 ， 中毒 ， thechaser:出血 ， thechaser:靶子 ， thechaser:假伤 ， 和 thechaser:无防备 。 NL 消耗 。"
 	},
 	"theChaser:Preemptive Attack": {
 		"NAME": "先发制人",
@@ -347,10 +347,10 @@
 	},
 	"theChaser:Walkout": {
 		"NAME": "退场",
-		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。 本回合每打出一张牌， thechaser:瞄准 1 次。 NL End your turn.",
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。 本回合每打出一张牌， thechaser:瞄准 1 次。 NL 结束你的回合。",
 		"EXTENDED_DESCRIPTION": [
 			"对所有敌人造成 !D! 点伤害。本回合每打出一张牌， thechaser:瞄准 1 次。（",
-			" 张牌） NL End your turn."
+			" 张牌 ） NL 结束你的回合。"
 		]
 	},
 	"theChaser:Wile": {

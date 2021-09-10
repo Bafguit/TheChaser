@@ -36,18 +36,18 @@
   "theChaser:Target": {
     "NAME": "靶子",
     "DESCRIPTIONS": [
-      "After a player or monster attacks, this creature takes #b",
-      " additional damage. NL ",
-      "Lasts for #b",
-      " turn.",
-      " turns."
+      "玩家或敌人 #y攻击 后，受到 #b",
+      " 点伤害。 NL ",
+      "持续时间 #b",
+      " 回合。",
+      " 回合。"
     ]
   },
   "theChaser:Unfortified": {
     "NAME": "无防备",
     "DESCRIPTIONS": [
-      "This creature receives #b",
-      "% more damage."
+      "从 #y攻击 受到的伤害增加 #b",
+      "% 。"
     ]
   },
   "theChaser:Unwary": {
@@ -59,22 +59,22 @@
   "theChaser:Bleeding": {
     "NAME": "出血",
     "DESCRIPTIONS": [
-      "At the start of its turn, loses #b",
-      " HP, then reduce #yBleeding by half. Whenever you play an Attack, increase #yBleeding by #b1."
+      "在回合的开始，失去 #b",
+      " 点生命和将该值减半。每打出一张攻击牌，将此值增加 #b1 。"
     ]
   },
   "theChaser:Hide": {
     "NAME": "隐身",
     "DESCRIPTIONS": [
-      "ALL enemies become #yStunned. Fades away after an Attack is played or #yTargeting is triggered. NL Lasts for #b",
-      " turn.",
-      " turns."
+      "所有敌人都会被眩晕。打出攻击或瞄准后消失。 NL 持续时间 #b",
+      " 回合。",
+      " 回合。"
     ]
   },
   "theChaser:Puzzled": {
     "NAME": "困惑",
     "DESCRIPTIONS": [
-      "This creature does not intend to do anything, out of confusion."
+      "敌人在哪里？"
     ]
   },
   "theChaser:Acceleration": {
@@ -133,8 +133,8 @@
   "theChaser:Fake Sore": {
     "NAME": "假伤",
     "DESCRIPTIONS": [
-      "This creature receives #b",
-      "% more damage."
+      "从 #y攻击 受到的伤害增加 #b",
+      "% 。"
     ]
   },
   "theChaser:FreeCard": {

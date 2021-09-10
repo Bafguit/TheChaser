@@ -132,8 +132,8 @@
   "theChaser:Fake Sore": {
     "NAME": "잔상처",
     "DESCRIPTIONS": [
-      "주고 받는 공격 피해가 #b",
-      "% 증가합니다."
+      "공격 피해를 #b",
+      "% 더 받습니다."
     ]
   },
   "theChaser:FreeCard": {
