@@ -223,12 +223,12 @@ public class ChaserUtil implements OnCardUseSubscriber, PostEnergyRechargeSubscr
         if(canAttack()) {
             if(AbstractDungeon.player.hasPower(DualWieldingPower.POWER_ID)) {
                 AbstractDungeon.player.getPower(DualWieldingPower.POWER_ID).flash();
-                addToTop(new DamageAllTargetAction(getTargetDamage(), getTarget()));
+                addToTop(new DamageAllTargetAction(TarAtkDmg, getTarget()));
                 addToTop(new VFXAction(new DaggerTargetEffect(AbstractDungeon.getMonsters().shouldFlipVfx(), getTargetCount()), 0.0F));
                 TarAtkCnt++;
                 TarAtkCntPerTurn++;
             }
-            addToTop(new DamageAllTargetAction(getTargetDamage(), getTarget()));
+            addToTop(new DamageAllTargetAction(TarAtkDmg, getTarget()));
             addToTop(new VFXAction(new DaggerTargetEffect(AbstractDungeon.getMonsters().shouldFlipVfx(), getTargetCount()), 0.0F));
             TarAtkCnt++;
             TarAtkCntPerTurn++;
