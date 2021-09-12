@@ -241,11 +241,11 @@
 	},
 	"theChaser:Sequence": {
 		"NAME": "斜线序列",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *序列流 到你的手牌。 NL thechaser:迅速 ：造成 !D! 点伤害2次。"
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 增加 !M! 张 *序列流 到你的手牌。 NL thechaser:迅速 ：造成 !D! 点伤害2次。"
 	},
 	"theChaser:Space Out": {
 		"NAME": "战斗间隔",
-		"DESCRIPTION": "每次 thechaser:瞄准 时，获得 !B! 点 格挡 。"
+		"DESCRIPTION": "每次 thechaser:瞄准 时，获得 !M! 点 格挡 。"
 	},
 	"theChaser:Testing": {
 		"NAME": "技能测试",
