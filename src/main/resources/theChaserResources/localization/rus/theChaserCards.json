@@ -1,7 +1,7 @@
 {
 	  "theChaser:Throwing Knife": {
 	    "NAME": "Нож",
-	    "DESCRIPTION": "Ethereal. NL Наносит !D! урона случайному врагу. Enemies affected by thechaser:Targeting are prioritized. Exhaust."
+	    "DESCRIPTION": "Ethereal. NL Наносит !D! урона случайному врагу. Enemies affected by thechaser:Targeting are prioritized. Сжигается."
 	  },
 	  "theChaser:Bloody Wind": {
 	    "NAME": "Bloody Wind",
@@ -13,15 +13,15 @@
 	  },
 	  "theChaser:Followup Slash": {
 	  	"NAME": "Followup Slash",
-		"DESCRIPTION": "Ethereal. Deal !D! damage twice. NL Exhaust."
+		"DESCRIPTION": "Ethereal. Deal !D! damage twice. NL Сжигается."
 	  },
 	  "theChaser:Knife Throw": {
 	    "NAME": "Knife Throw",
-	    "DESCRIPTION": "Trigger thechaser:Targeting !M! times."
+	    "DESCRIPTION": "Цель !M! раза."
 	  },
 	  "theChaser:Sequence Flow": {
 	    "NAME": "Sequence Flow",
-	    "DESCRIPTION": "Ethereal. Наносит !D! урона. NL Exhaust."
+	    "DESCRIPTION": "Ethereal. Наносит !D! урона. NL Сжигается."
 	  },
 	  "theChaser:Reactive Shot": {
 	    "NAME": "Reactive Shot",
@@ -115,7 +115,7 @@
 	  },
 	  "theChaser:Watch": {
 	    "NAME": "Watch",
-	    "DESCRIPTION": "Apply !M! thechaser:Targeting. NL Exhaust."
+	    "DESCRIPTION": "Apply !M! thechaser:Targeting. NL Сжигается."
 	  },
 	  "theChaser:Wound": {
 	    "NAME": "Open Vein",
@@ -148,12 +148,12 @@
 	  },
 	  "theChaser:Conquest": {
 	    "NAME": "Spirit of Conquest",
-	    "DESCRIPTION": "Gain Strength equal to the cumulative stacks of ALL debuffs you have. NL Exhaust.",
+	    "DESCRIPTION": "Gain Strength equal to the cumulative stacks of ALL debuffs you have. NL Сжигается.",
 	    "UPGRADE_DESCRIPTION": "Gain Strength equal to the cumulative stacks of ALL debuffs you have.",
 	    "EXTENDED_DESCRIPTION": [
 	      "Gain Strength equal to the cumulative stacks of ALL debuffs you have (",
 	      " Strength).",
-	      " NL Exhaust."
+	      " NL Сжигается."
 	    ]
 	  },
 	"theChaser:Diplade": {
@@ -184,7 +184,7 @@
 	  },
 	  "theChaser:Flexibility": {
 	    "NAME": "Flexibility",
-	    "DESCRIPTION": "Choose two: NL Trigger thechaser:Targeting !M! times; gain thechaser:Proxy !M! times; apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
+	    "DESCRIPTION": "Choose two: NL Trigger thechaser:Targeting !M! times; gain thechaser:Proxy !M! times; apply !M! thechaser:Bleeding to ALL enemies. NL Сжигается."
 	  },
 	  "theChaser:Gale Strike": {
 	    "NAME": "Gale Strike",
@@ -200,7 +200,7 @@
 	  },
 	  "theChaser:Internal Hemorrhage": {
 	    "NAME": "Internal Hemorrhage",
-	    "DESCRIPTION": "Apply !M! thechaser:Bleeding and 2 Weak to ALL enemies. NL Exhaust."
+	    "DESCRIPTION": "Apply !M! thechaser:Bleeding and 2 Weak to ALL enemies. NL Сжигается."
 	  },
 	  "theChaser:Open Sore": {
 	    "NAME": "Open Sore",
@@ -208,7 +208,7 @@
 	  },
 	  "theChaser:Paralyze": {
 	    "NAME": "Paralyze",
-	    "DESCRIPTION": "Enemy loses Strength equal to the amount of unique debuffs on them. NL Exhaust."
+	    "DESCRIPTION": "Enemy loses Strength equal to the amount of unique debuffs on them. NL Сжигается."
 	  },
 	  "theChaser:Penetrate": {
 	    "NAME": "Penetrate",
@@ -224,7 +224,7 @@
 	  },
 	  "theChaser:Ragewind": {
 	    "NAME": "Winds of Fury",
-	    "DESCRIPTION": "Trigger thechaser:Targeting !M! times. NL Permanently increase this card's thechaser:Targeting trigger amount by 1. NL Exhaust."
+	    "DESCRIPTION": "Trigger thechaser:Targeting !M! times. NL Permanently increase this card's thechaser:Targeting trigger amount by 1. NL Сжигается."
 	  },
 	  "theChaser:Ready To Counter": {
 	    "NAME": "Counter Manoeuvre",
@@ -270,12 +270,12 @@
 	  },
 	  "theChaser:Wither": {
 	    "NAME": "Wither",
-	    "DESCRIPTION": "Apply 99 Weak. Exhaust."
+	    "DESCRIPTION": "Apply 99 Weak. Сжигается."
 	  },
 	  "theChaser:Absolute Advantage": {
 	    "NAME": "Absolute Edge",
-	    "DESCRIPTION": "Gain [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL Exhaust.",
-	    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL Exhaust."
+	    "DESCRIPTION": "Gain [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL Сжигается.",
+	    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw 1 card for each unique debuff on ALL enemies. NL Сжигается."
 	  },
 	"theChaser:Acceleration": {
 		"NAME": "Acceleration",
@@ -283,7 +283,7 @@
 	},
 	  "theChaser:Approach Run": {
 	    "NAME": "High-Speed Advance",
-	    "DESCRIPTION": "thechaser:Quickstep !M!. NL thechaser:Swift: Apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
+	    "DESCRIPTION": "thechaser:Quickstep !M!. NL thechaser:Swift: Apply !M! thechaser:Bleeding to ALL enemies. NL Сжигается."
 	  },
 	  "theChaser:Dual Wielding": {
 	    "NAME": "Dual Wielding",
@@ -299,15 +299,15 @@
 	  },
 	  "theChaser:Hide": {
 	    "NAME": "Perfected Stealth",
-	    "DESCRIPTION": "thechaser:Hide for !M! turns. NL Exhaust."
+	    "DESCRIPTION": "thechaser:Hide for !M! turns. NL Сжигается."
 	  },
 	  "theChaser:Incisive Blade": {
 	    "NAME": "Neckcutter",
-	    "DESCRIPTION": "Ethereal. Наносит !D! урона. NL Exhaust."
+	    "DESCRIPTION": "Ethereal. Наносит !D! урона. NL Сжигается."
 	  },
 	  "theChaser:Phrenitis": {
 	    "NAME": "Phrenitis",
-	    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, thechaser:Proxy, and thechaser:Blindsided. NL Exhaust."
+	    "DESCRIPTION": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, thechaser:Proxy, and thechaser:Blindsided. NL Сжигается."
 	  },
 	  "theChaser:Preemptive Attack": {
 	    "NAME": "Preemptive Offense",
@@ -315,8 +315,8 @@
 	  },
 	"theChaser:Prepay": {
 		"NAME": "Prepay",
-		"DESCRIPTION": "This turn, your next X cards cost 0. Exhaust.",
-		"UPGRADE_DESCRIPTION": "This turn, your next X cards cost 0. Draw X cards. Exhaust."
+		"DESCRIPTION": "This turn, your next X cards cost 0. Сжигается.",
+		"UPGRADE_DESCRIPTION": "This turn, your next X cards cost 0. Draw X cards. Сжигается."
 	},
 	  "theChaser:Saw Blade": {
 	    "NAME": "Sawblades",
@@ -329,7 +329,7 @@
 	  },
 	  "theChaser:Stealage": {
 	    "NAME": "Shakedown",
-	    "DESCRIPTION": "Наносит !D! урона. NL Gain !M! Gold. NL Exhaust."
+	    "DESCRIPTION": "Наносит !D! урона. NL Gain !M! Gold. NL Сжигается."
 	  },
 	  "theChaser:Unwary": {
 	    "NAME": "Confounding Assault",
@@ -337,11 +337,11 @@
 	  },
 	  "theChaser:Vitality": {
 	    "NAME": "Joy From Misfortune",
-	    "DESCRIPTION": "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL Exhaust.",
-	    "UPGRADE_DESCRIPTION": "Retain. NL Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL Exhaust.",
+	    "DESCRIPTION": "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL Сжигается.",
+	    "UPGRADE_DESCRIPTION": "Retain. NL Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL Сжигается.",
 	    "EXTENDED_DESCRIPTION": [
 	      "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn (",
-	      " HP healed). NL Exhaust.",
+	      " HP healed). NL Сжигается.",
 	      "Retain. NL"
 	    ]
 	  },
