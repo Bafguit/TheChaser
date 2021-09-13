@@ -629,6 +629,8 @@ public class TheChaserMod implements
                 return "spa";
             case "ZHS":
                 return "zhs";
+            case "ZHT":
+                return "zht";
             default:
                 return "eng";
         }
