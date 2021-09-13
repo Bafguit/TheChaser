@@ -1,0 +1,155 @@
+{
+
+  "theChaser:Dual Wielding": {
+    "NAME": "雙手",
+    "DESCRIPTIONS": [
+      "本回合， #y瞄準 會觸發兩次。"
+    ]
+  },
+  "theChaser:Forte Is Frailty": {
+    "NAME": "權力慾",
+    "DESCRIPTIONS": [
+      "所有正面狀態都算作負面狀態。"
+    ]
+  },
+  "theChaser:Penetrative": {
+    "NAME": "刺耳的打擊",
+    "DESCRIPTIONS": [
+      "使 #y瞄準 的傷害增加 #b",
+      " 。"
+    ]
+  },
+  "theChaser:Shadow Form": {
+    "NAME": "影子形態",
+    "DESCRIPTIONS": [
+      "在回合的開始，使 #y瞄準 的傷害增加 #b",
+      " 。"
+    ]
+  },
+  "theChaser:Space Out": {
+    "NAME": "戰鬥間隔",
+    "DESCRIPTIONS": [
+      "每次 #y瞄準 時，獲得 #b",
+      " 點格擋。"
+    ]
+  },
+  "theChaser:Target": {
+    "NAME": "靶子",
+    "DESCRIPTIONS": [
+      "玩家或敵人 #y攻擊 後，受到 #b",
+      " 點傷害。 NL ",
+      "持續時間 #b",
+      " 回合。",
+      " 回合。"
+    ]
+  },
+  "theChaser:Unfortified": {
+    "NAME": "無防備",
+    "DESCRIPTIONS": [
+      "從 #y攻擊 受到的傷害增加 #b",
+      "% 。"
+    ]
+  },
+  "theChaser:Unwary": {
+    "NAME": "失神",
+    "DESCRIPTIONS": [
+      "瞄準會給予 #b1 層 #y無防備 。"
+    ]
+  },
+  "theChaser:Bleeding": {
+    "NAME": "出血",
+    "DESCRIPTIONS": [
+      "在回合的開始，失去 #b",
+      " 點生命和將該值減半。每打出一張攻擊牌，將此值增加 #b1 。"
+    ]
+  },
+  "theChaser:Hide": {
+    "NAME": "隱身",
+    "DESCRIPTIONS": [
+      "所有敵人都會被眩暈。打出攻擊或瞄準後消失。 NL 持續時間 #b",
+      " 回合。",
+      " 回合。"
+    ]
+  },
+  "theChaser:Puzzled": {
+    "NAME": "困惑",
+    "DESCRIPTIONS": [
+      "敵人在哪裏？"
+    ]
+  },
+  "theChaser:Acceleration": {
+    "NAME": "加速",
+    "DESCRIPTIONS": [
+      "每打出一張攻擊牌，獲得 #b",
+      " 層臨時 #y力量 。"
+    ]
+  },
+  "theChaser:Open Sore": {
+    "NAME": "開放性瘡",
+    "DESCRIPTIONS": [
+      "在回合的開始，給予所有敵人 #b",
+      " 層 #y出血 。"
+    ]
+  },
+  "theChaser:Big Picture": {
+    "NAME": "宏偉計劃",
+    "DESCRIPTIONS": [
+      "每當你對自己施獲得負面狀態，獲得 #b",
+      " 層 #y力量 。"
+    ]
+  },
+  "theChaser:Saw Blade": {
+    "NAME": "鋸齒",
+    "DESCRIPTIONS": [
+      "每打出一張牌，給予所有敵人 #b",
+      " 層 #y出血 。"
+    ]
+  },
+  "theChaser:Diplade": {
+    "NAME": "雙刀片",
+    "DESCRIPTIONS": [
+      "每打出一張不爲 #b0 的技能牌，增加 #b",
+      " 張 #y後續斜線 到你的手牌。"
+    ]
+  },
+  "theChaser:Preemptive Attack": {
+    "NAME": "先發制人",
+    "DESCRIPTIONS": [
+      "在回合的開始，抽 #b",
+      " 張牌和 #y瞄準 #b",
+      " 次。",
+      " 張牌和 #y瞄準 #b",
+      " 次。"
+    ]
+  },
+  "theChaser:Replica Dagger": {
+    "NAME": "複製匕首",
+    "DESCRIPTIONS": [
+      "在回合的開始，增加 #b",
+      " 張 #y匕首 到你的手牌和隨機對敵人給予 #b",
+      " 層 #y靶子 。"
+    ]
+  },
+  "theChaser:Fake Sore": {
+    "NAME": "假傷",
+    "DESCRIPTIONS": [
+      "從 #y攻擊 受到的傷害增加 #b",
+      "% 。"
+    ]
+  },
+  "theChaser:FreeCard": {
+    "NAME": "先付",
+    "DESCRIPTIONS": [
+      "本回合，下 #b1 張牌的費爲 #b0 。",
+      "本回合，下 #b",
+      " 張牌的費爲 #b0 。"
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "",
+      ""
+    ]
+  }
+}
