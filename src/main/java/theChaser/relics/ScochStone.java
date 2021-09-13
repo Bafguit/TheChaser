@@ -30,7 +30,7 @@ public class ScochStone extends CustomRelic {
         this.tips.add(new PowerTip(this.name, this.description));
         String keywordName = TheChaserMod.localKeyword.Targeting;
         this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keywordName).NAME, TheChaserMod.getKeywordInfo(keywordName).DESCRIPTION));
-        if(TheChaserMod.getLanguage().equals("kor") || TheChaserMod.getLanguage().equals("jpn") || TheChaserMod.getLanguage().equals("zhs")) {
+        if(TheChaserMod.getLanguage().equals("kor") || TheChaserMod.getLanguage().equals("jpn") || TheChaserMod.getLanguage().equals("zhs") || TheChaserMod.getLanguage().equals("zht")) {
             String keyName = TheChaserMod.localKeyword.Trigger;
             this.tips.add(new PowerTip(TheChaserMod.getKeywordInfo(keyName).NAME, TheChaserMod.getKeywordInfo(keyName).DESCRIPTION));
         }
