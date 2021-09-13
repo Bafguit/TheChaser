@@ -1,7 +1,7 @@
 {
 	  "theChaser:Throwing Knife": {
 	    "NAME": "Нож",
-	    "DESCRIPTION": "Ethereal. NL Deal !D! damage to a random enemy. Enemies affected by thechaser:Targeting are prioritized. Exhaust."
+	    "DESCRIPTION": "Ethereal. NL Наносит !D! урона случайному врагу. Enemies affected by thechaser:Targeting are prioritized. Exhaust."
 	  },
 	  "theChaser:Bloody Wind": {
 	    "NAME": "Bloody Wind",
@@ -29,7 +29,7 @@
 	  },
 	  "theChaser:Flawed Stealth": {
 	    "NAME": "Flawed Stealth",
-	    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Frail."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Gain 1 Frail."
 	  },
 	  "theChaser:Strike": {
 	    "NAME": "Strike",
@@ -37,15 +37,15 @@
 	  },
 	  "theChaser:Defend": {
 	    "NAME": "Defend",
-	    "DESCRIPTION": "Gain !B! Block."
+	    "DESCRIPTION": "Даёт !B! Защиты."
 	  },
 	  "theChaser:Alert": {
 	    "NAME": "Alertness",
-	    "DESCRIPTION": "Gain !B! Block. NL Gain thechaser:Proxy !M! times. NL thechaser:Quickstep !M!."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Gain thechaser:Proxy !M! times. NL thechaser:Quickstep !M!."
 	  },
 	  "theChaser:Blitzkrieg": {
 	    "NAME": "Blitzkrieg",
-	    "DESCRIPTION": "Deal !D! damage. NL Apply !M! thechaser:Blindsided."
+	    "DESCRIPTION": "Наносит !D! урона. NL Apply !M! thechaser:Blindsided."
 	  },
 	  "theChaser:Brass": {
 	    "NAME": "Brass Tacks",
@@ -53,7 +53,7 @@
 	  },
 	  "theChaser:Chase": {
 	    "NAME": "Pursuit",
-	    "DESCRIPTION": "Deal !D! damage. Draw 1 card for each enemy affected by thechaser:Targeting."
+	    "DESCRIPTION": "Наносит !D! урона. Draw 1 card for each enemy affected by thechaser:Targeting."
 	  },
 	  "theChaser:Continuous Slash": {
 	    "NAME": "Continuous Slash",
@@ -62,11 +62,11 @@
 	  },
 	  "theChaser:Delusive Strike": {
 	    "NAME": "Illusionary Strike",
-	    "DESCRIPTION": "Deal !D! damage. NL If you are Weak, gain [E] [E]."
+	    "DESCRIPTION": "Наносит !D! урона. NL If you are Weak, gain [E] [E]."
 	  },
 	  "theChaser:Fatal Blitz": {
 	    "NAME": "Fatal Blitz",
-	    "DESCRIPTION": "Deal !D! damage. NL Apply !M! thechaser:Bleeding."
+	    "DESCRIPTION": "Наносит !D! урона. NL Apply !M! thechaser:Bleeding."
 	  },
 	  "theChaser:Geck": {
 	    "NAME": "Nullify Defenses",
@@ -74,7 +74,7 @@
 	  },
 	  "theChaser:Inertial Strike": {
 	    "NAME": "Inertial Strike",
-	    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the amount of cards played this turn.",
+	    "DESCRIPTION": "Наносит !D! урона. NL Deals additional damage equal to the amount of cards played this turn.",
 	    "EXTENDED_DESCRIPTION": [
 	      "Deal !D! damage. NL Deals additional damage equal to the amount of cards played this turn (",
 	      " cards)."
@@ -86,7 +86,7 @@
 	  },
 	  "theChaser:Linger": {
 	    "NAME": "Malicious Trick",
-	    "DESCRIPTION": "Gain !B! Block. NL Trigger thechaser:Targeting !M! times."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Trigger thechaser:Targeting !M! times."
 	  },
 	  "theChaser:Makeready": {
 	    "NAME": "Preparation",
@@ -94,7 +94,7 @@
 	  },
 	  "theChaser:Passing": {
 	    "NAME": "Pass Through",
-	    "DESCRIPTION": "Gain !B! Block. If you have played an Attack on an enemy affected by thechaser:Targeting this turn, draw 2 cards."
+	    "DESCRIPTION": "Даёт !B! Защиты. If you have played an Attack on an enemy affected by thechaser:Targeting this turn, draw 2 cards."
 	  },
 	  "theChaser:Random Throw": {
 	    "NAME": "Draw Knives",
@@ -102,16 +102,16 @@
 	  },
 	  "theChaser:Scar Stab": {
 	    "NAME": "Gore Scars",
-	    "DESCRIPTION": "Deal !D! damage. NL If the enemy has thechaser:Bleeding, trigger it once.",
+	    "DESCRIPTION": "Наносит !D! урона. NL If the enemy has thechaser:Bleeding, trigger it once.",
 	    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy has thechaser:Bleeding, trigger it twice."
 	  },
 	  "theChaser:Stalling": {
 	    "NAME": "Stalling",
-	    "DESCRIPTION": "Deal !D! damage. NL Gain thechaser:Proxy !M! times. NL thechaser:Quickstep !M!."
+	    "DESCRIPTION": "Наносит !D! урона. NL Gain thechaser:Proxy !M! times. NL thechaser:Quickstep !M!."
 	  },
 	  "theChaser:Thornmail": {
 	    "NAME": "Thornmail",
-	    "DESCRIPTION": "Gain !B! Block. NL Apply !M! thechaser:Bleeding to ALL enemies."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Apply !M! thechaser:Bleeding to ALL enemies."
 	  },
 	  "theChaser:Watch": {
 	    "NAME": "Watch",
@@ -119,11 +119,11 @@
 	  },
 	  "theChaser:Wound": {
 	    "NAME": "Open Vein",
-	    "DESCRIPTION": "Deal !D! damage. NL Apply !M! thechaser:Bleeding."
+	    "DESCRIPTION": "Наносит !D! урона. NL Apply !M! thechaser:Bleeding."
 	  },
 	  "theChaser:Aggravate": {
 	    "NAME": "Aggravate",
-	    "DESCRIPTION": "Gain !B! Block. NL Trigger thechaser:Bleeding once on all enemies affected by thechaser:Bleeding."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Trigger thechaser:Bleeding once on all enemies affected by thechaser:Bleeding."
 	  },
 	  "theChaser:Attack First": {
 	    "NAME": "Take Initiative",
@@ -144,7 +144,7 @@
 	  },
 	  "theChaser:Chance": {
 	    "NAME": "Chaser's Luck",
-	    "DESCRIPTION": "Gain !B! Block. NL thechaser:Swift: Reduce the cost of a random card in your hand to 0 this turn."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL thechaser:Swift: Reduce the cost of a random card in your hand to 0 this turn."
 	  },
 	  "theChaser:Conquest": {
 	    "NAME": "Spirit of Conquest",
@@ -162,7 +162,7 @@
 	},
 	  "theChaser:Disguise": {
 	    "NAME": "Disguise",
-	    "DESCRIPTION": "Gain !B! Block. NL Repeat for each unique debuff on you.",
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Repeat for each unique debuff on you.",
 	    "EXTENDED_DESCRIPTION": [
 	      "Gain !B! Block. NL Repeat for each unique debuff on you (",
 	      " debuffs)."
@@ -170,16 +170,16 @@
 	  },
 	  "theChaser:Fall Technique": {
 	    "NAME": "Evasive Fall",
-	    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Weak."
+	    "DESCRIPTION": "Даёт !B! Защиты. NL Gain !M! Weak."
 	  },
 	  "theChaser:Feeble Defend": {
 	    "NAME": "Deceptive Defense",
-	    "DESCRIPTION": "Gain !B! Block. NL If you are Frail, double the amount of Block gained.",
+	    "DESCRIPTION": "Даёт !B! Защиты. NL If you are Frail, double the amount of Block gained.",
 	    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you are Frail, triple the amount of Block gained."
 	  },
 	  "theChaser:Feeble Strike": {
 	    "NAME": "Deceptive Strike",
-	    "DESCRIPTION": "Deal !D! damage. NL If you are Weak, deal double damage.",
+	    "DESCRIPTION": "Наносит !D! урона. NL If you are Weak, deal double damage.",
 	    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If you are Weak, deal triple damage."
 	  },
 	  "theChaser:Flexibility": {
@@ -196,7 +196,7 @@
 	  },
 	  "theChaser:Hidden Dagger": {
 	    "NAME": "Hidden Dagger",
-	    "DESCRIPTION": "Gain !B! Block. Add !M! *Throwing *Knife into your hand. NL thechaser:Swift: Upgrade ALL *Throwing *Knife cards in your hand."
+	    "DESCRIPTION": "Даёт !B! Защиты. Add !M! *Throwing *Knife into your hand. NL thechaser:Swift: Upgrade ALL *Throwing *Knife cards in your hand."
 	  },
 	  "theChaser:Internal Hemorrhage": {
 	    "NAME": "Internal Hemorrhage",
@@ -241,7 +241,7 @@
 	  },
 	  "theChaser:Sequence": {
 	    "NAME": "Slash Sequence",
-	    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage 2 times."
+	    "DESCRIPTION": "Наносит !D! урона. NL Add !M! *Sequence *Flow into your hand. NL thechaser:Swift: Deal !D! damage 2 times."
 	  },
 	  "theChaser:Space Out": {
 	    "NAME": "Combat Spacing",
@@ -262,11 +262,11 @@
 	  },
 	  "theChaser:Weakness Strike": {
 	    "NAME": "Weakpoint Strike",
-	    "DESCRIPTION": "Deal !D! damage. Repeat for each unique debuff on the enemy."
+	    "DESCRIPTION": "Наносит !D! урона. Repeat for each unique debuff on the enemy."
 	  },
 	  "theChaser:Win The Exchange": {
 	    "NAME": "Win the Exchange",
-	    "DESCRIPTION": "Deal !D! damage. NL If the enemy has thechaser:Blindsided, gain [E] and draw 1 card."
+	    "DESCRIPTION": "Наносит !D! урона. NL If the enemy has thechaser:Blindsided, gain [E] and draw 1 card."
 	  },
 	  "theChaser:Wither": {
 	    "NAME": "Wither",
@@ -303,7 +303,7 @@
 	  },
 	  "theChaser:Incisive Blade": {
 	    "NAME": "Neckcutter",
-	    "DESCRIPTION": "Ethereal. Deal !D! damage. NL Exhaust."
+	    "DESCRIPTION": "Ethereal. Наносит !D! урона. NL Exhaust."
 	  },
 	  "theChaser:Phrenitis": {
 	    "NAME": "Phrenitis",
@@ -329,7 +329,7 @@
 	  },
 	  "theChaser:Stealage": {
 	    "NAME": "Shakedown",
-	    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Gold. NL Exhaust."
+	    "DESCRIPTION": "Наносит !D! урона. NL Gain !M! Gold. NL Exhaust."
 	  },
 	  "theChaser:Unwary": {
 	    "NAME": "Confounding Assault",
@@ -355,7 +355,7 @@
 	  },
 	  "theChaser:Wile": {
 	    "NAME": "Cruel Ruin",
-	    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable, Weak, and thechaser:Blindsided."
+	    "DESCRIPTION": "Наносит !D! урона. NL Apply !M! Vulnerable, Weak, and thechaser:Blindsided."
 	  },
 
 
