@@ -1,0 +1,66 @@
+[
+  {
+    "PROPER_NAME": "靶子",
+    "NAMES": [
+      "靶子"
+    ],
+    "DESCRIPTION": "玩家或敵人 #y攻擊 後，瞄準。"
+  },
+  {
+    "PROPER_NAME": "瞄準",
+    "NAMES": [
+      "瞄準"
+    ],
+    "DESCRIPTION": "對所有受 #y靶子 影響的敵人造成 2 點傷害。"
+  },
+  {
+    "PROPER_NAME": "無防備",
+    "NAMES": [
+      "無防備"
+    ],
+    "DESCRIPTION": "有無防備效果的生物從攻擊中受到的傷害對於每一層增加 #b15% 。（ 最多 #b4 層 ）"
+  },
+  {
+    "PROPER_NAME": "出血",
+    "NAMES": [
+      "出血"
+    ],
+    "DESCRIPTION": "在回合的開始，失去生命和將該值減半。每打出一張攻擊牌，將此值增加 #b1 。"
+  },
+  {
+    "PROPER_NAME": "隱身",
+    "NAMES": [
+      "隱身"
+    ],
+    "DESCRIPTION": "所有敵人都會被眩暈。打出攻擊或瞄準後消失。"
+  },
+  {
+    "PROPER_NAME": "迅速",
+    "NAMES": [
+      "迅速"
+    ],
+    "DESCRIPTION": "如果打出 #b4 張或更多牌，則觸發額外效果。"
+  },
+    {
+    "PROPER_NAME": "諜報",
+    "NAMES": [
+      "諜報"
+    ],
+    "DESCRIPTION": "增加本回合打出的牌張數。"
+  },
+  {
+    "PROPER_NAME": "假傷",
+    "NAMES": [
+      "假傷"
+    ],
+    "DESCRIPTION": "有假傷效果的生物從攻擊中受到的傷害對於每一層增加 #b5% 。"
+  },
+  {
+    "PROPER_NAME": "",
+    "NAMES": [
+      "",
+      ""
+    ],
+    "DESCRIPTION": ""
+  }
+]
