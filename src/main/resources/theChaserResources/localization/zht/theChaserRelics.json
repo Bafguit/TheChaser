@@ -1,0 +1,86 @@
+{
+  "theChaser:Shadow In Necklace": {
+    "NAME": "陰影項鍊",
+    "FLAVOR": "一條帶有小玻璃瓶的項鍊，由深淵的黑暗製成。",
+    "DESCRIPTIONS": [
+      "在每場戰鬥開始時，隨機對敵人給予 #b2 層 #y靶子 。"
+    ]
+  },
+  "theChaser:Cloak Of Assassin": {
+    "NAME": "刺客斗篷",
+    "FLAVOR": "這種批量生產的斗篷擁有最可靠的僞裝。",
+    "DESCRIPTIONS": [
+      "在每場戰鬥開始時， #y隱身 #b2 回合。"
+    ]
+  },
+  "theChaser:R-B0-7": {
+    "NAME": "R-B0-7",
+    "FLAVOR": "危險的祕密武器。它的殺傷力與臭名昭著的藥物相輔相成。",
+    "DESCRIPTIONS": [
+      "在每回合的開始，所有受到負面狀態影響的敵人失去 #b5 點生命。"
+    ]
+  },
+  "theChaser:Broken Ticker": {
+    "NAME": "破碎的代碼",
+    "FLAVOR": "它已經破碎，但仍能聽到微弱的滴答聲。",
+    "DESCRIPTIONS": [
+      "在每場戰鬥開始時，給予所有敵人 #y緩慢 。"
+    ]
+  },
+  "theChaser:Scoch Stone": {
+    "NAME": "蘇格蘭石",
+    "FLAVOR": "一種細粒度的灰色石頭，用於磨銳武器。",
+    "DESCRIPTIONS": [
+      "使 #y瞄準 的傷害增加 #b1 。"
+    ]
+  },
+  "theChaser:Letter Of Request": {
+    "NAME": "請求書",
+    "FLAVOR": "一封來自未知客戶的請求信。",
+    "DESCRIPTIONS": [
+      "在每場戰鬥開始時，給予所有敵人 #b3 層 #y靶子 。"
+    ]
+  },
+  "theChaser:Shadow In Mask": {
+    "NAME": "陰影面具",
+    "FLAVOR": "面具背後，誰也看不到深淵。",
+    "DESCRIPTIONS": [
+      "替換 #p陰影項鍊 。 在回合的開始，給予所有敵人 #b1 層 #y靶子 和 #y瞄準 #b1 次。"
+    ]
+  },
+  "theChaser:Pocket Knife": {
+    "NAME": "小刀",
+    "FLAVOR": "一種用來割繩子的便攜式刀。",
+    "DESCRIPTIONS": [
+      "每回合 #y瞄準 #b4 次後，獲得 [E] 。"
+    ]
+  },
+  "theChaser:Acid Solution": {
+    "NAME": "酸溶液",
+    "FLAVOR": "腐蝕性極強。希望沒有其他人不小心把它灑在某物……或某人身上。",
+    "DESCRIPTIONS": [
+      "每打出一張攻擊牌，如果您受到 虛弱 的影響， 給予 #b1 層 #y虛弱 。如果您受到 脆弱 的影響，去除一名敵人的所有 格擋 值。"
+    ]
+  },
+  "theChaser:Box Cutter": {
+    "NAME": "盒式切割機",
+    "FLAVOR": "很奇特的一把劍。如此奇特，其目的不明。",
+    "DESCRIPTIONS": [
+      "每回合第一次瞄準後， #y瞄準 #b2 次。"
+    ]
+  },
+  "theChaser:": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  },
+  "theChaser:Rusty Helmet": {
+    "NAME": "生鏽的頭盔",
+    "FLAVOR": "過去戰爭中使用的舊頭盔。今天不太可能看到使用。",
+    "DESCRIPTIONS": [
+      "在每回合的開始，給予所有敵人 #b1 層 #y無防備"
+    ]
+  }
+}
