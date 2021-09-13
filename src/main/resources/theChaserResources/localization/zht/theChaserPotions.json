@@ -1,0 +1,23 @@
+{
+  "theChaser:Acid Potion": {
+    "NAME": "瓶裝出血",
+    "DESCRIPTIONS": [
+      "給予敵人 #b",
+      " 層 #y出血 。"
+    ]
+  },
+        "theChaser:Shadow Potion": {
+                "NAME": "罐子裏的影子",
+                "DESCRIPTIONS": [
+                        "#y隱身 #b",
+                        " 回合。"
+                ]
+        },
+        "theChaser:Target Potion": {
+                "NAME": "瞄準藥水",
+                "DESCRIPTIONS": [
+                        "#y瞄準 #b",
+                        " 次。"
+                ]
+        }
+}
