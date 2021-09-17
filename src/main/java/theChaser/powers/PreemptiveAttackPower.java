@@ -57,7 +57,7 @@ public class PreemptiveAttackPower extends AbstractPower implements CloneablePow
         this.fontScale = 8.0F;
         this.amount -= reduceAmount;
         if (this.amount == 0) {
-            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Draw"));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this));
         }
 
     }
