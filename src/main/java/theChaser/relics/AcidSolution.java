@@ -29,14 +29,14 @@ public class AcidSolution extends CustomRelic {
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if(info.owner.isPlayer && info.type == DamageInfo.DamageType.NORMAL && target != null) {
-            if(AbstractDungeon.player.hasPower(WeakPower.POWER_ID) || (AbstractDungeon.player.hasPower(FrailPower.POWER_ID) && target.currentBlock > 0)) {
+            if (AbstractDungeon.player.hasPower(WeakPower.POWER_ID)) {
                 this.flash();
-                if (AbstractDungeon.player.hasPower(WeakPower.POWER_ID)) {
-                    this.addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new WeakPower(target, 1, false), 1, true));
-                }
-                if (AbstractDungeon.player.hasPower(FrailPower.POWER_ID) && target.currentBlock > 0) {
-                    this.addToBot(new RemoveAllBlockAction(target, AbstractDungeon.player));
-                }
+                this.addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new WeakPower(target, 1, false), 1, true));
+                this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            }
+            if (AbstractDungeon.player.hasPower(FrailPower.POWER_ID) && target.currentBlock > 0) {
+                this.flash();
+                this.addToBot(new RemoveAllBlockAction(target, AbstractDungeon.player));
                 this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             }
         }
