@@ -70,6 +70,7 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if(this.strCount > 0) {
+            //TODO Change to ReducePowerAction
             addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.strCount), -this.strCount, true));
             this.strCount = 0;
         }
