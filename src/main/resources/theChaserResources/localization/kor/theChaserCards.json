@@ -285,7 +285,8 @@
   },
   "theChaser:Approach Run": {
     "NAME": "도움닫기",
-    "DESCRIPTION": "thechaser:빠른발 !M!. NL thechaser:신속: 적 전체에게 thechaser:출혈을 !M! 부여합니다. NL 소멸."
+    "DESCRIPTION": "thechaser:빠른발 !M!. NL 적 전체에게 thechaser:출혈을 !M! 부여합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. thechaser:빠른발 !M!. NL 적 전체에게 thechaser:출혈을 !M! 부여합니다. NL 소멸."
   },
   "theChaser:Dual Wielding": {
     "NAME": "쌍수",
