@@ -283,7 +283,8 @@
 	},
 	"theChaser:Approach Run": {
 		"NAME": "助跑",
-		"DESCRIPTION": "消耗 。 thechaser:谍报 !M!。 NL thechaser:迅速 ：给予所有敌人 !M! 层 thechaser:出血 。"
+		"DESCRIPTION": "thechaser:谍报 !M!。 NL 给予所有敌人 !M! 层 thechaser:出血 。 消耗 。",
+		"UPGRADE_DESCRIPTION": "保留 。 thechaser:谍报 !M!。 NL 给予所有敌人 !M! 层 thechaser:出血 。 消耗 。"
 	},
 	"theChaser:Dual Wielding": {
 		"NAME": "双手",
