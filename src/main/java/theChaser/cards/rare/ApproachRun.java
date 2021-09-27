@@ -30,7 +30,7 @@ public class ApproachRun extends ChaserCard {
     public static final String IMG = makeCardPath("ApproachRun.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.ALL;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheChaser.Enums.COLOR_CHASER;
 
@@ -41,17 +41,6 @@ public class ApproachRun extends ChaserCard {
     public ApproachRun() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, 0, TURN);
         this.exhaust = true;
-    }
-
-    @Override
-    public void triggerOnGlowCheck() {
-        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if(ChaserUtil.isAccel()) {
-            this.target = CardTarget.ALL_ENEMY;
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.target = CardTarget.SELF;
-        }
     }
 
     @Override
