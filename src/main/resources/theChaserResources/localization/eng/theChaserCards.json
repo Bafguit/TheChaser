@@ -283,7 +283,8 @@
 	},
 	  "theChaser:Approach Run": {
 	    "NAME": "High-Speed Advance",
-	    "DESCRIPTION": "thechaser:Quickstep !M!. NL thechaser:Swift: Apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
+	    "DESCRIPTION": "thechaser:Quickstep !M!. NL Apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust.",
+		  "UPGRADE_DESCRIPTION": "Retain. thechaser:Quickstep !M!. NL Apply !M! thechaser:Bleeding to ALL enemies. NL Exhaust."
 	  },
 	  "theChaser:Dual Wielding": {
 	    "NAME": "Dual Wielding",
