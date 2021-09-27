@@ -283,7 +283,8 @@
   },
   "theChaser:Approach Run": {
     "NAME": "Alta Velocidad",
-    "DESCRIPTION": "thechaser:Paso *Rápido !M!. NL thechaser:Ágil: Aplica !M! thechaser:Sangrado a TODOS los enemigos. NL Agota."
+    "DESCRIPTION": "thechaser:Paso *Rápido !M!. NL Aplica !M! thechaser:Sangrado a TODOS los enemigos. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. thechaser:Paso *Rápido !M!. NL Aplica !M! thechaser:Sangrado a TODOS los enemigos. NL Agota."
   },
   "theChaser:Dual Wielding": {
     "NAME": "Empuñadura Doble",
