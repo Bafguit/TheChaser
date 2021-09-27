@@ -174,13 +174,13 @@
 	  },
 	  "theChaser:Feeble Defend": {
 	    "NAME": "Deceptive Defense",
-	    "DESCRIPTION": "Gain !B! Block. NL If you are Frail, double the amount of Block gained.",
-	    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you are Frail, triple the amount of Block gained."
+	    "DESCRIPTION": "Gain !B! Block. NL If you are Frail, triple the amount of Block gained.",
+	    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you are Frail, quadruple the amount of Block gained."
 	  },
 	  "theChaser:Feeble Strike": {
 	    "NAME": "Deceptive Strike",
-	    "DESCRIPTION": "Deal !D! damage. NL If you are Weak, deal double damage.",
-	    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If you are Weak, deal triple damage."
+	    "DESCRIPTION": "Deal !D! damage. NL If you are Weak, deal triple damage.",
+	    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If you are Weak, deal quadruple damage."
 	  },
 	  "theChaser:Flexibility": {
 	    "NAME": "Flexibility",
@@ -337,7 +337,7 @@
 	    "DESCRIPTION": "Dealing damage by triggering thechaser:Targeting also applies thechaser:Blindsided."
 	  },
 	  "theChaser:Vitality": {
-	    "NAME": "Joy From Misfortune",
+	    "NAME": "Vibrancy",
 	    "DESCRIPTION": "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL Exhaust.",
 	    "UPGRADE_DESCRIPTION": "Retain. NL Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn. NL Exhaust.",
 	    "EXTENDED_DESCRIPTION": [
