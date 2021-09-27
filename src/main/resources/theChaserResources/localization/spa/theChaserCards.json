@@ -174,13 +174,13 @@
   },
   "theChaser:Feeble Defend": {
     "NAME": "Defensa Engañosa",
-    "DESCRIPTION": "Gana !B! de Bloqueo. NL Si eres Fragil, duplica la cantidad de Bloqueo obtenido.",
-    "UPGRADE_DESCRIPTION": "Gana !B! de Bloqueo. NL Si eres Fragil, triplica la cantidad de Bloqueo obtenido."
+    "DESCRIPTION": "Gana !B! de Bloqueo. NL Si eres Fragil, triplica la cantidad de Bloqueo obtenido.",
+    "UPGRADE_DESCRIPTION": "Gana !B! de Bloqueo. NL Si eres Fragil, cuadruplica la cantidad de Bloqueo obtenido."
   },
   "theChaser:Feeble Strike": {
     "NAME": "Golpe Engañoso",
-    "DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, haz el doble de daño.",
-    "UPGRADE_DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, haz el triple de daño."
+    "DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, haz el triple de daño.",
+    "UPGRADE_DESCRIPTION": "Haz !D! de daño. NL Si eres Débil, haz el cuádruple de daño."
   },
   "theChaser:Flexibility": {
     "NAME": "Flexibilidad",
