@@ -285,7 +285,8 @@
   },
   "theChaser:Approach Run": {
     "NAME": "助走",
-    "DESCRIPTION": "thechaser:捷歩 !M!。 NL thechaser:迅速 : 敵全体に thechaser:出血 !M! を与える。 NL 廃棄 。"
+    "DESCRIPTION": "thechaser:捷歩 !M!。 NL 敵全体に thechaser:出血 !M! を与える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "保留 。 thechaser:捷歩 !M!。 NL 敵全体に thechaser:出血 !M! を与える。 NL 廃棄 。"
   },
   "theChaser:Dual Wielding": {
     "NAME": "双手",
@@ -343,8 +344,8 @@
     "UPGRADE_DESCRIPTION": "保留。 このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
       "このターンに thechaser:狙った 回数(",
-      ")だけHPを回復する。 NL 廃棄。",
-      "保留。 "
+      ")だけHPを回復する。 NL 廃棄 。",
+      "保留 。 "
     ]
   },
   "theChaser:Walkout": {
