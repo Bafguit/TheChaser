@@ -44,6 +44,14 @@ public class InertialStrike extends ChaserCard {
         int ca = ChaserUtil.getCardCountPerTurn();
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage + ca), AttackEffect.SLASH_HEAVY));
     }
+    
+    @Override
+    public void calculateCardDamage(AbstractMonster m) {
+        int temp = this.baseDamage;
+        this.baseDamage += ChaserUtil.getCardCountPerTurn();
+        super(m);
+        this.baseDamage = temp;
+    }
 
     @Override
     public void upgradeCard() {
