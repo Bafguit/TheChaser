@@ -46,7 +46,9 @@ public class ApproachRun extends ChaserCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AddCardPerTurnAction(this.magicNumber));
-        addToBot(new ApplyPowerAction(mo, p, new BleedingPower(mo, p, this.magicNumber)));
+        for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            addToBot(new ApplyPowerAction(m, p, new BleedingPower(mo, p, this.magicNumber)));
+        }
     }
 
     @Override

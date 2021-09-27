@@ -343,7 +343,7 @@
     "EXTENDED_DESCRIPTION": [
       "Cura PV igual a la cantidad de veces que has activado thechaser:Objetivo en este turno (",
       " PV sanados). NL Agota.",
-      "Retiene. NL"
+      "Retiene. NL "
     ]
   },
   "theChaser:Walkout": {

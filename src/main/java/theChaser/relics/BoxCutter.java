@@ -66,8 +66,8 @@ public class BoxCutter extends CustomRelic implements OnAfterTargetAttackSubscri
         if(this.pulse) {
             this.flash();
             this.stopPulse();
-            this.addToBot(new TargetAttackAction());
-            this.addToBot(new TargetAttackAction());
+            ChaserUtil.attack();
+            ChaserUtil.attack();
         }
     }
 }

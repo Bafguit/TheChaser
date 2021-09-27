@@ -5,7 +5,9 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.purple.Brilliance;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
@@ -34,7 +36,12 @@ public class InertialStrike extends ChaserCard {
     }
 
     public void applyPowers() {
+        int realBaseDamage = this.baseDamage;
+        this.baseMagicNumber = ChaserUtil.getCardCountPerTurn();
+        this.baseDamage += this.baseMagicNumber;
         super.applyPowers();
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = this.damage != this.baseDamage;
         this.rawDescription = this.extendedDescription[0] + ChaserUtil.getCardCountPerTurn() + this.extendedDescription[1];
         this.initializeDescription();
     }
@@ -42,15 +49,19 @@ public class InertialStrike extends ChaserCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         //int ca = ChaserUtil.getCardCountPerTurn();
+        this.damage += this.magicNumber;
+        this.calculateCardDamage(m);
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AttackEffect.SLASH_HEAVY));
     }
     
     @Override
     public void calculateCardDamage(AbstractMonster m) {
-        int temp = this.baseDamage;
-        this.baseDamage += ChaserUtil.getCardCountPerTurn();
-        super(m);
-        this.baseDamage = temp;
+        this.baseMagicNumber = ChaserUtil.getCardCountPerTurn();
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += this.baseMagicNumber;
+        super.calculateCardDamage(m);
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = this.damage != this.baseDamage;
     }
 
     @Override

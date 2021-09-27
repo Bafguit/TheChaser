@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theChaser.TheChaserMod;
 import theChaser.actions.ChaserUtil;
+import theChaser.actions.HealTargetAction;
 import theChaser.cards.ChaserCard;
 import theChaser.characters.TheChaser;
 
@@ -50,7 +51,7 @@ public class Vitality extends ChaserCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new HealAction(p, p, ChaserUtil.getTargetAttackCountPerTurn()));
+        addToBot(new HealTargetAction(p));
     }
 
     @Override

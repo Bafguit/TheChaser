@@ -343,7 +343,7 @@
 	    "EXTENDED_DESCRIPTION": [
 	      "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn (",
 	      " HP healed). NL Exhaust.",
-	      "Retain. NL"
+	      "Retain. NL "
 	    ]
 	  },
 	  "theChaser:Walkout": {
