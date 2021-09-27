@@ -174,13 +174,11 @@
 	},
 	"theChaser:Feeble Defend": {
 		"NAME": "欺骗性防御",
-		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果您受到 脆弱 的影响，获得双倍的 格挡 。",
-		"UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果您受到 脆弱 的影响，获得三倍的 格挡 。"
+		"DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果您受到 脆弱 的影响，获得 !M! 倍的 格挡 。"
 	},
 	"theChaser:Feeble Strike": {
 		"NAME": "欺骗性打击",
-		"DESCRIPTION": "造成 !D! 点伤害。 NL 如果您受到 虚弱 的影响，造成双倍的点伤害。",
-		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果您受到 虚弱 的影响，造成三倍的点伤害。"
+		"DESCRIPTION": "造成 !D! 点伤害。 NL 如果您受到 虚弱 的影响，造成 !M! 倍的点伤害。"
 	},
 	"theChaser:Flexibility": {
 		"NAME": "灵活性",
