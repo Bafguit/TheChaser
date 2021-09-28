@@ -29,7 +29,7 @@ public class AccelerationPower extends AbstractPower implements CloneablePowerIn
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public int strCount = 0;
+    private int strCount = 0;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     private static final Texture tex84 = TextureLoader.getTexture("theChaserResources/images/powers/Accel84.png");
