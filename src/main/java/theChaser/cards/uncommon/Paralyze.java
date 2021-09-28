@@ -39,9 +39,11 @@ public class Paralyze extends ChaserCard {
                 }
             }
         }
-
-        int temp = -count;
-        addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, temp), temp));
+        
+        if(count > 0) {
+            int temp = -count;
+            addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, temp), temp));
+        }
     }
 
     @Override
