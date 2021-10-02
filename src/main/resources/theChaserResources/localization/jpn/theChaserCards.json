@@ -341,7 +341,7 @@
   "theChaser:Vitality": {
     "NAME": "活力",
     "DESCRIPTION": "このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "保留。 このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "保留 。 このターンに thechaser:狙った 回数だけHPを回復する。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
       "このターンに thechaser:狙った 回数(",
       ")だけHPを回復する。 NL 廃棄 。",
