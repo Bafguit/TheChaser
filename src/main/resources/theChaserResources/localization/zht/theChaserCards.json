@@ -194,7 +194,7 @@
 	},
 	"theChaser:Hidden Dagger": {
 		"NAME": "隱藏的匕首",
-		"DESCRIPTION": "獲得 !B! 點 格擋 。增加 !M! 張 *匕首 到你的手牌。 NL thechaser:迅速 ： 升級 手牌中的所有*匕首。"
+		"DESCRIPTION": "獲得 !B! 點 格擋 。增加 !M! 張 *匕首 到你的手牌。 NL thechaser:迅速 ： 升級 手牌中的所有 *匕首 。"
 	},
 	"theChaser:Internal Hemorrhage": {
 		"NAME": "內部出血",
@@ -310,7 +310,7 @@
 	},
 	"theChaser:Preemptive Attack": {
 		"NAME": "先发制人",
-		"DESCRIPTION": "在回合的开始，抽 !M! 张牌和 thechaser:瞄准 1 次。"
+		"DESCRIPTION": "在回合的开始，抽 1 张牌和 thechaser:瞄准 1 次。"
 	},
 	"theChaser:Prepay": {
 		"NAME": "先付",
