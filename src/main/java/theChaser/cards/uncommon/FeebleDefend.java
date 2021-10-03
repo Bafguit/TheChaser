@@ -31,21 +31,35 @@ public class FeebleDefend extends ChaserCard {
     private static final int MULTI = 3;
     private static final int UP_MULTI = 1;
 
+    private boolean isFrail = false;
+
     public FeebleDefend() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, 0, BLOCK, MULTI);
+    }
+
+    public void applyPowers() {
+        int realBaseBlock = this.baseBlock;
+        this.isFrail = AbstractDungeon.player.hasPower(FrailPower.POWER_ID);
+        this.baseBlock *= this.isFrail ? this.baseMagicNumber : 1;
+        super.applyPowers();
+        this.baseBlock = realBaseBlock;
+        this.isBlockModified = this.block != this.baseBlock;
+        this.initializeDescription();
     }
 
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.player.hasPower(FrailPower.POWER_ID)) {
+        if (this.isFrail) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, this.block * (p.hasPower(FrailPower.POWER_ID) ? this.magicNumber : 1)));
+        this.block *= this.isFrail ? this.baseMagicNumber : 1;
+        this.applyPowers();
+        addToBot(new GainBlockAction(p, this.block));
     }
 
     @Override
